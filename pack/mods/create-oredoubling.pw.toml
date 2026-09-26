@@ -1,0 +1,13 @@
+name = "Create:OreDoubling x4 ores"
+filename = "ore_doubling_mod-2.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6d958a9015bcb4d50fb6b70283bdf12befbf42e7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8225524
+project-id = 1261550

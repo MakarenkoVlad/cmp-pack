@@ -1,0 +1,13 @@
+name = "CMP"
+author = "MakarenkoVlad"
+version = "0.2.3"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "0c34fd2d0ce27ef4bdb50fbd50ef97bc563eb2741c7d508654aa2b7e819c4263"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.251"

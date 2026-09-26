@@ -1,0 +1,4 @@
+{
+  "type": "neoforge:none",
+  "_comment": "CMP Season 1: no natural zinc. Create's zinc ore biome modifier is replaced by this no-op; zinc only exists at the contested sites placed with /cmpwar site generate."
+}
