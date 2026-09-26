@@ -1,5 +1,5 @@
 # CMP modpack
 
-Install guide: https://makarenkovlad.github.io/cmp-pack/
+Import https://makarenkovlad.github.io/cmp-pack/CMP.zip in Prism Launcher (Add Instance > Import); the instance updates itself on every launch from `pack/`.
 
-Published automatically by the release workflow of the (private) CMP repository; edits here are overwritten by the next release.
+Published by the release workflow of the private CMP repository; changes made here are overwritten by the next release.
