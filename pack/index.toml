@@ -242,6 +242,10 @@ file = "kubejs/data/createages/recipe/copper_age/processing_line/spout.json"
 hash = "65681830f4c96824e1aee3527a8095a6d0b3c8b61dd7b59e29f302bb3806d0fc"
 
 [[files]]
+file = "kubejs/data/createdeco/recipe/placard.json"
+hash = "ddc3d0dd56b604d914bedbf2f985a2f0b5f7374eac79aad668a8a2cfd7cc154c"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
@@ -269,6 +273,11 @@ metafile = true
 [[files]]
 file = "mods/animalpens.pw.toml"
 hash = "492cd9b160e2c471762864545371901b9f3ff15c5d08a1bbecbc1c957a6d0c6a"
+metafile = true
+
+[[files]]
+file = "mods/appleskin.pw.toml"
+hash = "716d930feff599bf9ce732e05979fbae8025dc8a3c13ccf4f1cb207a70883bc6"
 metafile = true
 
 [[files]]
@@ -347,6 +356,11 @@ hash = "66b2e57fad1d958893206d82ff878159b7fdfef64ccb74fe1232b71012409953"
 metafile = true
 
 [[files]]
+file = "mods/clumps.pw.toml"
+hash = "c7f15ebcab95f04c71940715f09ced4caad2775a91ef34389431f91bc1c7be71"
+metafile = true
+
+[[files]]
 file = "mods/cmpfixes-0.2.0.jar"
 hash = "c8e7b1091c69ab2ff14c6e4ba3c5fa3a26d07a8fcaa85c5812a8af23c3b4f6d4"
 
@@ -357,6 +371,11 @@ hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 [[files]]
 file = "mods/cmpwar-0.3.4.jar"
 hash = "b027f1a72351a9844209123aeb00de936da6576985056448a771739628e32c74"
+
+[[files]]
+file = "mods/controlling.pw.toml"
+hash = "65c8086d2ec3d39acc7bd36c7a0306ccc43b602b38fa07d13291bc478ef7dfff"
+metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
@@ -406,6 +425,16 @@ metafile = true
 [[files]]
 file = "mods/create-connected.pw.toml"
 hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
+metafile = true
+
+[[files]]
+file = "mods/create-deco.pw.toml"
+hash = "67a405e6307f900d168deaa954a4309c3b44a6025e4efd7b8e774b6f9d3a69cd"
+metafile = true
+
+[[files]]
+file = "mods/create-diesel-generators.pw.toml"
+hash = "456f66abd180b3f5765473cda5e8acb1a6ea8b15b7ee34442be9a7af414cfc63"
 metafile = true
 
 [[files]]
@@ -489,6 +518,11 @@ hash = "75336ef402b68dd45a0b503559d4b4ab80ab451d30bdea158b927aff8caaafab"
 metafile = true
 
 [[files]]
+file = "mods/dynamic-fps.pw.toml"
+hash = "ae6fd52d8bdcbeca5bbe6db840f22f92c1928fe0fda22017b19612b9b00a245a"
+metafile = true
+
+[[files]]
 file = "mods/easy-villagers.pw.toml"
 hash = "d629988991e4e0c461a5031b8c774c184ef409f5b57187211c3abe5b1a21fc3c"
 metafile = true
@@ -524,6 +558,11 @@ hash = "950114e26a7d1a976a7da8d7d7dc708ea2be16a75a1ae86bb5906274aa311702"
 metafile = true
 
 [[files]]
+file = "mods/farmers-delight.pw.toml"
+hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
+metafile = true
+
+[[files]]
 file = "mods/ferrite-core.pw.toml"
 hash = "ead771197ca804c104207b6507e53bd62eed2e060180958c35d3f9b19623fd17"
 metafile = true
@@ -551,6 +590,11 @@ metafile = true
 [[files]]
 file = "mods/hots-aerostuff.pw.toml"
 hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "6828b28c310ae427da625473c55b79eb0c7ca42acc76591948644af0c04e3933"
 metafile = true
 
 [[files]]
@@ -589,6 +633,11 @@ hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
 metafile = true
 
 [[files]]
+file = "mods/kubejs-create.pw.toml"
+hash = "531aa276b74eabc24566c57412527767238c74ee16b9c646dff511f56dba990c"
+metafile = true
+
+[[files]]
 file = "mods/kubejs.pw.toml"
 hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
@@ -606,6 +655,11 @@ metafile = true
 [[files]]
 file = "mods/linear-bearings-fix.pw.toml"
 hash = "210e07b6cd9ef4bbd7bb6327f5c1903f2075a684240cc4f7a629d4afe73fa4e6"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "8fcf9b022a79aeabcd6b22dce076f9523f5d030e425a085902482201de3d2f0e"
 metafile = true
 
 [[files]]
@@ -679,6 +733,11 @@ hash = "0c0dff752cb29cf2c20e96c41cdcc70c92eb7c816102484156c1c5ddc5f13fe6"
 metafile = true
 
 [[files]]
+file = "mods/numismatics.pw.toml"
+hash = "f0a5a2604c8d733222a25e9c19dcf443d853864ed76a388b26982be97fdea71f"
+metafile = true
+
+[[files]]
 file = "mods/observable.pw.toml"
 hash = "3e477c97729015ac6184c0b56cb148947b7c0dc5cca764336ee96719f05f05e6"
 metafile = true
@@ -686,6 +745,11 @@ metafile = true
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "97660396e7f075f4c9ca8447878ec3da58ebea9ed464cdb494d4db1d62989936"
+metafile = true
+
+[[files]]
+file = "mods/ping-original.pw.toml"
+hash = "8239bff4e37b254c07362c5efe6bf527cabddaf43662e66f8dbf93a43d7e2ee3"
 metafile = true
 
 [[files]]
@@ -729,13 +793,28 @@ hash = "459862e1779ab18c1c299b607f32ba52e29c8d5c2517037c394e3da2ff0700b0"
 metafile = true
 
 [[files]]
+file = "mods/searchables.pw.toml"
+hash = "ce9ddada6ffd55a512149cc474c6a453281a997a5fdf1b7b4a2cc73f875e704a"
+metafile = true
+
+[[files]]
 file = "mods/shellbound-for-airship.pw.toml"
 hash = "026951f2fdf7709712269e4f2c03aa544d35d20c1fb6180876f5ec5063fc2e34"
 metafile = true
 
 [[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "8eae737eb20a0488e9b57b6a59f0681d142732bcb22fc896ad4e5ff924ec5683"
+metafile = true
+
+[[files]]
 file = "mods/sky-whale-ship.pw.toml"
 hash = "0be5b145e8ac324bbac2399a6f420a3f4e18f8b50d3b2c18bdb65b67c356eb45"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "83a7b840686a417dfe1161ee5cd918989dd2d901c9013bf85e93a30f597260f7"
 metafile = true
 
 [[files]]
