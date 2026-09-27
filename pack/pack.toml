@@ -1,12 +1,12 @@
 name = "CMP"
 author = "MakarenkoVlad"
-version = "0.2.17"
+version = "0.2.18"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "6b70bc628638696caa18ef737835c3de73ecea666075287c75a8fc0140baf510"
+hash = "806787806490f402c2835debf99246bba08ea204a4684223437a41b926dc55d6"
 
 [versions]
 minecraft = "1.21.1"
