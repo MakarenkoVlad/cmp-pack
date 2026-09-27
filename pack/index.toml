@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "c3a1a24d18eb6308927e2b6e8356cac431b3546330b2c7fec3f03ed978f9244f"
+hash = "681e0dc46178a74611005d5b779fd0cfa9dbf363525bb7ba91cf9d75892348b2"
 
 [[files]]
 file = "config/create_structures_arise-server.toml"
@@ -121,10 +121,6 @@ file = "kubejs/server_scripts/lootr_protection.js"
 hash = "3134bf419c53155daf078195b108d6a98a3ded4586ba0cbaad40d957ccf0ba56"
 
 [[files]]
-file = "kubejs/server_scripts/no_hostile_mobs.js"
-hash = "51e3a5b384a00b730d3727ff93b2e2a5dfae47db95e5ee9ed8fb2d91b02bc893"
-
-[[files]]
 file = "kubejs/server_scripts/parkour.js"
 hash = "73c88da6df53f34f0d43a5a08a817b60751b33bba7e3f6f169d35eb0f9c18c5e"
 
@@ -134,7 +130,7 @@ hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "50e0464bbfa26ca75e842d93f5eb8486ebe622a122dcd25f17507ae3216810af"
+hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
 
 [[files]]
 file = "mods/animalpens.pw.toml"
@@ -215,8 +211,8 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.3.2.jar"
-hash = "e9f86ff4e102cb548489ebc654867e66f1c59aabcfc1929ef261543d6f7644fc"
+file = "mods/cmpwar-0.3.3.jar"
+hash = "c98838c8772169a0089f3f329927a9944c94e586721210d60acce4a1a2fcf4cd"
 
 [[files]]
 file = "mods/copycats.pw.toml"

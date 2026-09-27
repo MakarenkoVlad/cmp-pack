@@ -4,10 +4,17 @@
 _version = 4
 
 [server]
-	# Every client caches the distant terrain under this key, or under one derived from the world seed
-	# while it is empty. When the world is reset without changing the seed, set a new value here, or
-	# players keep seeing the old map in the distance.
-	levelKeyPrefix = ""
+	# Every client caches the distant terrain under this key. Give each new world its own value, or
+	# players keep seeing the old map in the distance. Changing it also throws away what clients have
+	# cached of the current world, which is how the wrong "sea" from before CHUNKS_ONLY was cleared.
+	levelKeyPrefix = "season1"
+
+[common.worldGenerator]
+	# Distant Horizons' quick first pass guesses the terrain from the biomes, which for the sky islands
+	# means a sea floor and cliff walls that do not exist. Chunk generation only: slower to fill in,
+	# always the real map.
+	generatorPlan = "CHUNKS_ONLY"
+	enableFastSurfaceGenerator = false
 
 [client.advanced.autoUpdater]
 	# packwiz-installer keeps the mod up to date. Distant Horizons' own updater would put a second jar
