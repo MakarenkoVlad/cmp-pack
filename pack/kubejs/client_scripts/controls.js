@@ -2,14 +2,13 @@
 // once per game folder; after that the player's own choices stay. Each stage runs once, so a stage
 // added later reaches game folders that already had the earlier ones applied.
 //   v1 (combat):
-//     ParCool dodge, breakfall and wall run: R (TaCZ reload) -> X (in survival X does nothing)
 //     Curios accessory screen: G (TaCZ fire mode) -> none (the inventory has a Curios button)
 //     Sable Ragdolls "ragdoll yourself": H (TaCZ inspect) -> none (the server turns it off)
 //   v2 (villagers):
 //     Easy Villagers "pick up": V (TaCZ melee and zoom, Synaxis view lock) -> none
 //       (sneak + right-click on a villager picks it up)
-// C stays shared: TaCZ crawl and ParCool crawl both go prone while it is held, and sprinting into it slides.
-// Easy Villagers' "cycle trades" is C too, but it only works inside the trading screen.
+// C stays shared: Easy Villagers' "cycle trades" is C like TaCZ crawl, but it only works inside the
+// trading screen.
 const CmpControlsMinecraft = Java.loadClass('net.minecraft.client.Minecraft')
 const CmpControlsKeyMapping = Java.loadClass('net.minecraft.client.KeyMapping')
 const CmpControlsInput = Java.loadClass('com.mojang.blaze3d.platform.InputConstants')
@@ -17,9 +16,6 @@ const CMP_CONTROL_STAGES = [
     {
         marker: 'local/cmp/controls-v1.json',
         changes: {
-            'key.parcool.dodge': 'key.keyboard.x',
-            'key.parcool.breakfall': 'key.keyboard.x',
-            'key.parcool.horizontal_wall_run': 'key.keyboard.x',
             'key.curios.open.desc': 'key.keyboard.unknown',
             'key.sable_player_ragdoll.ragdoll': 'key.keyboard.unknown',
         },

@@ -85,10 +85,6 @@ file = "config/openpartiesandclaims-server.toml"
 hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
 
 [[files]]
-file = "config/parcool-server.toml"
-hash = "3980573ad90786250c08e23618d9ce1e2b0deb28284e8e3b7b827cc7cafe97ed"
-
-[[files]]
 file = "config/ragdoll_reactions-server.toml"
 hash = "7217399cbe3b893735b78930cae0a73a2680850a5794774b9d7f0c54c6415a65"
 
@@ -106,7 +102,7 @@ hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
-hash = "dc45bffb772fe5076809a2129b0ae45634056902c08ef3cc355dcb7b3e7fd0d1"
+hash = "915cdacb3e8fd57625e5cab8b98b3205ada4169d269ef187deb501546315be96"
 
 [[files]]
 file = "kubejs/server_scripts/guns.js"
@@ -119,10 +115,6 @@ hash = "d7380decf099f36dd237563a7c8d7bf8724d65f0a146bf22a909ec7a67dd4c44"
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
 hash = "3134bf419c53155daf078195b108d6a98a3ded4586ba0cbaad40d957ccf0ba56"
-
-[[files]]
-file = "kubejs/server_scripts/parkour.js"
-hash = "73c88da6df53f34f0d43a5a08a817b60751b33bba7e3f6f169d35eb0f9c18c5e"
 
 [[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
@@ -507,11 +499,6 @@ metafile = true
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
 hash = "97660396e7f075f4c9ca8447878ec3da58ebea9ed464cdb494d4db1d62989936"
-metafile = true
-
-[[files]]
-file = "mods/parcool.pw.toml"
-hash = "49e46163b793893766999901a198a23d0bc91e90eeae0b759078a4a46c031949"
 metafile = true
 
 [[files]]
