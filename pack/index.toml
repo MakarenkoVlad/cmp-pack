@@ -40,8 +40,18 @@ hash = "82a755cc7393f20c64d3465813840b90dcccc94e067b2e72411ad973e91dd089"
 metafile = true
 
 [[files]]
+file = "mods/cbc-compact-mount.pw.toml"
+hash = "414a58bba157ca4e565529c006a8637660644de1b2347f5452e1d7906b41c225"
+metafile = true
+
+[[files]]
 file = "mods/cbc-more-shells.pw.toml"
 hash = "9757f7d050adcb465f923e852b1e1e13aaaf8e58a2f611ce882ad80a2cb15c89"
+metafile = true
+
+[[files]]
+file = "mods/cc-cbc-compact-mount.pw.toml"
+hash = "ce40d18cff81bdf367361d9bf810a4f1e998e69c567522cd63694bb646675395"
 metafile = true
 
 [[files]]
@@ -79,6 +89,16 @@ file = "mods/cmpwar-0.1.0.jar"
 hash = "3359df9aa42bdbe71ef02c07fbe01ae35768e8aa95ec2ea3c71d74d0d79f18fa"
 
 [[files]]
+file = "mods/copycats.pw.toml"
+hash = "4892513825f87217b6cc3f4d3ec4dcd3965b96dede8cc10d6578c4769102ae8e"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-transmission-linkage.pw.toml"
+hash = "fd78380d12b73953fccdf69abd7449233fcce19244dc34378e1f9a1147a976c8"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
 metafile = true
@@ -89,6 +109,11 @@ hash = "100453b5fc7d3e8b754920a1838159ceac1daa3afc733880661f183e281f7828"
 metafile = true
 
 [[files]]
+file = "mods/create-avionics.pw.toml"
+hash = "02d8e1b53cf40eda776d245a2c946f0f246a9d789af2f4f00f264a48b42d7236"
+metafile = true
+
+[[files]]
 file = "mods/create-big-cannons-advanced-technologies.pw.toml"
 hash = "2de7339944ca4d988001c6cf30e9bf793cce8e18b6519fa3209afa8fb6ee3f94"
 metafile = true
@@ -96,6 +121,16 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
+metafile = true
+
+[[files]]
+file = "mods/create-compact-flap.pw.toml"
+hash = "8357524fb98d75ce1c11e1385744c1e4897ac0551c81f60ae437e5a52ed8d995"
+metafile = true
+
+[[files]]
+file = "mods/create-connected.pw.toml"
+hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
 metafile = true
 
 [[files]]
@@ -169,6 +204,11 @@ hash = "6ad22c468d67dcbb65784e161d4af9e671d3437cb5bfb1e86a42ae25207cf25b"
 metafile = true
 
 [[files]]
+file = "mods/hots-aerostuff.pw.toml"
+hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 hash = "6fd64a8c68d2935cbc62ca4346be2d3b702c05bc231f7bbb436bc3a4d8ab70e8"
 metafile = true
@@ -204,6 +244,16 @@ hash = "a57064a0b2f76d1940893fe8e4d6b6a57554fd27d32da88dcf152acfef223383"
 metafile = true
 
 [[files]]
+file = "mods/linear-bearing.pw.toml"
+hash = "e92248ff7e47d94175ee315550946858967e9f1076653468a1d10a6aa53a4d82"
+metafile = true
+
+[[files]]
+file = "mods/linear-bearings-fix.pw.toml"
+hash = "210e07b6cd9ef4bbd7bb6327f5c1903f2075a684240cc4f7a629d4afe73fa4e6"
+metafile = true
+
+[[files]]
 file = "mods/mc2discord.pw.toml"
 hash = "40b7f0cb1bc669c7fedf2eed795d08d772891a38ff09dbc2e68823e2a8c20d4c"
 metafile = true
@@ -236,6 +286,11 @@ metafile = true
 [[files]]
 file = "mods/rpl.pw.toml"
 hash = "7815e5a589de0c02a62ae83590e1f75f4d0c269e48f2435ce2ac448976ddf49f"
+metafile = true
+
+[[files]]
+file = "mods/sable-cleanup.pw.toml"
+hash = "a853620e7a9fff71bb22f2e467b5861bafdea792d4e679709800c587c98ae95c"
 metafile = true
 
 [[files]]

@@ -1,0 +1,13 @@
+name = "CC:CBC Compact Mount"
+filename = "cc_cbc_compact_mount-1.21.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/iFuSMaVW/versions/gpq9v0iU/cc_cbc_compact_mount-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "6320c3773904d8a8844f8fc7cbd0dab353ffe1a674a51f7221c8e2a3d6d4d5ec54b5517643c39041787041d0e6c68235088bf705658275f169be22a5ce4ff7f6"
+
+[update]
+[update.modrinth]
+mod-id = "iFuSMaVW"
+version = "gpq9v0iU"
