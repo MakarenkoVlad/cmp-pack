@@ -101,6 +101,10 @@ file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
 [[files]]
+file = "kubejs/server_scripts/no_hostile_mobs.js"
+hash = "51e3a5b384a00b730d3727ff93b2e2a5dfae47db95e5ee9ed8fb2d91b02bc893"
+
+[[files]]
 file = "kubejs/server_scripts/parkour.js"
 hash = "73c88da6df53f34f0d43a5a08a817b60751b33bba7e3f6f169d35eb0f9c18c5e"
 
@@ -110,7 +114,7 @@ hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "17f15c3877a71ae656defbb2f8cc5962711352757d8ccf5b6fc09cacf71f369f"
+hash = "de3ba2094b65a54c47fd65e7c09c8ea20d1a0ee46f764eb398da3dec10615084"
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
