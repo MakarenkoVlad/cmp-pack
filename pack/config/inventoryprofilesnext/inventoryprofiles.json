@@ -1,0 +1,104 @@
+{
+    "ModSettings": {
+        "enable_updates_check": false
+    },
+    "GuiSettings": {
+        "settings_top": 5,
+        "settings_left": 80,
+        "enable_inventory_editor_button": {
+            "value": false
+        }
+    },
+    "AutoRefillSettings": {
+        "auto_refill_enable_horbar_indicator_icons": {
+            "value": false
+        }
+    },
+    "Hotkeys": {
+        "open_config_menu": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "reload_custom_configs": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "sort_inventory": {
+            "main": {
+                "keys": "BUTTON_3"
+            }
+        },
+        "auto_refill_game_toggle_for_slot": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "apply_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "next_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "prev_profile": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_1": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_2": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_3": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_4": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_5": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_6": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_7": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_8": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_9": {
+            "main": {
+                "keys": ""
+            }
+        },
+        "profile_10": {
+            "main": {
+                "keys": ""
+            }
+        }
+    }
+}
