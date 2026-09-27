@@ -1,0 +1,13 @@
+name = "Nuit Interop"
+filename = "nuit-interop-neoforge-1.0.0-beta.5+mc1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/HpdHOPOp/versions/ix5pdiKO/nuit-interop-neoforge-1.0.0-beta.5%2Bmc1.21.1.jar"
+hash-format = "sha512"
+hash = "5d3f62e288dd7ed98894e18d7a4264bd8114281c40c478f75910c9457d0529187e56a4520548cb1b9b286af317fa358b1cb3b55e5fd6915eb68593e336ad3393"
+
+[update]
+[update.modrinth]
+mod-id = "HpdHOPOp"
+version = "ix5pdiKO"

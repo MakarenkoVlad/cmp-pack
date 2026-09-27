@@ -1,0 +1,8 @@
+{
+  "interoperability": true,
+  "debug_mode": false,
+  "prefer_nuit_native": true,
+  "process_fabric_sky_boxes": true,
+  "process_opti_fine": false,
+  "process_m_c_patcher": false
+}

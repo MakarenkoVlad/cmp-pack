@@ -81,6 +81,10 @@ file = "config/lootr-common.toml"
 hash = "649661e8b4bed77101d54de9933e0b088d75202f9f4164a6c93c74ddeeff6bff"
 
 [[files]]
+file = "config/nuit-interop.json"
+hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
+
+[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
 
@@ -105,6 +109,10 @@ file = "kubejs/client_scripts/controls.js"
 hash = "915cdacb3e8fd57625e5cab8b98b3205ada4169d269ef187deb501546315be96"
 
 [[files]]
+file = "kubejs/client_scripts/graphics.js"
+hash = "887b615f9f84f6266f7b3272ced1a4e5e4e3ef23d2e1b764a1f07850c9ed0015"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
@@ -114,7 +122,7 @@ hash = "d7380decf099f36dd237563a7c8d7bf8724d65f0a146bf22a909ec7a67dd4c44"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
-hash = "3134bf419c53155daf078195b108d6a98a3ded4586ba0cbaad40d957ccf0ba56"
+hash = "395d9584c555384b6a799ea8b86faa754cb4c95bec6479fb7039353850b463aa"
 
 [[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
@@ -362,6 +370,16 @@ hash = "82b5da4b806a09e490ce4e03204136194f7581aeb93cecf024f80d6f926764d0"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "0ae06c97bf858f3941fd7369e34a71967e7a5c26c26b1cb7371a5be0f1842ecd"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "42731772f3bde6bc35c48ff39a0b16c24edfa245c42d2ca8c8abd11f57edf4e7"
+metafile = true
+
+[[files]]
 file = "mods/explorify.pw.toml"
 hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
 metafile = true
@@ -507,6 +525,16 @@ hash = "188500c93c2f057ae0053890e72e409e2c4ddaedfcb34bdfecb87b6299b5717d"
 metafile = true
 
 [[files]]
+file = "mods/nuit-interop.pw.toml"
+hash = "689d33e9cffcf5d1a2ac4f4cf51658f605307d101523cac9af1058de3189c502"
+metafile = true
+
+[[files]]
+file = "mods/nuit.pw.toml"
+hash = "0c0dff752cb29cf2c20e96c41cdcc70c92eb7c816102484156c1c5ddc5f13fe6"
+metafile = true
+
+[[files]]
 file = "mods/observable.pw.toml"
 hash = "3e477c97729015ac6184c0b56cb148947b7c0dc5cca764336ee96719f05f05e6"
 metafile = true
@@ -619,6 +647,31 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "f8cc300d53ae8bf71d77124e6c46a5e85fe31654b39c5d73a1652a4d9c404af4"
+metafile = true
+
+[[files]]
+file = "resourcepacks/dramatic-skys.pw.toml"
+hash = "8f967b7e600898db0ee79dedf76eb5969df6c7ccec87f0b708445eed99ea8268"
+metafile = true
+
+[[files]]
+file = "resourcepacks/faithful-32x.pw.toml"
+hash = "e0a6012ba9dad43bbcc771bb65c9ed857cb959d1ac36b5d4924ad036b4ffb07a"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "6a1556a0e4fcb411b33efafc3382b4abd9a6e671f140dc0d42e9aad2808e24f3"
+metafile = true
+
+[[files]]
+file = "resourcepacks/improved-create-32x.pw.toml"
+hash = "7105fd32911c437be089020d80fcef21c10e511e85acfd1b9a3f67ca53f0f49c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/universal-bushy-leaves.pw.toml"
+hash = "30edef17ac2615dbbad050f5116b9e6f93d6adf1d06c2d10bfa66ba7aaaeeae9"
 metafile = true
 
 [[files]]

@@ -8,6 +8,13 @@
 //     (A Big Cannons explosion also asks at its centre: one centred on a Lootr container breaks no
 //     blocks at all, which is fine. The blocks around an explosion follow the explosion resistance,
 //     which blast_immune already sets.)
+// Nor can they be carried off: nothing assembles a Lootr container into something that moves.
+//   - Create contraptions (bearings, pistons, pulleys, gantries, cart assemblers, elevators, linear
+//     bearings) refuse the blocks in #create:non_movable: Contraption.moveBlock throws "unmovable block"
+//     when it reaches one (the block the contraption starts from, pushes against or pulls with a
+//     chassis) and skips one that it would only take along by glue.
+//   - Aeronautics airships: the physics assembler (Simulated) does the same with #simulated:non_movable
+//     (SimAssemblyContraption.movementAllowed).
 const CmpLootrTagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const CmpLootrRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 const CmpLootrId = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -15,6 +22,8 @@ const CMP_LOOTR_CONTAINERS = CmpLootrTagKey.create(CmpLootrRegistries.BLOCK, Cmp
 
 ServerEvents.tags('block', event => {
     event.add('create:non_breakable', '#lootr:containers')
+    event.add('create:non_movable', '#lootr:containers')
+    event.add('simulated:non_movable', '#lootr:containers')
 })
 
 NativeEvents.onEvent('rbasamoyai.createbigcannons.events.ProjectileDamageEvent', event => {
