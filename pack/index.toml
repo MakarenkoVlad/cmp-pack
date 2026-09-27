@@ -77,6 +77,11 @@ file = "config/fancymenu/user_variables.db"
 hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
+file = "config/iris.properties"
+hash = "e2a4ee4bd32547f16d606af772ef7338d6785b215c04115e5a9bf141b9a793c8"
+preserve = true
+
+[[files]]
 file = "config/lootr-common.toml"
 hash = "649661e8b4bed77101d54de9933e0b088d75202f9f4164a6c93c74ddeeff6bff"
 
@@ -110,7 +115,7 @@ hash = "915cdacb3e8fd57625e5cab8b98b3205ada4169d269ef187deb501546315be96"
 
 [[files]]
 file = "kubejs/client_scripts/graphics.js"
-hash = "887b615f9f84f6266f7b3272ced1a4e5e4e3ef23d2e1b764a1f07850c9ed0015"
+hash = "2364d6c7d8227bfca443484aa3914cae3bca0d9e28616c52c6ac25f5632bd82c"
 
 [[files]]
 file = "kubejs/client_scripts/server_address.js"
@@ -429,6 +434,11 @@ hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
 
 [[files]]
+file = "mods/iris.pw.toml"
+hash = "db1c1e6382878b78e994dba1b9026935f8d1c5ca685c89d2437858e0a0dcab58"
+metafile = true
+
+[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 hash = "6fd64a8c68d2935cbc62ca4346be2d3b702c05bc231f7bbb436bc3a4d8ab70e8"
 metafile = true
@@ -697,6 +707,11 @@ metafile = true
 file = "servers.dat"
 hash = "6e57bbf542f0e59bd23d59b585c42a3423114ab6f8e9bf51974874bdc503429f"
 preserve = true
+
+[[files]]
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "fc1043d3c0edd68c88c530c3a2ce48fe887ff6310ee252608a6724b4c2ec6384"
+metafile = true
 
 [[files]]
 file = "tacz/tacz-create-armorer-koei.pw.toml"
