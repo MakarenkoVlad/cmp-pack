@@ -502,6 +502,11 @@ hash = "8f1f7a8fad5f76d13cc8fdd8fd3c9b721a461fe72f009c23a247ffab76154586"
 metafile = true
 
 [[files]]
+file = "mods/no-chat-restrictions.pw.toml"
+hash = "188500c93c2f057ae0053890e72e409e2c4ddaedfcb34bdfecb87b6299b5717d"
+metafile = true
+
+[[files]]
 file = "mods/observable.pw.toml"
 hash = "3e477c97729015ac6184c0b56cb148947b7c0dc5cca764336ee96719f05f05e6"
 metafile = true
