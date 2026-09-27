@@ -14,3 +14,23 @@ listener_instance {
   [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:cmp_sky_click_title] = ["mode":"equals","text":"{"placeholder":"screenid"}","compare_with":"title_screen"]$
   [executable_action_instance:cmp_sky_click_boom][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/cmp/detonate.ogg","soundChannel":"master","baseVolume":0.9}
 }
+
+listener_instance {
+  listener_instance_identifier = cmp_start_volume
+  listener_provider_identifier = screen_open
+  listener_instance_action_script_identifier = cmp_start_volume_root
+  listener_instance_display_name = CMP: start at 20% master volume, once
+  [executable_block:cmp_start_volume_root][type:generic] = [executables:cmp_start_volume_first;]
+  [executable_block:cmp_start_volume_first][type:if] = [executables:cmp_start_volume_loud;cmp_start_volume_mark;]
+  [if_executable_block_body:cmp_start_volume_first] = cmp_start_volume_first_cond
+  [if_executable_block_collapsed:cmp_start_volume_first] = false
+  [loading_requirement_container_meta:cmp_start_volume_first_cond] = [groups:][instances:cmp_start_volume_unmarked;]
+  [loading_requirement:fancymenu_loading_requirement_file_exists][requirement_mode:if_not][req_id:cmp_start_volume_unmarked] = config/fancymenu/cmp_start_volume_applied
+  [executable_block:cmp_start_volume_loud][type:if] = [executables:cmp_start_volume_set;]
+  [if_executable_block_body:cmp_start_volume_loud] = cmp_start_volume_loud_cond
+  [if_executable_block_collapsed:cmp_start_volume_loud] = false
+  [loading_requirement_container_meta:cmp_start_volume_loud_cond] = [groups:][instances:cmp_start_volume_above;]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:cmp_start_volume_above] = ["mode":"bigger-than","number":"{"placeholder":"minecraft_option_value","values":{"name":"soundCategory_master"}}","compare_with":"0.2"]$
+  [executable_action_instance:cmp_start_volume_set][action_type:edit_minecraft_option] = soundCategory_master:0.2
+  [executable_action_instance:cmp_start_volume_mark][action_type:create_file_in_game_dir] = config/fancymenu/cmp_start_volume_applied
+}

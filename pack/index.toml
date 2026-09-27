@@ -38,7 +38,7 @@ hash = "72d3cc7383869ef979fa79b4ae2e4e3333ee442bf6b7e555f308abf44e4e8227"
 
 [[files]]
 file = "config/fancymenu/assets/cmp/hover.ogg"
-hash = "47396b8c07d8a624bb737f07fdccb7b78ce88ee3e4f5c0cb97a9ca12d4389787"
+hash = "24ec467687d3af3974e34f1a2953214bd5a4a00c0b5d42cad6a07396c24e91ee"
 
 [[files]]
 file = "config/fancymenu/assets/cmp/intro.ogg"
@@ -58,7 +58,7 @@ hash = "cecc7ad3f653d38759088fde4e3cbf43030dc135819c83d027038e10271a5dae"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
-hash = "e09000f37c169ed5b3e3f418dc2bfb57fa319760058b9247bcedd6a5e9875cc2"
+hash = "a3685b4995421e266ea19119145959eb357134acf06414ab2845ffb1bebd2cf1"
 
 [[files]]
 file = "config/fancymenu/options.txt"
