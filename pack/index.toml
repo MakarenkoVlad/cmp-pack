@@ -62,7 +62,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "cecc7ad3f653d38759088fde4e3cbf43030dc135819c83d027038e10271a5dae"
+hash = "53782a899ac5c5e0c37412a7a9151d56b6edbf92911a0176cd873a3a37895677"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -113,6 +113,10 @@ file = "kubejs/client_scripts/graphics.js"
 hash = "887b615f9f84f6266f7b3272ced1a4e5e4e3ef23d2e1b764a1f07850c9ed0015"
 
 [[files]]
+file = "kubejs/client_scripts/server_address.js"
+hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
@@ -131,6 +135,11 @@ hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 [[files]]
 file = "kubejs/server_scripts/season1.js"
 hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
+
+[[files]]
+file = "mods/alternate-current.pw.toml"
+hash = "18cf2b63d293ba0738c1073690fbd2c62305b161f76d346a551a66a9bbf8af32"
+metafile = true
 
 [[files]]
 file = "mods/animalpens.pw.toml"
@@ -213,8 +222,8 @@ hash = "66b2e57fad1d958893206d82ff878159b7fdfef64ccb74fe1232b71012409953"
 metafile = true
 
 [[files]]
-file = "mods/cmpfixes-0.1.0.jar"
-hash = "a477faf30992b31e801caa576e2859236a9379563251acd85a747ef3528d02bd"
+file = "mods/cmpfixes-0.2.0.jar"
+hash = "c8e7b1091c69ab2ff14c6e4ba3c5fa3a26d07a8fcaa85c5812a8af23c3b4f6d4"
 
 [[files]]
 file = "mods/cmpguard-0.1.0.jar"
@@ -325,11 +334,6 @@ hash = "a1ece75a981257cc4cb72f29eb89a95f48249269af6ea115de504d3fbe00be4d"
 metafile = true
 
 [[files]]
-file = "mods/create-ultimine.pw.toml"
-hash = "6adbe018fa82d595b6679edb045d66e266b031eca2bc1b6f243b1ae50bef92ab"
-metafile = true
-
-[[files]]
 file = "mods/create-xaeros-map.pw.toml"
 hash = "ce4f3b213b52415cecadc297652ba0f1c506e4f987a7ae2bfda437f3bd405d5b"
 metafile = true
@@ -395,6 +399,11 @@ hash = "950114e26a7d1a976a7da8d7d7dc708ea2be16a75a1ae86bb5906274aa311702"
 metafile = true
 
 [[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "ead771197ca804c104207b6507e53bd62eed2e060180958c35d3f9b19623fd17"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "2e72d40c6d7b128981b19b71c19d45eb6813f1af87ae1abe1cf92adfa5e8223f"
 metafile = true
@@ -407,11 +416,6 @@ metafile = true
 [[files]]
 file = "mods/ftb-teams-forge.pw.toml"
 hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
-metafile = true
-
-[[files]]
-file = "mods/ftb-ultimine-forge.pw.toml"
-hash = "3529bc9c3a7b54933869be1d1d84a948d091c3d6064bbb6b17874d7c153b4dca"
 metafile = true
 
 [[files]]
@@ -510,6 +514,11 @@ hash = "efad386063cb79013d7522fcc5b5879c5c3cd556e83bd41a56980632827b45b2"
 metafile = true
 
 [[files]]
+file = "mods/modernfix.pw.toml"
+hash = "f73c7e81a0e396cf3d1f04ba1fca6043121dbdb2cf5e4e207062991a33c965b5"
+metafile = true
+
+[[files]]
 file = "mods/moogs-structure-lib.pw.toml"
 hash = "00b3a07b1994eecda04b3893c1696c9114adf7494ac604f2d172b5931fed9275"
 metafile = true
@@ -517,6 +526,11 @@ metafile = true
 [[files]]
 file = "mods/moogs-voyager-structures.pw.toml"
 hash = "8f1f7a8fad5f76d13cc8fdd8fd3c9b721a461fe72f009c23a247ffab76154586"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "6bc414cc0f2d4c078fe83f384d786343f701f371d657c5279b5b0df1595804bd"
 metafile = true
 
 [[files]]
@@ -600,6 +614,11 @@ hash = "2a001cdb3d5ac4970d422914083c27380eba8ebd40dfd435754fe6566ba78beb"
 metafile = true
 
 [[files]]
+file = "mods/spark.pw.toml"
+hash = "5995decc8738d7ddccec218dfa1ed95db9eca5bb64c98fd2cede8bf9bbc837c2"
+metafile = true
+
+[[files]]
 file = "mods/ssrd.pw.toml"
 hash = "4a4c0c54b3b38ac660b9c06d8dc8e51ed3e2efc6dd94ad3e807a48146a420873"
 metafile = true
@@ -676,7 +695,7 @@ metafile = true
 
 [[files]]
 file = "servers.dat"
-hash = "f97baaf825214b918a9b208799ab5f16761b63dca31d9e694689c0146256a631"
+hash = "6e57bbf542f0e59bd23d59b585c42a3423114ab6f8e9bf51974874bdc503429f"
 preserve = true
 
 [[files]]

@@ -128,7 +128,7 @@ element {
   description = Connect to the CMP server
   button_element_executable_block_identifier = cmp_title_join_script
   [executable_block:cmp_title_join_script][type:generic] = [executables:cmp_title_join_action;]
-  [executable_action_instance:cmp_title_join_action][action_type:joinserver] = 104.204.219.211
+  [executable_action_instance:cmp_title_join_action][action_type:joinserver] = 104.204.219.198
   backgroundnormal = [source:local]/config/fancymenu/assets/cmp/button_war.png
   backgroundhovered = [source:local]/config/fancymenu/assets/cmp/button_war_hover.png
   background_texture_inactive = [source:local]/config/fancymenu/assets/cmp/button_inactive.png
@@ -159,7 +159,7 @@ element {
 element {
   element_type = text_v2
   instance_identifier = cmp_title_status
-  source = {"placeholder":"serverstatus","values":{"ip":"104.204.219.211"}} §8· §f{"placeholder":"serverplayercount","values":{"ip":"104.204.219.211"}} §7at war
+  source = {"placeholder":"serverstatus","values":{"ip":"104.204.219.198"}} §8· §f{"placeholder":"serverplayercount","values":{"ip":"104.204.219.198"}} §7at war
   source_mode = direct
   shadow = true
   scale = 1.0
