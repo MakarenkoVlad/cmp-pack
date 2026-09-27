@@ -77,10 +77,6 @@ file = "config/fancymenu/user_variables.db"
 hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
-file = "config/inventoryprofilesnext/inventoryprofiles.json"
-hash = "6afcf53aa8d0225b646dd99d6f2d9624162a4fa7cc975d5f22e43f00cb87bdbf"
-
-[[files]]
 file = "config/lootr-common.toml"
 hash = "649661e8b4bed77101d54de9933e0b088d75202f9f4164a6c93c74ddeeff6bff"
 
@@ -196,6 +192,16 @@ metafile = true
 [[files]]
 file = "mods/chunky.pw.toml"
 hash = "68cc51e721e993a8b7a2cbaf45369933b22b07a9c82327ab14757ee10684aa81"
+metafile = true
+
+[[files]]
+file = "mods/clientsort.pw.toml"
+hash = "3f56430540065191fdcf3980d96a750c4b6a17943574e4809b323f37825178c6"
+metafile = true
+
+[[files]]
+file = "mods/cloth-config.pw.toml"
+hash = "66b2e57fad1d958893206d82ff878159b7fdfef64ccb74fe1232b71012409953"
 metafile = true
 
 [[files]]
@@ -401,11 +407,6 @@ hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
 
 [[files]]
-file = "mods/inventory-profiles-next.pw.toml"
-hash = "ab503e89461dff879ee793253e173625b6ab868f570a371323ef725e567cf5ea"
-metafile = true
-
-[[files]]
 file = "mods/jade-addons-forge.pw.toml"
 hash = "6fd64a8c68d2935cbc62ca4346be2d3b702c05bc231f7bbb436bc3a4d8ab70e8"
 metafile = true
@@ -443,11 +444,6 @@ metafile = true
 [[files]]
 file = "mods/ldlib.pw.toml"
 hash = "a57064a0b2f76d1940893fe8e4d6b6a57554fd27d32da88dcf152acfef223383"
-metafile = true
-
-[[files]]
-file = "mods/libipn.pw.toml"
-hash = "0d2a00252d64ed7d2d9b19994f7accb780304be61f3903d36e810714b414c6cb"
 metafile = true
 
 [[files]]
