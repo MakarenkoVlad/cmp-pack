@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/create_structures_arise-server.toml"
+hash = "d807839362cca0878a6e120b6bd452e4252b3f7187cd6c854d77a1c4e2f4b4fe"
+
+[[files]]
 file = "config/fancymenu/assets/cmp/ambience.ogg"
 hash = "927a1b768de9a2540fb8a4eabdd55681a33a459111b2abfd242fdbbd63c3dfe4"
 
@@ -69,6 +73,10 @@ file = "config/fancymenu/user_variables.db"
 hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
+file = "config/lootr-common.toml"
+hash = "649661e8b4bed77101d54de9933e0b088d75202f9f4164a6c93c74ddeeff6bff"
+
+[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
 
@@ -94,11 +102,19 @@ hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
-hash = "50d778c58f83fd22724bcfa1f45fc9dcd031b107d5a42720062d4a48fc256293"
+hash = "dc45bffb772fe5076809a2129b0ae45634056902c08ef3cc355dcb7b3e7fd0d1"
 
 [[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
+
+[[files]]
+file = "kubejs/server_scripts/loot.js"
+hash = "d7380decf099f36dd237563a7c8d7bf8724d65f0a146bf22a909ec7a67dd4c44"
+
+[[files]]
+file = "kubejs/server_scripts/lootr_protection.js"
+hash = "3134bf419c53155daf078195b108d6a98a3ded4586ba0cbaad40d957ccf0ba56"
 
 [[files]]
 file = "kubejs/server_scripts/no_hostile_mobs.js"
@@ -115,6 +131,11 @@ hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 [[files]]
 file = "kubejs/server_scripts/season1.js"
 hash = "de3ba2094b65a54c47fd65e7c09c8ea20d1a0ee46f764eb398da3dec10615084"
+
+[[files]]
+file = "mods/animalpens.pw.toml"
+hash = "492cd9b160e2c471762864545371901b9f3ff15c5d08a1bbecbc1c957a6d0c6a"
+metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
@@ -177,12 +198,17 @@ hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
 metafile = true
 
 [[files]]
+file = "mods/chunky.pw.toml"
+hash = "68cc51e721e993a8b7a2cbaf45369933b22b07a9c82327ab14757ee10684aa81"
+metafile = true
+
+[[files]]
 file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.3.0.jar"
-hash = "5b6ee1b915c7bfa99318e6f4b5f8a1af741a33899d92d66cd2f2bbc5837e43e3"
+file = "mods/cmpwar-0.3.1.jar"
+hash = "3036b88a51d371aa63b0ce9026bf374c68b7f365e33c566ec95d9b4743abba78"
 
 [[files]]
 file = "mods/copycats.pw.toml"
@@ -235,8 +261,18 @@ hash = "6ac362d60bc8b13e03a5b6b9cdf9c7676f65d3e89e87c66f18514e7ee164cdb0"
 metafile = true
 
 [[files]]
+file = "mods/create-hangars.pw.toml"
+hash = "da8d5e82cf967b40f3e4246b33d42c911620d2598b825b607bce11fdb91edaa3"
+metafile = true
+
+[[files]]
 file = "mods/create-immersive-tacz-integration.pw.toml"
 hash = "7910a6d60620acce95fcce5d071d382b4b4fe5c1e2183f962620228771e378bc"
+metafile = true
+
+[[files]]
+file = "mods/create-let-the-adventure-begin.pw.toml"
+hash = "306079117b2da88795d6af88fb9c2bc0749559e61db0a830bb864ffe881ac79a"
 metafile = true
 
 [[files]]
@@ -255,8 +291,23 @@ hash = "c24712eb82bb29d7ed210d7bc175baeb3b022c3b365b2dd0275c25f690e98f52"
 metafile = true
 
 [[files]]
+file = "mods/create-rustic-structures.pw.toml"
+hash = "4db36dff15780e4e1ba380f13302a61d03e9c85509a09ca9e38749930f01511d"
+metafile = true
+
+[[files]]
 file = "mods/create-sifting.pw.toml"
 hash = "464baff9adb918c7eb8fbfdb2efedeba5f1d3f6eebe87fc3fad5649e8e4ee18e"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-arise.pw.toml"
+hash = "d07e87a42a1f882ee71b9f68fc531b1b9dcf4637f69fcf0c80322e488cf79171"
+metafile = true
+
+[[files]]
+file = "mods/create-structures-overhaul.pw.toml"
+hash = "a1ece75a981257cc4cb72f29eb89a95f48249269af6ea115de504d3fbe00be4d"
 metafile = true
 
 [[files]]
@@ -282,6 +333,26 @@ metafile = true
 [[files]]
 file = "mods/deployer.pw.toml"
 hash = "0e4942ab12e496d3649dc35f1734c20c9fb46e235265f7076a2465eb1b139473"
+metafile = true
+
+[[files]]
+file = "mods/dungeons-and-taverns.pw.toml"
+hash = "75336ef402b68dd45a0b503559d4b4ab80ab451d30bdea158b927aff8caaafab"
+metafile = true
+
+[[files]]
+file = "mods/easy-villagers.pw.toml"
+hash = "d629988991e4e0c461a5031b8c774c184ef409f5b57187211c3abe5b1a21fc3c"
+metafile = true
+
+[[files]]
+file = "mods/embers-floating-islands.pw.toml"
+hash = "82b5da4b806a09e490ce4e03204136194f7581aeb93cecf024f80d6f926764d0"
+metafile = true
+
+[[files]]
+file = "mods/explorify.pw.toml"
+hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
 metafile = true
 
 [[files]]
@@ -375,6 +446,21 @@ hash = "210e07b6cd9ef4bbd7bb6327f5c1903f2075a684240cc4f7a629d4afe73fa4e6"
 metafile = true
 
 [[files]]
+file = "mods/lithostitched.pw.toml"
+hash = "f2d07484c181a72f27e4fbf8f3e643b2690ed19d8b76d7c6b3b20a93133f7ce9"
+metafile = true
+
+[[files]]
+file = "mods/lootjs.pw.toml"
+hash = "9b32e1374a3d85ccdd4803c8932f72fbeb6357e69d895980e3f24e1974a07ca6"
+metafile = true
+
+[[files]]
+file = "mods/lootr.pw.toml"
+hash = "0d3683a8c533e1fb67bf0b1668089a322fc5f594f9610d441657378ab4f64383"
+metafile = true
+
+[[files]]
 file = "mods/mc2discord.pw.toml"
 hash = "40b7f0cb1bc669c7fedf2eed795d08d772891a38ff09dbc2e68823e2a8c20d4c"
 metafile = true
@@ -392,6 +478,16 @@ metafile = true
 [[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "efad386063cb79013d7522fcc5b5879c5c3cd556e83bd41a56980632827b45b2"
+metafile = true
+
+[[files]]
+file = "mods/moogs-structure-lib.pw.toml"
+hash = "00b3a07b1994eecda04b3893c1696c9114adf7494ac604f2d172b5931fed9275"
+metafile = true
+
+[[files]]
+file = "mods/moogs-voyager-structures.pw.toml"
+hash = "8f1f7a8fad5f76d13cc8fdd8fd3c9b721a461fe72f009c23a247ffab76154586"
 metafile = true
 
 [[files]]
@@ -450,8 +546,28 @@ hash = "459862e1779ab18c1c299b607f32ba52e29c8d5c2517037c394e3da2ff0700b0"
 metafile = true
 
 [[files]]
+file = "mods/shellbound-for-airship.pw.toml"
+hash = "026951f2fdf7709712269e4f2c03aa544d35d20c1fb6180876f5ec5063fc2e34"
+metafile = true
+
+[[files]]
+file = "mods/sky-whale-ship.pw.toml"
+hash = "0be5b145e8ac324bbac2399a6f420a3f4e18f8b50d3b2c18bdb65b67c356eb45"
+metafile = true
+
+[[files]]
 file = "mods/staaaaaaaaaaaack.pw.toml"
 hash = "d26d63d78d78a0da0241ff696abe86adeaf7ea44643a5f95d0827de19ec7a63e"
+metafile = true
+
+[[files]]
+file = "mods/structory-towers.pw.toml"
+hash = "c2d51d6fd5edb04406c16820ac38700b8272804c386c82d32235b1ee51977e91"
+metafile = true
+
+[[files]]
+file = "mods/structory.pw.toml"
+hash = "eaec78a5dd37404a381ba7cdf378a5cf018a80e50e39b7b3d9b8bd1589e231a2"
 metafile = true
 
 [[files]]
@@ -467,6 +583,11 @@ metafile = true
 [[files]]
 file = "mods/tacz-aeronautics-compat.pw.toml"
 hash = "9b0efc6327054eae3121ba7a29bb8e78d337f387d915785e2bfc4852a7728dc3"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise.pw.toml"
+hash = "7e6948368276f2c49d5bccf52cbf80930d0daca75b4dfbc5530479f1d3f95cf8"
 metafile = true
 
 [[files]]
