@@ -8,4 +8,7 @@ ServerEvents.loaded(event => {
     event.server.runCommandSilent('gamerule doInsomnia false')
     event.server.runCommandSilent('gamerule doWardenSpawning false')
     event.server.runCommandSilent('gamerule disableRaids true')
+    // Players cannot forceload chunks (cmpwar refuses Open Parties and Claims forceloads), so they
+    // cannot keep an airship loaded with /ssrd forceload either.
+    event.server.runCommandSilent('gamerule ssrdForceloadLimit 0')
 })

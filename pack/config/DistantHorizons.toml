@@ -1,0 +1,20 @@
+# CMP sets only the options below. Distant Horizons adds every other option with its default the first
+# time it starts, so the in-game settings (render distance, quality, CPU load) stay each player's own
+# until this file changes in the pack.
+_version = 4
+
+[server]
+	# Every client caches the distant terrain under this key, or under one derived from the world seed
+	# while it is empty. When the world is reset without changing the seed, set a new value here, or
+	# players keep seeing the old map in the distance.
+	levelKeyPrefix = ""
+
+[client.advanced.autoUpdater]
+	# packwiz-installer keeps the mod up to date. Distant Horizons' own updater would put a second jar
+	# into mods/, and the game refuses to start with two copies of the mod.
+	enableAutoUpdater = false
+
+[common.logging.warning]
+	# The CMP Prism instance runs ZGC, the collector Distant Horizons recommends. Instances imported
+	# before that change still run G1, and a chat warning about it gives players nothing they can act on.
+	showGarbageCollectorWarning = false

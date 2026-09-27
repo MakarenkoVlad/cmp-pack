@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "c3a1a24d18eb6308927e2b6e8356cac431b3546330b2c7fec3f03ed978f9244f"
+
+[[files]]
 file = "config/create_structures_arise-server.toml"
 hash = "d807839362cca0878a6e120b6bd452e4252b3f7187cd6c854d77a1c4e2f4b4fe"
 
@@ -130,7 +134,7 @@ hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "de3ba2094b65a54c47fd65e7c09c8ea20d1a0ee46f764eb398da3dec10615084"
+hash = "50e0464bbfa26ca75e842d93f5eb8486ebe622a122dcd25f17507ae3216810af"
 
 [[files]]
 file = "mods/animalpens.pw.toml"
@@ -201,6 +205,10 @@ metafile = true
 file = "mods/chunky.pw.toml"
 hash = "68cc51e721e993a8b7a2cbaf45369933b22b07a9c82327ab14757ee10684aa81"
 metafile = true
+
+[[files]]
+file = "mods/cmpfixes-0.1.0.jar"
+hash = "a477faf30992b31e801caa576e2859236a9379563251acd85a747ef3528d02bd"
 
 [[files]]
 file = "mods/cmpguard-0.1.0.jar"
@@ -333,6 +341,11 @@ metafile = true
 [[files]]
 file = "mods/deployer.pw.toml"
 hash = "0e4942ab12e496d3649dc35f1734c20c9fb46e235265f7076a2465eb1b139473"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "6d3e312dbf8db12dd1b6fb3bd1d29f210ab48024a0b2ebdf02fd32c265955c5d"
 metafile = true
 
 [[files]]
@@ -553,6 +566,16 @@ metafile = true
 [[files]]
 file = "mods/sky-whale-ship.pw.toml"
 hash = "0be5b145e8ac324bbac2399a6f420a3f4e18f8b50d3b2c18bdb65b67c356eb45"
+metafile = true
+
+[[files]]
+file = "mods/sodium.pw.toml"
+hash = "2a001cdb3d5ac4970d422914083c27380eba8ebd40dfd435754fe6566ba78beb"
+metafile = true
+
+[[files]]
+file = "mods/ssrd.pw.toml"
+hash = "4a4c0c54b3b38ac660b9c06d8dc8e51ed3e2efc6dd94ad3e807a48146a420873"
 metafile = true
 
 [[files]]
