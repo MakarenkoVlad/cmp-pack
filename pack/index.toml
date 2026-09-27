@@ -215,8 +215,8 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.3.1.jar"
-hash = "3036b88a51d371aa63b0ce9026bf374c68b7f365e33c566ec95d9b4743abba78"
+file = "mods/cmpwar-0.3.2.jar"
+hash = "e9f86ff4e102cb548489ebc654867e66f1c59aabcfc1929ef261543d6f7644fc"
 
 [[files]]
 file = "mods/copycats.pw.toml"
