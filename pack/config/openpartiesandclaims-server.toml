@@ -9,7 +9,7 @@
 	#How often to auto-save modified data, e.g. parties, claims, player configs (in minutes).
 	# Default: 10
 	# Range: > 1
-	autosaveInterval = 10
+	autosaveInterval = 2
 	#How many sub-configs (sub-claims) can each player create.
 	# Default: 64
 	# Range: 0 ~ 1024

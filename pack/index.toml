@@ -70,7 +70,7 @@ hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "7ae42ba3e5453836e47168ba9490ef0ee44a0a9c43a4baa54615267e394c6f58"
+hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
 
 [[files]]
 file = "config/tacz-common.toml"
@@ -79,10 +79,6 @@ hash = "94dac967fa1122991b30c5ae8f132268072b408b4d27f7ffb74a573b13b4b07d"
 [[files]]
 file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
-
-[[files]]
-file = "kubejs/data/create/neoforge/biome_modifier/zinc_ore.json"
-hash = "6cc61a160dd9b19f816fc1f6c4564305ee23a1d2663923043309b5f0c89ed2de"
 
 [[files]]
 file = "kubejs/server_scripts/guns.js"
@@ -157,8 +153,8 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.1.1.jar"
-hash = "20493d2fa5970d05db3b933673221b55550d373c2c563c8f2db129f85822690f"
+file = "mods/cmpwar-0.2.1.jar"
+hash = "ec0e0a9e96a5c3ca94b6ae540c0f6a268af534bfcd20d8df73029fb8840256be"
 
 [[files]]
 file = "mods/copycats.pw.toml"
