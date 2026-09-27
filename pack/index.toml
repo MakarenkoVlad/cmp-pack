@@ -1,6 +1,74 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fancymenu/assets/cmp/ambience.ogg"
+hash = "927a1b768de9a2540fb8a4eabdd55681a33a459111b2abfd242fdbbd63c3dfe4"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/button.png"
+hash = "33b66653b2417b16bd6ca49c53ef5f05c0f3437ef2e9a069949f041e3cc1fd02"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/button_hover.png"
+hash = "7b2c6f72451c7d88f172c702459a25b8c4a4a40e2600d9b606c531232603e496"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/button_inactive.png"
+hash = "33e4e90fb88c446fc0de39040f06b6af92034fc09af3141628465006362670c1"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/button_war.png"
+hash = "1fbd7ef47106a3606666403cd275c45dac35eb088675bb4c4a9869cd81f1f561"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/button_war_hover.png"
+hash = "f51bb75a8db25b64a317e2916e838991380bfb98cbd383f9b3756bd34487b7ff"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/click.ogg"
+hash = "f8c19724bc5f969c3b332ac399734d8ab8db86f39bde3cc3d140d3b2d09170ee"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/cmp_logo.png"
+hash = "3e258f8ead685be6b13ba18aa6506ba80f24b4b25b761661f33e3dc44afb2fdf"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/detonate.ogg"
+hash = "72d3cc7383869ef979fa79b4ae2e4e3333ee442bf6b7e555f308abf44e4e8227"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/hover.ogg"
+hash = "47396b8c07d8a624bb737f07fdccb7b78ce88ee3e4f5c0cb97a9ca12d4389787"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/intro.ogg"
+hash = "b30c10538be9f772a8895992fba0daa66e022f02ebcaa668d050974fd1f1c183"
+
+[[files]]
+file = "config/fancymenu/assets/cmp/splashes.txt"
+hash = "a65673ed8d1d181f94d6edb1a2b708e77178be27c3288d4d19625b714bb3f8d2"
+
+[[files]]
+file = "config/fancymenu/customizablemenus.txt"
+hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
+
+[[files]]
+file = "config/fancymenu/customization/cmp_title.txt"
+hash = "cecc7ad3f653d38759088fde4e3cbf43030dc135819c83d027038e10271a5dae"
+
+[[files]]
+file = "config/fancymenu/listener_instances.txt"
+hash = "e09000f37c169ed5b3e3f418dc2bfb57fa319760058b9247bcedd6a5e9875cc2"
+
+[[files]]
+file = "config/fancymenu/options.txt"
+hash = "7032087c3fd5feab4259ddc010c38cfb913384476df840371d5f3286431de95e"
+
+[[files]]
+file = "config/fancymenu/user_variables.db"
+hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
+
+[[files]]
 file = "config/openpartiesandclaims-server.toml"
 hash = "e31dd6559012e3cf99bf8bf9a67c28d336dc5ab4fa4314b20f6cc7c8843d53cc"
 
@@ -179,6 +247,11 @@ hash = "4c05f6744be64d47634fbd906b1502ec6ba7ce9becf473cc8db882922716b620"
 metafile = true
 
 [[files]]
+file = "mods/fancymenu.pw.toml"
+hash = "950114e26a7d1a976a7da8d7d7dc708ea2be16a75a1ae86bb5906274aa311702"
+metafile = true
+
+[[files]]
 file = "mods/ftb-library-forge.pw.toml"
 hash = "2e72d40c6d7b128981b19b71c19d45eb6813f1af87ae1abe1cf92adfa5e8223f"
 metafile = true
@@ -229,6 +302,11 @@ hash = "fb3233553d7a88373fcd54e6fbeac1f593fdfbe44f00e0c24790a01774545e2f"
 metafile = true
 
 [[files]]
+file = "mods/konkrete.pw.toml"
+hash = "5707b722541648df013644f3b4d50083c77965d536f219df9fac5026f6103777"
+metafile = true
+
+[[files]]
 file = "mods/kotlin-for-forge.pw.toml"
 hash = "712a69b3569a8055979de6eea262068535fe182dffb3833e53e5833e9cbf9766"
 metafile = true
@@ -261,6 +339,11 @@ metafile = true
 [[files]]
 file = "mods/mechanicals-lib.pw.toml"
 hash = "c9e181185e3177d43fc9bd8d919288ac1bc0ce6b85e7049890f3eb231f5be10d"
+metafile = true
+
+[[files]]
+file = "mods/melody.pw.toml"
+hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
 metafile = true
 
 [[files]]

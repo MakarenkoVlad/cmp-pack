@@ -1,0 +1,16 @@
+type = listener_instances
+
+listener_instance {
+  listener_instance_identifier = cmp_sky_click
+  listener_provider_identifier = mouse_button_clicked
+  listener_instance_action_script_identifier = cmp_sky_click_root
+  listener_instance_display_name = CMP: boom when the title screen sky is clicked
+  [executable_block:cmp_sky_click_root][type:generic] = [executables:cmp_sky_click_if;]
+  [executable_block:cmp_sky_click_if][type:if] = [executables:cmp_sky_click_boom;]
+  [if_executable_block_body:cmp_sky_click_if] = cmp_sky_click_cond
+  [if_executable_block_collapsed:cmp_sky_click_if] = false
+  [loading_requirement_container_meta:cmp_sky_click_cond] = [groups:][instances:cmp_sky_click_left;cmp_sky_click_title;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:cmp_sky_click_left] = ["mode":"equals","text":"$$button","compare_with":"left"]$
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:cmp_sky_click_title] = ["mode":"equals","text":"{"placeholder":"screenid"}","compare_with":"title_screen"]$
+  [executable_action_instance:cmp_sky_click_boom][action_type:play_audio] = {"audioSource":"[source:local]/config/fancymenu/assets/cmp/detonate.ogg","soundChannel":"master","baseVolume":0.9}
+}
