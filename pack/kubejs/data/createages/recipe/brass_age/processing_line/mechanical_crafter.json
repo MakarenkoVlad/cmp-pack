@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createages:brass_machine"
+  },
+  "transitional_item": {
+    "id": "createages:brass_machine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:brass_machine"
+        },
+        {
+          "item": "createages:brass_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:brass_machine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:brass_machine"
+        },
+        {
+          "item": "minecraft:crafting_table"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:brass_machine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:mechanical_crafter",
+      "count": 3
+    }
+  ],
+  "loops": 1
+}

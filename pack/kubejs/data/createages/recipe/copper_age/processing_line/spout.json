@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createages:copper_machine"
+  },
+  "transitional_item": {
+    "id": "createages:copper_machine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:copper_machine"
+        },
+        {
+          "item": "createages:copper_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:copper_machine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:copper_machine"
+        },
+        {
+          "item": "createages:cured_rubber"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:copper_machine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:spout",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}

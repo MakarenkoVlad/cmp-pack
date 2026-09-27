@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createages:andesite_machine"
+  },
+  "transitional_item": {
+    "id": "createages:andesite_machine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:andesite_machine"
+        },
+        {
+          "item": "createages:andesite_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:andesite_machine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:andesite_machine"
+        },
+        {
+          "tag": "minecraft:stone_crafting_materials"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:andesite_machine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:millstone",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}

@@ -122,6 +122,126 @@ file = "kubejs/client_scripts/server_address.js"
 hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
 
 [[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/charger.json"
+hash = "c07c36e680a7e346adb6d1b22765220542f0332d562d2cb807cbbbaa04d6874c"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/deployer.json"
+hash = "306a4577755b30d73d79321e2c8bbbcfd6057b072b04fc396ec5ae36641c02ab"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/draft.json"
+hash = "481aba53586dc4cabda1707b9736f7b82cf6f4129c067e0e2f6e7a0d94d437fe"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_bearing.json"
+hash = "eeff469a4caa9f427b10cff827f70180277bb05a21f7dedb8f45e88accead7d6"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_drill.json"
+hash = "7058ee49daa3261e9ad6ad425a9a5460806467671bac75cc0bd4b7b1eda8c7ec"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_mixer.json"
+hash = "1b10e28a0c7720ac66dec1ac61e79170000d9f05c771b10f4818139ec980a4cd"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_piston.json"
+hash = "307aa2fe2320b15689050191973f5fef0f5ace2535734be675c91255b75eda57"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_press.json"
+hash = "5bc70836bfca601a161489b01e8b75eb52c374af1515a6de9fa10c0b580ca312"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_roller.json"
+hash = "f2908fec0e0c5e5aa86ca413c26a0d70de01c43ba069bb08ea1258f9a5db0125"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_saw.json"
+hash = "e10ff3019023f260f649c35568a9eadf8c6b41d23247d6c44d1dc0d3d98fe73b"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/meteorite_compass.json"
+hash = "3e79effbbab51807bcdce777ad137e9bb9d834920a60b09fe0844e61de70e862"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/millstone.json"
+hash = "47c65db3fa4f483fd6cfd2df23d025ad3133a5156c75f6690b7dac0e5586b5c4"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/rolling_mill.json"
+hash = "3359f3bf2edaecac3c9353258e64c46a3323b37cf2c66c78023fecd4847b61ef"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/rope_pulley.json"
+hash = "91bac7f4679126a2b6976052fcdb6f96af3d0f2c7f36fd61f1ec1c1717a41dba"
+
+[[files]]
+file = "kubejs/data/createages/recipe/andesite_age/processing_line/wheel_bearing.json"
+hash = "c723b5cc329e7557a04d9847673192b9180ceed7295621c79450974c134bf7ab"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/clockwork_bearing.json"
+hash = "33cc1c7089a74cf46feb411991c6b23c013c74382eef53e43fcc04f45ea65a74"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/elevator_pulley.json"
+hash = "5835faccfbf83f6fd01735882c9afbee34560e3d9d0308179f4b5f4f574adc03"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_arm.json"
+hash = "2d0890e11551edd9e83cae6d83a3617337eed73b99bea4d4087d7d8c797dfc0c"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_crafter.json"
+hash = "68bf6f7970144dc81bfa6a64b55e61e2e7ccf8f444a5b021fe247ebce74db5a1"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_generator.json"
+hash = "c580e48b13797eb32ef630ab5ada817264eb60c4d08bb39a57678e243cafbaa5"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/modular_accumulator.json"
+hash = "9525d7e781adf0309432ca59bdbdb1c33b0b2f5caa2fad3c4e032515c5c4a3c8"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/package_assembler.json"
+hash = "447963b9682ed8629593d5f22b4582294ab7e8239285965ad322619ea7fdffda"
+
+[[files]]
+file = "kubejs/data/createages/recipe/brass_age/processing_line/shop.json"
+hash = "779354f2702c025af11d698fe488fd6159a7d3935a3b1367d6582fc77712a781"
+
+[[files]]
+file = "kubejs/data/createages/recipe/calculation_age/processing_line/annihilation_core.json"
+hash = "3aa168c50d7f79ab8a9d0400da24f178edf243ac52130897f5c7d54c206ab9c0"
+
+[[files]]
+file = "kubejs/data/createages/recipe/calculation_age/processing_line/condenser.json"
+hash = "9ec5ae5d0031c25af9ddbdee8ff7ad5152b05e14e231bdb549bffdfe24372179"
+
+[[files]]
+file = "kubejs/data/createages/recipe/calculation_age/processing_line/drive.json"
+hash = "fdbc5831b9d30e1a5f95777b07309720650d082d12547c5d98b85107687ff857"
+
+[[files]]
+file = "kubejs/data/createages/recipe/calculation_age/processing_line/formation_core.json"
+hash = "e37e3b0a03272fb8e02e0217b292863be745e69d37cc03420922768a43e9b787"
+
+[[files]]
+file = "kubejs/data/createages/recipe/calculation_age/processing_line/me_chest.json"
+hash = "ec6536b38e7da0fb3113affdf3d47ce27e6c5dd1c5e22357de4ea90e8eb733ea"
+
+[[files]]
+file = "kubejs/data/createages/recipe/copper_age/processing_line/hose_pulley.json"
+hash = "d38dd4b1cb2ad6f60cffb54504f1cc8ea43128c227359284bbd9742ab09e3bbb"
+
+[[files]]
+file = "kubejs/data/createages/recipe/copper_age/processing_line/spout.json"
+hash = "65681830f4c96824e1aee3527a8095a6d0b3c8b61dd7b59e29f302bb3806d0fc"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
@@ -235,8 +355,8 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.3.3.jar"
-hash = "c98838c8772169a0089f3f329927a9944c94e586721210d60acce4a1a2fcf4cd"
+file = "mods/cmpwar-0.3.4.jar"
+hash = "b027f1a72351a9844209123aeb00de936da6576985056448a771739628e32c74"
 
 [[files]]
 file = "mods/copycats.pw.toml"

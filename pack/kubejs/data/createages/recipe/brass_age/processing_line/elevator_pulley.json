@@ -1,0 +1,50 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createages:brass_machine"
+  },
+  "transitional_item": {
+    "id": "createages:brass_machine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:brass_machine"
+        },
+        {
+          "item": "createages:brass_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:brass_machine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:brass_machine"
+        },
+        {
+          "item": "createages:cured_rubber"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:brass_machine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "create:elevator_pulley",
+      "count": 1
+    }
+  ],
+  "loops": 1
+}

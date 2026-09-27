@@ -1,0 +1,56 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "ae2:controller"
+  },
+  "transitional_item": {
+    "id": "ae2:controller"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ae2:controller"
+        },
+        {
+          "item": "createages:calculation_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "ae2:controller"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "ae2:controller"
+        },
+        {
+          "item": "ae2:calculation_processor"
+        }
+      ],
+      "results": [
+        {
+          "id": "ae2:controller"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:annihilation_core",
+      "count": 4
+    }
+  ],
+  "loops": 1,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}

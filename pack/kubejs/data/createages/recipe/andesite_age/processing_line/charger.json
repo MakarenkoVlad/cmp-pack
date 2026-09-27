@@ -1,0 +1,56 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createages:andesite_machine"
+  },
+  "transitional_item": {
+    "id": "createages:andesite_machine"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:andesite_machine"
+        },
+        {
+          "item": "createages:andesite_template"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:andesite_machine"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "createages:andesite_machine"
+        },
+        {
+          "tag": "c:gems/fluix"
+        }
+      ],
+      "results": [
+        {
+          "id": "createages:andesite_machine"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": "ae2:charger",
+      "count": 1
+    }
+  ],
+  "loops": 1,
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "ae2"
+    }
+  ]
+}
