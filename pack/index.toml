@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "681e0dc46178a74611005d5b779fd0cfa9dbf363525bb7ba91cf9d75892348b2"
+hash = "8a9cdd41f5b7cb4da0ea41617ff193f9fadf33f190aee3486e9578c893ae3cd6"
 
 [[files]]
 file = "config/create_structures_arise-server.toml"

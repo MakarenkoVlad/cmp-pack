@@ -1,13 +1,15 @@
 # CMP sets only the options below. Distant Horizons adds every other option with its default the first
-# time it starts, so the in-game settings (render distance, quality, CPU load) stay each player's own
-# until this file changes in the pack.
+# time it starts. Players can change any of them in the game, these included, and keep their choice until
+# this file changes in the pack: then everyone starts again from the values below.
 _version = 4
 
 [server]
 	# Every client caches the distant terrain under this key. Give each new world its own value, or
-	# players keep seeing the old map in the distance. Changing it also throws away what clients have
-	# cached of the current world, which is how the wrong "sea" from before CHUNKS_ONLY was cleared.
-	levelKeyPrefix = "season1"
+	# players keep seeing the old map in the distance. A new value also makes the deploy delete the
+	# server's own copy while it is stopped (scripts/deploy.py), so both sides rebuild from the real chunks.
+	# "season1-2" clears the fake sea and cliff walls stored before CHUNKS_ONLY: "season1" only reset the
+	# clients, and the server kept sending them what it had stored.
+	levelKeyPrefix = "season1-2"
 
 [common.worldGenerator]
 	# Distant Horizons' quick first pass guesses the terrain from the biomes, which for the sky islands
@@ -15,6 +17,21 @@ _version = 4
 	# always the real map.
 	generatorPlan = "CHUNKS_ONLY"
 	enableFastSurfaceGenerator = false
+
+[client.advanced.graphics]
+	# Screen-space ambient occlusion shades the far terrain in an extra pass over the whole screen. Off, to
+	# go easy on weaker PCs.
+	enableSsao = false
+
+[client.advanced.graphics.quality]
+	# Far terrain reaches 32 chunks (512 blocks), the least Distant Horizons allows. Its default of 256
+	# chunks draws more than the whole 4 km map and lagged players' PCs. A strong PC can raise it in the
+	# Distant Horizons settings. SSRD's airship slider (Physics Render Distance) only goes as high as this
+	# number, but airships stay visible as far as the server allows (gamerule ssrdMaxRenderDistance, 128)
+	# until a player moves that slider.
+	lodChunkRenderDistanceRadius = 32
+	# Blends the normal chunks into the far terrain in one pass instead of the default two.
+	vanillaFadeMode = "SINGLE_PASS"
 
 [client.advanced.autoUpdater]
 	# packwiz-installer keeps the mod up to date. Distant Horizons' own updater would put a second jar
