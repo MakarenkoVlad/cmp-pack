@@ -73,6 +73,18 @@ file = "config/openpartiesandclaims-server.toml"
 hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
 
 [[files]]
+file = "config/parcool-server.toml"
+hash = "3980573ad90786250c08e23618d9ce1e2b0deb28284e8e3b7b827cc7cafe97ed"
+
+[[files]]
+file = "config/ragdoll_reactions-server.toml"
+hash = "7217399cbe3b893735b78930cae0a73a2680850a5794774b9d7f0c54c6415a65"
+
+[[files]]
+file = "config/sable_player_ragdoll-server.toml"
+hash = "ffd567a41cd762a63d82b5f1c07a3129dff02194180813aba3843b615352daf7"
+
+[[files]]
 file = "config/tacz-common.toml"
 hash = "94dac967fa1122991b30c5ae8f132268072b408b4d27f7ffb74a573b13b4b07d"
 
@@ -81,8 +93,20 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
+file = "kubejs/client_scripts/controls.js"
+hash = "50d778c58f83fd22724bcfa1f45fc9dcd031b107d5a42720062d4a48fc256293"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
+
+[[files]]
+file = "kubejs/server_scripts/parkour.js"
+hash = "73c88da6df53f34f0d43a5a08a817b60751b33bba7e3f6f169d35eb0f9c18c5e"
+
+[[files]]
+file = "kubejs/server_scripts/ragdoll_damage.js"
+hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -247,6 +271,11 @@ hash = "dcaf5f2e28db0b9a127d0167456832341045ddc9aec058c3d9fcf53f618d2404"
 metafile = true
 
 [[files]]
+file = "mods/curios.pw.toml"
+hash = "36debf7653e95a855b4fedacc19027cf2e01960fc0b6d55ef2ffbffbcb455690"
+metafile = true
+
+[[files]]
 file = "mods/deployer.pw.toml"
 hash = "0e4942ab12e496d3649dc35f1734c20c9fb46e235265f7076a2465eb1b139473"
 metafile = true
@@ -372,6 +401,16 @@ hash = "97660396e7f075f4c9ca8447878ec3da58ebea9ed464cdb494d4db1d62989936"
 metafile = true
 
 [[files]]
+file = "mods/parcool.pw.toml"
+hash = "49e46163b793893766999901a198a23d0bc91e90eeae0b759078a4a46c031949"
+metafile = true
+
+[[files]]
+file = "mods/ragdoll-reactions.pw.toml"
+hash = "89bd0f15795c70a1e06074e22bc5d80969abd48e1f540c79e3023cf8be51bef9"
+metafile = true
+
+[[files]]
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
@@ -387,6 +426,11 @@ hash = "a853620e7a9fff71bb22f2e467b5861bafdea792d4e679709800c587c98ae95c"
 metafile = true
 
 [[files]]
+file = "mods/sable-ragdolls.pw.toml"
+hash = "bf3c84eff52457596d58a73882e72759804117f0731a0fde343cfd54d33e55ba"
+metafile = true
+
+[[files]]
 file = "mods/sable-schematic-tool.pw.toml"
 hash = "bdb86f7611da8c045e82f4aca7cf4bde48a0271b2859c938551ecebb6f94d08d"
 metafile = true
@@ -394,6 +438,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
+metafile = true
+
+[[files]]
+file = "mods/sableragdoll-patch.pw.toml"
+hash = "459862e1779ab18c1c299b607f32ba52e29c8d5c2517037c394e3da2ff0700b0"
 metafile = true
 
 [[files]]
