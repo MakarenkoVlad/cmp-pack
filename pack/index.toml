@@ -153,6 +153,10 @@ hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
 metafile = true
 
 [[files]]
+file = "mods/cmpguard-0.1.0.jar"
+hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
+
+[[files]]
 file = "mods/cmpwar-0.1.0.jar"
 hash = "3359df9aa42bdbe71ef02c07fbe01ae35768e8aa95ec2ea3c71d74d0d79f18fa"
 
