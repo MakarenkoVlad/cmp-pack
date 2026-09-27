@@ -5,12 +5,20 @@ file = "config/openpartiesandclaims-server.toml"
 hash = "e31dd6559012e3cf99bf8bf9a67c28d336dc5ab4fa4314b20f6cc7c8843d53cc"
 
 [[files]]
+file = "config/tacz-common.toml"
+hash = "94dac967fa1122991b30c5ae8f132268072b408b4d27f7ffb74a573b13b4b07d"
+
+[[files]]
 file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/data/create/neoforge/biome_modifier/zinc_ore.json"
 hash = "6cc61a160dd9b19f816fc1f6c4564305ee23a1d2663923043309b5f0c89ed2de"
+
+[[files]]
+file = "kubejs/server_scripts/guns.js"
+hash = "12d7a0d4b1244c21c6372d98f77741ec87ec0f0f0414dc8acdb95771862b31b5"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -88,6 +96,11 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "a0e9ff95570cd9af3374ca8b44aa095447baf94e565f46ae99819d52a9b48dc1"
+metafile = true
+
+[[files]]
+file = "mods/create-immersive-tacz-integration.pw.toml"
+hash = "7910a6d60620acce95fcce5d071d382b4b4fe5c1e2183f962620228771e378bc"
 metafile = true
 
 [[files]]
@@ -246,6 +259,21 @@ hash = "518312fc4d99d83fbaa82f8d14d6a54eee19cc45e0515cf7da279b6b74f878b1"
 metafile = true
 
 [[files]]
+file = "mods/tacz-1.21.1.pw.toml"
+hash = "64a5ad1bbb2ca9e94053e4e6b7f0e5d762c2c7bea7674c168a6819e5782a99d6"
+metafile = true
+
+[[files]]
+file = "mods/tacz-aeronautics-compat.pw.toml"
+hash = "9b0efc6327054eae3121ba7a29bb8e78d337f387d915785e2bfc4852a7728dc3"
+metafile = true
+
+[[files]]
 file = "servers.dat"
 hash = "f97baaf825214b918a9b208799ab5f16761b63dca31d9e694689c0146256a631"
 preserve = true
+
+[[files]]
+file = "tacz/tacz-create-armorer-koei.pw.toml"
+hash = "e2c1388b12038aa3de9319d7443af7539736331731552f2ef92177764321123d"
+metafile = true
