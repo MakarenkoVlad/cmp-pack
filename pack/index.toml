@@ -70,7 +70,7 @@ hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "e31dd6559012e3cf99bf8bf9a67c28d336dc5ab4fa4314b20f6cc7c8843d53cc"
+hash = "7ae42ba3e5453836e47168ba9490ef0ee44a0a9c43a4baa54615267e394c6f58"
 
 [[files]]
 file = "config/tacz-common.toml"
@@ -234,6 +234,11 @@ metafile = true
 [[files]]
 file = "mods/create-ultimine.pw.toml"
 hash = "6adbe018fa82d595b6679edb045d66e266b031eca2bc1b6f243b1ae50bef92ab"
+metafile = true
+
+[[files]]
+file = "mods/create-xaeros-map.pw.toml"
+hash = "ce4f3b213b52415cecadc297652ba0f1c506e4f987a7ae2bfda437f3bd405d5b"
 metafile = true
 
 [[files]]
@@ -409,6 +414,16 @@ metafile = true
 [[files]]
 file = "mods/tacz-aeronautics-compat.pw.toml"
 hash = "9b0efc6327054eae3121ba7a29bb8e78d337f387d915785e2bfc4852a7728dc3"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-minimap.pw.toml"
+hash = "64670072fa3b4db4a721769dd3d66a2865daac01c9a2480b9561675b1e9e9737"
+metafile = true
+
+[[files]]
+file = "mods/xaeros-world-map.pw.toml"
+hash = "f8cc300d53ae8bf71d77124e6c46a5e85fe31654b39c5d73a1652a4d9c404af4"
 metafile = true
 
 [[files]]

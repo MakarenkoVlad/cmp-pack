@@ -1,7 +1,8 @@
 # CMP Season 1: shipped from pack/config. Teams come from FTB Teams and own the claims;
 # players never claim by hand (the protection block claims through the API and the cmpwar
 # mod refuses manual claiming); 25 chunks covers the largest 5x5 block area. Explosion
-# protection is not player-configurable: explosions always work inside claims.
+# protection is not player-configurable: explosions always work inside claims. Only a team's own
+# claims are synced to its players, so Xaero's maps don't mark every enemy base.
 [serverConfig]
 	#The default language used for server-side localization for players that don't have the mod installed.
 	defaultLanguage = "en_us"
@@ -195,7 +196,7 @@
 		#OWNED_ONLY - only the claims that the client player or their primary party owns and server claims are synced. Party-owned claims need to be enabled with "partyOwnedClaims".
 		#NOT_SYNCED - claims are not synced.
 		#Allowed Values: NOT_SYNCED, OWNED_ONLY, ALL
-		claimsSynchronization = "ALL"
+		claimsSynchronization = "OWNED_ONLY"
 		#Whether to display "welcome" messages when a player enters a claim or wilderness. Not recommended to turn off unless you have another mod handling this.
 		claimWelcomeMessages = true
 
