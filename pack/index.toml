@@ -431,8 +431,8 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.5.0.jar"
-hash = "2e029342ccfb181197f95aad3cd1febfd6290b08de9d8c57f010542af6c4ec15"
+file = "mods/cmpwar-0.6.0.jar"
+hash = "74f1d2a6ddbbf8bfae77c6fd00b6d894cc3ffe7f562adb9fa027e358d658d3c4"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -515,8 +515,8 @@ hash = "c4c513aea9433b96ff7e1b33db29914020c43786e5d3fd7b79829b2c098bf7e9"
 metafile = true
 
 [[files]]
-file = "mods/create-coasters.pw.toml"
-hash = "d9c8cbf813d758f2348be11df7bae4bdc4ae2e42c2e723f12a2644964329e0f8"
+file = "mods/create-coasters-simulated.pw.toml"
+hash = "d5aad6415413aa777ed89ae55912f33c86757321c7c16c8392ce2e1429b920d5"
 metafile = true
 
 [[files]]
