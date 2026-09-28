@@ -1,0 +1,13 @@
+name = "Create Coasters"
+filename = "createcoasters-2.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/i6E8U3vp/versions/ssnvgDum/createcoasters-2.0.jar"
+hash-format = "sha512"
+hash = "d77264a748f688ca34eb59895e270b9bb60b021e194f28a4f399be0c97e05e1fc8b9fb8fb04a51094b68b744d94d68dbc450db32aed20d46f79031eee3e7668d"
+
+[update]
+[update.modrinth]
+mod-id = "i6E8U3vp"
+version = "ssnvgDum"

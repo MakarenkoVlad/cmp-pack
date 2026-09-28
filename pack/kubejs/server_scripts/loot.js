@@ -1368,6 +1368,7 @@ const NEVER_TACZ = [
     'tacz:ammo{AmmoId:tacz:68x51fury}', 'tacz:ammo{AmmoId:tacz:762x25}', 'tacz:ammo{AmmoId:tacz:762x39}',
     'tacz:ammo{AmmoId:tacz:762x54}', 'tacz:ammo{AmmoId:tacz:792x57}', 'tacz:ammo{AmmoId:tacz:9mm}',
     'tacz:ammo{AmmoId:tacz:rpg_rocket}', 'tacz:attachment{AttachmentId:create_armorer:extended_mag_ca_3}',
+    'tacz:attachment{AttachmentId:create_armorer:muzzle_refit_iron_spike}',
     'tacz:attachment{AttachmentId:tacz:ammo_mod_fmj}', 'tacz:attachment{AttachmentId:tacz:ammo_mod_he}',
     'tacz:attachment{AttachmentId:tacz:ammo_mod_hp}', 'tacz:attachment{AttachmentId:tacz:ammo_mod_i}',
     'tacz:attachment{AttachmentId:tacz:ammo_mod_slug}', 'tacz:attachment{AttachmentId:tacz:bayonet_6h3}',

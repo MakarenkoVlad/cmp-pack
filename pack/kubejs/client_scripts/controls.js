@@ -7,8 +7,14 @@
 //   v2 (villagers):
 //     Easy Villagers "pick up": V (TaCZ melee and zoom, Synaxis view lock) -> none
 //       (sneak + right-click on a villager picks it up)
+//   v3 (zoom, fullbright, Robo Bees):
+//     Ok Zoomer "zoom": C (TaCZ crawl, Big Cannons pitch mode) -> X (only creative uses X, to load hotbars)
+//     Full Brightness Toggle: G (TaCZ fire mode, voice chat groups) -> . (period)
+//     Mobile Packages "portable stock ticker": G -> none (use the item to open it)
+//     Mobile Packages "player networks": H (TaCZ inspect, voice chat icons) -> none
 // C stays shared: Easy Villagers' "cycle trades" is C like TaCZ crawl, but it only works inside the
-// trading screen.
+// trading screen. Create: Factory Controller's C, R, F and Q only work inside its screen, and the
+// Tweaked Controllers' and Toolgun's keys (Tab, R, Left Alt) only while the item is in use.
 const CmpControlsMinecraft = Java.loadClass('net.minecraft.client.Minecraft')
 const CmpControlsKeyMapping = Java.loadClass('net.minecraft.client.KeyMapping')
 const CmpControlsInput = Java.loadClass('com.mojang.blaze3d.platform.InputConstants')
@@ -24,6 +30,15 @@ const CMP_CONTROL_STAGES = [
         marker: 'local/cmp/controls-v2.json',
         changes: {
             'key.easy_villagers.pick_up': 'key.keyboard.unknown',
+        },
+    },
+    {
+        marker: 'local/cmp/controls-v3.json',
+        changes: {
+            'key.ok_zoomer.zoom': 'key.keyboard.x',
+            'fullbrightnesstoggle.key.togglebrightness': 'key.keyboard.period',
+            'create_mobile_packages.keyinfo.open_portable_stock_ticker': 'key.keyboard.unknown',
+            'create_mobile_packages.keyinfo.open_player_networks_screen': 'key.keyboard.unknown',
         },
     },
 ]
