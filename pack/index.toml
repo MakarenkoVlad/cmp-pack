@@ -550,6 +550,11 @@ hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
 metafile = true
 
 [[files]]
+file = "mods/create-dup-fix.pw.toml"
+hash = "518c575e25233c2fa577470152e89fdd7fdec3d642355ccd48cc9ab8d03a9015"
+metafile = true
+
+[[files]]
 file = "mods/create-encased.pw.toml"
 hash = "5625c978cee5102013e027c07d7ba815c597799a14cc447dfff63104d76b74be"
 metafile = true
