@@ -12,6 +12,9 @@
 //     Full Brightness Toggle: G (TaCZ fire mode, voice chat groups) -> . (period)
 //     Mobile Packages "portable stock ticker": G -> none (use the item to open it)
 //     Mobile Packages "player networks": H (TaCZ inspect, voice chat icons) -> none
+//   v4 (Advanced Peripherals):
+//     Smart glasses hotkey: G (TaCZ fire mode) -> none (it only reaches a glasses computer with a hotkey
+//       module, so whoever uses one binds it in Controls)
 // C stays shared: Easy Villagers' "cycle trades" is C like TaCZ crawl, but it only works inside the
 // trading screen. Create: Factory Controller's C, R, F and Q only work inside its screen, and the
 // Tweaked Controllers' and Toolgun's keys (Tab, R, Left Alt) only while the item is in use.
@@ -39,6 +42,12 @@ const CMP_CONTROL_STAGES = [
             'fullbrightnesstoggle.key.togglebrightness': 'key.keyboard.period',
             'create_mobile_packages.keyinfo.open_portable_stock_ticker': 'key.keyboard.unknown',
             'create_mobile_packages.keyinfo.open_player_networks_screen': 'key.keyboard.unknown',
+        },
+    },
+    {
+        marker: 'local/cmp/controls-v4.json',
+        changes: {
+            'keybind.advancedperipherals.glasses_hotkey': 'key.keyboard.unknown',
         },
     },
 ]

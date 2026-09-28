@@ -1,6 +1,18 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Advancedperipherals/metaphysics.toml"
+hash = "ae85f9c3ea4a18bb5c46e975b73a4a13888214abce571aafc33ed2f3f31b6e5a"
+
+[[files]]
+file = "config/Advancedperipherals/peripherals.toml"
+hash = "0b787d34b8e00f46ade7401d80ae6fbf9a21f4651fb6d23e4f5ddb971255dfed"
+
+[[files]]
+file = "config/Advancedperipherals/world.toml"
+hash = "ef2318cbc363eb6fce4fb69e5cd968f41d6cb60ec9a6e8111d78257074909bed"
+
+[[files]]
 file = "config/DistantHorizons.toml"
 hash = "8a9cdd41f5b7cb4da0ea41617ff193f9fadf33f190aee3486e9578c893ae3cd6"
 
@@ -115,7 +127,7 @@ hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
-hash = "2a80a89e0a27207d7acc4ef8ea425f595e40fc935a7a8b83f77afeca68082686"
+hash = "b36a901b7f8f302441c546c569f3b549707a9394e176bb75a4ac00898b494dad"
 
 [[files]]
 file = "kubejs/client_scripts/graphics.js"
@@ -254,6 +266,10 @@ file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "ddc3d0dd56b604d914bedbf2f985a2f0b5f7374eac79aad668a8a2cfd7cc154c"
 
 [[files]]
+file = "kubejs/server_scripts/advanced_peripherals.js"
+hash = "c8692e56a2df8983660914c59bebed9300075dce85a6e993d9a6cb8b4737829e"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
@@ -280,6 +296,11 @@ hash = "868b48e7f383b12dace04234f89fd22c4ebcf5d5608f2dea2b8be62bb99c17e1"
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
 hash = "b3b67f83faf9dcc4985b7a13fa8affb71062461d271f80cc0958652df9f3126b"
+metafile = true
+
+[[files]]
+file = "mods/advancedperipherals.pw.toml"
+hash = "c18dcec1a4400520691d9efb52ac19427cd0d1a6e1b7278ae532aa18b6a08035"
 metafile = true
 
 [[files]]
@@ -423,8 +444,8 @@ hash = "c7f15ebcab95f04c71940715f09ced4caad2775a91ef34389431f91bc1c7be71"
 metafile = true
 
 [[files]]
-file = "mods/cmpfixes-0.3.0.jar"
-hash = "8e9de37b8b23d6bdd9f90b24b006c45433d2fc69cfe67142b2f63eb38bfec149"
+file = "mods/cmpfixes-0.4.0.jar"
+hash = "36fb455a63a42a3d6d5aee3d337ed3897b6f0dd09daa17460edc80c19102df48"
 
 [[files]]
 file = "mods/cmpguard-0.1.0.jar"
