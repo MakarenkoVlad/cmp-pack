@@ -91,7 +91,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "5aff115f1e1d63960d5e59d93ac8a812a10715a8f1a84463861eaaafbb25fa29"
+hash = "0f89d09062d05b78d1c1b5a6cea8ccb6c249ccedf2687e00211f252aff21214b"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -369,8 +369,13 @@ file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.3.4.jar"
-hash = "b027f1a72351a9844209123aeb00de936da6576985056448a771739628e32c74"
+file = "mods/cmpwar-0.4.0.jar"
+hash = "9d33d4172c937cfd5d0bb7d31d1cfad08ba1a22244134f281a9f03693c036de9"
+
+[[files]]
+file = "mods/contraption-lights.pw.toml"
+hash = "827cf4a7c4d0b0828a8674ebdcedcde448fc06d5ab79560eb1141f0ba70cead1"
+metafile = true
 
 [[files]]
 file = "mods/controlling.pw.toml"
@@ -643,6 +648,11 @@ hash = "7e0eca275f27b6543f06c36dec433851a956960cbedd2be57d19e159d636bfc1"
 metafile = true
 
 [[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "ebf0dae777cc19c354a662dc8144009dff7269b2d05624b4591fcb7de56fc14e"
+metafile = true
+
+[[files]]
 file = "mods/ldlib.pw.toml"
 hash = "a57064a0b2f76d1940893fe8e4d6b6a57554fd27d32da88dcf152acfef223383"
 metafile = true
@@ -695,6 +705,11 @@ metafile = true
 [[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "efad386063cb79013d7522fcc5b5879c5c3cd556e83bd41a56980632827b45b2"
+metafile = true
+
+[[files]]
+file = "mods/modded-votifier.pw.toml"
+hash = "2b4e72c2c53990c324ca1819a301dd14b584607d847b2cdefb152a8855a6fe2b"
 metafile = true
 
 [[files]]

@@ -1,6 +1,6 @@
 # CMP Season 1: shipped from pack/config. Teams come from FTB Teams and own the claims;
 # players never claim by hand (the protection block claims through the API and the cmpwar
-# mod refuses manual claiming); 25 chunks covers the largest 5x5 block area. Explosion
+# mod refuses manual claiming); the high technical cap allows captured territory. Explosion
 # protection is not player-configurable: explosions always work inside claims. Only a team's own
 # claims are synced to its players, so Xaero's maps don't mark every enemy base.
 [serverConfig]
@@ -142,7 +142,7 @@
 		#This value can be overridden with a player permission.
 		# Default: 500
 		# Range: > 0
-		maxPlayerClaims = 25
+		maxPlayerClaims = 1000000
 		#The maximum number of claimed chunks that a player can forceload. Additional forceloads can be configured in the player config.
 		#This value can be overridden with a player permission.
 		# Default: 10
