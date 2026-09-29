@@ -290,6 +290,10 @@ file = "kubejs/server_scripts/season1.js"
 hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
 
 [[files]]
+file = "kubejs/server_scripts/starter_kit.js"
+hash = "bdb87d555254777bae05bab36e9bb8e257c62fc3e7c85140b48f81e16b0474ec"
+
+[[files]]
 file = "kubejs/server_scripts/toolgun.js"
 hash = "868b48e7f383b12dace04234f89fd22c4ebcf5d5608f2dea2b8be62bb99c17e1"
 
