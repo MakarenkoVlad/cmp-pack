@@ -317,7 +317,6 @@ const TIERS = {
                 ['create:belt_connector', 2, 3, 3],
                 ['createages:andesite_machine', 1, 1, 4],
                 ['createages:zinc_machine', 1, 1, 2],
-                ['create:sticker', 1, 1, 1],  // loot-only: Create: Ages blanks its recipe (pending_verification)
             ] },
         ],
         fillerPools: [

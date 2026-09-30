@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "createages",
+  "category": "misc",
+  "pattern": [
+    "ISI",
+    "CMC"
+  ],
+  "key": {
+    "I": {
+      "item": "create:andesite_alloy"
+    },
+    "S": {
+      "tag": "c:slimeballs"
+    },
+    "C": {
+      "tag": "c:cobblestones"
+    },
+    "M": {
+      "item": "createages:andesite_mechanism"
+    }
+  },
+  "result": {
+    "id": "create:sticker",
+    "components": {},
+    "count": 1
+  }
+}

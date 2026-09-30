@@ -190,6 +190,10 @@ file = "kubejs/data/create_armorer/data/guns/sniper_semi_m1_data.json"
 hash = "79d29fa2a738db30719f63835cefa1d8317a9ac274822c68f78f93cd66a3e8dd"
 
 [[files]]
+file = "kubejs/data/createages/recipe/andesite_age/crafting/kinetics/sticker.json"
+hash = "fb72f95a35b8a010ef5a6338f694a46057a2336e6e5a62c3a72c1f929bd32c97"
+
+[[files]]
 file = "kubejs/data/createages/recipe/andesite_age/processing_line/charger.json"
 hash = "c07c36e680a7e346adb6d1b22765220542f0332d562d2cb807cbbbaa04d6874c"
 
@@ -331,7 +335,7 @@ hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
 [[files]]
 file = "kubejs/server_scripts/loot.js"
-hash = "5c423d7e20fd3f035f75741b4778fb35bf5a74f2d6b4741f57ca06711c68da88"
+hash = "20b61d417589bab4d0d192cf57331e0b57f8f181c13fce9ff079790f64bbcba5"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
@@ -351,7 +355,7 @@ hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "bdb87d555254777bae05bab36e9bb8e257c62fc3e7c85140b48f81e16b0474ec"
+hash = "417d5ab7dc864e36c47871e18e33e4f8aa80d5c8503abdf4bcdb0b64e4b161e0"
 
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
