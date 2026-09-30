@@ -508,16 +508,16 @@ hash = "c7f15ebcab95f04c71940715f09ced4caad2775a91ef34389431f91bc1c7be71"
 metafile = true
 
 [[files]]
-file = "mods/cmpfixes-0.4.0.jar"
-hash = "36fb455a63a42a3d6d5aee3d337ed3897b6f0dd09daa17460edc80c19102df48"
+file = "mods/cmpfixes-0.5.1.jar"
+hash = "e5fc10c9d8bbc0c6223a960b4354865502107989eba640450489304dd4f4c73d"
 
 [[files]]
 file = "mods/cmpguard-0.1.0.jar"
 hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
 
 [[files]]
-file = "mods/cmpwar-0.6.0.jar"
-hash = "74f1d2a6ddbbf8bfae77c6fd00b6d894cc3ffe7f562adb9fa027e358d658d3c4"
+file = "mods/cmpwar-0.7.1.jar"
+hash = "11e66701119dec94e28a8b80cd5d35d7269871043feff966ab3d491edb72e320"
 
 [[files]]
 file = "mods/collective.pw.toml"
