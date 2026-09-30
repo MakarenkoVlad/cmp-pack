@@ -111,11 +111,11 @@ hash = "0f89d09062d05b78d1c1b5a6cea8ccb6c249ccedf2687e00211f252aff21214b"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
-hash = "7217399cbe3b893735b78930cae0a73a2680850a5794774b9d7f0c54c6415a65"
+hash = "d00bb6148b151cfd11f7576a17e96b11bff485961e64e9c10c717a144c2ab3ae"
 
 [[files]]
 file = "config/sable_player_ragdoll-server.toml"
-hash = "ffd567a41cd762a63d82b5f1c07a3129dff02194180813aba3843b615352daf7"
+hash = "9501a8e28fe5d295c7151ea2073357adf298dda572cad75c25cd943b4d764d26"
 
 [[files]]
 file = "config/tacz-common.toml"
@@ -131,7 +131,7 @@ hash = "b36a901b7f8f302441c546c569f3b549707a9394e176bb75a4ac00898b494dad"
 
 [[files]]
 file = "kubejs/client_scripts/graphics.js"
-hash = "2364d6c7d8227bfca443484aa3914cae3bca0d9e28616c52c6ac25f5632bd82c"
+hash = "d5eda8e0d67ce107b893dfaf7e7ebfe61e9eb0131b3f691fc8b0c1400d7d62ff"
 
 [[files]]
 file = "kubejs/client_scripts/guns.js"
@@ -140,6 +140,54 @@ hash = "a7ae310ece726b71d4477e2c97783aa958d4e68318022aa15cc5abcd908395ee"
 [[files]]
 file = "kubejs/client_scripts/server_address.js"
 hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/cannon_40mm_salamander_data.json"
+hash = "8a3e1dafb082102d9c1a602cd7c1efdf53c5aa7e870284b6e74067da0c6ebb77"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/gl_revolver_devastator_data.json"
+hash = "f390a33ff7085e2a4c10ec8a12942274a9df6278d12576d0aa1780cc84ffe556"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/mg_platemag_flywheel_data.json"
+hash = "9e35890b88530b48fa5bf2d69991c683e92cdd1aa6204e41e49530538181dc05"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/pistol_auto_stress_data.json"
+hash = "efff12d2ab49c4f471ce3981a9d940ec1fc2c1405049ff5da63315f9d76b61d6"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/pistol_revolver_torque_data.json"
+hash = "5e4e45834b0ff676fbde2da25ff95ad553e858dd7db982412a2f4ba204eb7090"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/rifle_assult_crane_data.json"
+hash = "cd52310611cdc825787986d8f55c9a8ca3ba278daded6e5b3fbceb8226907a92"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/rifle_assult_roller_data.json"
+hash = "e42fd2f590558e878b5409a660540c8d92750b2eb27ff783e14a06963ab5858d"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/shotgun_db_stone_data.json"
+hash = "781214d9db8de212c75f72a3c9b6d83b836e34eaa1f69f693741dc1408b85b8b"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/shotgun_pump_bearing_data.json"
+hash = "93e8b622fb2667c9a9ceca294588253e08e4674030c5fe01fd8b67f2cfbcc282"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/smg_auto_crank_data.json"
+hash = "220e14db2e7264ab0de4991814db47f0d23701dce2b5097c4f8d910c2296cf2d"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/sniper_semi_clockwork_data.json"
+hash = "330af13d29e254f10159809142e574488f49f205a9f3ef81e1e4f29eedfa03b6"
+
+[[files]]
+file = "kubejs/data/create_armorer/data/guns/sniper_semi_m1_data.json"
+hash = "79d29fa2a738db30719f63835cefa1d8317a9ac274822c68f78f93cd66a3e8dd"
 
 [[files]]
 file = "kubejs/data/createages/recipe/andesite_age/processing_line/charger.json"
@@ -254,6 +302,10 @@ file = "kubejs/data/createages/recipe/calculation_age/processing_line/me_chest.j
 hash = "ec6536b38e7da0fb3113affdf3d47ce27e6c5dd1c5e22357de4ea90e8eb733ea"
 
 [[files]]
+file = "kubejs/data/createages/recipe/copper_age/mixing/rubber.json"
+hash = "a27416db72f93b7abea66d1003307f13de048f83e31035ebf8a02c6cded205b4"
+
+[[files]]
 file = "kubejs/data/createages/recipe/copper_age/processing_line/hose_pulley.json"
 hash = "d38dd4b1cb2ad6f60cffb54504f1cc8ea43128c227359284bbd9742ab09e3bbb"
 
@@ -270,12 +322,16 @@ file = "kubejs/server_scripts/advanced_peripherals.js"
 hash = "c8692e56a2df8983660914c59bebed9300075dce85a6e993d9a6cb8b4737829e"
 
 [[files]]
+file = "kubejs/server_scripts/create_encased.js"
+hash = "2ebdc50d2628d12e5f8cd3830bfaa3c6468cf65fd4283367c65d3df63a8f79cf"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
 [[files]]
 file = "kubejs/server_scripts/loot.js"
-hash = "e354bfe3fa264c9e05ba3551fff912f2b9742bf4a3ddf36259194c727633be71"
+hash = "5c423d7e20fd3f035f75741b4778fb35bf5a74f2d6b4741f57ca06711c68da88"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
@@ -284,6 +340,10 @@ hash = "395d9584c555384b6a799ea8b86faa754cb4c95bec6479fb7039353850b463aa"
 [[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
 hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
+
+[[files]]
+file = "kubejs/server_scripts/ragdoll_knockdowns.js"
+hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -770,6 +830,11 @@ hash = "4c05f6744be64d47634fbd906b1502ec6ba7ce9becf473cc8db882922716b620"
 metafile = true
 
 [[files]]
+file = "mods/extreme_sound_muffler.pw.toml"
+hash = "24ed7d0ffee64455b6aae616d04269b9067256003c6cbbcda6f7bb596c1a765b"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu.pw.toml"
 hash = "950114e26a7d1a976a7da8d7d7dc708ea2be16a75a1ae86bb5906274aa311702"
 metafile = true
@@ -1195,6 +1260,11 @@ hash = "9b0efc6327054eae3121ba7a29bb8e78d337f387d915785e2bfc4852a7728dc3"
 metafile = true
 
 [[files]]
+file = "mods/vs-hose-connectors.pw.toml"
+hash = "6c9883d2fa1643fe221307ab0101fbccb204c80953989d3e064872b4f45efd34"
+metafile = true
+
+[[files]]
 file = "mods/when-dungeons-arise.pw.toml"
 hash = "7e6948368276f2c49d5bccf52cbf80930d0daca75b4dfbc5530479f1d3f95cf8"
 metafile = true
@@ -1207,6 +1277,11 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "f8cc300d53ae8bf71d77124e6c46a5e85fe31654b39c5d73a1652a4d9c404af4"
+metafile = true
+
+[[files]]
+file = "resourcepacks/create-computercraft.pw.toml"
+hash = "5acf665b02f3a79024123c7824fd13bcb29b955c8d03c13806e13253352fb012"
 metafile = true
 
 [[files]]

@@ -9,11 +9,11 @@ enabled = true
 		#Clamp total ragdoll launch speed after trigger detection (m/s).
 		# Default: 128.0
 		# Range: 1.0 ~ 256.0
-		maxSpeed = 40.0
+		maxSpeed = 20.0
 		#Ticks before the same player can be auto-ragdolled again.
 		# Default: 60
 		# Range: 0 ~ 1200
-		cooldownTicks = 60
+		cooldownTicks = 200
 
 	#Shared target eligibility options.
 	[general.targeting]
@@ -129,11 +129,11 @@ enabled = true
 		#Extra blocks added to the explosion entity radius when searching for nearby players.
 		# Default: 2.0
 		# Range: 0.0 ~ 64.0
-		radiusPadding = 2.0
+		radiusPadding = 0.0
 		#Launch speed multiplier applied to cannon explosion power before the global max launch speed clamp.
 		# Default: 15.0
 		# Range: 0.0 ~ 128.0
-		launchMultiplier = 6.0
+		launchMultiplier = 3.0
 
 	#Vanilla explosion reactions.
 	[triggers.vanillaExplosions]
@@ -146,11 +146,11 @@ enabled = true
 		#Extra blocks added to the explosion knockback radius when searching for nearby players.
 		# Default: 2.0
 		# Range: 0.0 ~ 64.0
-		radiusPadding = 2.0
+		radiusPadding = 0.0
 		#Launch speed multiplier applied to explosion power before the global max launch speed clamp.
 		# Default: 15.0
 		# Range: 0.0 ~ 128.0
-		launchMultiplier = 6.0
+		launchMultiplier = 3.0
 
 	#Hard fall landing reactions.
 	[triggers.fall]
@@ -181,7 +181,7 @@ enabled = true
 	#Heavy melee/projectile hit reactions.
 	[triggers.hit]
 		#When true, taking a big hit knocks the player into a ragdoll away from the attacker.
-		enabled = true
+		enabled = false
 		#Minimum damage required to trigger a ragdoll.
 		# Default: 8.0
 		# Range: 0.0 ~ 1024.0

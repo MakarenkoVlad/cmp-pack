@@ -261,7 +261,7 @@ const TIERS = {
         pools: [
             { name: 'workshop_stores', rolls: [2, 3], entries: [
                 ['createages:andesite_mechanism', 2, 3, 12],
-                ['createages:cured_rubber', 1, 3, 12],  // 32 kelp each
+                ['createages:cured_rubber', 1, 3, 12],  // 16 kelp each
                 ['createages:copper_mechanism', 1, 2, 8],  // tier-2 claim fuel
                 ['createages:zinc_mechanism', 1, 2, 4],  // tier-3 claim fuel
                 ['minecraft:kelp', 4, 8, 6],

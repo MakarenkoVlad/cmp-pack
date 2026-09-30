@@ -1,7 +1,7 @@
 #Master switch for the ragdoll system.
 enabled = true
 #Allow players to grab and drag ragdolls.
-grabEnabled = true
+grabEnabled = false
 
 #Ragdoll trigger behavior.
 [trigger]
@@ -18,7 +18,7 @@ grabEnabled = true
 	#Minimum ticks after ragdoll start before the player can manually exit. 60 = 3 seconds.
 	# Default: 60
 	# Range: 0 ~ 1200
-	minDismountTicks = 60
+	minDismountTicks = 30
 
 #Ragdoll physics limits.
 [physics]
@@ -75,7 +75,7 @@ grabEnabled = true
 	#Ticks after launch before a player ragdoll expires and the player is unseated.
 	# Default: 40
 	# Range: 5 ~ 600
-	ragdollDurationTicks = 60
+	ragdollDurationTicks = 30
 	#Expire player ragdolls after they touch down and slow below the release speed threshold.
 	expireWhenSlow = false
 	#Expire after touchdown only once the ragdoll slows below this speed (m/s).
