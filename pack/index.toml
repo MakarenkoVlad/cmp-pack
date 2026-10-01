@@ -94,7 +94,7 @@ hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
 file = "config/iris.properties"
-hash = "e2a4ee4bd32547f16d606af772ef7338d6785b215c04115e5a9bf141b9a793c8"
+hash = "1df677fdf3bcdc92a3e0a70e61dcd611e0072d5237ad8799dc353ce416f88c4f"
 preserve = true
 
 [[files]]
@@ -140,6 +140,10 @@ hash = "a7ae310ece726b71d4477e2c97783aa958d4e68318022aa15cc5abcd908395ee"
 [[files]]
 file = "kubejs/client_scripts/server_address.js"
 hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
+
+[[files]]
+file = "kubejs/client_scripts/shaders.js"
+hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
 file = "kubejs/data/create_armorer/data/guns/cannon_40mm_salamander_data.json"
