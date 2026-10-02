@@ -15,6 +15,8 @@
 //   v4 (Advanced Peripherals):
 //     Smart glasses hotkey: G (TaCZ fire mode) -> none (it only reaches a glasses computer with a hotkey
 //       module, so whoever uses one binds it in Controls)
+//   v5 (Corpse):
+//     Corpse "death history": U (Xaero's waypoints) -> none (Xaero's minimap already marks where you died)
 // C stays shared: Easy Villagers' "cycle trades" is C like TaCZ crawl, but it only works inside the
 // trading screen. Create: Factory Controller's C, R, F and Q only work inside its screen, and the
 // Tweaked Controllers' and Toolgun's keys (Tab, R, Left Alt) only while the item is in use.
@@ -48,6 +50,12 @@ const CMP_CONTROL_STAGES = [
         marker: 'local/cmp/controls-v4.json',
         changes: {
             'keybind.advancedperipherals.glasses_hotkey': 'key.keyboard.unknown',
+        },
+    },
+    {
+        marker: 'local/cmp/controls-v5.json',
+        changes: {
+            'key.corpse.death_history': 'key.keyboard.unknown',
         },
     },
 ]

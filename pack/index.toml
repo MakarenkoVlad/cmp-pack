@@ -107,7 +107,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "0f89d09062d05b78d1c1b5a6cea8ccb6c249ccedf2687e00211f252aff21214b"
+hash = "c1fe59508b39d2382ced9780a2176488f76156ac77d6ef4fa210f0a4a8528652"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -127,7 +127,7 @@ hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
-hash = "b36a901b7f8f302441c546c569f3b549707a9394e176bb75a4ac00898b494dad"
+hash = "d21381963ff595d56e5b00a3ba1cd83c635928e6df8ec09142c6671272015e7b"
 
 [[files]]
 file = "kubejs/client_scripts/graphics.js"
@@ -144,6 +144,14 @@ hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
 [[files]]
 file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
+
+[[files]]
+file = "kubejs/data/create/recipe/dough_add_tomato_sauce.json"
+hash = "61feb5fd0d923cf7616e7e28a901b0ef13c48d5eb58ee33b3e0234a2241dac46"
+
+[[files]]
+file = "kubejs/data/create/recipe/tomato_sauce_filling.json"
+hash = "be6c9b18a6d8b33976bfcd7ba5e2781c259d7fef27683e2ba8ed5a3f84466b1e"
 
 [[files]]
 file = "kubejs/data/create_armorer/data/guns/cannon_40mm_salamander_data.json"
@@ -421,6 +429,11 @@ hash = "3f829f54e19ebb32f23f554e05bd49c005dfc057933e07d0df4f85e7085d314d"
 metafile = true
 
 [[files]]
+file = "mods/baguettelib.pw.toml"
+hash = "ad964c7bc216dc509aba7cc617456a340e7746565e79d0cd4fab8a4d31ec95ed"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "03084ff4f74cedc1b8ac6c85a98842f75956fb4fa811d285d8ca7caa8d54da5d"
 metafile = true
@@ -550,6 +563,21 @@ metafile = true
 [[files]]
 file = "mods/copycats.pw.toml"
 hash = "4892513825f87217b6cc3f4d3ec4dcd3965b96dede8cc10d6578c4769102ae8e"
+metafile = true
+
+[[files]]
+file = "mods/corpse-x-curios-api-compat.pw.toml"
+hash = "0f24d3112418b31cf86b84d0ded37decc9dbd50cc229cec632547458c01ffdca"
+metafile = true
+
+[[files]]
+file = "mods/corpse.pw.toml"
+hash = "8e671fbd3a5460a61073cced391ec08efc6b67d765e49015eea45a1f1db159a0"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-throwable-rope-connector.pw.toml"
+hash = "7c5aa4687ff34e1ffe62e0e2570e38d40dbedc8f0d45fadcb8f9c3252f9cf677"
 metafile = true
 
 [[files]]
@@ -773,6 +801,11 @@ hash = "0e4942ab12e496d3649dc35f1734c20c9fb46e235265f7076a2465eb1b139473"
 metafile = true
 
 [[files]]
+file = "mods/display-delight.pw.toml"
+hash = "063634f47239896738fe3c27d33e3449f6f69cdef4400e2852240b2acf5fdfab"
+metafile = true
+
+[[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "6d3e312dbf8db12dd1b6fb3bd1d29f210ab48024a0b2ebdf02fd32c265955c5d"
 metafile = true
@@ -850,6 +883,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
+metafile = true
+
+[[files]]
+file = "mods/farmers-pizzeria.pw.toml"
+hash = "ef7be6b02d0348ff3b296b95654fb02b18af552dd7807f568cac11850c92acbe"
 metafile = true
 
 [[files]]
