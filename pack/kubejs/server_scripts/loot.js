@@ -33,6 +33,13 @@
 const gun = (id, mode) => 'tacz:modern_kinetic_gun[minecraft:custom_data={GunId:"' + id + '",GunFireMode:"' + mode + '"}]'
 const ammo = id => 'tacz:ammo[minecraft:custom_data={AmmoId:"' + id + '"}]'
 
+// Farmer's Pizzeria's basil grows wild only in forests and jungles generated after the mod was added, so
+// the islands generated before have none. Every tier's containers may hold a few seeds instead (always:
+// it ignores the primary chance), and a grown plant drops 1 to 3 more, so one find starts a farm.
+const BASIL_SEEDS = { name: 'basil_seeds', rolls: [1, 1], chance: 0.15, always: true, entries: [
+    ['farmerspizzeria:basil', 1, 3, 1],  // the item is called Basil Seeds
+] }
+
 const TIERS = {
     ruin_early: {
         // Island-top ruins, camps, towers, houses and taverns reached on foot or by bridging in the first
@@ -42,6 +49,7 @@ const TIERS = {
         vanilla: 'strip',
         ground: true,
         pools: [
+            BASIL_SEEDS,
             { name: 'andesite_age_bottlenecks', rolls: [2, 3], entries: [
                 ['createages:andesite_mechanism', 1, 3, 18],  // tier-1 claim fuel and the base of every machine
                 ['create:andesite_alloy', 6, 12, 12],
@@ -259,6 +267,7 @@ const TIERS = {
         ground: true,
         stripExtra: ['create:precision_mechanism', 'create:mechanical_arm', 'create:brass_hand', 'create:brass_funnel', 'create:smart_chute', 'create:empty_blaze_burner', 'create:potato_cannon', 'minecraft:blaze_rod', 'minecraft:ender_pearl', 'minecraft:echo_shard'],
         pools: [
+            BASIL_SEEDS,
             { name: 'workshop_stores', rolls: [2, 3], entries: [
                 ['createages:andesite_mechanism', 2, 3, 12],
                 ['createages:cured_rubber', 1, 3, 12],  // 16 kelp each
@@ -398,6 +407,7 @@ const TIERS = {
         vanilla: 'strip',
         ground: true,
         pools: [
+            BASIL_SEEDS,
             { name: 'copper_zinc_stores', rolls: [2, 4], entries: [
                 ['createages:cured_rubber', 2, 4, 10],
                 ['createages:copper_mechanism', 1, 3, 9],
@@ -539,6 +549,7 @@ const TIERS = {
         // material, and a themed pool per islet. Minor jackpots only.
         vanilla: 'replace',
         pools: [
+            BASIL_SEEDS,
             { name: 'brass_entry_and_airship_parts', rolls: [2, 3], entries: [
                 ['create:precision_mechanism', 1, 2, 8],
                 ['create:brass_ingot', 4, 8, 6],
@@ -686,6 +697,7 @@ const TIERS = {
         // Minor jackpots at 5% per key chest, majors at 0.6%.
         vanilla: 'replace',
         pools: [
+            BASIL_SEEDS,
             { name: 'brass_age_core', rolls: [2, 4], entries: [
                 ['create:precision_mechanism', 2, 3, 9],
                 ['create:mechanical_crafter', 1, 2, 5],
@@ -844,6 +856,7 @@ const TIERS = {
         // protection block, cast-iron or steel cannon kit, explosive Armorer guns) and minor ones.
         vanilla: 'replace',
         pools: [
+            BASIL_SEEDS,
             { name: 'fortress_hoard', rolls: [2, 3], entries: [
                 ['create:precision_mechanism', 2, 4, 8],
                 ['create:mechanical_crafter', 1, 3, 6],

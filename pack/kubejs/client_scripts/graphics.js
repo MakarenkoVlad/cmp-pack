@@ -10,6 +10,8 @@
 //     its author asks for it above Faithful (it redraws a few vanilla copper textures to match) (off by default)
 //   Create: ComputerCraft: CC:Tweaked's computers, monitors, turtles, modems and screens in Create's style
 //     (the 1.20.1 build, so the pack list calls it old; it only touches computercraft textures and models)
+//   CreateEsque:Synaxis: Synaxis's blocks and items redrawn in Create's style (only touches synaxis models
+//     and textures, plus its own fromcreate textures)
 //   Universal Bushy Leaves: leaves grow past the block edge, with whatever leaf texture is under it
 //   Fresh Animations: animated animals and villagers (needs the EMF and ETF mods)
 //   Dramatic Skys: painted HD skies, sun and moon (needs the Nuit and Nuit Interop mods)
@@ -23,6 +25,7 @@ const CMP_GRAPHICS_PACKS = [
     { key: 'faithful-32x', file: 'Faithful 32x', on: false },
     { key: 'improved-create-32x', file: 'Improved_Create_32x', on: false },
     { key: 'create-computercraft', file: 'Create Computers', on: true },
+    { key: 'createesque-synaxis', file: 'CreateEsque-Synaxis', on: true },
     { key: 'universal-bushy-leaves', file: 'Universal Bushy Leaves', on: true },
     { key: 'fresh-animations', file: 'FreshAnimations', on: true },
     { key: 'dramatic-skys', file: 'Dramatic Skys', on: true },
