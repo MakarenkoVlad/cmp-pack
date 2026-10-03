@@ -557,8 +557,8 @@ hash = "c7f15ebcab95f04c71940715f09ced4caad2775a91ef34389431f91bc1c7be71"
 metafile = true
 
 [[files]]
-file = "mods/cmpfixes-0.5.1.jar"
-hash = "e5fc10c9d8bbc0c6223a960b4354865502107989eba640450489304dd4f4c73d"
+file = "mods/cmpfixes-0.6.0.jar"
+hash = "8a65052334b68c06eb63de040e3eba9ef33911dd2705c452923703689b7f7351"
 
 [[files]]
 file = "mods/cmpguard-0.1.0.jar"
