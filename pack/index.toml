@@ -146,6 +146,14 @@ file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
+file = "kubejs/data/cmp/physics_block_properties/no_fragile_blocks.json"
+hash = "1848b2e137932d9cfdd07168ddb89c57240f27944dae94978ebd939bffcffa58"
+
+[[files]]
+file = "kubejs/data/cmp/physics_block_properties/no_fragile_coin_piles.json"
+hash = "88e0d70caa94393580a4790cbb9fcad6ada8b84cf6206b375879222f325f5a72"
+
+[[files]]
 file = "kubejs/data/create/recipe/dough_add_tomato_sauce.json"
 hash = "61feb5fd0d923cf7616e7e28a901b0ef13c48d5eb58ee33b3e0234a2241dac46"
 
@@ -374,6 +382,10 @@ file = "kubejs/server_scripts/guns.js"
 hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
 [[files]]
+file = "kubejs/server_scripts/honey_welder.js"
+hash = "9fc551bb10da46bac355b54567f454bd84cd63ef8b13a7752f17641f76cc6c24"
+
+[[files]]
 file = "kubejs/server_scripts/loot.js"
 hash = "5c848b571dfc7152f20a4418788537b3f02e5dd2665c2854166e0f383b603f96"
 
@@ -557,16 +569,20 @@ hash = "c7f15ebcab95f04c71940715f09ced4caad2775a91ef34389431f91bc1c7be71"
 metafile = true
 
 [[files]]
-file = "mods/cmpfixes-0.6.0.jar"
-hash = "8a65052334b68c06eb63de040e3eba9ef33911dd2705c452923703689b7f7351"
+file = "mods/cmpauth-0.1.0.jar"
+hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpguard-0.1.0.jar"
-hash = "f6fc2dc03563df3af691bb843a3d0d4dc46f18bd4b2bfed2d3bb2952abb57eeb"
+file = "mods/cmpfixes-0.7.0.jar"
+hash = "7c0afd5b2c40c22b690e3f0ddd27059f7fcf9c8fb9751103de6f1110920bcc28"
 
 [[files]]
-file = "mods/cmpwar-0.7.1.jar"
-hash = "11e66701119dec94e28a8b80cd5d35d7269871043feff966ab3d491edb72e320"
+file = "mods/cmpguard-0.2.0.jar"
+hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
+
+[[files]]
+file = "mods/cmpwar-0.8.0.jar"
+hash = "2242a5454539daa9e382d27bd20c95516f4f24f51514206bae7b3a88e3b9fe90"
 
 [[files]]
 file = "mods/collective.pw.toml"
