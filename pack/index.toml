@@ -146,6 +146,10 @@ file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
+file = "kubejs/data/cmp/end_sea/overworld.json"
+hash = "ff93c45a71499d1f15d79a5ce3b348b4b40fb07d9bf6bbeef3ae4b7a0808252a"
+
+[[files]]
 file = "kubejs/data/cmp/physics_block_properties/no_fragile_blocks.json"
 hash = "1848b2e137932d9cfdd07168ddb89c57240f27944dae94978ebd939bffcffa58"
 
@@ -573,16 +577,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.7.0.jar"
-hash = "7c0afd5b2c40c22b690e3f0ddd27059f7fcf9c8fb9751103de6f1110920bcc28"
+file = "mods/cmpfixes-0.9.0.jar"
+hash = "e13bbbab7967ebd0dc6937ba5c5249f90435382edb44c033f74a8cb84d2231b8"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.8.0.jar"
-hash = "2242a5454539daa9e382d27bd20c95516f4f24f51514206bae7b3a88e3b9fe90"
+file = "mods/cmpwar-0.10.2.jar"
+hash = "292a469cc3de389057e9ad1f5db0d16991a88476f062788256b82fb4e57d671e"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1220,6 +1224,10 @@ hash = "84cb0dcad9ac46d22adba4fb7924951affa6ac5e46027a3b25fa9a0db8d91b2b"
 metafile = true
 
 [[files]]
+file = "mods/peripheralnames-1.0.0.jar"
+hash = "44b629745b7ad5d5421b49849246fe9ff3601f9fa786f594ea8fd3f2c8486ed0"
+
+[[files]]
 file = "mods/ping-original.pw.toml"
 hash = "8239bff4e37b254c07362c5efe6bf527cabddaf43662e66f8dbf93a43d7e2ee3"
 metafile = true
@@ -1338,6 +1346,10 @@ metafile = true
 file = "mods/staaaaaaaaaaaack.pw.toml"
 hash = "d26d63d78d78a0da0241ff696abe86adeaf7ea44643a5f95d0827de19ec7a63e"
 metafile = true
+
+[[files]]
+file = "mods/streamsafe-1.0.0.jar"
+hash = "4f824d5aa902794b1df70e67d84739579f3cc4c8daa461899198b9dbeb166a40"
 
 [[files]]
 file = "mods/structory-towers.pw.toml"
