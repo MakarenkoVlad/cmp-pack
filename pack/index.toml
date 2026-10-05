@@ -577,16 +577,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.9.0.jar"
-hash = "e13bbbab7967ebd0dc6937ba5c5249f90435382edb44c033f74a8cb84d2231b8"
+file = "mods/cmpfixes-0.12.0.jar"
+hash = "12e099a34447b1eefdce61d9f3ff6aea06e3c6f5f7025962b90c330f41874958"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.10.2.jar"
-hash = "292a469cc3de389057e9ad1f5db0d16991a88476f062788256b82fb4e57d671e"
+file = "mods/cmpwar-0.11.0.jar"
+hash = "21c3beb516ac5b92added83f1a2239fde4c1985a5af0112a4f2e71a0a900bdde"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -696,6 +696,11 @@ metafile = true
 [[files]]
 file = "mods/create-compact-flap.pw.toml"
 hash = "8357524fb98d75ce1c11e1385744c1e4897ac0551c81f60ae437e5a52ed8d995"
+metafile = true
+
+[[files]]
+file = "mods/create-configurable-crushing-wheel.pw.toml"
+hash = "7aaabe2566cff6ce0fc4c5570844040a96f5e48cdbd28786b77a85c3e10ea34e"
 metafile = true
 
 [[files]]
@@ -1310,6 +1315,11 @@ metafile = true
 [[files]]
 file = "mods/shellbound-for-airship.pw.toml"
 hash = "026951f2fdf7709712269e4f2c03aa544d35d20c1fb6180876f5ec5063fc2e34"
+metafile = true
+
+[[files]]
+file = "mods/shulkerboxtooltip.pw.toml"
+hash = "089e4203ca8bbdb98eb171818f1ec8d384e1a477e1276325c4e4f1a4367d8260"
 metafile = true
 
 [[files]]
