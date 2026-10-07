@@ -126,118 +126,6 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
-file = "kubejs/assets/cmp/textures/item/barrel_heavy.png"
-hash = "db96becff7763247cec2594cedb873d0e3419af36e32ac930f5e076399eb41d7"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/barrel_long.png"
-hash = "b8f49742412ee8d0bd6aefa8e52b1ef0e6c519032fce7cf802ebb3dfd79cb86f"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/barrel_precision.png"
-hash = "d3b714e37c6e586cfc197572413f2561558b38ef144725b66daa3251dde813e0"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/barrel_smooth.png"
-hash = "80715957fc276f0cf26aea6969d25e912b3bccc8c9f98093c228c2a09e56b22b"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/billet_heavy.png"
-hash = "ceb692190dcc67fb58416fd72ed5d5242b35fe65dba48ff34d493fefcf9338d9"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/billet_long.png"
-hash = "c89dd75fc635604fc54a0dca07911966ae3abecf06b607892ae54de740018f70"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/billet_precision.png"
-hash = "11f4ab2edd5b353f9de36f71389379084e20eeaea10125f30bccbc14ef9bbbd6"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/billet_small.png"
-hash = "57d8d1d2bf1249cc37541f8ee961fe24b6b59c3a4459e95342cd8b96c4bf8aae"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/billet_smooth.png"
-hash = "4164fe78562612cd48560e68e22fed157558777c0bcb5778b00d05d3498f8e1b"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/bolt_blank.png"
-hash = "02115d5e80dc7eea72772f9f38827e7d8714526609490776b8d1d5995b4e5ab5"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/boring_bar.png"
-hash = "f7cadadc31f9b7683cb0143403b42c1ac8ad3f002210e7a9cb8dab35d4abe90f"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/firing_pin.png"
-hash = "4add54e08c5ac623f16bfa1e91522be001e5ab0e48ba346852fc90fc1633564e"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/grip.png"
-hash = "83d8b5f4d2f440d9cba57c41ac5b034f46831fd78fc44ab26e0c11bdabf6f22c"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_barrel.png"
-hash = "ef58032ca8d148b4c895bdbd2c3083d863120e488cb3f1f98592478e67100d6f"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_bolt.png"
-hash = "3216d772119b1526359323ee48a497b4956121c88f5651b8f014f3eb893fecdc"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_gun.png"
-hash = "73c19c187430cd8fbe11c84403c2d326141f7b2973335488d794420e5e9d73ae"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_receiver.png"
-hash = "806ae0531c54acc6494cdd063ffb067e3cda3b5c5ee7333b053b843e51b29bc0"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_stock.png"
-hash = "c2bacbf736fa42bd49301c9ffae85a307ab85ffb0727b9d1ff86d4dd7a05fb8e"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/incomplete_trigger.png"
-hash = "ee0e928fc9737718d7669f6f1c3f357a69b82e8b6f678317f67d4c7400766bac"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/milling_cutter.png"
-hash = "25dc6ac283c4e3b311692a15146111b18a52440de857ad95782408a4157b87d0"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/receiver.png"
-hash = "ab69a5769db6c3f2b5dc2501cd4fdfb61b37e129411fbc7bea89b9d6655e25d5"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/receiver_blank.png"
-hash = "0d70ef93e5c49c5a457e95ef31d0fe740a5c5c6e32b88468d654e0427455f97d"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/receiver_hot.png"
-hash = "10277b71bf2ad805142f201ee5a92cffafac7fb19b8f6bf1bc4a4df4ce5f08bc"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/receiver_soft.png"
-hash = "fdbbec1224720323286cde5dcdeda76e18ea379df0cde83eabe7cf02af8456a0"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/rifling_broach.png"
-hash = "6327245ffc76d51b59a558ff74400a4017549ec87481ecb106c74954e3f49c4b"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/spring.png"
-hash = "2193a3b631805fba6986bab49b266bd87ac2a53ab585a27c9bdce8166c76c9a4"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/stock.png"
-hash = "3858942648dba6b9bcedf1d5312d77192251dd8db80d5f6580b78dc7479413ac"
-
-[[files]]
-file = "kubejs/assets/cmp/textures/item/stock_blank.png"
-hash = "ce754bb54086c95570af1799b212368639118e055c7ad58382ede56ae4948af7"
-
-[[files]]
 file = "kubejs/client_scripts/controls.js"
 hash = "d21381963ff595d56e5b00a3ba1cd83c635928e6df8ec09142c6671272015e7b"
 
@@ -502,10 +390,6 @@ file = "kubejs/server_scripts/guns.js"
 hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
 [[files]]
-file = "kubejs/server_scripts/gunsmithing.js"
-hash = "28151a3039ba3a26b2247ca445027d3cb97571cc16f136aa4e7d29141471c78a"
-
-[[files]]
 file = "kubejs/server_scripts/honey_welder.js"
 hash = "9fc551bb10da46bac355b54567f454bd84cd63ef8b13a7752f17641f76cc6c24"
 
@@ -536,10 +420,6 @@ hash = "39cef9bc5594709a97524dbe2d1eebf20c1fade727f94350ee83bae0c3ea1c6e"
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
 hash = "868b48e7f383b12dace04234f89fd22c4ebcf5d5608f2dea2b8be62bb99c17e1"
-
-[[files]]
-file = "kubejs/startup_scripts/gunsmithing_items.js"
-hash = "e8a5962bb470bfcd45134efaac32b1de879aaa48cad17ef4d153e315d8d784c9"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
