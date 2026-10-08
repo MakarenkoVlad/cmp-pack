@@ -14,7 +14,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "createages:andesite_template"
+          "tag": "c:gems/fluix"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "tag": "c:gems/fluix"
+          "item": "createages:andesite_template"
         }
       ],
       "results": [

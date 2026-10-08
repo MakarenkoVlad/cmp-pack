@@ -14,7 +14,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "createages:andesite_template"
+          "item": "create:propeller"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "create:propeller"
+          "item": "createages:andesite_template"
         }
       ],
       "results": [

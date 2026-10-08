@@ -14,7 +14,7 @@
           "item": "ae2:controller"
         },
         {
-          "item": "createages:calculation_template"
+          "item": "ae2:calculation_processor"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "ae2:controller"
         },
         {
-          "item": "ae2:calculation_processor"
+          "item": "createages:calculation_template"
         }
       ],
       "results": [

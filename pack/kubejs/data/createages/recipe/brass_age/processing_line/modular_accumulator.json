@@ -14,7 +14,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createages:brass_template"
+          "item": "createaddition:capacitor"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createaddition:capacitor"
+          "item": "createages:brass_template"
         }
       ],
       "results": [

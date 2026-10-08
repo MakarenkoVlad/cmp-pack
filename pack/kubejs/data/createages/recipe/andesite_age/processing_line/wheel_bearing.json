@@ -14,7 +14,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "createages:andesite_template"
+          "item": "create:large_water_wheel"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "create:large_water_wheel"
+          "item": "createages:andesite_template"
         }
       ],
       "results": [

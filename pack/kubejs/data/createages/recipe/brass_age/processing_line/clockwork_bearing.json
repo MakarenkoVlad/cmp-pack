@@ -14,7 +14,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createages:brass_template"
+          "tag": "minecraft:wooden_slabs"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "tag": "minecraft:wooden_slabs"
+          "item": "createages:brass_template"
         }
       ],
       "results": [

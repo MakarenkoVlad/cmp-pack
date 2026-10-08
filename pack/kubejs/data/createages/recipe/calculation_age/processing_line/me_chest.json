@@ -14,7 +14,7 @@
           "item": "ae2:controller"
         },
         {
-          "item": "createages:calculation_template"
+          "item": "minecraft:chest"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "ae2:controller"
         },
         {
-          "item": "minecraft:chest"
+          "item": "createages:calculation_template"
         }
       ],
       "results": [

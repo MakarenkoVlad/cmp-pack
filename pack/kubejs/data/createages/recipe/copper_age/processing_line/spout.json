@@ -14,7 +14,7 @@
           "item": "createages:copper_machine"
         },
         {
-          "item": "createages:copper_template"
+          "item": "createages:cured_rubber"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:copper_machine"
         },
         {
-          "item": "createages:cured_rubber"
+          "item": "createages:copper_template"
         }
       ],
       "results": [

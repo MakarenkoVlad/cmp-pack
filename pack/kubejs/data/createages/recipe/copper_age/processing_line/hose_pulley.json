@@ -14,7 +14,7 @@
           "item": "createages:copper_machine"
         },
         {
-          "item": "createages:copper_template"
+          "item": "minecraft:dried_kelp_block"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:copper_machine"
         },
         {
-          "item": "minecraft:dried_kelp_block"
+          "item": "createages:copper_template"
         }
       ],
       "results": [

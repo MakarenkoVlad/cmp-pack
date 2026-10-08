@@ -14,7 +14,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createages:brass_template"
+          "item": "minecraft:lava_bucket"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "minecraft:lava_bucket"
+          "item": "createages:brass_template"
         }
       ],
       "results": [

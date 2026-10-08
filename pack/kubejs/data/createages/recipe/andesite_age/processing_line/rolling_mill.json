@@ -14,7 +14,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "createages:andesite_template"
+          "tag": "c:plates/iron"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "tag": "c:plates/iron"
+          "item": "createages:andesite_template"
         }
       ],
       "results": [

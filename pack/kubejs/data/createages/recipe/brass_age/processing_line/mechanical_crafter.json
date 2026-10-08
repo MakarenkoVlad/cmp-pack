@@ -14,7 +14,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createages:brass_template"
+          "item": "minecraft:crafting_table"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "minecraft:crafting_table"
+          "item": "createages:brass_template"
         }
       ],
       "results": [

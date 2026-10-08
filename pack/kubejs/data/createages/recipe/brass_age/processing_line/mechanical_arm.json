@@ -14,7 +14,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "createages:brass_template"
+          "item": "create:andesite_alloy"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:brass_machine"
         },
         {
-          "item": "create:andesite_alloy"
+          "item": "createages:brass_template"
         }
       ],
       "results": [

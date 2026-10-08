@@ -14,7 +14,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "item": "createages:andesite_template"
+          "tag": "minecraft:stone_crafting_materials"
         }
       ],
       "results": [
@@ -30,7 +30,7 @@
           "item": "createages:andesite_machine"
         },
         {
-          "tag": "minecraft:stone_crafting_materials"
+          "item": "createages:andesite_template"
         }
       ],
       "results": [
