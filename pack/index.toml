@@ -597,8 +597,8 @@ file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.13.0.jar"
-hash = "eb8c8c9dc78607d99230f6cca961ad6d253d3bf5c86c277dc992aba8b9089a7c"
+file = "mods/cmpwar-0.15.0.jar"
+hash = "39b804bc81e61db55162468fdf826eaf120d92871f0fff3d985f39cc620c35fe"
 
 [[files]]
 file = "mods/collective.pw.toml"
