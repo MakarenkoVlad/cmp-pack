@@ -346,6 +346,10 @@ file = "kubejs/data/createdeco/recipe/placard.json"
 hash = "ddc3d0dd56b604d914bedbf2f985a2f0b5f7374eac79aad668a8a2cfd7cc154c"
 
 [[files]]
+file = "kubejs/data/createdieselgenerators/recipe/distillation/superheated_crude_oil.json"
+hash = "c84b73e7f47b51e3f1729e9949c7161702a83eb4d2570f56b10758b23871f6be"
+
+[[files]]
 file = "kubejs/data/createimmersivetacz/recipe/ammo/pneumatic_pistol_casing_fill.json"
 hash = "e0a1e45cb888d6287652dfe4987b0bb5b55a77d15f132ba41d2cf4aaede7661b"
 
@@ -399,7 +403,7 @@ hash = "5c848b571dfc7152f20a4418788537b3f02e5dd2665c2854166e0f383b603f96"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
-hash = "395d9584c555384b6a799ea8b86faa754cb4c95bec6479fb7039353850b463aa"
+hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
@@ -416,6 +420,10 @@ hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
 hash = "39cef9bc5594709a97524dbe2d1eebf20c1fade727f94350ee83bae0c3ea1c6e"
+
+[[files]]
+file = "kubejs/server_scripts/thruster_fuels.js"
+hash = "dd9730aeb170bd8b0e5db6cfa0bdd87557eb762b81a28548c1d932993c0a62cc"
 
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
@@ -589,8 +597,8 @@ file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.11.1.jar"
-hash = "9ea917bd3416082f23d2051e5bda27d13d1fced468dfbc848169755b5eca342a"
+file = "mods/cmpwar-0.13.0.jar"
+hash = "eb8c8c9dc78607d99230f6cca961ad6d253d3bf5c86c277dc992aba8b9089a7c"
 
 [[files]]
 file = "mods/collective.pw.toml"

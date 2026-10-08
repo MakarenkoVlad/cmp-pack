@@ -1,6 +1,8 @@
 // Lootr containers (the structures' per-player chests, barrels, pots and suspicious sand) cannot be
-// broken: lootr-common.toml stops players (disable_break) and explosions (blast_immune). Machines break
-// blocks without a player, so they are stopped here, each where it looks before it breaks a block:
+// broken: lootr-common.toml stops players (disable_break) and explosions (blast_immune). The one exception
+// is a team's own claim, where its players break them by hand while sneaking (the cmpwar mod, 0.11.2,
+// compat/LootrClaimBreak); everything below holds inside claims too. Machines break blocks without a
+// player, so they are stopped here, each where it looks before it breaks a block:
 //   - Create drills and saws, placed or on a contraption, and the Offroad borehead drill (Aeronautics)
 //     skip every block in #create:non_breakable (Create's BlockBreakingKineticBlockEntity.isBreakable).
 //   - Create Big Cannons shot (solid, AP and autocannon rounds, shrapnel) asks ProjectileDamageEvent
@@ -15,6 +17,10 @@
 //     chassis) and skips one that it would only take along by glue.
 //   - Aeronautics airships: the physics assembler (Simulated) does the same with #simulated:non_movable
 //     (SimAssemblyContraption.movementAllowed).
+//   - Every other airship route (a Synaxis motor, swivel bearings, add-ons) leaves them where they are
+//     only because cmpwar's move guard reads #simulated:non_movable too (cmpwar 0.12.0, compat/MoveGuard);
+//     it also keeps a ship from being put down on one. A Create contraption put down on one still
+//     replaces it (see cmpwar/README.md).
 const CmpLootrTagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const CmpLootrRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 const CmpLootrId = Java.loadClass('net.minecraft.resources.ResourceLocation')
