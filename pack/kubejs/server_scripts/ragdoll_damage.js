@@ -64,7 +64,9 @@ NativeEvents.onEvent(CmpEventPriority.LOWEST, 'net.neoforged.neoforge.event.leve
         downed.forEach(player => {
             event.getAffectedEntities().remove(player)
             let exposure = 1 - Math.sqrt(player.distanceToSqr(center)) / diameter
-            if (exposure <= 0) return
+            // Written so that NaN also stops here: a blast of size 0 (a gun with an attachment that takes all of
+            // its radius away) gives 0 / 0 for a player at its centre, and NaN damage left a player unkillable.
+            if (!(exposure > 0)) return
             let source = CmpExplosion.getDefaultDamageSource(level, explosion.getDirectSourceEntity())
             player.attack(source, (exposure * exposure + exposure) / 2 * 7 * diameter + 1)
         })

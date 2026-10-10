@@ -166,6 +166,10 @@ file = "kubejs/data/create/recipe/tomato_sauce_filling.json"
 hash = "be6c9b18a6d8b33976bfcd7ba5e2781c259d7fef27683e2ba8ed5a3f84466b1e"
 
 [[files]]
+file = "kubejs/data/create_armorer/data/attachments/muzzle_refit_ap_grenade_data.json"
+hash = "3bb608b5075c18422a4a3195a55053f70646fe656be66ecd502ff1f1438dca8e"
+
+[[files]]
 file = "kubejs/data/create_armorer/data/guns/cannon_40mm_salamander_data.json"
 hash = "8a3e1dafb082102d9c1a602cd7c1efdf53c5aa7e870284b6e74067da0c6ebb77"
 
@@ -407,7 +411,7 @@ hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
-hash = "750eea0163f20b72590e676fc836071116a580d806c05288a6ad7e5ddbc4a78d"
+hash = "f9649030b5351b143b5c12a873643106859c522acd6f4845b85c55f068dc6f5d"
 
 [[files]]
 file = "kubejs/server_scripts/ragdoll_knockdowns.js"
@@ -589,8 +593,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.13.0.jar"
-hash = "6dd39164a3ba93ad2acbc41c80190d9ad6afbebd969089d58564e72327da106a"
+file = "mods/cmpfixes-0.14.0.jar"
+hash = "5f61244190b10b7e1b357dce2985e26785d5f5e5745d08497dddc867718fff97"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
