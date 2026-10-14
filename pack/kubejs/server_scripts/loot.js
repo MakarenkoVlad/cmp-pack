@@ -40,6 +40,14 @@ const BASIL_SEEDS = { name: 'basil_seeds', rolls: [1, 1], chance: 0.15, always: 
     ['farmerspizzeria:basil', 1, 3, 1],  // the item is called Basil Seeds
 ] }
 
+// A filled blaze burner. The Nether is locked and no blazes spawn, so loot is the only source, and the
+// Big Cannons Cannon Welder and Enchantment Industry's blaze machines are crafted from one. Each sky tier
+// rolls it on its own, outside the major jackpots, so the cannon kits there keep their odds: per key chest
+// 3% on the small sky finds, 10% on the big sky structures and 25% in the fortresses.
+const blazeBurner = chance => ({ name: 'blaze_burner', chance: chance, entries: [
+    ['create:blaze_burner', 1, 1, 1],
+] })
+
 const TIERS = {
     ruin_early: {
         // Island-top ruins, camps, towers, houses and taverns reached on foot or by bridging in the first
@@ -546,7 +554,7 @@ const TIERS = {
         // Small sky finds that float in the open-sky corridors at y~100-200, reachable with a first airship:
         // CSA airdrop, Ember's Floating Islands, small ShellBound ships (ship6/7/8; 2/4/10 have no chests),
         // MVS floating islands. Brass entry and airship parts, the first small amounts of Nether/End
-        // material, and a themed pool per islet. Minor jackpots only.
+        // material, and a themed pool per islet. Minor jackpots only, and a blaze burner at 3% per key chest.
         vanilla: 'replace',
         pools: [
             BASIL_SEEDS,
@@ -631,7 +639,8 @@ const TIERS = {
             ] },
         ],
         jackpots: [
-            // minor war-winners only; no crushing wheels, blaze burners, protection blocks or cannon parts below y241
+            // minor war-winners only; no crushing wheels, protection blocks or cannon parts below y241
+            blazeBurner(0.03),
             { name: 'drifter_minor', chance: 0.03, entries: [
                 ['createages:brass_template', 1, 1, 4],
                 ['create:mechanical_crafter', 1, 3, 4],
@@ -694,7 +703,7 @@ const TIERS = {
         // (frozen_whale, whalearena, whaleship; whalelight has no chest; the 96-tall whale is dropped), big
         // ShellBound ships (ship3/5/9 carry one chest each; ship1 has none). Brass-age core, End/Nether
         // material in small stacks, Armorer ammo and gun parts. Single-chest ships get a captain's cache.
-        // Minor jackpots at 5% per key chest, majors at 0.6%.
+        // Minor jackpots at 5% per key chest, majors at 0.6%, a blaze burner at 10%.
         vanilla: 'replace',
         pools: [
             BASIL_SEEDS,
@@ -767,6 +776,7 @@ const TIERS = {
             ] },
         ],
         jackpots: [
+            blazeBurner(0.10),
             // per key chest per player; containers with a primary_chance p roll it at p x 5%
             { name: 'sky_minor', chance: 0.05, entries: [
                 ['createages:brass_machine', 1, 2, 25],  // war-winner (minor): tier-4 claim fuel, 1-2 only
@@ -853,7 +863,8 @@ const TIERS = {
         // The rarest, hardest airship-only targets: When Dungeons Arise heavenly challenger/conqueror/rider
         // (every room) and the Trial Airship's vault chests. The brass age in bulk, the most End/Nether material,
         // and the main source of war-winners: major jackpots (crushing-wheel pair, blaze burner, spare
-        // protection block, cast-iron or steel cannon kit, explosive Armorer guns) and minor ones.
+        // protection block, cast-iron or steel cannon kit, explosive Armorer guns) and minor ones, plus a
+        // blaze burner at 25% per key chest (about 40% per player per fortress).
         vanilla: 'replace',
         pools: [
             BASIL_SEEDS,
@@ -897,6 +908,7 @@ const TIERS = {
             ] },
         ],
         jackpots: [
+            blazeBurner(0.25),
             // per key chest per player. Heavenly treasure chests have primary_chance 0.4 (challenger, 5 chests) or 1 (conqueror/rider, 2 chests), so every fortress is 2 key-chest equivalents: 14% minor per player per fortress
             { name: 'fortress_minor', chance: 0.07, entries: [
                 ['createages:brass_machine', 1, 2, 25],  // war-winner (minor)

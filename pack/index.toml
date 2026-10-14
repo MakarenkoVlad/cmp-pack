@@ -411,7 +411,7 @@ hash = "9fc551bb10da46bac355b54567f454bd84cd63ef8b13a7752f17641f76cc6c24"
 
 [[files]]
 file = "kubejs/server_scripts/loot.js"
-hash = "5c848b571dfc7152f20a4418788537b3f02e5dd2665c2854166e0f383b603f96"
+hash = "b9882a8a0f98ccd268dbccfa663bd2cee49e2d689f2a6d0b2d01d54a83cfb0eb"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
