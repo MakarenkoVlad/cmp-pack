@@ -146,6 +146,14 @@ file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
+file = "kubejs/config/web_server.json"
+hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
+
+[[files]]
+file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json"
+hash = "42f3dd8f314d3722a1b6cd02ada831cc338d8726be9f693035dea0bf8380a762"
+
+[[files]]
 file = "kubejs/data/cmp/end_sea/overworld.json"
 hash = "ff93c45a71499d1f15d79a5ce3b348b4b40fb07d9bf6bbeef3ae4b7a0808252a"
 
@@ -593,16 +601,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.19.0.jar"
-hash = "0fb012210259322d7e7da3ddbbca3046bf4f661c5055c29e813549cb26574bd4"
+file = "mods/cmpfixes-0.20.0.jar"
+hash = "551a055c991b63f39524fc311780c92753d4af964706fba5f1f14c6cbe5554f4"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.15.1.jar"
-hash = "61c503c8127f2c1db1e2cc6c45ecb418ce34877b49441880ec0dec1131df68c2"
+file = "mods/cmpwar-0.16.0.jar"
+hash = "bc215f4c4e2d69e6e05a0dc5f47b66d921109c0f4492c31d9508a0ead154bcca"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -981,7 +989,7 @@ metafile = true
 
 [[files]]
 file = "mods/ferrite-core.pw.toml"
-hash = "ead771197ca804c104207b6507e53bd62eed2e060180958c35d3f9b19623fd17"
+hash = "73360e397134d238ee8fd21d33fd7f9275e9441f74f8f1b6ed92278877c0b9f1"
 metafile = true
 
 [[files]]
@@ -1161,7 +1169,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "f73c7e81a0e396cf3d1f04ba1fca6043121dbdb2cf5e4e207062991a33c965b5"
+hash = "c84140c66f233909b392bd7253ca33c59903ffda51beff558d9a2a4a8c6bc269"
 metafile = true
 
 [[files]]
