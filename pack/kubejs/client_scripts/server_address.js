@@ -1,13 +1,13 @@
-// CMP server address. Bloom Host gives the server a new IP whenever it moves it to another machine
-// (2026-09-27: 104.204.219.211 -> 104.204.219.198). packwiz never overwrites a player's server list
-// (servers.dat is "preserve" in the pack), so an entry saved before a move still points at the dead
-// address. On every launch this moves such entries to the current address, or drops them when the list
-// already has the current one. It does nothing once no old entry is left.
-// The same address is in pack/servers.dat and the title screen (menu/build.py SERVER).
+// CMP server address. It changes whenever the server moves to another machine (2026-09-27 at Bloom Host:
+// 104.204.219.211 -> 104.204.219.198; 2026-10-16, the move to the PebbleHost box: -> 185.83.153.162).
+// packwiz never overwrites a player's server list (servers.dat is "preserve" in the pack), so an entry
+// saved before a move still points at the dead address. On every launch this moves such entries to the
+// current address, or drops them when the list already has the current one. It does nothing once no old
+// entry is left. The same address is in pack/servers.dat and the title screen (menu/build.py SERVER).
 const CmpAddressMinecraft = Java.loadClass('net.minecraft.client.Minecraft')
 const CmpAddressServerList = Java.loadClass('net.minecraft.client.multiplayer.ServerList')
-const CMP_ADDRESS = '104.204.219.198:25565'
-const CMP_OLD_ADDRESSES = ['104.204.219.211', '104.204.219.211:25565']
+const CMP_ADDRESS = '185.83.153.162:25565'
+const CMP_OLD_ADDRESSES = ['104.204.219.211', '104.204.219.211:25565', '104.204.219.198', '104.204.219.198:25565']
 let cmpAddressChecked = false
 
 function cmpAddressIsCurrent(ip) {

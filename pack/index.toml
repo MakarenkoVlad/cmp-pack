@@ -78,7 +78,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "53782a899ac5c5e0c37412a7a9151d56b6edbf92911a0176cd873a3a37895677"
+hash = "0ee936c87e2d916d17dd85bca41997095f37e018c9cf56ab33f105592b5b9d52"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -139,7 +139,7 @@ hash = "a7ae310ece726b71d4477e2c97783aa958d4e68318022aa15cc5abcd908395ee"
 
 [[files]]
 file = "kubejs/client_scripts/server_address.js"
-hash = "682919ce12056e28d221373e60ee56801964fb33e9e479477fcea830a7547efe"
+hash = "ed82de888eeb08b9fcbeaa55b09a712b75624ac6c07a6e2ddca26a6abb643c23"
 
 [[files]]
 file = "kubejs/client_scripts/shaders.js"
@@ -1467,7 +1467,7 @@ metafile = true
 
 [[files]]
 file = "servers.dat"
-hash = "6e57bbf542f0e59bd23d59b585c42a3423114ab6f8e9bf51974874bdc503429f"
+hash = "db60bf67ad5ab1d223067c6d7d62e30931f2866b5d8d8353cb33bb5ab811c0cc"
 preserve = true
 
 [[files]]
