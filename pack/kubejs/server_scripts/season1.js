@@ -12,4 +12,7 @@ ServerEvents.loaded(event => {
     // Players cannot forceload chunks (cmpwar refuses Open Parties and Claims forceloads), so they
     // cannot keep an airship loaded with /ssrd forceload either.
     event.server.runCommandSilent('gamerule ssrdForceloadLimit 0')
+    // Airships are sent to a player out to 64 chunks (1 km), not SSRD's default 128 (2 km). To change it back,
+    // put 128 here: the number is kept in the world, so deleting the line keeps 64.
+    event.server.runCommandSilent('gamerule ssrdMaxRenderDistance 64')
 })

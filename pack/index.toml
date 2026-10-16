@@ -427,7 +427,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "0ae8be5ce0e79728261d50367cc749513983e562a7ec3b65fb1ecd4ae9217534"
+hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
@@ -601,16 +601,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.20.0.jar"
-hash = "551a055c991b63f39524fc311780c92753d4af964706fba5f1f14c6cbe5554f4"
+file = "mods/cmpfixes-0.22.0.jar"
+hash = "16fc0672b3f6fe364bfdeca37bd4f68f38ce3f1eac832245c9057987cb7c377e"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.16.0.jar"
-hash = "bc215f4c4e2d69e6e05a0dc5f47b66d921109c0f4492c31d9508a0ead154bcca"
+file = "mods/cmpwar-0.17.0.jar"
+hash = "0f9c6f1532986565ffa38b8c70b1a344f3d4202a0d921d3e83b0b5cdf4f29b53"
 
 [[files]]
 file = "mods/collective.pw.toml"
