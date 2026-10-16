@@ -601,16 +601,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.22.0.jar"
-hash = "16fc0672b3f6fe364bfdeca37bd4f68f38ce3f1eac832245c9057987cb7c377e"
+file = "mods/cmpfixes-0.23.0.jar"
+hash = "c9ec4b0ff3864e56593e2c4baf4d30f4cf78ae907b673b2516035c2a54b50414"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.17.0.jar"
-hash = "0f9c6f1532986565ffa38b8c70b1a344f3d4202a0d921d3e83b0b5cdf4f29b53"
+file = "mods/cmpwar-0.17.1.jar"
+hash = "d09991ac3649f46521a8b8f8f9a25eedcfe773d1bce2d3dc6a3f21b3dc9a7faf"
 
 [[files]]
 file = "mods/collective.pw.toml"
