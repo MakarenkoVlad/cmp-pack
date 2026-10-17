@@ -430,6 +430,10 @@ file = "kubejs/server_scripts/season1.js"
 hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
 
 [[files]]
+file = "kubejs/server_scripts/smithing_templates.js"
+hash = "ddb74afee75886c010f7cb47900353c628bcf1c4e7bbdf688f86f999273f0bf2"
+
+[[files]]
 file = "kubejs/server_scripts/starter_kit.js"
 hash = "39cef9bc5594709a97524dbe2d1eebf20c1fade727f94350ee83bae0c3ea1c6e"
 
