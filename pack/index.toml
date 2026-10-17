@@ -601,8 +601,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.23.0.jar"
-hash = "c9ec4b0ff3864e56593e2c4baf4d30f4cf78ae907b673b2516035c2a54b50414"
+file = "mods/cmpfixes-0.24.0.jar"
+hash = "0d0958ddea4edc996fa281c502693d670044c99942b28c04cc24addbfe08c8d2"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1253,8 +1253,8 @@ hash = "84cb0dcad9ac46d22adba4fb7924951affa6ac5e46027a3b25fa9a0db8d91b2b"
 metafile = true
 
 [[files]]
-file = "mods/peripheralnames-1.0.1.jar"
-hash = "d31483b78a049bdc0823fb76959dd9a83a347c7b103760ecc0c338c4c34e57aa"
+file = "mods/peripheralnames-1.1.0.jar"
+hash = "39e6939d814d576b7ef1c685ab62d9eff07ceeb571af29fea1abda206d1b4fbe"
 
 [[files]]
 file = "mods/ping-original.pw.toml"
@@ -1290,6 +1290,10 @@ metafile = true
 file = "mods/rhino.pw.toml"
 hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
+
+[[files]]
+file = "mods/rocketpilot-3.1.0.jar"
+hash = "6057cb7e4a4168882996fb044154869236dd1dcb1f28db17e3f476f0da51f540"
 
 [[files]]
 file = "mods/rpl.pw.toml"
