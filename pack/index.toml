@@ -561,6 +561,10 @@ hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
 metafile = true
 
 [[files]]
+file = "mods/cc_schematics-1.2.4-serverfix.jar"
+hash = "11b2a3898c04f42e5a34c34622e6241a138f1bca5c9fd70c156be657ea8edd0b"
+
+[[files]]
 file = "mods/cccbridge.pw.toml"
 hash = "0194091946d249681e33dd32a927122e844d4093c2f14165f2f99f92e028af11"
 metafile = true
@@ -605,16 +609,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.24.0.jar"
-hash = "0d0958ddea4edc996fa281c502693d670044c99942b28c04cc24addbfe08c8d2"
+file = "mods/cmpfixes-0.27.0.jar"
+hash = "5e053918eb752c9bc5a1ce43eb7cf000a30fa130d7aa645636fbb7c44ed6b17c"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.17.1.jar"
-hash = "d09991ac3649f46521a8b8f8f9a25eedcfe773d1bce2d3dc6a3f21b3dc9a7faf"
+file = "mods/cmpwar-0.19.0.jar"
+hash = "e1fe33529ae0084e46b4e1bb431904da02230902f4605dc7e96ff602d48ad933"
 
 [[files]]
 file = "mods/collective.pw.toml"
