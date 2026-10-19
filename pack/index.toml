@@ -126,6 +126,10 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
+file = "kubejs/client_scripts/coin_tooltip.js"
+hash = "06440515e14be4ce6a2094df90e88981b4829624bc770c7c128cece0e3e6de48"
+
+[[files]]
 file = "kubejs/client_scripts/controls.js"
 hash = "d21381963ff595d56e5b00a3ba1cd83c635928e6df8ec09142c6671272015e7b"
 
@@ -402,6 +406,10 @@ file = "kubejs/server_scripts/dupe_guards.js"
 hash = "5badf04ecae8636db530c5220d10f6c2cc6464beb7ff2c86e14b27353279bd43"
 
 [[files]]
+file = "kubejs/server_scripts/end_crystals.js"
+hash = "7f6a51b08b4da18a8776f6e7ed606ee0c25b36f3a4b14b91ec25713d509e6934"
+
+[[files]]
 file = "kubejs/server_scripts/guns.js"
 hash = "503876a914c2d95f1b4e95c4b8b806fa460aa655ecfae808ce0fd27bfde3f2be"
 
@@ -416,6 +424,10 @@ hash = "b9882a8a0f98ccd268dbccfa663bd2cee49e2d689f2a6d0b2d01d54a83cfb0eb"
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
 hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
+
+[[files]]
+file = "kubejs/server_scripts/numismatics.js"
+hash = "32040919e89c5aeb7b0e1fd1984c4a78ca917cfd259c78429e519ace36c392bb"
 
 [[files]]
 file = "kubejs/server_scripts/radar_fire_arc.js"
@@ -434,8 +446,12 @@ file = "kubejs/server_scripts/season1.js"
 hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
 
 [[files]]
+file = "kubejs/server_scripts/shop.js"
+hash = "f37f6ff0df3af5cdadb7dd6d7cae8258fd327ef353c7b0d09c4b3ef183968c21"
+
+[[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
-hash = "ddb74afee75886c010f7cb47900353c628bcf1c4e7bbdf688f86f999273f0bf2"
+hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
@@ -621,8 +637,8 @@ file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.19.2.jar"
-hash = "2c5e2c1470d1c887985e6a5757da42d0135d197777e419c1c568857edad56f64"
+file = "mods/cmpwar-0.21.0.jar"
+hash = "89b4e1910b62f439935f7f648398ab28fbb6dc8c798e7c88d822f9f53720b1ae"
 
 [[files]]
 file = "mods/collective.pw.toml"
