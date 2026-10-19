@@ -418,6 +418,10 @@ file = "kubejs/server_scripts/lootr_protection.js"
 hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
+file = "kubejs/server_scripts/radar_fire_arc.js"
+hash = "711b14c9c98ed24aec67bc72be5fee1e583afcf8d97407cf3a429f5a45a3286a"
+
+[[files]]
 file = "kubejs/server_scripts/ragdoll_damage.js"
 hash = "f9649030b5351b143b5c12a873643106859c522acd6f4845b85c55f068dc6f5d"
 
@@ -609,16 +613,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.27.0.jar"
-hash = "5e053918eb752c9bc5a1ce43eb7cf000a30fa130d7aa645636fbb7c44ed6b17c"
+file = "mods/cmpfixes-0.28.0.jar"
+hash = "a4dfef58b4c1aaefb664cd10722cf16797f079ae772d6860616b3d5031bbfb2d"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpwar-0.19.1.jar"
-hash = "dedbc3659c19ff681e92b25f77b9e2d9ec759aed87a54d17b900d8d085f74ed9"
+file = "mods/cmpwar-0.19.2.jar"
+hash = "2c5e2c1470d1c887985e6a5757da42d0135d197777e419c1c568857edad56f64"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -833,6 +837,11 @@ metafile = true
 [[files]]
 file = "mods/create-propulsion-simulated.pw.toml"
 hash = "f82cdd570cb4f6bd9b87a6a30c5e5ecc23125dfcecc715d4950a17301de8c58a"
+metafile = true
+
+[[files]]
+file = "mods/create-radar-fire-arc.pw.toml"
+hash = "40b2272abd6a0914ce2fa78836e9ea841a2d82c02a237100afd0297f8992ab6b"
 metafile = true
 
 [[files]]
