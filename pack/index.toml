@@ -447,7 +447,7 @@ hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "f37f6ff0df3af5cdadb7dd6d7cae8258fd327ef353c7b0d09c4b3ef183968c21"
+hash = "b66bf0ebf3781d28bab636e542d7c44c04f6e49c9508fc5b21775017a7fa141a"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -629,12 +629,16 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.28.0.jar"
-hash = "a4dfef58b4c1aaefb664cd10722cf16797f079ae772d6860616b3d5031bbfb2d"
+file = "mods/cmpfixes-0.29.0.jar"
+hash = "edadb715b9e81b46123890987226b53be0741cebf84629b966fe9b0935b73d18"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
+
+[[files]]
+file = "mods/cmpshop-0.1.0.jar"
+hash = "444ccef68e1663788081a2b8ea9ac756cd1863281268f48e06ea390cbdbabf18"
 
 [[files]]
 file = "mods/cmpwar-0.21.0.jar"

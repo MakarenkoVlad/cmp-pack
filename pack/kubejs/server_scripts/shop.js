@@ -2,7 +2,9 @@
 // crates; numismatics.js takes away every recipe, bank and vendor), and the shop sells the items that are not in
 // the crates any more for them. It never buys anything back: every coin it takes is destroyed.
 //
-//   /shop                     the price list (click an item to fill in the buy command) and your coins
+//   /shop                     the shop screen (the cmpshop mod: tabs, search, prices, your coins, the treasury;
+//                             its buttons run the commands below, so every rule here holds), else the list
+//   /shop list                the price list in chat (click an item to fill in the buy command) and your coins
 //   /shop buy <item> [bundles] that many of the item's bundle (default 1, no cap): froglights come 8 to a
 //                             bundle, so /shop buy ochre_froglight 3 is 24 Ochre Froglight for 6 Cog
 //   /shop change cog          1 Cog into 4 Sprockets, and /shop change sprocket the other way round
@@ -57,7 +59,17 @@ const CMP_SHOP_COINS = [
     ['numismatics:spur', 1, 'Spur'],
 ]
 
-// What the shop sells: [key, item, how many in one bundle, price of a bundle in Cog]. Never sold: Ages fuel,
+// The tabs of the /shop screen, in order: [id, name]. Every offer below names one of them.
+const CMP_SHOP_CATEGORIES = [
+    ['rare', 'Rare'],
+    ['templates', 'Templates'],
+    ['trims', 'Trims'],
+    ['discs', 'Discs'],
+    ['patterns', 'Patterns'],
+    ['froglights', 'Froglights'],
+]
+
+// What the shop sells: [key, item, how many in one bundle, price of a bundle in Cog, tab]. Never sold: Ages fuel,
 // diesel, crude oil and gasoline, cannon parts and ammo, netherite, nethersteel and ancient debris, elytras,
 // totems, end crystals (end_crystals.js also takes away their recipe), beacons, spider eyes and villager eggs.
 // The owner cut the list on 2026-10-19 to the crate items, trims, discs, banner patterns and froglights: no
@@ -68,25 +80,25 @@ const CMP_SHOP_COINS = [
 // fortresses and snout from bastions. The rest are 4 Cog, wayfinder (trail ruins) too. Trims only change how
 // armour looks, so the vanilla recipes that copy a template stay.
 const CMP_SHOP_OFFERS_ALL = [
-    ['dragon_head', 'minecraft:dragon_head', 1, 60],
-    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 32],
-    ['blaze_template', 'create_dragons_plus:blaze_upgrade_smithing_template', 1, 32],
-    ['god_apple', 'minecraft:enchanted_golden_apple', 1, 20],
-    ['blaze_burner', 'create:blaze_burner', 1, 16], // the filled one (create:empty_blaze_burner is empty)
-    ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12],
-    ['levitite', 'aeronautics:levitite', 8, 12],
+    ['dragon_head', 'minecraft:dragon_head', 1, 60, 'rare'],
+    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 32, 'templates'],
+    ['blaze_template', 'create_dragons_plus:blaze_upgrade_smithing_template', 1, 32, 'templates'],
+    ['god_apple', 'minecraft:enchanted_golden_apple', 1, 20, 'rare'],
+    ['blaze_burner', 'create:blaze_burner', 1, 16, 'rare'], // the filled one (create:empty_blaze_burner is empty)
+    ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12, 'rare'],
+    ['levitite', 'aeronautics:levitite', 8, 12, 'rare'],
 ].concat(
     ['silence', 'ward', 'eye', 'vex', 'spire', 'rib', 'snout']
-        .map(t => [t + '_trim', 'minecraft:' + t + '_armor_trim_smithing_template', 1, 8]),
+        .map(t => [t + '_trim', 'minecraft:' + t + '_armor_trim_smithing_template', 1, 8, 'trims']),
     ['wayfinder', 'sentry', 'dune', 'coast', 'wild', 'tide', 'shaper', 'raiser', 'host', 'flow', 'bolt']
-        .map(t => [t + '_trim', 'minecraft:' + t + '_armor_trim_smithing_template', 1, 4]),
+        .map(t => [t + '_trim', 'minecraft:' + t + '_armor_trim_smithing_template', 1, 4, 'trims']),
     ['13', 'cat', 'blocks', 'chirp', 'far', 'mall', 'mellohi', 'stal', 'strad', 'ward', '11', 'wait', 'otherside',
         '5', 'pigstep', 'relic', 'creator', 'creator_music_box', 'precipice']
-        .map(d => ['disc_' + d, 'minecraft:music_disc_' + d, 1, 2]),
+        .map(d => ['disc_' + d, 'minecraft:music_disc_' + d, 1, 2, 'discs']),
     ['flower', 'creeper', 'skull', 'mojang', 'globe', 'piglin', 'flow', 'guster']
-        .map(p => [p + '_pattern', 'minecraft:' + p + '_banner_pattern', 1, 2]),
+        .map(p => [p + '_pattern', 'minecraft:' + p + '_banner_pattern', 1, 2, 'patterns']),
     ['ochre', 'verdant', 'pearlescent']
-        .map(f => [f + '_froglight', 'minecraft:' + f + '_froglight', 8, 2])
+        .map(f => [f + '_froglight', 'minecraft:' + f + '_froglight', 8, 2, 'froglights'])
 )
 
 const $CmpShopStack = Java.loadClass('net.minecraft.world.item.ItemStack')
@@ -108,6 +120,13 @@ const $CmpShopPriority = Java.loadClass('net.neoforged.bus.api.EventPriority')
 const $CmpShopTeams = Java.loadClass('dev.ftb.mods.ftbteams.api.FTBTeamsAPI')
 const $CmpShopStringArg = Java.loadClass('com.mojang.brigadier.arguments.StringArgumentType')
 const $CmpShopIntArg = Java.loadClass('com.mojang.brigadier.arguments.IntegerArgumentType')
+// The /shop screen (the cmpshop mod, in the pack on both sides). Without it every player gets the chat list.
+let $CmpShopNet = null
+try {
+    $CmpShopNet = Java.loadClass('dev.cmp.shop.ShopNet')
+} catch (err) {
+    console.warn('[shop] no shop screen, the cmpshop mod is not loaded: ' + err)
+}
 
 // The offers whose item is in the game, by key; an id that is not is left out and named in the log.
 const CMP_SHOP_OFFERS = []
@@ -117,7 +136,7 @@ CMP_SHOP_OFFERS_ALL.forEach(entry => {
         console.warn('[shop] no such item, left out of the shop: ' + entry[1])
         return
     }
-    let offer = { key: entry[0], id: entry[1], count: entry[2], price: entry[3] }
+    let offer = { key: entry[0], id: entry[1], count: entry[2], price: entry[3], cat: entry[4] }
     CMP_SHOP_OFFERS.push(offer)
     CMP_SHOP_BY_KEY[offer.key] = offer
 })
@@ -421,11 +440,16 @@ function cmpShopItemName(offer) {
 
 // KubeJS adds sendSuccess(Component, boolean) to the command source; Rhino would turn a supplier function into the
 // text of a Component, so the Component goes in as it is.
+// Both also keep what they said last, for the /shop screen (cmpShopAct), where chat is hidden behind it.
+let CMP_SHOP_LAST = null
 function cmpShopSay(source, text) {
-    source.sendSuccess(typeof text == 'string' ? Text.of(text) : text, false)
+    let component = typeof text == 'string' ? Text.of(text) : text
+    CMP_SHOP_LAST = { ok: true, text: String(component.getString()) }
+    source.sendSuccess(component, false)
 }
 
 function cmpShopFail(source, text) {
+    CMP_SHOP_LAST = { ok: false, text: String(text) }
     source.sendFailure(Text.of(text))
     return 0
 }
@@ -446,17 +470,17 @@ function cmpShopEntry(offer) {
 function cmpShopTrader(source) {
     const player = source.getPlayer()
     if (player == null) {
-        source.sendFailure(Text.of('Only players can trade in the shop.'))
+        cmpShopFail(source, 'Only players can trade in the shop.')
         return null
     }
     if (!cmpShopOpen(source.getServer())) {
-        source.sendFailure(Text.of('The shop is closed right now.'))
+        cmpShopFail(source, 'The shop is closed right now.')
         return null
     }
     if (!player.isAlive()) return null
     const wait = cmpShopHurtWait(player)
     if (wait > 0) {
-        source.sendFailure(Text.of('You took damage in the last 30 seconds. Try again in ' + Math.ceil(wait / 1000) + 's.'))
+        cmpShopFail(source, 'You took damage in the last 30 seconds. Try again in ' + Math.ceil(wait / 1000) + 's.')
         return null
     }
     return player
@@ -485,7 +509,7 @@ function cmpShopList(source) {
             cmpShopSay(source, line)
         }
     })
-    cmpShopSay(source, Text.gray('/shop buy <item> [bundles], /shop change cog or sprocket, /shop treasury <cog>, /shop top'))
+    cmpShopSay(source, Text.gray('/shop buy <item> [bundles], /shop change cog or sprocket, /shop treasury <cog>, /shop top, /shop list'))
     const player = source.getPlayer()
     if (player != null) cmpShopSay(source, Text.yellow('You have ' + cmpShopCog(cmpShopWallet(player).total) + ' in your inventory.'))
     return 1
@@ -495,7 +519,7 @@ function cmpShopBuy(source, key, bundles) {
     const player = cmpShopTrader(source)
     if (player == null) return 0
     const offer = cmpShopOffer(key)
-    if (offer == null) return cmpShopFail(source, 'The shop has nothing called "' + key + '". Type /shop to see the list.')
+    if (offer == null) return cmpShopFail(source, 'The shop has nothing called "' + key + '". Type /shop list to see the list.')
     const server = source.getServer()
     const cog = offer.price * bundles
     const price = cog * CMP_SHOP_COG
@@ -609,11 +633,12 @@ function cmpShopEgg(server, player, team) {
     console.info('[shop] saved the world after the dragon egg: ' + saved)
 }
 
-function cmpShopTop(source) {
-    const server = source.getServer()
+// Every treasury as [name, cog, key], the fullest first. Reads only: no entry is made for anyone.
+function cmpShopTopRows(server) {
     const data = cmpShopData(server)
-    const treasury = cmpShopSub(data, 'treasury')
     const rows = []
+    if (!data.contains('treasury')) return rows
+    const treasury = data.getCompound('treasury')
     const keys = treasury.getAllKeys().toArray()
     for (let i = 0; i < keys.length; i++) {
         let key = String(keys[i])
@@ -624,9 +649,16 @@ function cmpShopTop(source) {
             let found = $CmpShopTeams.api().getManager().getTeamByID($CmpShopUUID.fromString(key))
             if (found.isPresent()) name = String(found.get().getName().getString())
         } catch (err) {}
-        rows.push([name, entry.getInt('cog')])
+        rows.push([name, entry.getInt('cog'), key])
     }
     rows.sort((a, b) => b[1] - a[1])
+    return rows
+}
+
+function cmpShopTop(source) {
+    const server = source.getServer()
+    const data = cmpShopData(server)
+    const rows = cmpShopTopRows(server)
     if (data.contains('egg')) {
         let egg = data.getCompound('egg')
         cmpShopSay(source, Text.gold(egg.getString('name') + " won this season's dragon egg (" + egg.getString('player') + ' put in the last Cog).'))
@@ -640,10 +672,92 @@ function cmpShopTop(source) {
 
 function cmpShopSwitch(source, open) {
     if (!source.hasPermission(2)) return cmpShopFail(source, 'Only ops can close or open the shop.')
-    cmpShopSetOpen(source.getServer(), open)
+    const server = source.getServer()
+    cmpShopSetOpen(server, open)
     console.info('[shop] ' + (open ? 'opened' : 'closed') + ' by ' + source.getTextName())
     cmpShopSay(source, open ? 'The shop is open.' : 'The shop is closed. /shop on opens it again.')
+    // Every open screen shows the switch at once (a screen that is not open ignores this).
+    if ($CmpShopNet != null) {
+        let players = server.getPlayerList().getPlayers()
+        let self = source.getPlayer()
+        for (let i = 0; i < players.size(); i++) {
+            let p = players.get(i)
+            if (self != null && cmpShopName(p) == cmpShopName(self)) continue // cmpShopAct refreshes this one
+            try {
+                $CmpShopNet.send(p, cmpShopSnapshot(p, 'update', null))
+            } catch (err) {
+                console.error('[shop] could not refresh the shop screen of ' + cmpShopName(p) + ': ' + err)
+            }
+        }
+    }
     return 1
+}
+
+// ---- the /shop screen ----------------------------------------------------------------------------------
+
+// Text for the snapshot's JSON, as a JavaScript string. KubeJS's JSON.stringify is Gson's whenever Gson is there
+// (always, in Minecraft) and escapes backslashes and control characters itself, so a party called ¯\_(ツ)_/¯
+// reads back as it is; escaping here as well would double every backslash on the screen.
+function cmpShopJsonText(text) {
+    return String(text)
+}
+
+// What the screen shows, as JSON: the tabs and offers, the switch, the player's party and its treasury (read
+// only, so looking makes no entry), the egg, the top ten, how long until the player may trade, and what the last
+// command said (null when it said nothing, as for a dead player). The screen counts coins itself, from the
+// player's own inventory. mode: open (opens the screen) or update (refreshes it if it is open).
+function cmpShopSnapshot(player, mode, result) {
+    const server = player.getServer()
+    const data = cmpShopData(server)
+    const team = cmpShopTeam(player)
+    let cog = 0
+    if (data.contains('treasury') && data.getCompound('treasury').contains(team.key)) {
+        cog = data.getCompound('treasury').getCompound(team.key).getInt('cog')
+    }
+    let egg = null
+    if (data.contains('egg')) {
+        let tag = data.getCompound('egg')
+        egg = {
+            name: cmpShopJsonText(tag.getString('name')),
+            player: cmpShopJsonText(tag.getString('player')),
+            ours: String(tag.getString('team')) == team.key,
+        }
+    }
+    return JSON.stringify({
+        v: 1,
+        mode: mode,
+        open: cmpShopOpen(server),
+        goal: CMP_SHOP_EGG_GOAL,
+        cats: CMP_SHOP_CATEGORIES.map(c => ({ id: c[0], name: cmpShopJsonText(c[1]) })),
+        offers: CMP_SHOP_OFFERS.map(o => ({ key: o.key, item: o.id, count: o.count, price: o.price, cat: o.cat, name: cmpShopJsonText(cmpShopItemName(o)) })),
+        hurt: Math.max(0, Math.ceil(cmpShopHurtWait(player) / 1000)),
+        team: { name: cmpShopJsonText(team.name), party: team.party },
+        treasury: cog,
+        egg: egg,
+        top: cmpShopTopRows(server).slice(0, 10).map(r => ({ name: cmpShopJsonText(r[0]), cog: r[1], ours: r[2] == team.key })),
+        result: result == null ? null : { ok: result.ok, text: cmpShopJsonText(result.text) },
+    })
+}
+
+// Sends the screen to the player behind the command. False for the console, or a player without the screen.
+function cmpShopSend(source, mode, result) {
+    const player = source.getPlayer()
+    if (player == null || $CmpShopNet == null) return false
+    try {
+        return $CmpShopNet.send(player, cmpShopSnapshot(player, mode, result)) == true
+    } catch (err) {
+        console.error('[shop] could not send the shop screen to ' + cmpShopName(player) + ': ' + err)
+        return false
+    }
+}
+
+// Runs a command and refreshes the player's screen with what came of it (the chat line too, as always). A screen
+// that is not open ignores the refresh.
+function cmpShopAct(source, command) {
+    CMP_SHOP_LAST = null
+    const result = command()
+    cmpShopSend(source, 'update', CMP_SHOP_LAST)
+    return result
 }
 
 ServerEvents.loaded(event => {
@@ -662,19 +776,21 @@ ServerEvents.commandRegistry(event => {
         return builder.buildFuture()
     }
     event.register(Commands.literal('shop')
-        .executes(ctx => cmpShopList(ctx.source))
+        // the screen for a player who has it, else the chat list
+        .executes(ctx => (cmpShopSend(ctx.source, 'open', null) ? 1 : cmpShopList(ctx.source)))
+        .then(Commands.literal('list').executes(ctx => cmpShopList(ctx.source)))
         .then(Commands.literal('buy')
             .then(Commands.argument('item', $CmpShopStringArg.word()).suggests(keys)
-                .executes(ctx => cmpShopBuy(ctx.source, String($CmpShopStringArg.getString(ctx, 'item')), 1))
+                .executes(ctx => cmpShopAct(ctx.source, () => cmpShopBuy(ctx.source, String($CmpShopStringArg.getString(ctx, 'item')), 1)))
                 .then(Commands.argument('bundles', $CmpShopIntArg.integer(1))
-                    .executes(ctx => cmpShopBuy(ctx.source, String($CmpShopStringArg.getString(ctx, 'item')), $CmpShopIntArg.getInteger(ctx, 'bundles'))))))
+                    .executes(ctx => cmpShopAct(ctx.source, () => cmpShopBuy(ctx.source, String($CmpShopStringArg.getString(ctx, 'item')), $CmpShopIntArg.getInteger(ctx, 'bundles')))))))
         .then(Commands.literal('change')
-            .then(Commands.literal('cog').executes(ctx => cmpShopChange(ctx.source, 'cog')))
-            .then(Commands.literal('sprocket').executes(ctx => cmpShopChange(ctx.source, 'sprocket'))))
+            .then(Commands.literal('cog').executes(ctx => cmpShopAct(ctx.source, () => cmpShopChange(ctx.source, 'cog'))))
+            .then(Commands.literal('sprocket').executes(ctx => cmpShopAct(ctx.source, () => cmpShopChange(ctx.source, 'sprocket')))))
         .then(Commands.literal('treasury')
             .then(Commands.argument('cog', $CmpShopIntArg.integer(1))
-                .executes(ctx => cmpShopDeposit(ctx.source, $CmpShopIntArg.getInteger(ctx, 'cog')))))
+                .executes(ctx => cmpShopAct(ctx.source, () => cmpShopDeposit(ctx.source, $CmpShopIntArg.getInteger(ctx, 'cog'))))))
         .then(Commands.literal('top').executes(ctx => cmpShopTop(ctx.source)))
-        .then(Commands.literal('off').executes(ctx => cmpShopSwitch(ctx.source, false)))
-        .then(Commands.literal('on').executes(ctx => cmpShopSwitch(ctx.source, true))))
+        .then(Commands.literal('off').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, false))))
+        .then(Commands.literal('on').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, true)))))
 })
