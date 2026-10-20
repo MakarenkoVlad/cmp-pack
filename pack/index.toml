@@ -14,7 +14,7 @@ hash = "ef2318cbc363eb6fce4fb69e5cd968f41d6cb60ec9a6e8111d78257074909bed"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "508777d7195f8037f78e09041a885ae011855daf161c13e69a984a788763f65d"
+hash = "4316c525b98b759121f95277ed20261bfd890a28945b3984831cef1ddc7ac118"
 
 [[files]]
 file = "config/create_structures_arise-server.toml"
