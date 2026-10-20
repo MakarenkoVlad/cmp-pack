@@ -1,4 +1,5 @@
-// /kit: 2 sheep spawn eggs, for wool (hot air balloon envelopes), since most islands have no sheep, and a
+// /kit: 2 sheep spawn eggs, for wool (hot air balloon envelopes), and 2 chicken spawn eggs, for eggs and
+// feathers, since most islands have neither, and a
 // protection block, so nobody has to craft one before they can claim land. A team can only have one block
 // placed, so the extra ones are spares (a team whose block is captured can put a new one down at once).
 // Every player can use it once every 24 hours, so losing your sheep (off the island edge, or into the
@@ -8,7 +9,7 @@
 const CMP_KIT_LAST_USE = 'cmp_kit_last_use' // Date.now() of the last /kit
 const CMP_KIT_OLD_USES = 'cmp_kit_uses' // the old "twice ever" counter, dropped at the next /kit
 const CMP_KIT_COOLDOWN = 24 * 60 * 60 * 1000
-const CMP_KIT_ITEMS = [['minecraft:sheep_spawn_egg', 2], ['cmpwar:protection_block', 1]]
+const CMP_KIT_ITEMS = [['minecraft:sheep_spawn_egg', 2], ['minecraft:chicken_spawn_egg', 2], ['cmpwar:protection_block', 1]]
 const CmpKitStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 
 // Room in the 36 main slots, where give() puts things, for all the stacks at once; whatever does not
@@ -67,7 +68,8 @@ ServerEvents.commandRegistry(event => {
         data.putLong(CMP_KIT_LAST_USE, now)
         data.remove(CMP_KIT_OLD_USES)
         stacks.forEach(stack => player.give(stack))
-        player.tell(Text.gold("Here's 2 sheep spawn eggs and a protection block. Breed the sheep with wheat for wool, "
+        player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs and a protection block. Breed the sheep with wheat for wool "
+            + 'and the chickens with seeds for eggs and feathers, '
             + 'and place the block to claim land for your team (each team can have one placed). '
             + 'You can use /kit again in 24 hours.'))
         return 1

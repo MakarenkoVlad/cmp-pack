@@ -163,7 +163,7 @@ hash = "42f3dd8f314d3722a1b6cd02ada831cc338d8726be9f693035dea0bf8380a762"
 
 [[files]]
 file = "kubejs/data/cmp/block_armor/tags/armor/ancient_debris.json"
-hash = "c855c44c9225128f2c41941c89251763456c5c6fa43936fcc84a9e42f7c82bee"
+hash = "d527c8061a1bcbb8dfd20b2017b8986d2d01b9f7230d96af10c47bfb7245f407"
 
 [[files]]
 file = "kubejs/data/cmp/block_armor/tags/armor/iron.json"
@@ -531,7 +531,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "39cef9bc5594709a97524dbe2d1eebf20c1fade727f94350ee83bae0c3ea1c6e"
+hash = "50fa0a5eabc79b71ffee7db65ae756004b79796c53e016711ca884e2164b26ad"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
