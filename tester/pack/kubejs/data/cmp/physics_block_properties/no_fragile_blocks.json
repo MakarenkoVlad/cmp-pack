@@ -1,0 +1,7 @@
+{
+  "selector": "#sable:fragile",
+  "priority": 100000,
+  "properties": {
+    "sable:fragile": false
+  }
+}

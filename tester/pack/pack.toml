@@ -1,0 +1,13 @@
+name = "CMP Tester Pack"
+author = "MakarenkoVlad"
+version = "main-1314c4f9febd"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "dc1dfb177051fe913c9dcb4616ef9f2327e5fde35d400b8a97572b16d44995c6"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.251"

@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "farmersdelight:wheat_dough"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "farmerspizzeria:tomato_sauce"
+    }
+  ],
+  "results": [
+    {
+      "id": "farmerspizzeria:dough_tomato_sauce"
+    }
+  ]
+}

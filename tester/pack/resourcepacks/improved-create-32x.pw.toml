@@ -1,0 +1,13 @@
+name = "Improved Create 32x"
+filename = "[1.21.1_ver_0.06]_Improved_Create_32x.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZyLGK5YD/versions/oqS2V9rP/%5B1.21.1_ver_0.06%5D_Improved_Create_32x.zip"
+hash-format = "sha512"
+hash = "3d10f1b0db7c4d1daecbf9364007edd8508afe445b2f0981a43e71e17e4769fc405e445c6b6e238aa2b7262c61bd83367a8f75ec5449fff362a173f20c0854e5"
+
+[update]
+[update.modrinth]
+mod-id = "ZyLGK5YD"
+version = "oqS2V9rP"

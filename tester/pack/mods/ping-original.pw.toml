@@ -1,0 +1,13 @@
+name = "Ping"
+filename = "Ping-neoforge-1.21.1-1.12.4.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/Qaq8E11f/versions/Kx6ZdsSe/Ping-neoforge-1.21.1-1.12.4.jar"
+hash-format = "sha512"
+hash = "ab450bde3287d3a36bc6bf937138c5fa74daa1fe7f3fde0b5e1372f7fc43a4088c03fff5784e203d8c04a15f8164d71fa89fdaf51a151b3de78a41287c033e09"
+
+[update]
+[update.modrinth]
+mod-id = "Qaq8E11f"
+version = "Kx6ZdsSe"

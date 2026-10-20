@@ -1,0 +1,13 @@
+name = "CreateEsque:Synaxis"
+filename = "CreateEsque-Synaxis.zip"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/GdNUfCnR/versions/Q5jyOiV9/CreateEsque-Synaxis.zip"
+hash-format = "sha512"
+hash = "d429d53349d404221b3f82dc2e8e8686cf84da47c25b131c3b8047672684635380725cb1de4a2fc60d595abca4cac2a19cd8aedf19a4d2e390f6e140ee1602dd"
+
+[update]
+[update.modrinth]
+mod-id = "GdNUfCnR"
+version = "Q5jyOiV9"

@@ -1,0 +1,7 @@
+{
+  "selector": "#createdeco:coin_piles",
+  "priority": 100000,
+  "properties": {
+    "sable:fragile": false
+  }
+}
