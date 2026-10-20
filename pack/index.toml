@@ -629,8 +629,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.29.0.jar"
-hash = "edadb715b9e81b46123890987226b53be0741cebf84629b966fe9b0935b73d18"
+file = "mods/cmpfixes-0.30.0.jar"
+hash = "1cc15b2e3a82c4df47aeab90845880cc91893560bb64e6642f133e9f63ad2976"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
