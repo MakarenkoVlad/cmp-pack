@@ -14,7 +14,7 @@ hash = "ef2318cbc363eb6fce4fb69e5cd968f41d6cb60ec9a6e8111d78257074909bed"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "8a9cdd41f5b7cb4da0ea41617ff193f9fadf33f190aee3486e9578c893ae3cd6"
+hash = "508777d7195f8037f78e09041a885ae011855daf161c13e69a984a788763f65d"
 
 [[files]]
 file = "config/create_structures_arise-server.toml"
@@ -641,8 +641,8 @@ file = "mods/cmpshop-0.1.0.jar"
 hash = "444ccef68e1663788081a2b8ea9ac756cd1863281268f48e06ea390cbdbabf18"
 
 [[files]]
-file = "mods/cmpwar-0.21.0.jar"
-hash = "89b4e1910b62f439935f7f648398ab28fbb6dc8c798e7c88d822f9f53720b1ae"
+file = "mods/cmpwar-0.21.1.jar"
+hash = "5d9e0e794e9da65f058dd4198d83d7e22a89aed9bea7f52084133218ba87a7d8"
 
 [[files]]
 file = "mods/collective.pw.toml"

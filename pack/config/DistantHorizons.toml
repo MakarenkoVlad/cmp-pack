@@ -4,6 +4,14 @@
 _version = 4
 
 [server]
+	# Far terrain shares the player's connection with movement and block updates. Keep its transfer
+	# budget below the ~50 KB/s delivered on the affected routes, leaving room for normal gameplay.
+	# This is KB/s per player; 0 would remove the limit. Far terrain fills in more slowly.
+	playerBandwidthLimit = 16
+	# DH 3.3.2's client-side adaptive controller counts received bytes without normalizing elapsed
+	# time and increases its request by 50 KB/s at once. Use the fixed budget above.
+	enableAdaptiveTransferSpeed = false
+
 	# Every client caches the distant terrain under this key. Give each new world its own value, or
 	# players keep seeing the old map in the distance. A new value also makes the deploy delete the
 	# server's own copy while it is stopped (scripts/deploy.py), so both sides rebuild from the real chunks.
