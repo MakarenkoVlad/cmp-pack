@@ -150,6 +150,10 @@ file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
+file = "kubejs/client_scripts/zz_cmp_glasses_redraw.js"
+hash = "f75bb147968d44231855036953db658d2bf780cb318dedc7ac2f83eb0bbc7e7d"
+
+[[files]]
 file = "kubejs/config/web_server.json"
 hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
 
