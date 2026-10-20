@@ -150,6 +150,10 @@ file = "kubejs/client_scripts/shaders.js"
 hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
+file = "kubejs/client_scripts/zz_cmp_glasses_redraw.js"
+hash = "f75bb147968d44231855036953db658d2bf780cb318dedc7ac2f83eb0bbc7e7d"
+
+[[files]]
 file = "kubejs/config/web_server.json"
 hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
 
@@ -629,8 +633,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.32.4.jar"
-hash = "b1881cef38e30e976f91462254243a8715be3bdab528f4d00cbe2519d6cc0156"
+file = "mods/cmpfixes-0.34.1.jar"
+hash = "82d2c1ef578da4dec7bcf87a93197201cfafea263720aabc7a1b0015755a8a29"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -641,8 +645,8 @@ file = "mods/cmpshop-0.1.0.jar"
 hash = "444ccef68e1663788081a2b8ea9ac756cd1863281268f48e06ea390cbdbabf18"
 
 [[files]]
-file = "mods/cmpwar-0.22.0.jar"
-hash = "bfda2cbfe3f79c96b70ee863311d1d71ba558898fab635dc22bab1586ceb6986"
+file = "mods/cmpwar-0.22.1.jar"
+hash = "d36b7a5602abc470e78fadf7c9bb5a22b2fd2517a0569f12460c7899a2910fcf"
 
 [[files]]
 file = "mods/collective.pw.toml"
