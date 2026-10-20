@@ -162,6 +162,22 @@ file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json
 hash = "42f3dd8f314d3722a1b6cd02ada831cc338d8726be9f693035dea0bf8380a762"
 
 [[files]]
+file = "kubejs/data/cmp/block_armor/tags/armor/ancient_debris.json"
+hash = "c855c44c9225128f2c41941c89251763456c5c6fa43936fcc84a9e42f7c82bee"
+
+[[files]]
+file = "kubejs/data/cmp/block_armor/tags/armor/iron.json"
+hash = "b506d618bf2b94426c6af56214b19c18bcb84af171d4151040b2cb97d2ee38aa"
+
+[[files]]
+file = "kubejs/data/cmp/block_armor/tags/armor/netherite.json"
+hash = "df00b53167c8a023cbbf9dedbaef5e66a376b79047c7936403a1146824680bb1"
+
+[[files]]
+file = "kubejs/data/cmp/block_armor/tags/armor/obsidian.json"
+hash = "506433d568cd6fcd6bdf916fe40db0a5b5bdb2160a8e61558c041267f9be4189"
+
+[[files]]
 file = "kubejs/data/cmp/end_sea/overworld.json"
 hash = "ff93c45a71499d1f15d79a5ce3b348b4b40fb07d9bf6bbeef3ae4b7a0808252a"
 
@@ -172,6 +188,38 @@ hash = "1848b2e137932d9cfdd07168ddb89c57240f27944dae94978ebd939bffcffa58"
 [[files]]
 file = "kubejs/data/cmp/physics_block_properties/no_fragile_coin_piles.json"
 hash = "88e0d70caa94393580a4790cbb9fcad6ada8b84cf6206b375879222f325f5a72"
+
+[[files]]
+file = "kubejs/data/cmp/tags/block/armor/ancient_debris.json"
+hash = "d3b530a604d6d7c3339d8f25890c875f2f9edc628229ab320e4c3b4e20e65cdb"
+
+[[files]]
+file = "kubejs/data/cmp/tags/block/armor/iron.json"
+hash = "c15fa0cfbe9f3d5757f6d123ff6fafa9a1593864f433255247c5ffe123630694"
+
+[[files]]
+file = "kubejs/data/cmp/tags/block/armor/netherite.json"
+hash = "5ee6169fc2d48ca146f246b51e478c9c7c61a4ff68f0490da5d077b271943891"
+
+[[files]]
+file = "kubejs/data/cmp/tags/block/armor/obsidian.json"
+hash = "d31bea16e72bea39c412585aaa6ddec3a7457d03332ced342ce027265d1e30a5"
+
+[[files]]
+file = "kubejs/data/copycats/block_armor/copycat_half_layer.json"
+hash = "59b129c48700089824f5b5809db4bf024738484531b3e1d21819cf7050890940"
+
+[[files]]
+file = "kubejs/data/copycats/block_armor/copycat_layer.json"
+hash = "12fd4a341ac82b231f58637033bc8d625bdc5ea00ccb6b86c5bb88e35e07c88d"
+
+[[files]]
+file = "kubejs/data/copycats/block_armor/copycat_stacked_half_layer.json"
+hash = "59b129c48700089824f5b5809db4bf024738484531b3e1d21819cf7050890940"
+
+[[files]]
+file = "kubejs/data/copycats/block_armor/copycat_vertical_half_layer.json"
+hash = "59b129c48700089824f5b5809db4bf024738484531b3e1d21819cf7050890940"
 
 [[files]]
 file = "kubejs/data/create/recipe/dough_add_tomato_sauce.json"
@@ -354,6 +402,22 @@ file = "kubejs/data/createages/recipe/copper_age/processing_line/spout.json"
 hash = "14159fba8cecb9c935647ab36598d23c840470116f67781f60a9379247b58d40"
 
 [[files]]
+file = "kubejs/data/createbigcannons/block_armor/bronze_block.json"
+hash = "b506d618bf2b94426c6af56214b19c18bcb84af171d4151040b2cb97d2ee38aa"
+
+[[files]]
+file = "kubejs/data/createbigcannons/block_armor/cast_iron_block.json"
+hash = "8c8933b3abc04fa7d0f28ffb01417257d0b4b63c52244aef1f10b32652544b28"
+
+[[files]]
+file = "kubejs/data/createbigcannons/block_armor/nethersteel_block.json"
+hash = "df00b53167c8a023cbbf9dedbaef5e66a376b79047c7936403a1146824680bb1"
+
+[[files]]
+file = "kubejs/data/createbigcannons/block_armor/steel_block.json"
+hash = "fc4209e1dbf7967d9ccdff8931b4ffc50c554000a1ee59221253cc9d7e2bb21c"
+
+[[files]]
 file = "kubejs/data/createcobblestone/generator_types/cobbled_deepslate.json"
 hash = "650861bdedc61ca37738db5e62a2637a5e980d465bd36fb65e085b419e559200"
 
@@ -400,6 +464,14 @@ hash = "c8692e56a2df8983660914c59bebed9300075dce85a6e993d9a6cb8b4737829e"
 [[files]]
 file = "kubejs/server_scripts/ages_shop.js"
 hash = "3396295805fd9d131126e721fc7b125d56a4171decfd7715215b652444729432"
+
+[[files]]
+file = "kubejs/server_scripts/artillery_mechanisms.js"
+hash = "c2a46f7943bc55e7c420b52c8f737110f937985875a9180f6574010c85999514"
+
+[[files]]
+file = "kubejs/server_scripts/artillery_parts.js"
+hash = "6926a88c6f82080a4e13bd24313df25e70986ca0491d9bac810d962333fa1535"
 
 [[files]]
 file = "kubejs/server_scripts/create_encased.js"
@@ -468,6 +540,10 @@ hash = "dd9730aeb170bd8b0e5db6cfa0bdd87557eb762b81a28548c1d932993c0a62cc"
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
 hash = "868b48e7f383b12dace04234f89fd22c4ebcf5d5608f2dea2b8be62bb99c17e1"
+
+[[files]]
+file = "kubejs/startup_scripts/artillery_mechanisms.js"
+hash = "e0492739cf441e7756498daf472ac8e82ec46d57ae23a649a94e2f2cad33f482"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -633,8 +709,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.34.2.jar"
-hash = "4261c3ce8736694b35b1df15cc523c15b5ed2062fa5354fd303a103540302138"
+file = "mods/cmpfixes-0.35.0.jar"
+hash = "d448d00cb81f330ff4275d50b50bd052410d45ceb990b434985c5c9a2ef59cae"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
