@@ -721,8 +721,8 @@ file = "mods/cmpshop-0.1.0.jar"
 hash = "444ccef68e1663788081a2b8ea9ac756cd1863281268f48e06ea390cbdbabf18"
 
 [[files]]
-file = "mods/cmpwar-0.22.1.jar"
-hash = "d36b7a5602abc470e78fadf7c9bb5a22b2fd2517a0569f12460c7899a2910fcf"
+file = "mods/cmpwar-0.22.2.jar"
+hash = "e6569c99a52a20cea979157bfc2e0567e2d2c5aa0bfaa62563ea275c7fbae16b"
 
 [[files]]
 file = "mods/collective.pw.toml"
