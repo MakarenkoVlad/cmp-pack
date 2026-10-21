@@ -159,7 +159,7 @@ element {
 element {
   element_type = text_v2
   instance_identifier = cmp_title_status
-  source = {"placeholder":"serverstatus","values":{"ip":"185.83.153.162"}} §8· §f{"placeholder":"serverplayercount","values":{"ip":"185.83.153.162"}} §7at war
+  source = {"placeholder":"cmp_server_status","values":{"ip":"185.83.153.162"}}
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -183,6 +183,32 @@ element {
   fade_in_speed = 1.5
 }
 
+element {
+  element_type = glsl_shader
+  instance_identifier = cmp_title_status_progress
+  inline_shader_source = // Indeterminate server-status progress: a warm segment travels back and forth within the track.%%!serialized_property_newline!%%void mainImage(out vec4 color, in vec2 fragCoord) {%%!serialized_property_newline!%%    vec2 uv = fragCoord / iResolution.xy;%%!serialized_property_newline!%%    float start = (0.5 - 0.5 * cos(iTime * 3.0)) * 0.72;%%!serialized_property_newline!%%    float segmentMask = step(start, uv.x) * step(uv.x, start + 0.28);%%!serialized_property_newline!%%    color = vec4(mix(vec3(0.22, 0.17, 0.12), vec3(1.0, 0.69, 0.29), segmentMask), 1.0);%%!serialized_property_newline!%%}
+  compile_mode = shadertoy
+  force_shadertoy_compatibility = true
+  freeze_time = false
+  time_scale = 1.0
+  enable_blending = true
+  use_input = false
+  show_compile_errors = false
+  element_loading_requirement_container_identifier = cmp_title_status_loading_cond
+  [loading_requirement_container_meta:cmp_title_status_loading_cond] = [groups:][instances:cmp_title_status_loading_req;]
+  [loading_requirement:fancymenu_visibility_requirement_is_text][requirement_mode:if][req_id:cmp_title_status_loading_req] = ["mode":"equals","text":"{"placeholder":"cmp_server_state","values":{"ip":"185.83.153.162"}}","compare_with":"checking"]$
+  anchor_point = mid-left
+  sticky_anchor = false
+  x = 16
+  y = 19
+  width = 176
+  height = 3
+  stay_on_screen = false
+  base_opacity = 1.0
+  appearance_delay = no_delay
+  fade_in_v2 = no_fading
+}
+
 vanilla_button {
   element_type = vanilla_button
   instance_identifier = mc_titlescreen_singleplayer_button
@@ -202,7 +228,7 @@ vanilla_button {
   anchor_point = mid-left
   sticky_anchor = false
   x = 16
-  y = 22
+  y = 26
   width = 176
   height = 20
   stay_on_screen = false
@@ -232,7 +258,7 @@ vanilla_button {
   anchor_point = mid-left
   sticky_anchor = false
   x = 16
-  y = 44
+  y = 48
   width = 176
   height = 20
   stay_on_screen = false
@@ -262,7 +288,7 @@ vanilla_button {
   anchor_point = mid-left
   sticky_anchor = false
   x = 16
-  y = 66
+  y = 70
   width = 176
   height = 20
   stay_on_screen = false
@@ -292,7 +318,7 @@ vanilla_button {
   anchor_point = mid-left
   sticky_anchor = false
   x = 16
-  y = 88
+  y = 92
   width = 87
   height = 20
   stay_on_screen = false
@@ -322,7 +348,7 @@ vanilla_button {
   anchor_point = mid-left
   sticky_anchor = false
   x = 105
-  y = 88
+  y = 92
   width = 87
   height = 20
   stay_on_screen = false

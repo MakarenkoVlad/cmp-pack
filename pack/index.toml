@@ -78,7 +78,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "0ee936c87e2d916d17dd85bca41997095f37e018c9cf56ab33f105592b5b9d52"
+hash = "11b6561539dc35e83303ab7b3559fc19ba208dc9cb8cdd65027ac2745578ed0b"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -709,8 +709,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.35.0.jar"
-hash = "d448d00cb81f330ff4275d50b50bd052410d45ceb990b434985c5c9a2ef59cae"
+file = "mods/cmpfixes-0.35.2.jar"
+hash = "0442325e23cba0091c673a3782cd385ec2f2495d8d5e47be2b4cef1f69fcffd9"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
