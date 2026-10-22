@@ -531,7 +531,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "50fa0a5eabc79b71ffee7db65ae756004b79796c53e016711ca884e2164b26ad"
+hash = "b84a20030bb7d75b46ea4b44c4a215679c820e5263d046f032b9abc19cfe9392"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -675,6 +675,10 @@ hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
 metafile = true
 
 [[files]]
+file = "mods/cchose-1.0.2.jar"
+hash = "25a6726e594ab88662307c7f0cf851621ca059250e6a2027fb6e4c24952f75ec"
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "80455b28c3010ad153ccabc2998cb445b9854b26b386628243a9c8160b8d7e8e"
 metafile = true
@@ -709,8 +713,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.35.2.jar"
-hash = "0442325e23cba0091c673a3782cd385ec2f2495d8d5e47be2b4cef1f69fcffd9"
+file = "mods/cmpfixes-0.36.0.jar"
+hash = "7606dbe411090ebead77c47097d5088a661706c8f1e7fdd724867d00d04553c2"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -721,8 +725,8 @@ file = "mods/cmpshop-0.1.0.jar"
 hash = "444ccef68e1663788081a2b8ea9ac756cd1863281268f48e06ea390cbdbabf18"
 
 [[files]]
-file = "mods/cmpwar-0.22.2.jar"
-hash = "e6569c99a52a20cea979157bfc2e0567e2d2c5aa0bfaa62563ea275c7fbae16b"
+file = "mods/cmpwar-0.23.1.jar"
+hash = "1c3d7645522eb270a79b8582c920acdf7f2113ff17df6e78fedcf7e1ebef8652"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1145,6 +1149,10 @@ hash = "932c65fb598293dba5dc60a76fc64c2579db427018b10dd4757dd421d9abcaf0"
 metafile = true
 
 [[files]]
+file = "mods/hddisplay-1.1.1.jar"
+hash = "59394890be5b9b00b5faa88d0c66fe318757737bcd604d036497bdac7af5013e"
+
+[[files]]
 file = "mods/hots-aerostuff.pw.toml"
 hash = "a7e9187482cf225fbdb3769e860989040d41508106c4672c49439ed4f0d94af1"
 metafile = true
@@ -1409,8 +1417,8 @@ hash = "e55ca32b338a0e0540f4fec5170675d860566255ae0f45692a00cb4ebf2eb535"
 metafile = true
 
 [[files]]
-file = "mods/rocketpilot-3.1.0.jar"
-hash = "6057cb7e4a4168882996fb044154869236dd1dcb1f28db17e3f476f0da51f540"
+file = "mods/rocketpilot-4.1.2.jar"
+hash = "9433cff2ed111b9ccd1c65aabdd4e33ca3c6fef06ad33bbc1eee98e8d917e07d"
 
 [[files]]
 file = "mods/rpl.pw.toml"
