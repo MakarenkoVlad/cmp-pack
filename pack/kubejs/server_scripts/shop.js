@@ -8,7 +8,7 @@
 //   /shop buy <item> [bundles] that many of the item's bundle (default 1, no cap): froglights come 8 to a
 //                             bundle, so /shop buy ochre_froglight 3 is 24 Ochre Froglight for 6 Cog
 //   /shop change cog          1 Cog into 4 Sprockets, and /shop change sprocket the other way round
-//   /shop treasury <n>        n Cog into your party's treasury; the first party to 160 Cog gets the dragon egg
+//   /shop treasury <n>        n Cog into your party's treasury; the first party to 320 Cog gets the dragon egg
 //   /shop top                 the treasuries
 //   /shop off, /shop on       ops only (permission level 2): close and open the shop, kept over restarts
 //
@@ -45,7 +45,7 @@ const CMP_SHOP_TRIPWIRE = true
 const CMP_SHOP_DATA = 'cmp_shop'
 const CMP_SHOP_HURT = 'cmp_shop_hurt' // player persistent data: Date.now() of the last damage taken
 const CMP_SHOP_HURT_WAIT = 30 * 1000
-const CMP_SHOP_EGG_GOAL = 160 // Cog
+const CMP_SHOP_EGG_GOAL = 320 // Cog
 const CMP_SHOP_COG = 64 // spurs in a Cog
 const CMP_SHOP_SCORE = 'cmp_coins'
 const CMP_SHOP_BAD_PRICE = "Something's wrong with that price, so nothing was taken. Tell an admin."
@@ -62,6 +62,7 @@ const CMP_SHOP_COINS = [
 // The tabs of the /shop screen, in order: [id, name]. Every offer below names one of them.
 const CMP_SHOP_CATEGORIES = [
     ['rare', 'Rare'],
+    ['supplies', 'Supplies'],
     ['templates', 'Templates'],
     ['trims', 'Trims'],
     ['discs', 'Discs'],
@@ -71,7 +72,7 @@ const CMP_SHOP_CATEGORIES = [
 
 // What the shop sells: [key, item, how many in one bundle, price of a bundle in Cog, tab]. Never sold: Ages fuel,
 // diesel, crude oil and gasoline, cannon parts and ammo, netherite, nethersteel and ancient debris, elytras,
-// totems, end crystals (end_crystals.js also takes away their recipe), beacons, spider eyes and villager eggs.
+// totems, end crystals (end_crystals.js also takes away their recipe), beacons and villager eggs.
 // The owner cut the list on 2026-10-19 to the crate items, trims, discs, banner patterns and froglights: no
 // Nether and End materials, mob heads, spawn eggs, XP bottles, name tags or saddles; levitite sells next to
 // pearlescent levitite at the same price.
@@ -79,6 +80,8 @@ const CMP_SHOP_CATEGORIES = [
 // ancient cities, eye from strongholds, vex from woodland mansions, spire from end cities, rib from nether
 // fortresses and snout from bastions. The rest are 4 Cog, wayfinder (trail ruins) too. Trims only change how
 // armour looks, so the vanilla recipes that copy a template stay.
+// Supplies added 2026-10-22 cost one Sprocket per bundle (0.25 Cog = 16 whole spurs).
+// Common consumables come in small bundles; bottles, turtle eggs and wither roses are single items.
 const CMP_SHOP_OFFERS_ALL = [
     ['dragon_head', 'minecraft:dragon_head', 1, 60, 'rare'],
     ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 32, 'templates'],
@@ -87,6 +90,13 @@ const CMP_SHOP_OFFERS_ALL = [
     ['blaze_burner', 'create:blaze_burner', 1, 16, 'rare'], // the filled one (create:empty_blaze_burner is empty)
     ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12, 'rare'],
     ['levitite', 'aeronautics:levitite', 8, 12, 'rare'],
+    ['ink_sac', 'minecraft:ink_sac', 8, 0.25, 'supplies'],
+    ['ominous_bottle', 'minecraft:ominous_bottle', 1, 0.25, 'supplies'],
+    ['spider_eye', 'minecraft:spider_eye', 4, 0.25, 'supplies'],
+    ['turtle_egg', 'minecraft:turtle_egg', 1, 0.25, 'supplies'],
+    ['wither_rose', 'minecraft:wither_rose', 1, 0.25, 'supplies'],
+    ['raw_salmon', 'minecraft:salmon', 8, 0.25, 'supplies'],
+    ['raw_cod', 'minecraft:cod', 8, 0.25, 'supplies'],
 ].concat(
     ['silence', 'ward', 'eye', 'vex', 'spire', 'rib', 'snout']
         .map(t => [t + '_trim', 'minecraft:' + t + '_armor_trim_smithing_template', 1, 8, 'trims']),
@@ -396,12 +406,20 @@ function cmpShopApply(player, slots) {
 
 // ---- text ----------------------------------------------------------------------------------------------
 
-// Spurs in Cog and the Spur left over: "45 Cog and 48 Spur".
+// Prices use the largest exact denomination up to Cog: "1 Sprocket", not "0.25 Cog".
+function cmpShopPrice(spurs) {
+    if (spurs % CMP_SHOP_COG == 0) return spurs / CMP_SHOP_COG + ' Cog'
+    if (spurs % 16 == 0) return spurs / 16 + ' Sprocket'
+    if (spurs % 8 == 0) return spurs / 8 + ' Bevel'
+    return spurs + ' Spur'
+}
+
+// Wallet totals in Cog and smaller coins, with no leading "0 Cog".
 function cmpShopCog(spurs) {
     const cog = Math.floor(spurs / CMP_SHOP_COG)
     const rest = spurs - cog * CMP_SHOP_COG
     if (rest == 0) return cog + ' Cog'
-    return cog + ' Cog and ' + rest + ' Spur'
+    return (cog > 0 ? cog + ' Cog and ' : '') + cmpShopCoinWords(cmpShopCoinsFor(rest))
 }
 
 // [[id, n], ...] as "7 Crown and 6 Cog".
@@ -489,7 +507,7 @@ function cmpShopTrader(source) {
 function cmpShopList(source) {
     const server = source.getServer()
     if (!cmpShopOpen(server)) cmpShopSay(source, Text.red('The shop is closed right now.'))
-    cmpShopSay(source, Text.gold('Prices are in Cog per bundle, and ochre_froglight x8 means 8 to a bundle. Click an item to put its /shop buy command in chat.'))
+    cmpShopSay(source, Text.gold('Prices are per bundle; ink_sac x8 means 8 to a bundle. 1 Cog = 4 Sprocket. Click an item to put its /shop buy command in chat.'))
     const prices = []
     CMP_SHOP_OFFERS.forEach(offer => {
         if (prices.indexOf(offer.price) < 0) prices.push(offer.price)
@@ -500,7 +518,7 @@ function cmpShopList(source) {
         let offers = CMP_SHOP_OFFERS.filter(offer => offer.price == price)
         let size = Math.ceil(offers.length / Math.ceil(offers.length / 12))
         for (let start = 0; start < offers.length; start += size) {
-            let line = Text.of(price + ' Cog: ').gold()
+            let line = Text.of(cmpShopPrice(price * CMP_SHOP_COG) + ': ').gold()
             let part = offers.slice(start, start + size)
             for (let i = 0; i < part.length; i++) {
                 if (i > 0) line.append(Text.of(', ').gray())
@@ -529,7 +547,7 @@ function cmpShopBuy(source, key, bundles) {
     }
     const wallet = cmpShopWallet(player)
     const pick = wallet.total < price ? null : cmpShopPick(wallet.counts, price)
-    if (pick == null) return cmpShopFail(source, 'That costs ' + cmpShopCog(price) + '. You have ' + cmpShopCog(wallet.total) + '.')
+    if (pick == null) return cmpShopFail(source, 'That costs ' + cmpShopPrice(price) + '. You have ' + cmpShopCog(wallet.total) + '.')
     const change = cmpShopCoinsFor(pick.change)
     const items = offer.count * bundles
     const slots = cmpShopPlan(player, pick.take, [[offer.id, items]].concat(change))
@@ -545,7 +563,7 @@ function cmpShopBuy(source, key, bundles) {
     const team = cmpShopTeam(player)
     console.info('[shop] ' + cmpShopName(player) + ' ' + cmpShopLogParty(team) + ' ' + offer.key + ' x' + bundles + ' ' + cog + ' cog')
     let message = 'You bought ' + cmpShopItemName(offer) + (items > 1 ? ' x' + items : '')
-        + (bundles > 1 && offer.count > 1 ? ' (' + bundles + ' bundles of ' + offer.count + ')' : '') + ' for ' + cog + ' Cog.'
+        + (bundles > 1 && offer.count > 1 ? ' (' + bundles + ' bundles of ' + offer.count + ')' : '') + ' for ' + cmpShopPrice(price) + '.'
     if (change.length > 0) message += ' You got ' + cmpShopCoinWords(change) + ' back.'
     cmpShopSay(source, Text.green(message))
     return 1
@@ -729,7 +747,7 @@ function cmpShopSnapshot(player, mode, result) {
         open: cmpShopOpen(server),
         goal: CMP_SHOP_EGG_GOAL,
         cats: CMP_SHOP_CATEGORIES.map(c => ({ id: c[0], name: cmpShopJsonText(c[1]) })),
-        offers: CMP_SHOP_OFFERS.map(o => ({ key: o.key, item: o.id, count: o.count, price: o.price, cat: o.cat, name: cmpShopJsonText(cmpShopItemName(o)) })),
+        offers: CMP_SHOP_OFFERS.map(o => ({ key: o.key, item: o.id, count: o.count, price: o.price, priceSpurs: o.price * CMP_SHOP_COG, cat: o.cat, name: cmpShopJsonText(cmpShopItemName(o)) })),
         hurt: Math.max(0, Math.ceil(cmpShopHurtWait(player) / 1000)),
         team: { name: cmpShopJsonText(team.name), party: team.party },
         treasury: cog,
