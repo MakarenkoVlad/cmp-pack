@@ -94,7 +94,7 @@ hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
 
 [[files]]
 file = "config/iris.properties"
-hash = "1df677fdf3bcdc92a3e0a70e61dcd611e0072d5237ad8799dc353ce416f88c4f"
+hash = "bf4471108777e32a08105906f974a1ab1f4eee83a714e801753d295f0ebadc4c"
 preserve = true
 
 [[files]]
@@ -895,7 +895,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-factory-controller.pw.toml"
-hash = "2dd5e2d6614a352fe6138d4d55bbed0ba9d1dfbc060f3f028f4b92f1f04fcb4c"
+hash = "2677237aa7c7c037f770bd15c33359e054cd27f5614a7667e02183ed23f3c4d1"
 metafile = true
 
 [[files]]
@@ -1066,6 +1066,11 @@ metafile = true
 [[files]]
 file = "mods/entitytexturefeatures.pw.toml"
 hash = "42731772f3bde6bc35c48ff39a0b16c24edfa245c42d2ca8c8abd11f57edf4e7"
+metafile = true
+
+[[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "d71abc5f76bbd6c2f1ddf5a113b0cdf8495c23ce85e310a69c50eac462e1821a"
 metafile = true
 
 [[files]]
@@ -1597,6 +1602,11 @@ metafile = true
 [[files]]
 file = "servers.dat"
 hash = "db60bf67ad5ab1d223067c6d7d62e30931f2866b5d8d8353cb33bb5ab811c0cc"
+preserve = true
+
+[[files]]
+file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt"
+hash = "b6cbb7fe7f1cbcad9012a5ec66608d9749dabccba80c627102dd29f50439734d"
 preserve = true
 
 [[files]]
