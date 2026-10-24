@@ -675,8 +675,13 @@ hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
 metafile = true
 
 [[files]]
-file = "mods/cchose-1.0.2.jar"
-hash = "25a6726e594ab88662307c7f0cf851621ca059250e6a2027fb6e4c24952f75ec"
+file = "mods/cchose-1.0.3.jar"
+hash = "5594dd486ffcc0578dc96442c30738bc77c59322e555406b49f9966607258f13"
+
+[[files]]
+file = "mods/ccpowergridcompat.pw.toml"
+hash = "961ddb497832118c0eb389c7d668f5fb881461776e62b9c7af82afdb3b2fed9b"
+metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
@@ -723,6 +728,10 @@ hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 [[files]]
 file = "mods/cmpshop-0.1.1.jar"
 hash = "80ac683aff583d9235b72edfcc0d27a5f68ecc2dad4a9b180e083d256a796a22"
+
+[[files]]
+file = "mods/cmptab-0.1.0.jar"
+hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
 
 [[files]]
 file = "mods/cmpwar-0.23.1.jar"
@@ -1399,6 +1408,11 @@ metafile = true
 [[files]]
 file = "mods/polymorph.pw.toml"
 hash = "d935e4ce118d15c88b10809df85e801f0e9577855f870f3c28e5a0bd5e7fecf6"
+metafile = true
+
+[[files]]
+file = "mods/power-grid.pw.toml"
+hash = "22cf5579fbc67af2ac84358af3c390c6235fabd6cd6cc3828021349b588f4bdb"
 metafile = true
 
 [[files]]
