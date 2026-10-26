@@ -301,7 +301,7 @@ const TIERS = {
                 ['createpropulsion:stirling_engine', 1, 1, 3],
                 ['simulated:physics_assembler', 1, 1, 3],
                 ['simulated:steering_wheel', 1, 1, 3],
-                ['create:belt_connector', 1, 1, 2],  // 6 cured rubber
+                ['create:belt_connector', 1, 1, 2],  // 6 cured rubber make 2 belts
             ] },
             // graft from design-treasure: a hangar is an airship parts depot. Its pulley chest rides the hangar's
             // winch, so it is not a Lootr chest (lootr-common.toml) and one player would empty it for everyone:

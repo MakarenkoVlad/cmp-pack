@@ -474,6 +474,14 @@ file = "kubejs/server_scripts/artillery_parts.js"
 hash = "6926a88c6f82080a4e13bd24313df25e70986ca0491d9bac810d962333fa1535"
 
 [[files]]
+file = "kubejs/server_scripts/belts.js"
+hash = "fe7436f9c241c45f81aceb5154a66dd3281cad3da4747699f846498f867b48a5"
+
+[[files]]
+file = "kubejs/server_scripts/computercraft.js"
+hash = "a0e0f6a63d1bf2381366fc8683c6249bdf5d98dc1c7826c7e1bd5247a8bacf6c"
+
+[[files]]
 file = "kubejs/server_scripts/create_encased.js"
 hash = "2ebdc50d2628d12e5f8cd3830bfaa3c6468cf65fd4283367c65d3df63a8f79cf"
 
@@ -495,7 +503,7 @@ hash = "9fc551bb10da46bac355b54567f454bd84cd63ef8b13a7752f17641f76cc6c24"
 
 [[files]]
 file = "kubejs/server_scripts/loot.js"
-hash = "b9882a8a0f98ccd268dbccfa663bd2cee49e2d689f2a6d0b2d01d54a83cfb0eb"
+hash = "fd86ac698c37d45c379efe99df8be9a5bd262b367987fde33bfe1ec313dd4d29"
 
 [[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
