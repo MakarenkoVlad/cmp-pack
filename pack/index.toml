@@ -742,8 +742,8 @@ file = "mods/cmptab-0.1.0.jar"
 hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
 
 [[files]]
-file = "mods/cmpwar-0.23.1.jar"
-hash = "1c3d7645522eb270a79b8582c920acdf7f2113ff17df6e78fedcf7e1ebef8652"
+file = "mods/cmpwar-0.23.2.jar"
+hash = "98991d07c117e158911b11b1f0e256ff943ebfc8f22a7b979203e19d7e056607"
 
 [[files]]
 file = "mods/collective.pw.toml"
