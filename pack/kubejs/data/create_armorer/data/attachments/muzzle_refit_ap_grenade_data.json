@@ -33,9 +33,9 @@
     "addend": 60
   },
   "damage": {
-    "addend": 40
+    "addend": 16
   },
   "head_shot":{
-    "addend": 0.5
+    "addend": 0
   }
 }
