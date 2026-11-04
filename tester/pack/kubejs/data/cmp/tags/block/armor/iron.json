@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_block",
+    {
+      "id": "#chipped:iron_block",
+      "required": false
+    }
+  ]
+}

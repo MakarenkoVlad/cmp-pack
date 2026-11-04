@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:obsidian",
+    "minecraft:crying_obsidian",
+    {
+      "id": "#chipped:obsidian",
+      "required": false
+    },
+    {
+      "id": "#chipped:crying_obsidian",
+      "required": false
+    }
+  ]
+}
