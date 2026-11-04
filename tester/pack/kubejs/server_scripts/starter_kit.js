@@ -75,9 +75,9 @@ ServerEvents.commandRegistry(event => {
         data.putLong(CMP_KIT_LAST_USE, now)
         data.remove(CMP_KIT_OLD_USES)
         stacks.forEach(stack => player.give(stack))
-        player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs and a protection block. Breed the sheep with wheat for wool "
-            + 'and the chickens with seeds for eggs and feathers, '
-            + 'and place the block to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' placed). '
+        player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs and a core (protection block). Breed the sheep with wheat for wool "
+            + 'and the chickens with seeds for eggs and feathers. '
+            + 'Place the core and install a load of andesite alloy to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' land cores placed, 7 chunks apart). '
             + 'You can use /kit again in 24 hours.'))
         return 1
     }))
