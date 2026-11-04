@@ -11,6 +11,13 @@ const CMP_KIT_OLD_USES = 'cmp_kit_uses' // the old "twice ever" counter, dropped
 const CMP_KIT_COOLDOWN = 24 * 60 * 60 * 1000
 const CMP_KIT_ITEMS = [['minecraft:sheep_spawn_egg', 2], ['minecraft:chicken_spawn_egg', 2], ['cmpwar:protection_block', 1]]
 const CmpKitStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+let CmpKitWarConfig = null
+try { CmpKitWarConfig = Java.loadClass('dev.cmp.cmpwar.CmpWarConfig') } catch (e) { CmpKitWarConfig = null }
+
+// How many protection blocks a team may have placed at once (cmpwar's blocksPerTeam), for the /kit text.
+function cmpKitTeamCap() {
+    try { return CmpKitWarConfig == null ? 1 : CmpKitWarConfig.BLOCKS_PER_TEAM.get() } catch (e) { return 1 }
+}
 
 // Room in the 36 main slots, where give() puts things, for all the stacks at once; whatever does not
 // fit would drop at the player's feet, which on an island edge or an airship is the void. Each stack
@@ -70,7 +77,7 @@ ServerEvents.commandRegistry(event => {
         stacks.forEach(stack => player.give(stack))
         player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs and a protection block. Breed the sheep with wheat for wool "
             + 'and the chickens with seeds for eggs and feathers, '
-            + 'and place the block to claim land for your team (each team can have one placed). '
+            + 'and place the block to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' placed). '
             + 'You can use /kit again in 24 hours.'))
         return 1
     }))

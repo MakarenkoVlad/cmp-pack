@@ -11,6 +11,13 @@
 //   /shop treasury <n>        n Cog into your party's treasury; the first party to 320 Cog gets the dragon egg
 //   /shop top                 the treasuries
 //   /shop off, /shop on       ops only (permission level 2): close and open the shop, kept over restarts
+//   /money                    Season 2's hourly money kit: CMP_MONEY_COG Cog, then a wait of an hour from that claim
+//                             (missed hours do not add up), at most CMP_MONEY_DAILY claims a UTC day (#60, settled
+//                             point 8). The coins count as minted (#minted) in the same tick, so the tripwire lets them
+//                             through. Refused like /kit when they do not fit; works anywhere.
+//
+// Season 2 (#8): with cmpwar's safe square on, every trade (buy, change, treasury) works only inside it, in the city.
+// With it off (Season 1) the shop works anywhere.
 //
 // Payment comes from the 36 main inventory slots only (hotbar included; armour, offhand and Curios slots are
 // never touched), in any coins by their value in spurs (Spur 1, Bevel 8, Sprocket 16, Cog 64, Crown 512,
@@ -42,6 +49,13 @@
 // Rhino: a const inside a block (try, if, a loop) fails with "redeclaration of var" or keeps its first value,
 // so everything below a function's top level is let.
 const CMP_SHOP_TRIPWIRE = true
+// The money kit's playtest numbers: 2 Cog a claim, 6 claims a day (12 Cog: a filled blaze burner in under two days).
+const CMP_MONEY_COG = 2
+const CMP_MONEY_DAILY = 6
+const CMP_MONEY_WAIT = 60 * 60 * 1000
+const CMP_MONEY_LAST = 'cmp_money_last'   // player persistent data: Date.now() of the last claim
+const CMP_MONEY_DAY = 'cmp_money_day'     // UTC date CMP_MONEY_COUNT counts
+const CMP_MONEY_COUNT = 'cmp_money_count' // claims that day
 const CMP_SHOP_DATA = 'cmp_shop'
 const CMP_SHOP_HURT = 'cmp_shop_hurt' // player persistent data: Date.now() of the last damage taken
 const CMP_SHOP_HURT_WAIT = 30 * 1000
@@ -130,6 +144,8 @@ const $CmpShopPriority = Java.loadClass('net.neoforged.bus.api.EventPriority')
 const $CmpShopTeams = Java.loadClass('dev.ftb.mods.ftbteams.api.FTBTeamsAPI')
 const $CmpShopStringArg = Java.loadClass('com.mojang.brigadier.arguments.StringArgumentType')
 const $CmpShopIntArg = Java.loadClass('com.mojang.brigadier.arguments.IntegerArgumentType')
+let $CmpShopSafe = null
+try { $CmpShopSafe = Java.loadClass('dev.cmp.cmpwar.SafeZone') } catch (e) { $CmpShopSafe = null }
 // The /shop screen (the cmpshop mod, in the pack on both sides). Without it every player gets the chat list.
 let $CmpShopNet = null
 try {
@@ -496,6 +512,10 @@ function cmpShopTrader(source) {
         return null
     }
     if (!player.isAlive()) return null
+    if ($CmpShopSafe != null && $CmpShopSafe.on() && !$CmpShopSafe.contains(player)) {
+        cmpShopFail(source, 'The shop only trades in the city. Come back inside the safe zone.')
+        return null
+    }
     const wait = cmpShopHurtWait(player)
     if (wait > 0) {
         cmpShopFail(source, 'You took damage in the last 30 seconds. Try again in ' + Math.ceil(wait / 1000) + 's.')
@@ -778,6 +798,39 @@ function cmpShopAct(source, command) {
     return result
 }
 
+// ---- the money kit ------------------------------------------------------------------------------------
+
+function cmpMoney(source) {
+    const player = source.getPlayer()
+    if (player == null) return cmpShopFail(source, 'Only players can use /money.')
+    if (!player.isAlive()) return 0
+    const data = player.persistentData
+    const now = Date.now()
+    if (data.getLong(CMP_MONEY_LAST) > now) data.putLong(CMP_MONEY_LAST, now) // the clock was set back
+    const wait = data.getLong(CMP_MONEY_LAST) + CMP_MONEY_WAIT - now
+    if (wait > 0) return cmpShopFail(source, 'You can use /money again in ' + Math.max(1, Math.ceil(wait / 60000)) + 'm.')
+    const day = new Date(now).toISOString().slice(0, 10)
+    const count = data.getString(CMP_MONEY_DAY) == day ? data.getInt(CMP_MONEY_COUNT) : 0
+    if (count >= CMP_MONEY_DAILY) {
+        return cmpShopFail(source, "You've claimed /money " + CMP_MONEY_DAILY + ' times today. More tomorrow (the day turns at 00:00 UTC).')
+    }
+    const spurs = CMP_MONEY_COG * CMP_SHOP_COG
+    const coins = cmpShopCoinsFor(spurs)
+    const slots = cmpShopPlan(player, {}, coins)
+    if (slots == null) return cmpShopFail(source, 'Your inventory is full. Make some room and try /money again.')
+    const server = source.getServer()
+    cmpShopApply(player, slots)
+    cmpShopAddScore(server, '#minted', spurs)
+    data.putLong(CMP_MONEY_LAST, now)
+    data.putString(CMP_MONEY_DAY, day)
+    data.putInt(CMP_MONEY_COUNT, count + 1)
+    console.info('[shop] money ' + cmpShopName(player) + ' ' + CMP_MONEY_COG + ' cog (' + (count + 1) + '/' + CMP_MONEY_DAILY + ' today)')
+    const left = CMP_MONEY_DAILY - count - 1
+    cmpShopSay(source, Text.green('Here are ' + cmpShopCoinWords(coins) + '. ' + (left > 0
+        ? 'Next /money in 1h (' + left + ' more today).' : "That was today's last /money.")))
+    return 1
+}
+
 ServerEvents.loaded(event => {
     cmpShopObjective(event.server)
 })
@@ -811,4 +864,5 @@ ServerEvents.commandRegistry(event => {
         .then(Commands.literal('top').executes(ctx => cmpShopTop(ctx.source)))
         .then(Commands.literal('off').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, false))))
         .then(Commands.literal('on').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, true)))))
+    event.register(Commands.literal('money').executes(ctx => cmpMoney(ctx.source)))
 })

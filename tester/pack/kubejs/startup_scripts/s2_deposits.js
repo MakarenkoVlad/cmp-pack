@@ -52,3 +52,20 @@ StartupEvents.registry('block', event => {
             .texture('create_rns:block/' + deposit.texture + '_deposit_block')
     })
 })
+
+// The city generator (S2 stage 2, server_scripts/s2_generators.js): staff place it with /setblock in the city
+// (worldgen/s2/city.py). A right-click hands a player their own ready supply. It has no item, no recipe, no drops,
+// no menu and no storage, nobody breaks it (hardness -1, bedrock's blast resistance), and nothing moves it.
+StartupEvents.registry('block', event => {
+    event.create('kubejs:generator')
+        .displayName('City Generator')
+        .texture('minecraft:block/vault_side_on')
+        .unbreakable()
+        .resistance(3600000)
+        .lightLevel(0.5)
+        .noDrops()
+        .noItem()
+        .tagBlock('create:non_movable')
+        .tagBlock('simulated:non_movable')
+        .tagBlock('create:non_breakable')
+})

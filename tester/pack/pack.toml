@@ -1,12 +1,12 @@
 name = "CMP Tester Pack"
 author = "MakarenkoVlad"
-version = "test-52c6cb869d93"
+version = "test-b9d711c6c283"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "3b75f39768136eb7a98fceeb08b6653e9eba831ca2271705c526218bd2b4a8b3"
+hash = "975dd322e2879172935117ab91460b8d5ee02938f64c8bb941be6cbc8c538a1f"
 
 [versions]
 minecraft = "1.21.1"
