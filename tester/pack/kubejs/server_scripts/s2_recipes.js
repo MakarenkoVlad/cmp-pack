@@ -7,7 +7,9 @@
 // Here every recipe that makes one goes, and EMI hides them (the c:hidden_from_recipe_viewers tag, as numismatics.js
 // does). S2 has no loot chests (no structures), no endermen (cmpwar noHostileMobs) and no villagers, and Create Sifting
 // left the pack in stage 1, so nothing else makes them.
-const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats']
+// The borehead and its rockcutting wheel cut any block with no HP, no claim check and no raid, even in the city and through the
+// offline shield (launch audit, 2026-11-05), so they stay out.
+const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel']
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
@@ -29,7 +31,8 @@ ServerEvents.recipes(event => {
     // glowstone dust and blaze powder. Lapis unblocks Power Grid's integrated circuit, which computercraft.js puts in
     // every CC advanced recipe (advanced computers, turtles, pocket computers, the advanced modem); glowstone the
     // tracer tip and Power Grid's lamps and tubes; blaze powder the tracer tip, HEI autocannon rounds and congealed
-    // nitro. Quartz needs no stand-in: Create's crushing of diorite (the islands' rock blobs) gives it. Diamond, emerald,
+    // nitro. Quartz needs no stand-in: the generators give the first of it (s2_generators.js) and Create's crushing of diorite
+    // (the islands' rock blobs) the rest. Diamond, emerald,
     // netherite and the other Nether and End minerals stay without a source (tools, armour, beacons).
     event.replaceInput({ input: 'minecraft:lapis_lazuli' }, 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard')
     event.replaceInput({ input: 'minecraft:glowstone_dust' }, 'minecraft:glowstone_dust', 'kubejs:sulfur')

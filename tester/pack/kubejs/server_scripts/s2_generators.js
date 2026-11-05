@@ -12,7 +12,9 @@
 // Playtest numbers (set low on purpose, "from the smallest successful expedition"): one bundle per 20 minutes online,
 // 6 bundles a day (2 hours of play). Contents follow the first-expedition recipe audit (scripts/tests/s2_city_test.js,
 // "audit"): with these, the islands, the kits and the shop, every Create, Aeronautics, Simulated, Propulsion and
-// Diesel Generators part of a first aircraft, drill, mixer, refinery and burner can be made. Quartz is not needed.
+// Diesel Generators part of a first aircraft, drill, mixer, refinery and burner can be made. One quartz breaks a loop: a
+// crushing wheel needs mechanical crafters, crafters need electron tubes, tubes need quartz, and quartz needs a crushing wheel
+// (launch audit, 2026-11-05). After the first wheels, crushing diorite gives quartz.
 const CMP_GEN_BUNDLE_MINUTES = 20
 const CMP_GEN_DAILY_BUNDLES = 6
 const CMP_GEN_BUNDLE = [
@@ -22,6 +24,7 @@ const CMP_GEN_BUNDLE = [
     ['minecraft:gold_ingot', 2],
     ['minecraft:redstone', 8],
     ['minecraft:amethyst_shard', 4],
+    ['minecraft:quartz', 1],
     ['create:andesite_alloy', 16],
     ['kubejs:rubber', 4],
     ['createdieselgenerators:diesel_bucket', 1],
