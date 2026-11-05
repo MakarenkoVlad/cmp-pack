@@ -399,7 +399,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_deposits.js"
-hash = "4eb627638e1179e21fa3501389eb289632f56ca5c8cf3b0707b9d43117f9051e"
+hash = "12eb2d0dfe3f7e3c9158d47379bf42515ba68600e85dce54ccbfed3c07c9f6e3"
 
 [[files]]
 file = "kubejs/server_scripts/s2_generators.js"
@@ -638,8 +638,8 @@ file = "mods/cmptab-0.1.0.jar"
 hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
 
 [[files]]
-file = "mods/cmpwar-0.26.1.jar"
-hash = "a5fd92f4a75fa5d9b42833a4ba71773f6e6cbbb6fd06c3d5258ba367f3d23b99"
+file = "mods/cmpwar-0.26.2.jar"
+hash = "bda8a69738d14809911aa171a6fec1d41016fb03695add81c669797179d7ecab"
 
 [[files]]
 file = "mods/collective.pw.toml"

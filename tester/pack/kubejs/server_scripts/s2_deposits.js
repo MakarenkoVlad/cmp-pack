@@ -20,13 +20,26 @@ const DEPOSITS = {
     latex: 'kubejs:latex',
     amethyst: 'minecraft:amethyst_shard'
 }
+// The share of a drill's operations that give an item, per material (Vlad, 2026-11-05). miningSpeed is at its lowest, 1, so a
+// material can only go slower than the base rate: at 256 RPM a small vein does 27 operations an hour, a medium 100, a rich 125.
+const CMP_DEPOSIT_RATE = {
+    veridium: 1.0,
+    crimsite: 1.0,
+    bone_meal: 1.0,
+    asurine: 0.75,
+    oil: 0.75,
+    latex: 0.75,
+    ochrum: 0.5,
+    amethyst: 0.5,
+    sulfur: 0.5
+}
 
 ServerEvents.recipes(event => {
     Object.keys(DEPOSITS).forEach(type => {
         event.custom({
             type: 'create_rns:mining',
             deposit_block: 'kubejs:' + type + '_deposit',
-            yields: [{ items: [{ item: DEPOSITS[type] }] }]
+            yields: [{ chance: CMP_DEPOSIT_RATE[type], items: [{ item: DEPOSITS[type] }] }]
         }).id('cmp:s2/mining/' + type)
     })
 
