@@ -9,7 +9,10 @@
 // left the pack in stage 1, so nothing else makes them.
 // The borehead and its rockcutting wheel cut any block with no HP, no claim check and no raid, even in the city and through the
 // offline shield (launch audit, 2026-11-05), so they stay out.
-const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel']
+const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel',
+    // Every drink comes from a barrel or a shaker, so without them the city's alcohol market stays Frigulus's (s2_drinks.js).
+    // The molotov stays out until it works on airships.
+    'kaleidoscope_tavern:barrel', 'kaleidoscope_tavern:shaker', 'kaleidoscope_tavern:molotov']
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
@@ -81,17 +84,16 @@ function cmpS2Rewash(event, name, input, results) {
 // in the hose and elevator pulleys. The foods that need kelp go, since rubber is no food.
 const CMP_S2_KELP = ['minecraft:kelp', 'minecraft:dried_kelp', 'minecraft:dried_kelp_block']
 const CMP_S2_KELP_FOOD_RECIPES = [
-    'brewinandchewin:fermenting/kimchi', 'brewinandchewin:fermenting/kippers', 'brewinandchewin:fermenting/salty_folly_from_vodka',
     'farmersdelight:cooking/noodle_soup', 'farmersdelight:kelp_roll', 'farmersdelight:cutting/kelp_roll',
-    'farmersdelight:rice_roll_medley_block',
-    'farmerspizzeria:dough_add_dried_kelp', 'farmerspizzeria:dough_add_cod', 'farmerspizzeria:dough_add_salmon',
-    'farmerspizzeria:dough_cod_add_salmon', 'farmerspizzeria:dough_salmon_add_cod',
-    'create:dough_add_dried_kelp', 'create:dough_dried_kelp_add_cod', 'create:dough_dried_kelp_add_salmon',
-    'create:dough_cod_add_salmon', 'create:dough_salmon_add_cod',
+    'farmersdelight:rice_roll_medley_block', 'crabbersdelight:cooking/stuffed_nautilus_shell', 'crabbersdelight:kelp_shake',
 ]
+// A crab trap runs on its own, so what it catches must not become a metal or a vein's material: its cans would smelt into iron
+// and its fish bones into bone meal.
+const CMP_S2_TRAP_SCRAP = ['crabbersdelight:iron_nugget_from_smelting_can', 'crabbersdelight:bone_meal_from_fish_bones']
 
 ServerEvents.recipes(event => {
     CMP_S2_KELP_FOOD_RECIPES.forEach(id => event.remove({ id: id }))
+    CMP_S2_TRAP_SCRAP.forEach(id => event.remove({ id: id }))
     CMP_S2_KELP.forEach(id => event.remove({ output: id }))
     CMP_S2_KELP.forEach(id => event.replaceInput({ input: id }, id, 'kubejs:rubber'))
     // replaceInput cannot reach this mod's own recipe type, so it is made again with rubber.
@@ -108,7 +110,5 @@ ServerEvents.tags('item', event => {
     event.add('c:hidden_from_recipe_viewers', CMP_S2_BANNED)
     event.add('c:hidden_from_recipe_viewers', CMP_S2_KELP.concat(['chipped:dried_kelp_block', 'farmersdelight:kelp_roll',
         'farmersdelight:kelp_roll_slice', 'farmersdelight:rice_roll_medley_block', 'farmersdelight:noodle_soup',
-        'brewinandchewin:kimchi', 'brewinandchewin:kippers', 'farmerspizzeria:dough_dried_kelp',
-        'farmerspizzeria:dough_dried_kelp_cod', 'farmerspizzeria:dough_dried_kelp_salmon',
-        'farmerspizzeria:raw_abyssal_marinara_pizza', 'farmerspizzeria:abyssal_marinara_pizza']))
+        'crabbersdelight:stuffed_nautilus_shell', 'crabbersdelight:kelp_shake']))
 })

@@ -218,16 +218,16 @@ file = "kubejs/data/copycats/block_armor/copycat_vertical_half_layer.json"
 hash = "59b129c48700089824f5b5809db4bf024738484531b3e1d21819cf7050890940"
 
 [[files]]
-file = "kubejs/data/create/recipe/dough_add_tomato_sauce.json"
-hash = "61feb5fd0d923cf7616e7e28a901b0ef13c48d5eb58ee33b3e0234a2241dac46"
+file = "kubejs/data/crabbersdelight/loot_table/gameplay/crab_trap_loot/air.json"
+hash = "10a86b9d723b961b13dd2b6128398016f16475ec3faa010939393e4da24ebea7"
+
+[[files]]
+file = "kubejs/data/crabbersdelight/loot_table/gameplay/fishing_bait_loot/salmon.json"
+hash = "826d253904aa795e6adf321c1bbe16fecce094e942916828ed0a19c1c561f619"
 
 [[files]]
 file = "kubejs/data/create/recipe/milling/tuff.json"
 hash = "46ed6922a8aa2c261a41ddc1b609fe792e0f3d1d8216a796922c5e036d1ae443"
-
-[[files]]
-file = "kubejs/data/create/recipe/tomato_sauce_filling.json"
-hash = "be6c9b18a6d8b33976bfcd7ba5e2781c259d7fef27683e2ba8ed5a3f84466b1e"
 
 [[files]]
 file = "kubejs/data/create_armorer/data/attachments/muzzle_refit_ap_grenade_data.json"
@@ -402,12 +402,16 @@ file = "kubejs/server_scripts/s2_deposits.js"
 hash = "12eb2d0dfe3f7e3c9158d47379bf42515ba68600e85dce54ccbfed3c07c9f6e3"
 
 [[files]]
+file = "kubejs/server_scripts/s2_drinks.js"
+hash = "5c07ab03040c928e7e7926e180c6f979f82b08cc0edcc9c50a28a169ac607103"
+
+[[files]]
 file = "kubejs/server_scripts/s2_generators.js"
 hash = "2248fa06bdb8770c70dfaa35fd690e9b7941036ddd0256d24b2961dd9931fd67"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "7d338f5d9665328885d4d072dbffe957bebc54daa3f8ff6036fe11edc90adc76"
+hash = "adb0b6e2bfbedae8f9f6cc68a571d784f2dda3cc46f5654a8d13c36724dd5035"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -517,11 +521,6 @@ metafile = true
 [[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "e1f1588b18947699ddc9b4f7c5b5406c5559155b8cb52dcd0f203c07c31cd0b8"
-metafile = true
-
-[[files]]
-file = "mods/brewin-and-chewin.pw.toml"
-hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
 metafile = true
 
 [[files]]
@@ -674,6 +673,11 @@ metafile = true
 [[files]]
 file = "mods/corpse.pw.toml"
 hash = "8e671fbd3a5460a61073cced391ec08efc6b67d765e49015eea45a1f1db159a0"
+metafile = true
+
+[[files]]
+file = "mods/crabbers-delight.pw.toml"
+hash = "6561e381b08dab5643dfc7bff8f2b60df1f2e2e4078c83fa0ead4978266ec37a"
 metafile = true
 
 [[files]]
@@ -967,11 +971,6 @@ hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
 metafile = true
 
 [[files]]
-file = "mods/farmers-pizzeria.pw.toml"
-hash = "ef7be6b02d0348ff3b296b95654fb02b18af552dd7807f568cac11850c92acbe"
-metafile = true
-
-[[files]]
 file = "mods/fast-leaf-decay.pw.toml"
 hash = "e9711a942110d54884394c3a436ae509bc6444a30215e7dd385e4766ba92b400"
 metafile = true
@@ -1073,6 +1072,16 @@ metafile = true
 [[files]]
 file = "mods/jei.pw.toml"
 hash = "fb3233553d7a88373fcd54e6fbeac1f593fdfbe44f00e0c24790a01774545e2f"
+metafile = true
+
+[[files]]
+file = "mods/kaleidoscope-world-liquor.pw.toml"
+hash = "493ed76bf7f84916b4e7f66011ca3c276e53ffbded28538c7c95ef55a6686ef6"
+metafile = true
+
+[[files]]
+file = "mods/kaleidoscopetavern.pw.toml"
+hash = "64b32907185ca1477a4f1335af4cc3068c4ea9e5ea537ce408b360d595609acc"
 metafile = true
 
 [[files]]
