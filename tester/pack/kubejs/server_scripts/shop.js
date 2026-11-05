@@ -1,6 +1,7 @@
 // /shop: the only place coins go. Numismatics coins come from airdrops only (the airdrop mod puts them in the
 // crates; numismatics.js takes away every recipe, bank and vendor), and the shop sells the items that are not in
 // the crates any more for them. It never buys anything back: every coin it takes is destroyed.
+// Season 2's plot rent and plot sales are paid the same way, with these functions (plot_rent.js).
 //
 //   /shop                     the shop screen (the cmpshop mod: tabs, search, prices, your coins, the treasury;
 //                             its buttons run the commands below, so every rule here holds), else the list
@@ -103,6 +104,7 @@ const CMP_SHOP_OFFERS_ALL = [
     ['blaze_burner', 'create:blaze_burner', 1, 16, 'rare'], // the filled one (create:empty_blaze_burner is empty)
     ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12, 'rare'],
     ['levitite', 'aeronautics:levitite', 8, 12, 'rare'],
+    ['gyroscope', 'aeroworks:gyroscope', 1, 12, 'rare'], // shop only (s2_recipes.js); Season 2's only source
     ['ink_sac', 'minecraft:ink_sac', 8, 0.25, 'supplies'],
     ['ominous_bottle', 'minecraft:ominous_bottle', 1, 0.25, 'supplies'],
     ['spider_eye', 'minecraft:spider_eye', 4, 0.25, 'supplies'],
@@ -125,6 +127,7 @@ const CMP_SHOP_OFFERS_ALL = [
 )
 
 const $CmpShopStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const $CmpShopPlots = Java.loadClass('dev.cmp.cmpwar.Plots')
 const $CmpShopCompound = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $CmpShopRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 const $CmpShopId = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -191,8 +194,10 @@ function cmpShopOpen(server) {
     return !cmpShopData(server).getBoolean('off')
 }
 
+// Nobody can pay rent on a city plot while the shop is closed, so cmpwar stops the rent clock until it opens.
 function cmpShopSetOpen(server, open) {
     cmpShopData(server).putBoolean('off', !open)
+    $CmpShopPlots.paymentsClosed(server, !open)
 }
 
 // The tripwire's scores, in spurs. The objective is made when it is missing.
@@ -860,6 +865,7 @@ function cmpMoney(source) {
 
 ServerEvents.loaded(event => {
     cmpShopObjective(event.server)
+    $CmpShopPlots.paymentsClosed(event.server, !cmpShopOpen(event.server))
 })
 
 ServerEvents.commandRegistry(event => {

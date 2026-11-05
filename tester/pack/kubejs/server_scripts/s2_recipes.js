@@ -2,17 +2,22 @@
 // chest boats, crafted or found; gunpowder only from sulfur, levitite only from the shop, no metal from rock or sand.
 //
 // Use is banned server-wide in pack/config/openpartiesandclaims-server.toml (completelyDisabledItemInteractions:
-// pearls, eyes, #minecraft:boats, #minecraft:chest_boats; completelyDisabledBlockInteractions: ender chests), in a
-// claim or not: nobody throws a pearl (so no pearl stasis either), uses an eye, places a boat or opens an Ender Chest.
+// ender chests, pearls, eyes, #minecraft:boats, #minecraft:chest_boats; completelyDisabledBlockInteractions: ender chests),
+// in a claim or not: nobody throws a pearl (so no pearl stasis either), uses an eye, places a boat, or places or opens an
+// Ender Chest. The block ban also stops one being mined, so a placed one would be an unbreakable block (linuxchr, 2026-11-05).
 // Here every recipe that makes one goes, and EMI hides them (the c:hidden_from_recipe_viewers tag, as numismatics.js
 // does). S2 has no loot chests (no structures), no endermen (cmpwar noHostileMobs) and no villagers, and Create Sifting
 // left the pack in stage 1, so nothing else makes them.
 // The borehead and its rockcutting wheel cut any block with no HP, no claim check and no raid, even in the city and through the
 // offline shield (launch audit, 2026-11-05), so they stay out.
 const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel',
-    // Every drink comes from a barrel or a shaker, so without them the city's alcohol market stays Frigulus's (s2_drinks.js).
-    // The molotov stays out until it works on airships.
-    'kaleidoscope_tavern:barrel', 'kaleidoscope_tavern:shaker', 'kaleidoscope_tavern:molotov']
+    // Barrels, pressing tubs, taps and freezers are Frigulus's alone, so the city's alcohol market stays his (s2_drinks.js). A
+    // shaker stays for sale: it mixes his drinks. The molotov stays out until it works on airships.
+    'kaleidoscope_tavern:barrel', 'kaleidoscope_tavern:pressing_tub', 'kaleidoscope_tavern:tap', 'kaleidoscope_world_liquor:freezer',
+    'kaleidoscope_tavern:molotov',
+    // Minecart contraptions are out: moving machines stay in the city, each with its own check against plot lines, but this one
+    // was taken out instead (Vlad, 2026-11-05). The same config line stops a creative copy being placed. No recipe takes one.
+    'create:cart_assembler']
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
@@ -38,8 +43,8 @@ ServerEvents.recipes(event => {
     // (the islands' rock blobs) the rest. Diamond, emerald,
     // netherite and the other Nether and End minerals stay without a source (tools, armour, beacons).
     event.replaceInput({ input: 'minecraft:lapis_lazuli' }, 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard')
-    event.replaceInput({ input: 'minecraft:glowstone_dust' }, 'minecraft:glowstone_dust', 'kubejs:sulfur')
-    event.replaceInput({ input: 'minecraft:blaze_powder' }, 'minecraft:blaze_powder', 'kubejs:sulfur')
+    event.replaceInput({ input: 'minecraft:glowstone_dust' }, 'minecraft:glowstone_dust', 'cmpveins:sulfur')
+    event.replaceInput({ input: 'minecraft:blaze_powder' }, 'minecraft:blaze_powder', 'cmpveins:sulfur')
 
     // Gunpowder comes only from sulfur and charcoal in a mixer (#7, #31; the recipe is in s2_deposits.js). Out go
     // Create's cinder flour + harming potion filling and the 25% gunpowder from washing crushed zinc (the wash keeps its
@@ -54,6 +59,9 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'aeronautics:mixing/levitite_blend' })
     event.remove({ output: 'aeronautics:levitite' })
     event.remove({ output: 'aeronautics:pearlescent_levitite' })
+    // The Gyroscope only from the shop, at a high price (Vlad, 2026-11-05: "disable gyroscopes and make them buyable in shop"). No recipe
+    // needs one. The Gyroscopic Propeller Bearing, the gyroscopic mechanism and the gearbox are other items and stay craftable.
+    event.remove({ output: 'aeroworks:gyroscope' })
 
     // No metal from rock or sand (#34): metal comes from the deposits and the generators. Washing gravel, red sand and
     // soul sand and grinding tuff keep their other outputs and lose their nuggets.
@@ -95,13 +103,13 @@ ServerEvents.recipes(event => {
     CMP_S2_KELP_FOOD_RECIPES.forEach(id => event.remove({ id: id }))
     CMP_S2_TRAP_SCRAP.forEach(id => event.remove({ id: id }))
     CMP_S2_KELP.forEach(id => event.remove({ output: id }))
-    CMP_S2_KELP.forEach(id => event.replaceInput({ input: id }, id, 'kubejs:rubber'))
+    CMP_S2_KELP.forEach(id => event.replaceInput({ input: id }, id, 'cmpveins:rubber'))
     // replaceInput cannot reach this mod's own recipe type, so it is made again with rubber.
     event.remove({ id: 'aeroworks:wheel_module_from_styles' })
     event.custom({
         type: 'aeroworks:transform_module',
         category: 'misc',
-        ingredients: [{ tag: 'aeroworks:wheel_modules' }, { item: 'kubejs:rubber' }],
+        ingredients: [{ tag: 'aeroworks:wheel_modules' }, { item: 'cmpveins:rubber' }],
         result: { id: 'aeroworks:wheel_module', count: 1 }
     }).id('cmp:s2/wheel_module_from_styles')
 })

@@ -3,8 +3,8 @@
 // Each ingot is a separate deploying step: Create deployers consume one item per operation.
 ServerEvents.recipes(event => {
     const materials = [
-        { id: 'cast_iron', base: 'kubejs:pressed_mechanism', plate: 'create:iron_sheet' },
-        { id: 'bronze', base: 'kubejs:pressed_mechanism', plate: 'create:iron_sheet' },
+        { id: 'cast_iron', base: 'cmpveins:pressed_mechanism', plate: 'create:iron_sheet' },
+        { id: 'bronze', base: 'cmpveins:pressed_mechanism', plate: 'create:iron_sheet' },
         { id: 'steel', base: 'create:precision_mechanism', plate: 'create:iron_sheet' },
         { id: 'nethersteel', base: 'kubejs:steel_mechanism', plate: 'create:sturdy_sheet' }
     ]

@@ -1,0 +1,77 @@
+{
+  "item": "kaleidoscope_tavern:honey_wine",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:nausea",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 45,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:resistance",
+        "duration": 160,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:resistance",
+        "duration": 480,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 20,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:resistance",
+        "duration": 480,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 10,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:resistance",
+        "duration": 1080,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

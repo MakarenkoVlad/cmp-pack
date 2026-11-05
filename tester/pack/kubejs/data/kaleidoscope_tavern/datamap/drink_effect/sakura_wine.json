@@ -1,0 +1,77 @@
+{
+  "item": "kaleidoscope_tavern:sakura_wine",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:nausea",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 45,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 160,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 480,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 20,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 480,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "kaleidoscope_tavern:slightly_tipsy",
+        "duration": 10,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "minecraft:regeneration",
+        "duration": 1080,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

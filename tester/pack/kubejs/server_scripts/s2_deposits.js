@@ -1,4 +1,4 @@
-// Season 2 deposits (blocks and items in startup_scripts/s2_deposits.js).
+// Season 2 deposits (the blocks and items are the CMP Veins mod, cmpveins/).
 //
 // Each deposit gives only its own output: one create_rns:mining recipe per deposit, one yield, no catalysts.
 // Veridium, Ochrum, Crimsite and Asurine give their Create stone, which crushes into copper, gold, iron and
@@ -15,9 +15,9 @@ const DEPOSITS = {
     crimsite: 'create:crimsite',
     asurine: 'create:asurine',
     bone_meal: 'minecraft:bone_meal',
-    sulfur: 'kubejs:sulfur',
-    oil: 'kubejs:oil_sand',
-    latex: 'kubejs:latex',
+    sulfur: 'cmpveins:sulfur',
+    oil: 'cmpveins:oil_sand',
+    latex: 'cmprubber:latex',
     amethyst: 'minecraft:amethyst_shard'
 }
 // The share of a drill's operations that give an item, per material (Vlad, 2026-11-05). miningSpeed is at its lowest, 1, so a
@@ -34,23 +34,30 @@ const CMP_DEPOSIT_RATE = {
     sulfur: 0.5
 }
 
+const CMP_RNS_UNUSED = ['create_rns:deposit_scanner', 'create_rns:resonator', 'create_rns:shattering_resonator',
+    'create_rns:stabilizing_resonator', 'create_rns:resonance_buffer', 'create_rns:resonant_amethyst',
+    'create_rns:polished_resonant_amethyst', 'create_rns:redstone_small_dust']
+
 ServerEvents.recipes(event => {
     Object.keys(DEPOSITS).forEach(type => {
         event.custom({
             type: 'create_rns:mining',
-            deposit_block: 'kubejs:' + type + '_deposit',
+            deposit_block: 'cmpveins:' + type + '_deposit',
             yields: [{ chance: CMP_DEPOSIT_RATE[type], items: [{ item: DEPOSITS[type] }] }]
         }).id('cmp:s2/mining/' + type)
     })
 
-    // The Deposit Scanner only finds deposits Rock & Stone generated itself, and S2 has none.
-    event.remove({ output: 'create_rns:deposit_scanner' })
+    // Rock & Stone's own deposits never generate, so their mining recipes would only tell players about veins that aren't
+    // there, with diamonds and emeralds in them. Its scanner only finds those deposits, and its resonators only change their
+    // yields: the season's veins have one yield and no catalysts.
+    event.remove({ id: /^create_rns:.*_deposit_block$/ })
+    CMP_RNS_UNUSED.forEach(id => event.remove({ output: id }))
 
     // Latex mixes into rubber (belts.js makes belts from rubber).
     event.custom({
         type: 'create:mixing',
-        ingredients: [{ item: 'kubejs:latex' }, { item: 'kubejs:latex' }],
-        results: [{ id: 'kubejs:rubber' }]
+        ingredients: [{ item: 'cmprubber:latex' }, { item: 'cmprubber:latex' }],
+        results: [{ id: 'cmpveins:rubber' }]
     }).id('cmp:s2/mixing/rubber')
 
     // Oil sand melts into crude oil in a heated mixer (#5): a Create Propulsion solid burner on charcoal heats it, no
@@ -60,7 +67,7 @@ ServerEvents.recipes(event => {
     // (thruster_fuels.js), so 16 oil sand (a canister) runs four thrusters for a trip of about 40 minutes.
     event.custom({
         type: 'create:mixing',
-        ingredients: [{ item: 'kubejs:oil_sand' }],
+        ingredients: [{ item: 'cmpveins:oil_sand' }],
         results: [{ id: 'createdieselgenerators:crude_oil', amount: 250 }],
         heat_requirement: 'heated'
     }).id('cmp:s2/mixing/crude_oil')
@@ -69,7 +76,7 @@ ServerEvents.recipes(event => {
     // others). Playtest number: one of each makes two.
     event.custom({
         type: 'create:mixing',
-        ingredients: [{ item: 'kubejs:sulfur' }, { item: 'minecraft:charcoal' }],
+        ingredients: [{ item: 'cmpveins:sulfur' }, { item: 'minecraft:charcoal' }],
         results: [{ id: 'minecraft:gunpowder', count: 2 }]
     }).id('cmp:s2/mixing/gunpowder')
 
@@ -78,7 +85,7 @@ ServerEvents.recipes(event => {
     event.custom({
         type: 'create:pressing',
         ingredients: [{ item: 'create:andesite_alloy' }],
-        results: [{ id: 'kubejs:pressed_mechanism' }]
+        results: [{ id: 'cmpveins:pressed_mechanism' }]
     }).id('cmp:s2/pressing/pressed_mechanism')
 })
 
@@ -86,6 +93,12 @@ const CmpDepositTagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const CmpDepositRegistries = Java.loadClass('net.minecraft.core.registries.Registries')
 const CmpDepositId = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const CMP_DEPOSIT_BLOCKS = CmpDepositTagKey.create(CmpDepositRegistries.BLOCK, CmpDepositId.parse('create_rns:deposit_blocks'))
+
+// The recipe viewers show the season's veins and nothing of Rock & Stone's that isn't in the game.
+ServerEvents.tags('item', event => {
+    event.add('c:hidden_from_recipe_viewers', CMP_RNS_UNUSED)
+    event.add('c:hidden_from_recipe_viewers', /^create_rns:.*_deposit_block$/)
+})
 
 ServerEvents.tags('block', event => {
     event.add('create:non_breakable', '#create_rns:deposit_blocks')

@@ -46,12 +46,7 @@ NativeEvents.onEvent('net.neoforged.neoforge.client.event.ScreenEvent$Render$Pos
             pose.popPose()
         }
         if (!cmpGrReported) {
-            let directGpu = 'unavailable'
-            try {
-                let hooks = Java.loadClass('com.tom.directgpu.client.DirectGPUTerminalClientHooks')
-                directGpu = String(hooks.getDisplayForCurrentScreen())
-            } catch (ignored) {}
-            console.info('CMP GLASSES REDRAW v1 active: terminal render called after screen; directGpuDisplay=' + directGpu)
+            console.info('CMP GLASSES REDRAW v1 active: terminal render called after screen')
             cmpGrReported = true
         }
     } catch (err) {

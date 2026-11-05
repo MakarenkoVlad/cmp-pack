@@ -1,6 +1,7 @@
-// Season 2 city generators (#59, settled point 8, detail D1; block in startup_scripts/s2_deposits.js).
+// Season 2 city generators (#59, settled point 8, detail D1; the block is the CMP City mod, cmpcity/, whose info page and
+// Ponder scene say the numbers below in words: change them together).
 //
-// A right-click with the main hand on a kubejs:generator hands the player everything that is ready for them, straight
+// A right-click with the main hand on a cmpcity:generator hands the player everything that is ready for them, straight
 // into the 36 main slots. Supply comes in bundles: one bundle (CMP_GEN_BUNDLE) for every CMP_GEN_BUNDLE_MINUTES of
 // the player's play time, the vanilla statistic, which counts only while they are online, idle time included. The
 // player's KubeJS persistent data keeps the play time up to which bundles were paid (cmp_gen_paid, in ticks), so
@@ -26,7 +27,7 @@ const CMP_GEN_BUNDLE = [
     ['minecraft:amethyst_shard', 4],
     ['minecraft:quartz', 1],
     ['create:andesite_alloy', 16],
-    ['kubejs:rubber', 4],
+    ['cmpveins:rubber', 4],
     ['createdieselgenerators:diesel_bucket', 1],
 ]
 const CMP_GEN_PAID = 'cmp_gen_paid'   // play-time ticks up to which bundles were handed out (or dropped past the cap)
@@ -125,7 +126,7 @@ NativeEvents.onEvent($CmpGenPriority.HIGH, 'net.neoforged.neoforge.event.entity.
     try {
         if (event.getLevel().isClientSide()) return
         let state = event.getLevel().getBlockState(event.getPos())
-        if (String($CmpGenRegs.BLOCK.getKey(state.getBlock())) != 'kubejs:generator') return
+        if (String($CmpGenRegs.BLOCK.getKey(state.getBlock())) != 'cmpcity:generator') return
         // nothing else happens on a click: no block goes against it, no item is used on it
         event.setCanceled(true)
         event.setCancellationResult($CmpGenResult.SUCCESS)

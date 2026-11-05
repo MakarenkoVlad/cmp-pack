@@ -1,0 +1,13 @@
+{
+  "item": "kaleidoscope_world_liquor:highball",
+  "effects": [
+    [
+      {
+        "effect": "kaleidoscope_world_liquor:creative_flight",
+        "duration": 1200,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ]
+  ]
+}
