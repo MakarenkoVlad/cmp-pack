@@ -77,7 +77,7 @@ ServerEvents.commandRegistry(event => {
         stacks.forEach(stack => player.give(stack))
         player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs and a core (protection block). Breed the sheep with wheat for wool "
             + 'and the chickens with seeds for eggs and feathers. '
-            + 'Place the core and install a load of andesite alloy to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' land cores placed, 7 chunks apart). '
+            + 'Place the core and install a load of andesite alloy to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' land cores placed, none within 7 chunks of another core). '
             + 'You can use /kit again in 24 hours.'))
         return 1
     }))
@@ -93,7 +93,7 @@ const CMP_KIT2_ITEMS = [
     ['minecraft:bee_nest', 1], ['minecraft:bee_spawn_egg', 1], // one bee: more have to be found
     ['minecraft:oak_sapling', 1], // one sapling: other trees have to be found
     ['minecraft:water_bucket', 1], ['minecraft:grass_block', 16], ['minecraft:bone', 8],
-    ['minecraft:wheat_seeds', 8], ['minecraft:sugar_cane', 4], ['minecraft:potato', 4], ['minecraft:kelp', 1],
+    ['minecraft:wheat_seeds', 8], ['minecraft:sugar_cane', 4], ['minecraft:potato', 4],
     ['minecraft:red_mushroom', 1], ['minecraft:brown_mushroom', 1],
     ['minecraft:torch', 16], ['minecraft:bread', 8],
 ]
@@ -132,7 +132,7 @@ ServerEvents.commandRegistry(event => {
         data.putLong(CMP_KIT2_LAST_USE, now)
         stacks.forEach(stack => player.give(stack))
         player.tell(Text.gold("Here's your weekly farm kit: cows, pigs, a bee nest and a bee, a sapling, crops, water, grass, "
-            + 'bones, kelp, torches and some bread. You can use /kit2 again in 7 days.'))
+            + 'bones, torches and some bread. You can use /kit2 again in 7 days.'))
         return 1
     }))
 })

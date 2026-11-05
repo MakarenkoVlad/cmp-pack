@@ -14,11 +14,7 @@ hash = "ef2318cbc363eb6fce4fb69e5cd968f41d6cb60ec9a6e8111d78257074909bed"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "4316c525b98b759121f95277ed20261bfd890a28945b3984831cef1ddc7ac118"
-
-[[files]]
-file = "config/create_structures_arise-server.toml"
-hash = "d807839362cca0878a6e120b6bd452e4252b3f7187cd6c854d77a1c4e2f4b4fe"
+hash = "ea071f9fddaa6b453d2475fb8bd908943b78ca9844b81b3ff7ead247b2c751a5"
 
 [[files]]
 file = "config/exposure-client.toml"
@@ -107,7 +103,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "1ccfc44e63be3369c59f25298fff158383773053c1dfc3d3fb93f9e626d193e4"
+hash = "0ffb8227bd0bbeee16f4106423f16b2f125e91756a77c70c981494e64e04f95a"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -403,7 +399,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_deposits.js"
-hash = "153014b407e8d438aa4d8508f2416eed04fdb5386bbd1bbf6516ae176d80d647"
+hash = "4eb627638e1179e21fa3501389eb289632f56ca5c8cf3b0707b9d43117f9051e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_generators.js"
@@ -411,15 +407,15 @@ hash = "a40afa033fdb180cd296026a579b2f63c90ff6bc0e43c807fbe7c8a52a60a2d2"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "e8db4335fc9fc3a99537da83840c678459bcf954fd2c1bba8762a06d9aeb157f"
+hash = "475915c25748f8363fdb2bb3ccb0f13bfe3b536401369bda41becc192e86321a"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
+hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "dbb4f94b22bb24e48a2c515d1fba6a30dffd9e0e2b910fefdeed43a565fd7c27"
+hash = "727ef046a50bd01b3077054c73a0f16165b6629dca1fe37dcc460d237f032b85"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -427,7 +423,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "16fc395b100874e1aeda1dc4441b156b6a1bc34c2d8ffbec13870da96c2473cb"
+hash = "acda6b885150711f5cb746b82183de330633ce934e4b39d7f6784fe9ac4ce0b1"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -447,7 +443,7 @@ hash = "e0492739cf441e7756498daf472ac8e82ec46d57ae23a649a94e2f2cad33f482"
 
 [[files]]
 file = "kubejs/startup_scripts/s2_deposits.js"
-hash = "83f631a2d6c90427a7978106181bb831adf14e46092e6b406a8f6021d64096a2"
+hash = "91af8f2dc3a56f49c3e0e6ed6be6e4072c36a8acc303862187aa94de83e752e5"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"
@@ -626,8 +622,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.38.1.jar"
-hash = "0a291460b2c8dde4b87fb2c0b43f1849d9b24898171195784810c672a80957bf"
+file = "mods/cmpfixes-0.38.2.jar"
+hash = "dc5b6c6a9a9bdee878937fd214abbcf3a8a4e3ca0a6e021dde17a865441aa47e"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -642,8 +638,8 @@ file = "mods/cmptab-0.1.0.jar"
 hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
 
 [[files]]
-file = "mods/cmpwar-0.25.0.jar"
-hash = "6ebc45d9717a5868fbadc1f3e28322c14e12ddabf67da88e7294368753e016c2"
+file = "mods/cmpwar-0.26.1.jar"
+hash = "a5fd92f4a75fa5d9b42833a4ba71773f6e6cbbb6fd06c3d5258ba367f3d23b99"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -811,11 +807,6 @@ hash = "2677237aa7c7c037f770bd15c33359e054cd27f5614a7667e02183ed23f3c4d1"
 metafile = true
 
 [[files]]
-file = "mods/create-hangars.pw.toml"
-hash = "da8d5e82cf967b40f3e4246b33d42c911620d2598b825b607bce11fdb91edaa3"
-metafile = true
-
-[[files]]
 file = "mods/create-immersive-tacz-integration.pw.toml"
 hash = "7910a6d60620acce95fcce5d071d382b4b4fe5c1e2183f962620228771e378bc"
 metafile = true
@@ -823,11 +814,6 @@ metafile = true
 [[files]]
 file = "mods/create-integrated-farming.pw.toml"
 hash = "205ac4987dcaf6aa6a099c9dbcb97f9aea85b2f9b2f5953fc88c83d92afd90b5"
-metafile = true
-
-[[files]]
-file = "mods/create-let-the-adventure-begin.pw.toml"
-hash = "306079117b2da88795d6af88fb9c2bc0749559e61db0a830bb864ffe881ac79a"
 metafile = true
 
 [[files]]
@@ -863,21 +849,6 @@ metafile = true
 [[files]]
 file = "mods/create-rns.pw.toml"
 hash = "eda98b54aa329bb3f99671a839dd221b310d15c1fd68649a64a8ccd8eb5f279f"
-metafile = true
-
-[[files]]
-file = "mods/create-rustic-structures.pw.toml"
-hash = "4db36dff15780e4e1ba380f13302a61d03e9c85509a09ca9e38749930f01511d"
-metafile = true
-
-[[files]]
-file = "mods/create-structures-arise.pw.toml"
-hash = "d07e87a42a1f882ee71b9f68fc531b1b9dcf4637f69fcf0c80322e488cf79171"
-metafile = true
-
-[[files]]
-file = "mods/create-structures-overhaul.pw.toml"
-hash = "a1ece75a981257cc4cb72f29eb89a95f48249269af6ea115de504d3fbe00be4d"
 metafile = true
 
 [[files]]
@@ -927,12 +898,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "6d3e312dbf8db12dd1b6fb3bd1d29f210ab48024a0b2ebdf02fd32c265955c5d"
-metafile = true
-
-[[files]]
-file = "mods/dungeons-and-taverns.pw.toml"
-hash = "75336ef402b68dd45a0b503559d4b4ab80ab451d30bdea158b927aff8caaafab"
+hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
 
 [[files]]
@@ -943,11 +909,6 @@ metafile = true
 [[files]]
 file = "mods/easy-villagers.pw.toml"
 hash = "d629988991e4e0c461a5031b8c774c184ef409f5b57187211c3abe5b1a21fc3c"
-metafile = true
-
-[[files]]
-file = "mods/embers-floating-islands.pw.toml"
-hash = "82b5da4b806a09e490ce4e03204136194f7581aeb93cecf024f80d6f926764d0"
 metafile = true
 
 [[files]]
@@ -978,11 +939,6 @@ metafile = true
 [[files]]
 file = "mods/euphoria-patches.pw.toml"
 hash = "d71abc5f76bbd6c2f1ddf5a113b0cdf8495c23ce85e310a69c50eac462e1821a"
-metafile = true
-
-[[files]]
-file = "mods/explorify.pw.toml"
-hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
 metafile = true
 
 [[files]]
@@ -1205,16 +1161,6 @@ hash = "c84140c66f233909b392bd7253ca33c59903ffda51beff558d9a2a4a8c6bc269"
 metafile = true
 
 [[files]]
-file = "mods/moogs-structure-lib.pw.toml"
-hash = "00b3a07b1994eecda04b3893c1696c9114adf7494ac604f2d172b5931fed9275"
-metafile = true
-
-[[files]]
-file = "mods/moogs-voyager-structures.pw.toml"
-hash = "8f1f7a8fad5f76d13cc8fdd8fd3c9b721a461fe72f009c23a247ffab76154586"
-metafile = true
-
-[[files]]
 file = "mods/moreculling.pw.toml"
 hash = "d6183e3e5f6f98aa2dc8dec2491ca2a4802262007f75781ef449296f7d9671ba"
 metafile = true
@@ -1373,11 +1319,6 @@ hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
 metafile = true
 
 [[files]]
-file = "mods/shellbound-for-airship.pw.toml"
-hash = "026951f2fdf7709712269e4f2c03aa544d35d20c1fb6180876f5ec5063fc2e34"
-metafile = true
-
-[[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "089e4203ca8bbdb98eb171818f1ec8d384e1a477e1276325c4e4f1a4367d8260"
 metafile = true
@@ -1385,11 +1326,6 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "8eae737eb20a0488e9b57b6a59f0681d142732bcb22fc896ad4e5ff924ec5683"
-metafile = true
-
-[[files]]
-file = "mods/sky-whale-ship.pw.toml"
-hash = "0be5b145e8ac324bbac2399a6f420a3f4e18f8b50d3b2c18bdb65b67c356eb45"
 metafile = true
 
 [[files]]
@@ -1422,16 +1358,6 @@ file = "mods/streamsafe-1.0.0.jar"
 hash = "4f824d5aa902794b1df70e67d84739579f3cc4c8daa461899198b9dbeb166a40"
 
 [[files]]
-file = "mods/structory-towers.pw.toml"
-hash = "c2d51d6fd5edb04406c16820ac38700b8272804c386c82d32235b1ee51977e91"
-metafile = true
-
-[[files]]
-file = "mods/structory.pw.toml"
-hash = "eaec78a5dd37404a381ba7cdf378a5cf018a80e50e39b7b3d9b8bd1589e231a2"
-metafile = true
-
-[[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "aa89e067824ca42d818a81a6d02ce5296ce662d834c35dd2ff0d81189d3bc3f9"
 metafile = true
@@ -1454,11 +1380,6 @@ metafile = true
 [[files]]
 file = "mods/vs-hose-connectors.pw.toml"
 hash = "6c9883d2fa1643fe221307ab0101fbccb204c80953989d3e064872b4f45efd34"
-metafile = true
-
-[[files]]
-file = "mods/when-dungeons-arise.pw.toml"
-hash = "7e6948368276f2c49d5bccf52cbf80930d0daca75b4dfbc5530479f1d3f95cf8"
 metafile = true
 
 [[files]]

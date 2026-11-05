@@ -17,7 +17,8 @@ const DEPOSITS = {
     bone_meal: 'minecraft:bone_meal',
     sulfur: 'kubejs:sulfur',
     oil: 'kubejs:oil_sand',
-    latex: 'kubejs:latex'
+    latex: 'kubejs:latex',
+    amethyst: 'minecraft:amethyst_shard'
 }
 
 ServerEvents.recipes(event => {
@@ -38,6 +39,26 @@ ServerEvents.recipes(event => {
         ingredients: [{ item: 'kubejs:latex' }, { item: 'kubejs:latex' }],
         results: [{ id: 'kubejs:rubber' }]
     }).id('cmp:s2/mixing/rubber')
+
+    // Oil sand melts into crude oil in a heated mixer (#5): a Create Propulsion solid burner on charcoal heats it, no
+    // blaze needed. The Diesel Generators tower then splits 100 mB crude into 50 mB diesel and 50 mB gasoline on
+    // ordinary heat (the mod's own crude_oil distillation), so one oil sand gives 125 mB of each and 4 oil sand a
+    // bucket of fuel. Playtest number: a thruster at full throttle burns a bucket in about 42 minutes
+    // (thruster_fuels.js), so 16 oil sand (a canister) runs four thrusters for a trip of about 40 minutes.
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [{ item: 'kubejs:oil_sand' }],
+        results: [{ id: 'createdieselgenerators:crude_oil', amount: 250 }],
+        heat_requirement: 'heated'
+    }).id('cmp:s2/mixing/crude_oil')
+
+    // Sulfur and charcoal mix into gunpowder, the only source of it in Season 2 (#7, #31; s2_recipes.js takes out the
+    // others). Playtest number: one of each makes two.
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [{ item: 'kubejs:sulfur' }, { item: 'minecraft:charcoal' }],
+        results: [{ id: 'minecraft:gunpowder', count: 2 }]
+    }).id('cmp:s2/mixing/gunpowder')
 
     // The pressed mechanism replaces Create: Ages' andesite mechanism as the base of the cast iron and
     // bronze cannon mechanisms (artillery_mechanisms.js).

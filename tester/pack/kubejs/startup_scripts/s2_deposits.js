@@ -18,7 +18,7 @@ StartupEvents.registry('item', event => {
         { id: 'latex', name: 'Latex', texture: 'minecraft:item/slime_ball', color: 0xefe9d6,
           tooltip: 'From latex deposits. Mix it into rubber.' },
         { id: 'rubber', name: 'Rubber', texture: 'minecraft:item/dried_kelp', color: 0x3a3a3a,
-          tooltip: 'Belts, spouts and hose pulleys.' },
+          tooltip: 'Belts, spouts, funnels, hoses and more.' },
         { id: 'oil_sand', name: 'Oil Sand', texture: 'minecraft:item/clay_ball', color: 0x3b2f22,
           tooltip: 'From oil deposits. Melt it into crude oil in a heated mixer.' },
         { id: 'pressed_mechanism', name: 'Pressed Mechanism', texture: 'create:item/precision_mechanism', color: 0x9a9a8e,
@@ -44,7 +44,8 @@ StartupEvents.registry('block', event => {
         { id: 'bone_meal', name: 'Bone Meal', texture: 'quartz' },
         { id: 'sulfur', name: 'Sulfur', texture: 'uranium' },
         { id: 'oil', name: 'Oil', texture: 'coal' },
-        { id: 'latex', name: 'Latex', texture: 'silver' }
+        { id: 'latex', name: 'Latex', texture: 'silver' },
+        { id: 'amethyst', name: 'Amethyst', texture: 'lapis' }
     ]
     deposits.forEach(deposit => {
         event.create('kubejs:' + deposit.id + '_deposit', 'create_rns:deposit')

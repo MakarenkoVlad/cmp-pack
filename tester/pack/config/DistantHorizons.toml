@@ -1,7 +1,9 @@
 # CMP sets only the options below. Distant Horizons adds every other option with its default the first
 # time it starts. Players can change any of them in the game, these included, and keep their choice until
 # this file changes in the pack: then everyone starts again from the values below.
-_version = 4
+# Distant Horizons 3.3.3 moved its config to version 5 and wipes a file with an older number on its first
+# start, which would throw away every choice below. Keep this in step with the shipped DH version.
+_version = 5
 
 [server]
 	# Use DH's default LOD upload budget of 500 KB/s per player (0 removes the limit).
@@ -14,9 +16,9 @@ _version = 4
 	# Every client caches the distant terrain under this key. Give each new world its own value, or
 	# players keep seeing the old map in the distance. A new value also makes the deploy delete the
 	# server's own copy while it is stopped (scripts/deploy.py), so both sides rebuild from the real chunks.
-	# "season1-2" clears the fake sea and cliff walls stored before CHUNKS_ONLY: "season1" only reset the
-	# clients, and the server kept sending them what it had stored.
-	levelKeyPrefix = "season1-2"
+	# "season1-2" cleared the fake sea and cliff walls stored before CHUNKS_ONLY on Season 1. Season 2 is a new
+	# world, so it gets its own key and nobody sees Season 1's islands in the distance.
+	levelKeyPrefix = "season2"
 
 [common.worldGenerator]
 	# Distant Horizons' quick first pass guesses the terrain from the biomes, which for the sky islands
