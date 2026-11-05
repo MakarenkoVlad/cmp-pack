@@ -70,7 +70,7 @@ hash = "b30c10538be9f772a8895992fba0daa66e022f02ebcaa668d050974fd1f1c183"
 
 [[files]]
 file = "config/fancymenu/assets/cmp/splashes.txt"
-hash = "a65673ed8d1d181f94d6edb1a2b708e77178be27c3288d4d19625b714bb3f8d2"
+hash = "8631588c60040e8ce2e668935fd523e921fa5f578662068bed636e866ac08935"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -78,7 +78,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "c00cdd20ad844af64c7d7aeffdc5029338064907c347148036390c8a4e2c4699"
+hash = "8e2359f2015739965d7a9d1acf953f0c40a2dd78680c47d6afd1b56c8770713b"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -127,7 +127,7 @@ hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
 file = "kubejs/client_scripts/coin_tooltip.js"
-hash = "06440515e14be4ce6a2094df90e88981b4829624bc770c7c128cece0e3e6de48"
+hash = "2095349089c864e27ec718502d572513d28f219290cfeff5949103975a1b041b"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
@@ -1064,8 +1064,8 @@ file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmprubber-0.1.1.jar"
-hash = "3e035c6c00ac7eb62adb2079d11750dbfc10f6ef22514cee84566fd02fbceaac"
+file = "mods/cmprubber-0.1.2.jar"
+hash = "4bdf5a6d43fb60bd8f84be92256300c6d9ac27965ddb35110c0ffef5905b92d8"
 
 [[files]]
 file = "mods/cmpshop-0.1.1.jar"
@@ -1080,8 +1080,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.2.jar"
-hash = "68e07386747f2aee255d33eca69780ab9fe3a51b1ab2d92daf2c3dcfea13ca35"
+file = "mods/cmpwar-0.27.3.jar"
+hash = "84732a94cdcea32cf5baf0bd1ed2ad0ff09adae8cfdbeaea81f3e5ee99f4ae6c"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1427,6 +1427,10 @@ metafile = true
 file = "mods/fragmentum.pw.toml"
 hash = "d4dfbacb2e7b74ca70b6a9c1f2217ff082c853633e83c67569fe55541f6cf014"
 metafile = true
+
+[[files]]
+file = "mods/frigulus-avatar-1.0.4.jar"
+hash = "756b7586f76b961b1b2db51708e0188cf133942e5a89281d6f45d4442baf48b0"
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"

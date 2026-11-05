@@ -125,7 +125,7 @@ element {
   element_type = custom_button
   instance_identifier = cmp_title_join
   label = §lJOIN TEST SERVER
-  description = Season 2 survival test world%%!serialized_property_newline!%%Licensed Minecraft account linked to Discord%%!serialized_property_newline!%%Discord Testers role required%%!serialized_property_newline!%%Builds the latest test version on first join; restart this instance when ready
+  description = Season 2 survival test world%%!serialized_property_newline!%%Licensed Minecraft account linked to Discord%%!serialized_property_newline!%%Discord Testers role required%%!serialized_property_newline!%%After an update, close the game and relaunch this instance
   button_element_executable_block_identifier = cmp_title_join_script
   [executable_block:cmp_title_join_script][type:generic] = [executables:cmp_title_join_action;]
   [executable_action_instance:cmp_title_join_action][action_type:joinserver] = 185.83.153.162:25566
