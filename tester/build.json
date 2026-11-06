@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "sourceRef": "refs/heads/test-live",
-  "sourceCommit": "2db1d95ec28b0f089bd5c341fce0639304279926",
-  "packVersion": "test-live-2db1d95ec28b",
+  "sourceCommit": "301bbe909e492610a7cc57643bc2aed4a6e387ab",
+  "packVersion": "test-live-301bbe909e49",
   "versions": {
     "minecraft": "1.21.1",
     "neoforge": "21.1.251"
   },
-  "packIndexSha256": "f4a7203e2889f41317aa3f5c6e67f2e31f48b33dcb9bf06cd4f6ca385b144ae5",
-  "packSha256": "d00b942cf2d88443f9c1d367435ed573075a2e31b39fbe40d1175961a99c4301",
+  "packIndexSha256": "b745c75ddf0fe7337aae94ff23738cf2b004aec93b672ff8813da9e3d513edf9",
+  "packSha256": "b5f42230389cc5b6a4e8b08d2533cebd1578d8a61750ee6e7b03a92305251820",
   "archiveSha256": "cdf4c414deecc24ab7ad52bdedff27cfe235cc2f134ac1faa206936a71485631",
   "downloadUrl": "https://makarenkovlad.github.io/cmp-pack/tester/CMP-Tester.zip",
   "updateUrl": "https://makarenkovlad.github.io/cmp-pack/tester/pack/pack.toml"
