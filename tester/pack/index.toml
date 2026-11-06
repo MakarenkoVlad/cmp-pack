@@ -1084,8 +1084,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.6.jar"
-hash = "20c4a65012781aa281cd8a37d085adb4e2c062e49015692570da400adc74a9b6"
+file = "mods/cmpwar-0.27.7.jar"
+hash = "9d3467d892992906cf0ccbcdd1a6ca3f82cf8354cb5fb03f986cedb02ad4b5fa"
 
 [[files]]
 file = "mods/collective.pw.toml"
