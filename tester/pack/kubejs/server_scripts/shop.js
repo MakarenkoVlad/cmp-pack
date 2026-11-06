@@ -14,8 +14,8 @@
 //   /shop off, /shop on       ops only (permission level 2): close and open the shop, kept over restarts
 //   /money                    Season 2's hourly money kit: CMP_MONEY_SPURS spurs, then a wait of an hour from that claim
 //                             (missed hours do not add up), at most CMP_MONEY_DAILY claims a UTC day (#60, settled
-//                             point 8). A crew shares it: one claim an hour and CMP_MONEY_DAILY a day for all its members
-//                             together (Vlad, 2026-11-04). The coins count as minted (#minted) in the same tick, so the
+//                             point 8). Each crew member has their own hour and daily cap (Vlad, 2026-11-06, replacing
+//                             the crew-wide one of 2026-11-04). The coins count as minted (#minted) in the same tick, so the
 //                             tripwire lets them through. Refused like /kit when they do not fit; works anywhere.
 //
 // Season 2 (#8): with cmpwar's safe square on, every trade (buy, change, treasury) works only inside it, in the city.
@@ -812,36 +812,22 @@ function cmpShopAct(source, command) {
 
 // ---- the money kit ------------------------------------------------------------------------------------
 
-// A claim is written on every member's own entry in the server's saved data (cmp_shop/money/<player id>: last, day,
-// count), and a claim reads the latest of all members' entries. So a crew shares one timer, leaving a crew takes the
-// timer along, and a new member brings their own: no team change ever gives a fresh claim.
+// A claim is written on the player's own entry in the server's saved data (cmp_shop/money/<player id>: last, day,
+// count), so every crew member has their own hour and their own daily cap, and changing crews changes nothing.
 function cmpMoney(source) {
     const player = source.getPlayer()
     if (player == null) return cmpShopFail(source, 'Only players can use /money.')
     if (!player.isAlive()) return 0
     const server = source.getServer()
-    const money = cmpShopSub(cmpShopData(server), 'money')
-    const team = cmpShopTeam(player)
-    const crew = team.members
-    const who = crew.length > 1 ? 'Your crew' : 'You'
+    const entry = cmpShopSub(cmpShopSub(cmpShopData(server), 'money'), String(player.getGameProfile().getId()))
     const now = Date.now()
     const day = new Date(now).toISOString().slice(0, 10)
-    // One crew a day for each player: without this a crew could split up and claim once per member every hour.
-    const own = cmpShopSub(money, crew[0])
-    if (String(own.getString('day')) == day && String(own.getString('team')) != '' && String(own.getString('team')) != team.key) {
-        return cmpShopFail(source, 'You already used /money with another crew today. More tomorrow (the day turns at 00:00 UTC).')
-    }
-    let last = 0
-    let count = 0
-    crew.forEach(id => {
-        let entry = cmpShopSub(money, id)
-        last = Math.max(last, Math.min(entry.getLong('last'), now)) // min: the clock was set back
-        if (entry.getString('day') == day) count = Math.max(count, entry.getInt('count'))
-    })
+    const last = Math.min(entry.getLong('last'), now) // min: the clock was set back
+    const count = entry.getString('day') == day ? entry.getInt('count') : 0
     const wait = last + CMP_MONEY_WAIT - now
-    if (wait > 0) return cmpShopFail(source, who + ' can use /money again in ' + Math.max(1, Math.ceil(wait / 60000)) + 'm.')
+    if (wait > 0) return cmpShopFail(source, 'You can use /money again in ' + Math.max(1, Math.ceil(wait / 60000)) + 'm.')
     if (count >= CMP_MONEY_DAILY) {
-        return cmpShopFail(source, who + (crew.length > 1 ? ' has' : ' have') + ' claimed /money ' + CMP_MONEY_DAILY + ' times today. More tomorrow (the day turns at 00:00 UTC).')
+        return cmpShopFail(source, 'You have claimed /money ' + CMP_MONEY_DAILY + ' times today. More tomorrow (the day turns at 00:00 UTC).')
     }
     const spurs = CMP_MONEY_SPURS
     const coins = cmpShopCoinsFor(spurs)
@@ -849,14 +835,10 @@ function cmpMoney(source) {
     if (slots == null) return cmpShopFail(source, 'Your inventory is full. Make some room and try /money again.')
     cmpShopApply(player, slots)
     cmpShopAddScore(server, '#minted', spurs)
-    crew.forEach(id => {
-        let entry = cmpShopSub(money, id)
-        entry.putLong('last', now)
-        entry.putString('day', day)
-        entry.putInt('count', count + 1)
-        entry.putString('team', team.key)
-    })
-    console.info('[shop] money ' + cmpShopName(player) + ' ' + CMP_MONEY_SPURS + ' spurs (' + (count + 1) + '/' + CMP_MONEY_DAILY + ' today, crew of ' + crew.length + ')')
+    entry.putLong('last', now)
+    entry.putString('day', day)
+    entry.putInt('count', count + 1)
+    console.info('[shop] money ' + cmpShopName(player) + ' ' + CMP_MONEY_SPURS + ' spurs (' + (count + 1) + '/' + CMP_MONEY_DAILY + ' today)')
     const left = CMP_MONEY_DAILY - count - 1
     cmpShopSay(source, Text.green('Here are ' + cmpShopCoinWords(coins) + '. ' + (left > 0
         ? 'Next /money in 1h (' + left + ' more today).' : "That was today's last /money.")))

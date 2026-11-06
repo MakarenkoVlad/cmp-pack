@@ -107,7 +107,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "449852d1a09733c8131635c0762d12efedc63d827567129ab47facad480c193c"
+hash = "64df21aa71d4a84424121e22d83e456c41f9313910c087e85a43acc66168383c"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -863,7 +863,7 @@ hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "9090b6336254017e661c26ade0fd39fe6afa8ce3ca2a2c98693526fde4b0fa69"
+hash = "2991767199e8028c5a5dd82d29c5eda9d25472596ddd1ae665b582d0a48efd63"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -871,7 +871,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "a743447868622cd81ad339ed1a0ca1cc014798e39246cbaa1f3f2eae5bf64dcf"
+hash = "3bc9bcb5846be132e2b57ab97c55e3418610815733b6c259f5b161170e969bb3"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -1056,6 +1056,10 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
+file = "mods/cmpball-0.1.0.jar"
+hash = "a0c283d258d59006cc846c9f55dffddc66d20fdf6aa90e5e639f2612e0622563"
+
+[[files]]
 file = "mods/cmpcity-0.1.2.jar"
 hash = "825f9e30e99c63fdaf7306b00df42d754ac12b741c66a310a2d270fd4bca040c"
 
@@ -1084,8 +1088,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.7.jar"
-hash = "9d3467d892992906cf0ccbcdd1a6ca3f82cf8354cb5fb03f986cedb02ad4b5fa"
+file = "mods/cmpwar-0.27.12.jar"
+hash = "60c8d935e6e0ce4fccadf89621e903ec4bba016ec1b0d6aca8c426729d17ff1d"
 
 [[files]]
 file = "mods/collective.pw.toml"
