@@ -839,7 +839,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_deposits.js"
-hash = "9bdaed683fc523c52262de1a9d0664f5584cfe1a08771d4f10dbc128ba4e6715"
+hash = "e5c28f60cb58920e87873876a8b4c51b78076f13b86847085525aac395bde309"
 
 [[files]]
 file = "kubejs/server_scripts/s2_drinks.js"
@@ -847,11 +847,15 @@ hash = "1ca523f1419c3f59b948f428347de69e86aa447d576eda073b56c7144982fdd1"
 
 [[files]]
 file = "kubejs/server_scripts/s2_generators.js"
-hash = "bb23b7c168fb3af5eb98f220fcffc3172ed464f9d8fc1c840e84e9039243b00e"
+hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "77f2b27b19e743159d969eec3df52f3efb2a4b5dca3407714e33432357961f32"
+hash = "9087d0d577da87e1df92f925f71dfa55dd33d65a3a12f8697b97b99b3cc479b3"
+
+[[files]]
+file = "kubejs/server_scripts/s2_ship_loot.js"
+hash = "fcda29e9b7868e30ffcd21819ea81f501501c3d34bfe520bcbbd8376123818b2"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -867,7 +871,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "acda6b885150711f5cb746b82183de330633ce934e4b39d7f6784fe9ac4ce0b1"
+hash = "a743447868622cd81ad339ed1a0ca1cc014798e39246cbaa1f3f2eae5bf64dcf"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -1052,8 +1056,8 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpcity-0.1.1.jar"
-hash = "3e9cb224effdfb02b885f0d5a0591f07f250f540dc53bc712fb78a51732a0abf"
+file = "mods/cmpcity-0.1.2.jar"
+hash = "825f9e30e99c63fdaf7306b00df42d754ac12b741c66a310a2d270fd4bca040c"
 
 [[files]]
 file = "mods/cmpfixes-0.38.5.jar"
@@ -1080,8 +1084,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.3.jar"
-hash = "84732a94cdcea32cf5baf0bd1ed2ad0ff09adae8cfdbeaea81f3e5ee99f4ae6c"
+file = "mods/cmpwar-0.27.5.jar"
+hash = "668f83011c7754ecc0998bcf6308b653e3ad1fed8ec8d06c004ac782fe35a254"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1830,6 +1834,11 @@ metafile = true
 [[files]]
 file = "mods/vs-hose-connectors.pw.toml"
 hash = "6c9883d2fa1643fe221307ab0101fbccb204c80953989d3e064872b4f45efd34"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise-seven-seas.pw.toml"
+hash = "49daa837ab97ab95e582d7ca094f56e5b3a04bf00248bc86e50ee8874cea87af"
 metafile = true
 
 [[files]]

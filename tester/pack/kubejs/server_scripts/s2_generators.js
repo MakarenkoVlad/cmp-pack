@@ -2,7 +2,7 @@
 // Ponder scene say the numbers below in words: change them together).
 //
 // A right-click with the main hand on a cmpcity:generator hands the player everything that is ready for them, straight
-// into the 36 main slots. Supply comes in bundles: one bundle (CMP_GEN_BUNDLE) for every CMP_GEN_BUNDLE_MINUTES of
+// into the 36 main slots. Supply comes in bundles: one bundle (CMP_GEN_BUNDLE) from the start, then one for every CMP_GEN_BUNDLE_MINUTES of
 // the player's play time, the vanilla statistic, which counts only while they are online, idle time included. The
 // player's KubeJS persistent data keeps the play time up to which bundles were paid (cmp_gen_paid, in ticks), so
 // clicking often loses nothing, and restarts, deaths and team changes change nothing. At most CMP_GEN_DAILY_BUNDLES
@@ -55,7 +55,8 @@ function cmpGenWords(stacks) {
 function cmpGenState(player) {
     const data = player.persistentData
     const play = cmpGenPlayTicks(player)
-    let paid = data.getLong(CMP_GEN_PAID)
+    // Before the first click nothing is paid, and one bundle is ready from the start (Vlad, 2026-11-05).
+    let paid = data.contains(CMP_GEN_PAID) ? data.getLong(CMP_GEN_PAID) : -CMP_GEN_TICKS
     if (paid > play) paid = play // the statistic was reset: start again from now
     const ready = Math.floor((play - paid) / CMP_GEN_TICKS)
     const used = data.getString(CMP_GEN_DAY) == cmpGenToday() ? data.getInt(CMP_GEN_TODAY) : 0

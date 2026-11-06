@@ -30,6 +30,11 @@ ServerEvents.recipes(event => {
     // one. Charcoal stands in. That makes the Diesel Generators liquid burner (the refinery's heat, #5) craftable; a
     // blaze burner still needs a blaze to work, and filled ones come from the shop only.
     event.replaceInput({ output: 'create:empty_blaze_burner' }, '#c:netherracks', 'minecraft:charcoal')
+    // Survival cannon parts don't join until welded, and casting is out, so the welder is the only way to a cast iron, steel or bronze
+    // cannon. It took a filled burner, 16 Cog in the shop: an empty one instead (progression audit, 2026-11-05). Both of its recipes.
+    event.replaceInput({ output: 'createbigcannons:cannon_welder' }, 'create:blaze_burner', 'create:empty_blaze_burner')
+    // Bronze alloys took cinder flour, which needs netherrack: 43 items out of reach (same audit).
+    event.replaceInput({ output: 'createbigcannons:bronze_ingot' }, 'create:cinder_flour', 'minecraft:charcoal')
     // No coal ore on the islands: 9 charcoal press into a coal block ("charcoal for coal", #33). The Aeronautics hot-air
     // burner takes a coal block (tag aeronautics:burner_fire), and the block crafts back into coal for anything else.
     event.shapeless('minecraft:coal_block', ['9x minecraft:charcoal']).id('cmp:s2/coal_block_from_charcoal')
@@ -116,6 +121,8 @@ ServerEvents.recipes(event => {
 
 ServerEvents.tags('item', event => {
     event.add('c:hidden_from_recipe_viewers', CMP_S2_BANNED)
+    // Nothing makes these shells in Season 2 (same audit): 294 items that only fill the recipe viewers.
+    event.add('c:hidden_from_recipe_viewers', /^cbcmoreshells:/)
     event.add('c:hidden_from_recipe_viewers', CMP_S2_KELP.concat(['chipped:dried_kelp_block', 'farmersdelight:kelp_roll',
         'farmersdelight:kelp_roll_slice', 'farmersdelight:rice_roll_medley_block', 'farmersdelight:noodle_soup',
         'crabbersdelight:stuffed_nautilus_shell', 'crabbersdelight:kelp_shake']))

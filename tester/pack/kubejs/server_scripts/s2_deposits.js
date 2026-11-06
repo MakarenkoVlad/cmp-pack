@@ -20,18 +20,21 @@ const DEPOSITS = {
     latex: 'cmprubber:latex',
     amethyst: 'minecraft:amethyst_shard'
 }
-// The share of a drill's operations that give an item, per material (Vlad, 2026-11-05). miningSpeed is at its lowest, 1, so a
-// material can only go slower than the base rate: at 256 RPM a small vein does 27 operations an hour, a medium 100, a rich 125.
+// The share of a drill's operations that give an item, per material (Vlad, 2026-11-06). At miningSpeed 4 and 256 RPM a small vein does 108
+// operations an hour, a medium 400, a rich 500. Metals come out at about twice what one player's City Generator gives an hour (crushing
+// gives 0.889 copper, 0.444 iron, 0.333 zinc and 0.222 gold a stone): a small vein makes 48 iron, 48 copper, 27 zinc, 12 gold an hour.
+// Oil follows Vlad's rule that a small vein feeds 1 gasoline chunk loader, a medium 2, a big one 3: one oil sand is 125 mB of gasoline, and
+// 1, 2, 3 and 4 loaders of a crew burn 10.7, 26.7, 48 and 74.7 oil sand an hour, so 0.11 gives 12, 44 and 55 an hour.
 const CMP_DEPOSIT_RATE = {
-    veridium: 1.0,
     crimsite: 1.0,
-    bone_meal: 1.0,
     asurine: 0.75,
-    oil: 0.75,
-    latex: 0.75,
+    veridium: 0.5,
     ochrum: 0.5,
-    amethyst: 0.5,
-    sulfur: 0.5
+    sulfur: 0.5,
+    bone_meal: 0.5,
+    latex: 0.375,
+    amethyst: 0.25,
+    oil: 0.11
 }
 
 const CMP_RNS_UNUSED = ['create_rns:deposit_scanner', 'create_rns:resonator', 'create_rns:shattering_resonator',
