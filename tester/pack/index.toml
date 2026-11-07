@@ -107,7 +107,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "a60d1fdcf688dc496a9fd15d17d5b2065717c7484ac9a68a1f5595b2d2ca171f"
+hash = "741aa9f521271aa1c73c113ca8bf68d8a3b2350d12a5a224b13c3276d6014f1b"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
