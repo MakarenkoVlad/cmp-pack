@@ -57,6 +57,21 @@ ServerEvents.recipes(event => {
     // TaCZ's gunpowder fluid pressed back into gunpowder). No mob drops any: cmpwar's noHostileMobs keeps creepers,
     // witches and ghasts out, there are no loot chests, and wandering traders are off (the city build sets
     // doTraderSpawning false).
+    // Create: Connected's smoking catalyst took netherrack on an empty fan catalyst, and the Nether is locked: coal or charcoal
+    // makes it instead (Vlad, 2026-11-07).
+    event.remove({ id: 'create_connected:item_application/smoking_catalyst_from_empty' })
+    event.custom({
+        type: 'create:item_application',
+        ingredients: [{ item: 'create_connected:empty_fan_catalyst' }, { tag: 'minecraft:coals' }],
+        results: [{ id: 'create_connected:fan_smoking_catalyst' }],
+    }).id('cmp:s2/item_application/smoking_catalyst_from_coal')
+    // Its sanding catalyst took plain sand only: red sand works too (Vlad, 2026-11-07).
+    event.remove({ id: 'create_connected:item_application/sanding_catalyst_from_empty' })
+    event.custom({
+        type: 'create:item_application',
+        ingredients: [{ item: 'create_connected:empty_fan_catalyst' }, [{ item: 'minecraft:sand' }, { item: 'minecraft:red_sand' }]],
+        results: [{ id: 'create_connected:fan_sanding_catalyst' }],
+    }).id('cmp:s2/item_application/sanding_catalyst_from_sand')
     event.remove({ id: 'create:filling/gunpowder' })
     cmpS2Rewash(event, 'crushed_raw_zinc', 'create:crushed_raw_zinc', [{ id: 'create:zinc_nugget', count: 9 }])
 

@@ -16,7 +16,8 @@
 //     Vector Thruster): the mod shows one decimal of what its last update took.
 //   - The mod's Liquid Burner reads the same number: 2 mB now burn for 55 s on diesel (was 1.1 s) and 60 s on
 //     gasoline (was 1.5 s), with the same heat. A bucket keeps one burner lit for about 8 hours.
-//   - Diesel Generators engines have their own fuel table and do not change.
+//   - Diesel Generators engines have their own fuel table. In Season 2 it burns the same 0.02 mB a tick on diesel and gasoline
+//     (Vlad, 2026-11-07): server/season1/datapacks/cmp_s2_sites/data/createdieselgenerators/createdieselgenerators/fuel_type/.
 //
 // A fuel set here stays until the server restarts, also when this file is taken away and the scripts are
 // reloaded.

@@ -855,7 +855,7 @@ hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "9087d0d577da87e1df92f925f71dfa55dd33d65a3a12f8697b97b99b3cc479b3"
+hash = "bc47d99f9e33b99a879b3b91c5fe1f05178ebb7fab67995f74066f64caf0c51f"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -879,7 +879,7 @@ hash = "3bc9bcb5846be132e2b57ab97c55e3418610815733b6c259f5b161170e969bb3"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
-hash = "dd9730aeb170bd8b0e5db6cfa0bdd87557eb762b81a28548c1d932993c0a62cc"
+hash = "b4850e194160932f3f32eb17a3cbace629815fac8b2d9191f7306d60328906d2"
 
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
