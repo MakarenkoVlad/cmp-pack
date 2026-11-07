@@ -4,5 +4,5 @@ Import [https://makarenkovlad.github.io/cmp-pack/tester/CMP-Tester.zip](https://
 
 Use a licensed Minecraft account linked to Discord and ask staff to assign the Testers role. Removing the role removes server access. The main Join button connects to the test server. Joining while it sleeps builds the latest test-live revision; after the build finishes, restart this Prism instance to download the matching pack, then reconnect.
 
-Source commit: `f39c8eef124fa1db073aff6e7ac50b54d097cb19`. Minecraft 1.21.1, NeoForge 21.1.251.
+Source commit: `927881f3e9c380b3e3ee34503d2b2d32351329b1`. Minecraft 1.21.1, NeoForge 21.1.251.
 This channel is published only after a successful test-server build. The normal CMP release and production server use their own channel.

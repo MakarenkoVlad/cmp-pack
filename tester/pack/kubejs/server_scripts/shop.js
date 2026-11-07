@@ -786,6 +786,8 @@ function cmpShopSnapshot(player, mode, result) {
         egg: egg,
         top: cmpShopTopRows(server).slice(0, 10).map(r => ({ name: cmpShopJsonText(r[0]), cog: r[1], ours: r[2] == team.key })),
         result: result == null ? null : { ok: result.ok, text: cmpShopJsonText(result.text) },
+        // The Metal Market's or Auction's tab, for a player at one of those blocks (market.js).
+        desk: typeof cmpDeskSnapshot == 'function' ? cmpDeskSnapshot(player) : null,
     })
 }
 
