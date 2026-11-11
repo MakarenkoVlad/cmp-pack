@@ -107,7 +107,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "741aa9f521271aa1c73c113ca8bf68d8a3b2350d12a5a224b13c3276d6014f1b"
+hash = "4a95da88068b41fe2b638a4d69d098674bc636546070eb9351d6ac895dacc631"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -799,7 +799,7 @@ hash = "2ebdc50d2628d12e5f8cd3830bfaa3c6468cf65fd4283367c65d3df63a8f79cf"
 
 [[files]]
 file = "kubejs/server_scripts/dupe_guards.js"
-hash = "5badf04ecae8636db530c5220d10f6c2cc6464beb7ff2c86e14b27353279bd43"
+hash = "1a037af0c88e94f07bcc6dc9b598b9e48e379b59d39b921ec88b06b463861200"
 
 [[files]]
 file = "kubejs/server_scripts/end_crystals.js"
@@ -819,7 +819,11 @@ hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
 file = "kubejs/server_scripts/market.js"
-hash = "7efd29fa660cd0cb2640c2ae8e0caed45fa6eadf72f2162f4f4d1f9c6711f907"
+hash = "36acbd4cbe6e255659f1b85a4cc24faee64d71510dfdf5f782438bb84b71efb5"
+
+[[files]]
+file = "kubejs/server_scripts/market_board.js"
+hash = "3c782183ec210b85b0f646c7d01f16d4f1caeef552c9d1c2366e90d47aee8cad"
 
 [[files]]
 file = "kubejs/server_scripts/numismatics.js"
@@ -827,7 +831,7 @@ hash = "32040919e89c5aeb7b0e1fd1984c4a78ca917cfd259c78429e519ace36c392bb"
 
 [[files]]
 file = "kubejs/server_scripts/plot_rent.js"
-hash = "2750940598884e4a3019301e01ff8e1670bdf397934c32bde040dd1eb07b900e"
+hash = "afa1ac9dfd8b9311ea8e09119e6f3d713bf11993948910b2b1f7033b1433ec11"
 
 [[files]]
 file = "kubejs/server_scripts/radar_fire_arc.js"
@@ -855,11 +859,15 @@ hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "bc47d99f9e33b99a879b3b91c5fe1f05178ebb7fab67995f74066f64caf0c51f"
+hash = "0cc861c5e137332fd6938c8f9c0a67f735f98151a90375def9f88ac98fc14754"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
-hash = "fcda29e9b7868e30ffcd21819ea81f501501c3d34bfe520bcbbd8376123818b2"
+hash = "fde3263ff49de2a4b2cfff4cee458977bedfc291b65b89b5fa5155f70f5f7cf6"
+
+[[files]]
+file = "kubejs/server_scripts/s2_welcome.js"
+hash = "90cb7adefe8a20e654cfab5cfdb3c0bac27b5505a9f0684c4c8851e12a4dbe59"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -867,7 +875,7 @@ hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "f39f3bb70a2ce3d63c76dede69113b665be1a9ba0f9a99033fa74875178e7b31"
+hash = "81f6c29dc2820a4166a48442746dad8482ebacd81e8c02c1391849b23f326fdd"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -875,7 +883,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "3bc9bcb5846be132e2b57ab97c55e3418610815733b6c259f5b161170e969bb3"
+hash = "cb0f494be14661ecb34010a552706a3946d7c2f88cf1530fb7b92b2c8f04d573"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -1017,8 +1025,8 @@ hash = "0194091946d249681e33dd32a927122e844d4093c2f14165f2f99f92e028af11"
 metafile = true
 
 [[files]]
-file = "mods/cchose-1.0.3.jar"
-hash = "5594dd486ffcc0578dc96442c30738bc77c59322e555406b49f9966607258f13"
+file = "mods/cchose-1.0.4.jar"
+hash = "d56fa36ed910fa709c8100d7d8587b0eca8bace8b57680aaac3bba05b6f91898"
 
 [[files]]
 file = "mods/ccpowergridcompat.pw.toml"
@@ -1068,8 +1076,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.38.5.jar"
-hash = "b35a6feb3bd56edde4c5f5de8aa668dd157e2dc4d4bb428d6ac2ec712e500058"
+file = "mods/cmpfixes-0.38.6.jar"
+hash = "d90702ebbbdcbfa0d1b047a71d3c761de2c0b0fd0292a51f48eba56f2177e2be"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1080,8 +1088,8 @@ file = "mods/cmprubber-0.1.2.jar"
 hash = "4bdf5a6d43fb60bd8f84be92256300c6d9ac27965ddb35110c0ffef5905b92d8"
 
 [[files]]
-file = "mods/cmpshop-0.1.2.jar"
-hash = "2cf588aba39aeb18229674ddc7f45ae847db9cb8cf314301f4a9ef12c0b4916a"
+file = "mods/cmpshop-0.4.0.jar"
+hash = "73b5f2c47e8438dc7d92b29d0c09a68318799317b0765018c69ad1917bc1570f"
 
 [[files]]
 file = "mods/cmptab-0.1.0.jar"
@@ -1092,8 +1100,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.14.jar"
-hash = "14865acc74cf0b8a683b7f76441043110f2fbc8427d9707b420674e3dcc18cb0"
+file = "mods/cmpwar-0.27.18.jar"
+hash = "5f2026a64d91d38a73fa87a1c873342331d6aa78c11f1c3fa03ee3015e3d614f"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1322,7 +1330,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-xaeros-map.pw.toml"
-hash = "ce4f3b213b52415cecadc297652ba0f1c506e4f987a7ae2bfda437f3bd405d5b"
+hash = "34fc08837336e7f5b3e97b43fc0f8df9dfe4456f764bcae2c9736413d2454205"
 metafile = true
 
 [[files]]
@@ -1441,8 +1449,8 @@ hash = "d4dfbacb2e7b74ca70b6a9c1f2217ff082c853633e83c67569fe55541f6cf014"
 metafile = true
 
 [[files]]
-file = "mods/frigulus-avatar-1.0.4.jar"
-hash = "756b7586f76b961b1b2db51708e0188cf133942e5a89281d6f45d4442baf48b0"
+file = "mods/frigulus-avatar-1.1.0.jar"
+hash = "a0338a23d6030430eba64b8bade48839de18a758f804c4db2daf03c501d50c4c"
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
@@ -1841,7 +1849,7 @@ metafile = true
 
 [[files]]
 file = "mods/vs-hose-connectors.pw.toml"
-hash = "6c9883d2fa1643fe221307ab0101fbccb204c80953989d3e064872b4f45efd34"
+hash = "52c86942f80b262807611743be5991c4dfe2df66041a6503a46266d9e7ed4b96"
 metafile = true
 
 [[files]]

@@ -42,11 +42,12 @@
 // ships with this script) adds the spurs it puts into crates to #minted and takes off what is destroyed with
 // unopened leftovers; the shop adds what it destroys to #spent (buys) and #treasury (deposits). More spent than
 // minted means coins that never came from a crate, so a trade that would push #spent + #treasury over #minted
-// is refused, the shop closes itself and logs "[shop] tripwire", and an op opens it again with /shop on. Coins
+// is refused, logged as "[shop] tripwire" and told to the ops who are online. The shop stays open (until
+// 2026-11-11 it closed itself, which stopped every crew's rent over one player's trade). Coins
 // from /give count as coins from nowhere too, so ops must not hand out coins on live (an op who has to adds
 // the spurs to #minted: /scoreboard players add #minted cmp_coins <spurs>). CMP_SHOP_TRIPWIRE = false turns
 // the check off; the shop counts #spent and #treasury either way. A trade worth no whole number of spurs above
-// 0 (only a bug could make one) is refused without closing the shop.
+// 0 (only a bug could make one) is refused too.
 //
 // Rhino: a const inside a block (try, if, a loop) fails with "redeclaration of var" or keeps its first value,
 // so everything below a function's top level is let.
@@ -234,7 +235,9 @@ function cmpShopSpendable(spurs) {
 
 // Null when a trade of `spurs` may go ahead, or what to tell the player. One that is not cmpShopSpendable is
 // refused and the shop stays open. With the tripwire on, one that would make the shop have destroyed more
-// spurs than the airdrops minted closes the shop instead.
+// spurs than were ever minted is refused too, and the staff who are online are told. It used to close the shop
+// for everyone until an op typed /shop on: in the beta that stopped every crew's plot payments from 2026-11-07
+// to 11-09 with nobody told, over one player's trade. /shop off still closes it by hand.
 function cmpShopTripwire(server, player, spurs) {
     if (!cmpShopSpendable(spurs)) {
         console.error('[shop] refused a trade of ' + spurs + ' spurs from ' + cmpShopName(player))
@@ -245,10 +248,27 @@ function cmpShopTripwire(server, player, spurs) {
     const spent = cmpShopScore(server, '#spent')
     const treasury = cmpShopScore(server, '#treasury')
     if (spent + treasury + spurs <= minted) return null
-    cmpShopSetOpen(server, false)
     console.warn('[shop] tripwire: ' + cmpShopName(player) + ' tried to spend ' + spurs + ' spurs with #spent ' + spent
-        + ' + #treasury ' + treasury + ' already against #minted ' + minted + '; the shop is closed until an op runs /shop on')
-    return 'The shop is closed right now.'
+        + ' + #treasury ' + treasury + ' already against #minted ' + minted + '; the trade is refused, the shop stays open')
+    cmpShopTellStaff(server, player, '[shop] ' + cmpShopName(player) + ' tried to spend ' + cmpShopPrice(spurs)
+        + ', more than the server ever gave out (' + cmpShopPrice(Math.max(0, minted - spent - treasury)) + ' left). The trade was refused. '
+        + 'Coins from creative or a dupe cause this. /shop off closes the shop for everyone.')
+    return "The shop can't take these coins right now. Staff have been told."
+}
+
+// Tells every op who is online, at most once a minute for each player who trips the wire, so a player
+// clicking Buy over and over doesn't fill the staff's chat.
+const cmpShopStaffTold = {}
+function cmpShopTellStaff(server, player, text) {
+    const name = cmpShopName(player)
+    const now = Date.now()
+    if (cmpShopStaffTold[name] != null && now - cmpShopStaffTold[name] < 60000) return
+    cmpShopStaffTold[name] = now
+    const players = server.getPlayerList().getPlayers()
+    for (let i = 0; i < players.size(); i++) {
+        let p = players.get(i)
+        if (p.hasPermissions(2)) p.tell(Text.red(text))
+    }
 }
 
 // ---- players, parties, damage --------------------------------------------------------------------------
@@ -786,8 +806,6 @@ function cmpShopSnapshot(player, mode, result) {
         egg: egg,
         top: cmpShopTopRows(server).slice(0, 10).map(r => ({ name: cmpShopJsonText(r[0]), cog: r[1], ours: r[2] == team.key })),
         result: result == null ? null : { ok: result.ok, text: cmpShopJsonText(result.text) },
-        // The Metal Market's or Auction's tab, for a player at one of those blocks (market.js).
-        desk: typeof cmpDeskSnapshot == 'function' ? cmpDeskSnapshot(player) : null,
     })
 }
 
@@ -804,11 +822,13 @@ function cmpShopSend(source, mode, result) {
 }
 
 // Runs a command and refreshes the player's screen with what came of it (the chat line too, as always). A screen
-// that is not open ignores the refresh.
-function cmpShopAct(source, command) {
+// that is not open ignores the refresh. send: what refreshes the screen the command came from, the shop's own unless
+// one is given (the Metal Market's and Auction's screens are their own: market.js's cmpDeskSend).
+function cmpShopAct(source, command, send) {
     CMP_SHOP_LAST = null
     const result = command()
-    cmpShopSend(source, 'update', CMP_SHOP_LAST)
+    if (send) send(source, 'update', CMP_SHOP_LAST)
+    else cmpShopSend(source, 'update', CMP_SHOP_LAST)
     return result
 }
 

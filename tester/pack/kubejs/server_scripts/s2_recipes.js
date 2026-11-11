@@ -17,10 +17,24 @@ const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraf
     'kaleidoscope_tavern:molotov',
     // Minecart contraptions are out: moving machines stay in the city, each with its own check against plot lines, but this one
     // was taken out instead (Vlad, 2026-11-05). The same config line stops a creative copy being placed. No recipe takes one.
-    'create:cart_assembler']
+    'create:cart_assembler',
+    // FTB Quests is here for its Quest Book alone. Its task screens can be set Indestructible by the crew that places one
+    // and a 3x3 to 7x7 screen puts its other blocks down across plot and claim lines: a wall nobody can mine. The
+    // configurator and the loot crate opener have no use without them (no loot crates, no rewards). The book keeps its recipe.
+    'ftbquests:screen_1', 'ftbquests:screen_3', 'ftbquests:screen_5', 'ftbquests:screen_7', 'ftbquests:task_screen_configurator',
+    'ftbquests:loot_crate_opener',
+    // The Re-Packager is out for launch: an order whose fragments can't fill its grid still leaves as a full package, so
+    // metal comes from nothing (Create #8082, #8600, #8155). The Re-Packager Fix mod could hang the server and left in #268.
+    // It comes back with a real fix. Its one recipe turns a Packager into it; the same config line as the cart assembler's
+    // stops a creative copy being placed.
+    'create:repackager']
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
+    // Lava stays /kit-only: it is thruster and burner fuel, and these two turned cobblestone into it, endless without an oil
+    // vein. No other recipe in the pack makes lava (Create's Alex's Mobs lava bottle needs a mod the pack doesn't have).
+    event.remove({ id: 'create:mixing/lava_from_cobble' })
+    event.remove({ id: 'createdieselgenerators:bulk_fermenting/lava' })
     // Amethyst takes the pearl's and the eye's place in every recipe that used one: the chunk loader (pearl), the
     // wireless modem (pearl) and the advanced modem (eye) (#34), and anything else, which would otherwise have no
     // source at all.

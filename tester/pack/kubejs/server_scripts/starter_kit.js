@@ -1,5 +1,6 @@
 // /kit: 2 sheep spawn eggs, for wool (hot air balloon envelopes), 2 chicken spawn eggs, for eggs and
-// feathers, since most islands have neither, a bucket of lava, and a
+// feathers, since most islands have neither, a bucket of lava, 8 bread so nobody starts out hungry (playtester
+// laptoppunk, 2026-11-07: "maybe food in the kit also"; Vlad's yes 2026-11-11), and a
 // protection block, so nobody has to craft one before they can claim land. A team can only have one block
 // placed, so the extra ones are spares (a team whose block is captured can put a new one down at once).
 // Every player can use it once every 24 hours, so losing your sheep (off the island edge, or into the
@@ -11,7 +12,7 @@
 const CMP_KIT_LAST_USE = 'cmp_kit_last_use_2' // Date.now() of the last /kit
 const CMP_KIT_OLD_USES = 'cmp_kit_uses' // the old "twice ever" counter, dropped at the next /kit
 const CMP_KIT_COOLDOWN = 24 * 60 * 60 * 1000
-const CMP_KIT_ITEMS = [['minecraft:sheep_spawn_egg', 2], ['minecraft:chicken_spawn_egg', 2], ['cmpwar:protection_block', 1], ['minecraft:soul_sand', 1], ['minecraft:lava_bucket', 1]]
+const CMP_KIT_ITEMS = [['minecraft:sheep_spawn_egg', 2], ['minecraft:chicken_spawn_egg', 2], ['cmpwar:protection_block', 1], ['minecraft:soul_sand', 1], ['minecraft:lava_bucket', 1], ['minecraft:bread', 8]]
 const CmpKitStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 let CmpKitWarConfig = null
 try { CmpKitWarConfig = Java.loadClass('dev.cmp.cmpwar.CmpWarConfig') } catch (e) { CmpKitWarConfig = null }
@@ -71,13 +72,13 @@ ServerEvents.commandRegistry(event => {
         if (!player.isAlive()) return 0
         const stacks = CMP_KIT_ITEMS.map(entry => Item.of(entry[0], entry[1]))
         if (!cmpKitHasRoom(player, stacks)) {
-            player.tell(Text.red('Your inventory is full. Make some room and try /kit again.'))
+            player.tell(Text.red('Not enough room: /kit needs ' + stacks.length + ' free slots. Make some room and try again.'))
             return 0
         }
         data.putLong(CMP_KIT_LAST_USE, now)
         data.remove(CMP_KIT_OLD_USES)
         stacks.forEach(stack => player.give(stack))
-        player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs, a core (protection block), a soul sand and a bucket of lava. Light the soul sand to haunt sand into more with a fan. Breed the sheep with wheat for wool "
+        player.tell(Text.gold("Here's 2 sheep spawn eggs, 2 chicken spawn eggs, a core (protection block), a soul sand, a bucket of lava and 8 bread. Light the soul sand to haunt sand into more with a fan. Breed the sheep with wheat for wool "
             + 'and the chickens with seeds for eggs and feathers. '
             + 'Place the core and install a load of andesite alloy to claim land for your team (each team can have ' + (cmpKitTeamCap() == 1 ? 'one' : cmpKitTeamCap()) + ' land cores placed plus 1 per member, none within 7 chunks of another core). '
             + 'You can use /kit again in 24 hours.'))

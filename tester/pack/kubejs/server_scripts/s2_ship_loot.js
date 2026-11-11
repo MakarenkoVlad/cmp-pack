@@ -24,7 +24,7 @@ function cmpShipFill(id, loot) {
     const count = rolls[0] + Math.floor(Math.random() * (rolls[1] - rolls[0] + 1))
     loot.clear()
     for (let i = 0; i < count; i++) {
-        const line = lines[Math.floor(Math.random() * lines.length)]
+        let line = lines[Math.floor(Math.random() * lines.length)]
         loot.addItem(Item.of(line[0], line[1] + Math.floor(Math.random() * (line[2] - line[1] + 1))))
     }
 }
