@@ -107,7 +107,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "4a95da88068b41fe2b638a4d69d098674bc636546070eb9351d6ac895dacc631"
+hash = "e93728b3041fdd71d710f85f83ac816900ad81a5268f05953a384106873fd7ce"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -859,7 +859,7 @@ hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "0cc861c5e137332fd6938c8f9c0a67f735f98151a90375def9f88ac98fc14754"
+hash = "96806059180185a52bbd9a2725bfa088ca2f4784c27728a19f2e772e0a4a0a6e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1076,8 +1076,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.38.6.jar"
-hash = "d90702ebbbdcbfa0d1b047a71d3c761de2c0b0fd0292a51f48eba56f2177e2be"
+file = "mods/cmpfixes-0.38.7.jar"
+hash = "504a204f4bf38841b317f17a2c1cb711177d410d45f14804990303971cdf1670"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1100,8 +1100,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.18.jar"
-hash = "5f2026a64d91d38a73fa87a1c873342331d6aa78c11f1c3fa03ee3015e3d614f"
+file = "mods/cmpwar-0.27.20.jar"
+hash = "55cb703d58ec8d71c304281a97a8789def423619c42a1992302d274062bbe338"
 
 [[files]]
 file = "mods/collective.pw.toml"

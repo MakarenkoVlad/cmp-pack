@@ -22,12 +22,13 @@ const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraf
     // and a 3x3 to 7x7 screen puts its other blocks down across plot and claim lines: a wall nobody can mine. The
     // configurator and the loot crate opener have no use without them (no loot crates, no rewards). The book keeps its recipe.
     'ftbquests:screen_1', 'ftbquests:screen_3', 'ftbquests:screen_5', 'ftbquests:screen_7', 'ftbquests:task_screen_configurator',
-    'ftbquests:loot_crate_opener',
-    // The Re-Packager is out for launch: an order whose fragments can't fill its grid still leaves as a full package, so
-    // metal comes from nothing (Create #8082, #8600, #8155). The Re-Packager Fix mod could hang the server and left in #268.
-    // It comes back with a real fix. Its one recipe turns a Packager into it; the same config line as the cart assembler's
-    // stops a creative copy being placed.
-    'create:repackager']
+    'ftbquests:loot_crate_opener'
+    // The Re-Packager (create:repackager) was in this list for a day, 2026-11-11: an order short of its items still left
+    // as a full package, so metal came from nothing (Create #8082, #8600, #8155). It is back since cmpfixes 0.38.7, which
+    // lets a Re-Packager send out only what came in (cmpfixes/README.md, "A Re-Packager makes items out of nothing").
+    // If a server ever says at its start that the Re-Packager guard does not fit, it goes back in here and in the OPAC
+    // config's completelyDisabledItemInteractions.
+]
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
