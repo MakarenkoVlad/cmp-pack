@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "name": "drugfx_pill",
+  "author": "CMP (cmpfixes)",
+  "description": "A pill: the hand tosses it into the mouth, the head goes back to swallow",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 30,
+    "stopTick": 34,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -20, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      },
+      {
+        "tick": 5,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -112, "yaw": -33, "roll": 0},
+        "head": {"pitch": -4, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"scaleX": 0.6, "scaleY": 0.6, "scaleZ": 0.6}
+      },
+      {
+        "tick": 9,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -60, "yaw": -10, "roll": 5},
+        "head": {"pitch": -22, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      },
+      {
+        "tick": 20,
+        "easing": "easeInOutSine",
+        "head": {"pitch": -20, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 26,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -25, "yaw": -4, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 30,
+        "easing": "easeInOutSine",
+        "head": {"pitch": 0, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "maxRopeLength": 24.0,
+  "maxHorizontalAirspeed": 1.5,
+  "maxVerticalAirspeed": 1.5,
+  "flingBasePower": 0.0,
+  "flingVerticalAngle": 12.5,
+  "hookSpeed": 2.0,
+  "hookGravity": 1.0,
+  "grappleGravity": 0.08,
+  "playerMovementMultiplier": 1.0
+}

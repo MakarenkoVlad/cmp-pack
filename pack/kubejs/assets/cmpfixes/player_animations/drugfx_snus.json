@@ -1,0 +1,51 @@
+{
+  "version": 3,
+  "name": "drugfx_snus",
+  "author": "CMP (cmpfixes)",
+  "description": "Snus: the fingers push a pouch under the upper lip",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 17,
+    "stopTick": 21,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -20, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      },
+      {
+        "tick": 4,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -118, "yaw": -35, "roll": 0},
+        "head": {"pitch": -6, "yaw": 0, "roll": 4},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"scaleX": 0.45, "scaleY": 0.45, "scaleZ": 0.45}
+      },
+      {
+        "tick": 8,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -121, "yaw": -36, "roll": 0}
+      },
+      {
+        "tick": 13,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -118, "yaw": -35, "roll": 0},
+        "head": {"pitch": -5, "yaw": 0, "roll": 3},
+        "rightItem": {"scaleX": 0.45, "scaleY": 0.45, "scaleZ": 0.45}
+      },
+      {
+        "tick": 17,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -30, "yaw": -5, "roll": 0},
+        "head": {"pitch": 0, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      }
+    ]
+  }
+}

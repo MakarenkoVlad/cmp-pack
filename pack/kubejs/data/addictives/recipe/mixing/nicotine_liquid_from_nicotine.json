@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:nicotine"
+    },
+    {
+      "item": "addictives:nicotine"
+    },
+    {
+      "item": "addictives:nicotine"
+    },
+    {
+      "item": "addictives:nicotine"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "addictives:nicotine_liquid"
+    }
+  ]
+}

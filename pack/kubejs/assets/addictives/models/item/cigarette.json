@@ -1,0 +1,9 @@
+{
+  "__comment": "Create: Addictives visuals (cmpfixes/ADDICTIVES.md, FX world, V2): the mod's own model (parent) unchanged, plus the burning stages while it is smoked (cmpfixes:burn, 0 unless smoked, 0.5-1 over the smoke).",
+  "parent": "addictives:item/cigarette_3d",
+  "overrides": [
+    {"predicate": {"cmpfixes:burn": 0.5}, "model": "cmpfixes:item/drugfx/cigarette_burn_1"},
+    {"predicate": {"cmpfixes:burn": 0.67}, "model": "cmpfixes:item/drugfx/cigarette_burn_2"},
+    {"predicate": {"cmpfixes:burn": 0.83}, "model": "cmpfixes:item/drugfx/cigarette_burn_3"}
+  ]
+}

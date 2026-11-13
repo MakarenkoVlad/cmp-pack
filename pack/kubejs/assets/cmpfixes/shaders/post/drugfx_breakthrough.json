@@ -1,0 +1,18 @@
+{
+  "targets": [
+    "swap",
+    { "name": "half_rooms", "width": 2, "height": 2 }
+  ],
+  "passes": [
+    { "name": "cmpfixes:drugfx_breakthrough_rooms", "intarget": "minecraft:main", "outtarget": "half_rooms" },
+    {
+      "name": "cmpfixes:drugfx_breakthrough",
+      "intarget": "minecraft:main",
+      "outtarget": "swap",
+      "auxtargets": [
+        { "name": "RoomsSampler", "id": "half_rooms" }
+      ]
+    },
+    { "name": "minecraft:blit", "intarget": "swap", "outtarget": "minecraft:main" }
+  ]
+}

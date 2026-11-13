@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "name": "drugfx_smoke_exhale",
+  "author": "CMP (cmpfixes)",
+  "description": "Breathing the smoke out: the arm lowers, the head tips back",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 24,
+    "stopTick": 30,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -4, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": -15, "yaw": -75, "roll": 0, "x": -2, "y": 0, "z": 3}
+      },
+      {
+        "tick": 5,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -55, "yaw": -15, "roll": 8},
+        "head": {"pitch": -10, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0.2}
+      },
+      {
+        "tick": 10,
+        "easing": "easeInOutSine",
+        "head": {"pitch": -16, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0, "x": 0, "y": 0, "z": 0}
+      },
+      {
+        "tick": 18,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -35, "yaw": -8, "roll": 4},
+        "head": {"pitch": -12, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 24,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -25, "yaw": -5, "roll": 0},
+        "head": {"pitch": 0, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

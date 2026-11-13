@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "look": "caffeine",
+  "effect": "addictives:caffeine_high",
+  "chain": "cmpfixes:shaders/post/drugfx_caffeine.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "comeUpSeconds": 3,
+    "peak": [
+      0.35,
+      0.45,
+      0.55,
+      0.6,
+      0.6
+    ],
+    "comedown": {
+      "share": 0.2,
+      "minSeconds": 3,
+      "maxSeconds": 20
+    },
+    "tail": 0.4,
+    "afterglowSeconds": 3
+  },
+  "heart": {
+    "bpm": 96
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "T2a's look (cmpfixes/ADDICTIVES.md, FX calm looks): new (the mod had none)."
+}

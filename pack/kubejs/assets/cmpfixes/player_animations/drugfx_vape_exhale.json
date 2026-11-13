@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "name": "drugfx_vape_exhale",
+  "author": "CMP (cmpfixes)",
+  "description": "Blowing the vapour out: the hand drops, the head tips back, quicker than a smoke",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 14,
+    "stopTick": 20,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -80, "yaw": -35, "roll": 0},
+        "head": {"pitch": -3, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": 45, "yaw": -30, "roll": 0, "x": 0, "y": 0, "z": 0}
+      },
+      {
+        "tick": 4,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -45, "yaw": -15, "roll": 5},
+        "head": {"pitch": -12, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0}
+      },
+      {
+        "tick": 8,
+        "easing": "easeInOutSine",
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0},
+        "rightItemPos": {"x": 0, "y": 0, "z": 0}
+      },
+      {
+        "tick": 14,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -25, "yaw": -5, "roll": 0},
+        "head": {"pitch": 0, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

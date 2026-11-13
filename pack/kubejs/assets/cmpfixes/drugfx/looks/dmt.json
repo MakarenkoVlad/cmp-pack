@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "look": "dmt",
+  "effect": "addictives:dmt_high",
+  "chain": "addictives:shaders/post/dmt.json",
+  "layer": "warp",
+  "cost": "heavy",
+  "curve": {
+    "comeUpSeconds": 2,
+    "peak": [0.75, 0.85, 0.95, 1.0, 1.0],
+    "comedown": {
+      "share": 0.2,
+      "minSeconds": 8,
+      "maxSeconds": 40
+    },
+    "tail": 0.25,
+    "afterglowSeconds": 6
+  },
+  "heart": {
+    "bpm": 110
+  },
+  "flash": null,
+  "glitch": null,
+  "centre": true,
+  "_note": "The intense looks track's DMT (T2b): our own chain at the mod's path (the six scenes' layer at half size, the composite, a history for echoes); centre true: the crosshair's clear spot (the owner's answer 8)."
+}

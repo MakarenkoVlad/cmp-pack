@@ -1,0 +1,17 @@
+{
+  "__comment": "Create: Addictives visuals (cmpfixes/ADDICTIVES.md, FX world, V2): the mod's own cigarette model as it is (its stick, its textures, its transforms) with our ember and ash, stage 2 of 3.",
+  "parent": "addictives:item/cigarette_3d",
+  "loader": "neoforge:composite",
+  "children": {
+    "stick": {
+      "parent": "addictives:item/cigarette_3d"
+    },
+    "burn": {
+      "parent": "cmpfixes:item/drugfx/ember_2",
+      "textures": {
+        "ash": "cmpfixes:item/drugfx/ash_cigarette"
+      }
+    }
+  },
+  "item_render_order": ["stick", "burn"]
+}

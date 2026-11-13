@@ -14,11 +14,15 @@ hash = "ef2318cbc363eb6fce4fb69e5cd968f41d6cb60ec9a6e8111d78257074909bed"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "4316c525b98b759121f95277ed20261bfd890a28945b3984831cef1ddc7ac118"
+hash = "ea071f9fddaa6b453d2475fb8bd908943b78ca9844b81b3ff7ead247b2c751a5"
 
 [[files]]
-file = "config/create_structures_arise-server.toml"
-hash = "d807839362cca0878a6e120b6bd452e4252b3f7187cd6c854d77a1c4e2f4b4fe"
+file = "config/create-addictives.toml"
+hash = "1dbdcd5611465dedbe4a82f80ffc89916c1db28a51ee44c994d343bf3b7ba414"
+
+[[files]]
+file = "config/euphoria_patcher/settings.toml"
+hash = "67a67f36821cca5d9cb8d6e4b15cf64c189c8b6a722eb41a9c2b3c0f060ca950"
 
 [[files]]
 file = "config/exposure-client.toml"
@@ -70,7 +74,7 @@ hash = "b30c10538be9f772a8895992fba0daa66e022f02ebcaa668d050974fd1f1c183"
 
 [[files]]
 file = "config/fancymenu/assets/cmp/splashes.txt"
-hash = "a65673ed8d1d181f94d6edb1a2b708e77178be27c3288d4d19625b714bb3f8d2"
+hash = "8631588c60040e8ce2e668935fd523e921fa5f578662068bed636e866ac08935"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -78,7 +82,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "11b6561539dc35e83303ab7b3559fc19ba208dc9cb8cdd65027ac2745578ed0b"
+hash = "fef6cdbbd432eff26b6359ef2a1cef5de74b7d432cef7bd5e3e9ca148943d75d"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -91,6 +95,10 @@ hash = "7032087c3fd5feab4259ddc010c38cfb913384476df840371d5f3286431de95e"
 [[files]]
 file = "config/fancymenu/user_variables.db"
 hash = "5f2016994ceaf15de56e1d18ba7f645d78b48e11e4cbc7c53cf66664e8f8d755"
+
+[[files]]
+file = "config/grapplemod-properties.json"
+hash = "e1c0c619420279defa9aa07fed6d832296c560df1f6cc1a8a226819a6ac07c03"
 
 [[files]]
 file = "config/iris.properties"
@@ -107,7 +115,7 @@ hash = "4a52c6ddd914d4243bf25f02e012edbe77e37bd9808fcac11e924ff91015e080"
 
 [[files]]
 file = "config/openpartiesandclaims-server.toml"
-hash = "c1fe59508b39d2382ced9780a2176488f76156ac77d6ef4fa210f0a4a8528652"
+hash = "e93728b3041fdd71d710f85f83ac816900ad81a5268f05953a384106873fd7ce"
 
 [[files]]
 file = "config/ragdoll_reactions-server.toml"
@@ -126,8 +134,756 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
+file = "kubejs/assets/addictives/models/item/cigar.json"
+hash = "ce8ad5bcb7e8a45e3321589ddde96daa24b2f234a3295bca03487a671bf9edf2"
+
+[[files]]
+file = "kubejs/assets/addictives/models/item/cigarette.json"
+hash = "e11345dceb131a2e770a0644748e06547f73104501f0bbea0f8bbe8b3ffe5103"
+
+[[files]]
+file = "kubejs/assets/addictives/models/item/joint.json"
+hash = "8fd8ff0c4873dc04d6d8c6fd65f6ca8872df3eb39954281611bec15547d803f2"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/cocaine.json"
+hash = "a0501e11d3d768df372b950bbbcb3380b1d4816335f787b49e1283d31c0de814"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/crack.json"
+hash = "daf8e150bd52bb1e72241c4b18c2fbdab8e45bafcec454bf23c1e462f9430440"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/dmt.json"
+hash = "0b7cf9e13377f7534c53897fed5825da69819fbb37698957d14e5d218b1dc8c8"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/fentanyl.json"
+hash = "c3699bef01b6d9d36b2c55b1aaa9aa4554d6fe696f166085c3dadde2c51f9ddc"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/heroin.json"
+hash = "d5f2711e9dd35db3a2d04d89372dbca53913a7e137cf062428907d7823be8b0e"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/lean.json"
+hash = "8d580c0d1557073127a777159cdec7ed889f9c676060ae5d45c3f28654e11c37"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/lsd.json"
+hash = "01d1229a69b6dfe7a6a2471a6d65138e9825a316118d825cee0e3302dc46ee98"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/mdma.json"
+hash = "2df7da7d5e72b7ada5c124da948c41c1413bb73b6d12b4e721c60ec018527f29"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/meth.json"
+hash = "00d26b0a56c2b8e1c6ab4e978e126bceb1f9cdfaf5c59c4b8627b26f498ea1d7"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/nicotine_high.json"
+hash = "dfcd1e5158a873de4c932b2e279e296797576f5908b3ad08d4fb736f8916bcf4"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/shrooms.json"
+hash = "a06d3170c8996a82b14a6c83a4e453c4f019d3f456f94745d4b641955625b96b"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/tobacco_high.json"
+hash = "866d6e73477b77edd4d18b737822fe0850d1b133ece86b12e361c59388cb04a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/weed.json"
+hash = "97719fd27603e34db5574bf9d8a0acec36bb9ec4ac872cbb983b17ca69f4a078"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/cocaine.fsh"
+hash = "c9e6814072b0e99cdb8f35d4c1fe4168237ca1301fe2517a49aa67404b70891e"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/cocaine.json"
+hash = "3dc3f0c621f65c3d3cbd8af32fcabb6b2209df74c8c55af4d2573098fa201879"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/crack.fsh"
+hash = "92f170a8dd44159001c67b16242969bd09adb789c1c6e91776a84f8b4362b989"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/crack.json"
+hash = "6a2f5e16fd844c0b91cfe75444c538dfb988a34b624e6c8b1eeacfe8cdc9f884"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/dmt.fsh"
+hash = "f30c4a1e52e6427419ddf6e31b2809c6bfbbabe5f09e68be024b2938eb8a23ff"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/dmt.json"
+hash = "ad13379af1e804c908acaa7d59bb3e34e2177f9616270e5717314435ed6e450a"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/fentanyl.fsh"
+hash = "966898a055e97e877fedf2b03c5d557f25e100b3067eb2eb1c86f164241ce9cb"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/fentanyl.json"
+hash = "30f4d4ea9275ac3a4e2285dbbbf0c5a294b49cd5ff42898ab400f6fadc46ecf1"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/heroin.fsh"
+hash = "4dc50ba299725e3eebea24b8fd8ba65d3164cb365f9dffe32206951179ef54d0"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/heroin.json"
+hash = "7fdb80ca0957b68fa81b2c24a618b161fd544a2e8f8550de80413862c0424205"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lean.fsh"
+hash = "f666b200d554145dc35a396fe7e1d28386f0d59f52b2f46cd45bb935f212f04d"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lean.json"
+hash = "20f4e785f47ed69fbc9abcf4738ba9d7f3a218d9595427056f2ecf796014f0a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lsd.fsh"
+hash = "b59d21a80074266e64ec1f38e2e974549f376a9a83dfb3214acbe1e156911805"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lsd.json"
+hash = "f7cb88b12faf952a8b6ae2512dc8c56523c96f510c1b8eb2764e9f86cf276540"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/mdma.fsh"
+hash = "62c50037cfcccef7b2337d6090568e3ccdaa0ba89b82a67cba5f02c3f6a3e330"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/mdma.json"
+hash = "383e4dbfde7b4cd832d1f4df843cedd03e46b4dd67147b71de77dfe8fac4909b"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/meth.fsh"
+hash = "7383a9a927a822a70367c39de6dc60c89acdb6c446eb4764d8da4d1362da28e5"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/meth.json"
+hash = "6a950d5dccc43e2f93b6aca1e6390a8abb12c891a4303c8ad6c2884950578788"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/nicotine_high.fsh"
+hash = "290b29dff81f7b7f77802cc1b259d2d1cc59a20d3c7bb24e819100dc8a522598"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/nicotine_high.json"
+hash = "200556b13b99abc5033fbc72fac24b25b13b9ce6b1dbf96ebca9e02452d2c0a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/shrooms.fsh"
+hash = "affe42881f08209bb8dee3b47e07753fdddaeab6fee5db1790d094e9d6a66995"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/shrooms.json"
+hash = "ca608e53f65081bad4ed641e2f75f7061b69f7b6949b04537aa0441756ea8df7"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/tobacco_high.fsh"
+hash = "7222f6c4e6df7a0cdc3d8bc9baf40c5ff13ed69a6c4913e1cb857ac598a516ee"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/tobacco_high.json"
+hash = "4133c765de77166e0799a5fa78b2bddb0f1775c23459dcfb847b8f8d0a5bde51"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/weed.fsh"
+hash = "b7282b9baecc02132204d2db7c89f53452ab086416f2470d15acb406d731286a"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/weed.json"
+hash = "abd3beeef1efbd7b0a87b6227ad399feca57e74fa0599a25508b7ba738cc2f1a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/adderall.json"
+hash = "a9432ea43916fe053f942f66319876c47d6ce8e5ccec9aedc691917b50fc24b0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/benadryl.json"
+hash = "06ed3122f38849f2827970dbc654e42af468c640db47a48e0c9bc9dfbc75c12a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/breakthrough.json"
+hash = "591042a048742b06cd02d5051a42d9096f8a90a863fa0370a67ad173bd95c898"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/caffeine.json"
+hash = "9a6b78afb67111244a397466126094428714203ab2a79ef9bdcd50425f8b6df2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/cocaine.json"
+hash = "5298fc9b2f390ae3a88507b0b8481c2e62be2b326bcbafaab061096f84713542"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/crack.json"
+hash = "a610270f631589ca2b7cdf2f076b1fbaf93fcd1257a86c4f283960ad7182e9d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/dmt.json"
+hash = "fb4bc08cde0929740fd326867570b2f248bb98e0cc1296944dbb80b5b6661e10"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/fentanyl.json"
+hash = "2e3d0405d6d9c5d51486be0915bbb68eee0253327d4f3bfdf9fba103e6e7862c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/heroin.json"
+hash = "2d9d940d0d424ebcf57657e3dc559a741a047e0e8df718902ecb6f808eff3e1c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/lean.json"
+hash = "16a022634124f8b1ad2de5503676099595b8d26375b3b9b029962b370b992150"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/lsd.json"
+hash = "34867e2a6d47f65307329652df28eb6835dfa0562797f7b722421b28e1d24db8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/mdma.json"
+hash = "b6f60a2b0ac16211b071105095ad58c31c45ebd36cf8824772b59e1f05156a2f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/meth.json"
+hash = "6d52cc017a632b8ec6779a9280b579e1580842210859dbdb4390b11e762fc2a9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/nicotine_high.json"
+hash = "253aee66f94bc607037c6e34b4c9667bd41681bce5082376535057852ee9053f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/overdose.json"
+hash = "e643d011ec52a60667e1df1a835fc484303f07bfcec36f80a47ebbcc49d00eb8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/shrooms.json"
+hash = "2f9fb30a655e7dff2f28c98f7c0428e65a2db68d02647434976522cea2280955"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/tobacco_high.json"
+hash = "6b38aa01283b37c373430c0e8054687ff35a43e09763c33d7bfb386479bc4589"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/weed.json"
+hash = "19450d7a560a7b255b3d0933ff5c091917d9f9502482dd6dbc20d4ed899b452e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/dynamiclights/entity/drugfx_smoking.json"
+hash = "1f0849483a61e73c677a3a4c2cb2129da78aebbad42db0051b74fda289f45b02"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_1.json"
+hash = "8c9e49e123ddf89ddc5eda04c76a52f3f54b8ee7f5de9328e8e29a600c4c321e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_2.json"
+hash = "e20e0049a887484416d94b3cbcfb4df24d16bc0772df14bad3ef1a750013883c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_3.json"
+hash = "3eb46dfbe819699b11991643c27227bc30c496631a5eb305ebe0c75828856a72"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_1.json"
+hash = "6e7ffaad8f1cdd3e907317feed64d5857aaa2079a99638b99630ce81863e2dcb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_2.json"
+hash = "73fc20faaa2396038f98edc0e21621484d6b1c38b6e1e8144de27352439b390f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_3.json"
+hash = "1a1003553966bd6cf0d1ebb5a730b998bd781fc7b75e8642c54050adb679af09"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_1.json"
+hash = "ef65cae1e520a7a6430e4b8be34285d040a270dd58d37121ee3e86a7c7338cc1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_2.json"
+hash = "5b58b44c5565d6bd970fddfd94df5170941388f64da8c2b0149736edceae7379"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_3.json"
+hash = "a125f0f8bee91fbec96de774769d19a9b7e6e182cd72ee5829dafe71b98098d8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_1.json"
+hash = "81f4c7e619b7f7ab6f99b2fcfc2d7e7e2a4910c9d99e5dc4fbe345128a8f9121"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_2.json"
+hash = "b863f11487b5ae73f75a2c4504b1464dc396be1dd3e8d349cfe1c8d0073fb080"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_3.json"
+hash = "1b827fce5d758c22555f8f3fa412f4ea275c0f2cff1f222912c8de54bf0ebb27"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_inject.json"
+hash = "c7ff9215bba1fef2c055ff33f2c6ec8e3a748d12402e42dfda99630494bf4f25"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pill.json"
+hash = "26823f2546e09f1080df594ee3e49293b3488d0b3d6341046caaa1366881fd2d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pipe_drag.json"
+hash = "0b00aa094dad4cd93b3522a7e511c5401a0157c9d3bb1a37070915eb382c1d37"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pipe_exhale.json"
+hash = "820fc1b57e72f2baaf367252fe44a2722abe6479af6c0741c178426bfa013e0d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_smoke_drag.json"
+hash = "e866b9233571ef7e6dbb03e31c3136f2d74eb4d6a727479a086f6e3c9c68f56b"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_smoke_exhale.json"
+hash = "aed1b0adf17a5f34be65d75d3a621e87194441eb6348885f191e6e7d54ac55ba"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_snort.json"
+hash = "0a30da95c21b75fad57f4815a6be5375e7a0c672be13ab51d08084b9085c4b8f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_snus.json"
+hash = "782d471ccb5e2b7abb017b14ce41d61669a131507d64e21cd0beadbdfb99787d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_vape_exhale.json"
+hash = "0b42a2e8a6b21f2c5dbd16e3f65228c291539e747c9896eee583b41f3ea872c4"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_vape_hold.json"
+hash = "9c2e0b6155d8425144c0a262ede14a98485fd5e31ba968b80da9d0fe265f45fd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/include/drugfx_breakthrough.glsl"
+hash = "b474dbec2a9f7b472c74dbd8e5d76afeb5aab1922a8c362fc2156a03d4354d6a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_adderall.json"
+hash = "8836335849707f34bd2618ac1122b34c557d9d4c4eacc45b5397bb895e0afc40"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_benadryl.json"
+hash = "ecbd384daa3c3d31a2853baa8dfcc821935d292babaed81348ef75673ac389d5"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_breakthrough.json"
+hash = "f8573659676aed50dbe717ff2130b5c070b7433fb9e86812311110a57769ee01"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_caffeine.json"
+hash = "16cd538de3e946c66dea9e6cc1eeda4b6e0263851a6e0232004aabd22ff9bd56"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_common.json"
+hash = "e6eea89beb59b1bd78e133053c8c01f955f1d18b992a39fb8f683c7289ff33ee"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_overdose.json"
+hash = "16636c593cfa2ae90c285bfcce4cdc48fec1145394be5ebb2a591eb0c208292e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_adderall.fsh"
+hash = "a87c02c62eacb57616ad93a2c4c6872796c5181978cc96e3a7e4751d96bbb5eb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_adderall.json"
+hash = "1af2ce419a327b892a0b3cb73326299a355e7868a45cd25e73c4878baf879cb9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_benadryl.fsh"
+hash = "ab17798eec0547ae25614a08c8260ba67b74f0231f6dc8750b85c185cfac708a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_benadryl.json"
+hash = "5332bb7c7697d84a5f2a8620998a89f5ba5ba7ce87e5d763b5d26a8cf164c8ee"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_blur.fsh"
+hash = "3c5b05594d489146062c69ebe3711cf77464867156294f758ef13162d4aa4035"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_blur.json"
+hash = "e7981fb0d95f771b8c7d7ea1a67b606c358036ac148f96e1e0c446fbea1dab30"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough.fsh"
+hash = "d6f976ec11d4507f5e334c608c9015b9fb8c819ec6851a29addea0e90329357a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough.json"
+hash = "f5fa8d342736df88479d2f3af3138d44a4061769e6faa462f3f0b4b0bb892d38"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough_rooms.fsh"
+hash = "72da7cf23144715e6e61e01d6ee1d8eeaba99adb2e6b5b4ff8c0fab782595f80"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough_rooms.json"
+hash = "be3c89b627f0de29d06592f2d30a75627c558a9ca7fe0f64f3911fd2dffe5756"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_caffeine.fsh"
+hash = "05b9632c02648d60d10c06d02cc27e8e5a57dff1bd51c4752b551fb09f341a30"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_caffeine.json"
+hash = "e8b9233eaea0750e5f36dc6f88387bc2850c336ac6bbbf4d7a00094dace17512"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_common.fsh"
+hash = "c54193d66ab9f27e0f12d14eb9efb5f43d9c63b17ebf04a01c3f976498660a84"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_common.json"
+hash = "d2085bf9ab37f4af90c050a9ace0186e956635867d1f688e22d0d826985fd0f2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_dmt_pattern.fsh"
+hash = "39e21645c53f0033eed52393f81c29db7d01a9da8385cd9e673a58fca35ff88e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_dmt_pattern.json"
+hash = "859f8c1a1ebc6e31397165c445accde07c5deb1fb192e614bcacccfee72a5b0e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_down.fsh"
+hash = "a0fcd431f47d5987e09e134b80b3a7f4d2541ec03c11c5824bb8e6fd534504b1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_down.json"
+hash = "3a03209f26042df57da8240df0f12e210d6f9b654b0d5f02c348b03831854b42"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_lsd_flow.fsh"
+hash = "60f3c73f592a310c90b16564eb734515bcd5350d035599fa60d9e833c0e49650"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_lsd_flow.json"
+hash = "54c4c50dd880559d6bf43640b1fc5acd25e7a4cdabdee6fb3a9991c19e680da1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_overdose.fsh"
+hash = "66a725639ccc816f140579c9851c04ce6bda4cc2acdaaccc0636832931aa7f86"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_overdose.json"
+hash = "285951e8a20cad20b3004ce28ece311df3f7e846628ea52218468c9a9b38f5ab"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_screen.vsh"
+hash = "6ee598f70705b55d1c49f5e17850cff514c16c1a862bd669b98b4371120832bc"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_shrooms_melt.fsh"
+hash = "2cde3d89b70c65e5e8abdb40772f5a59cf120e2fab3d5df3f36b8eda5f9f34a9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_shrooms_melt.json"
+hash = "a164d975d2478c4b7e7bdbe3f8856a2ac1b78123deb92c48f1fde8bec90bd1ec"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/effect/drugfx/benadryl_figures.png"
+hash = "1c0fe48861bde6186abc56f47456312da724cf8b99f83137c044826c69bc19d1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_glow.png"
+hash = "5414a6ffa097e3b452bff1dace55e5e81c5fc9edd82e836a35336a040be18194"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_halo.png"
+hash = "6894da7a4748ee4acee3c9df2a25e3b1b82e49d163440b3e3eae63bc57c58418"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_overdose.png"
+hash = "80265f36dc97b5d9e2693b2b0893ab5f94a48fa8a65be44b72c256d70da8bd41"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_pinned.png"
+hash = "adb7cd7258e60f3ddfd6fa3eac79e2118c107510555e859f9a3627b75661f51d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_red.png"
+hash = "01baced5b0d8bf2b9caef1406f8cec242d33b8ed07118974f037eae115c78bb3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_wide.png"
+hash = "4a7c69ddaa3da27dae7103007b5ae96c7d90c8adc013b1ba6d8e98fc6c1571b3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/pale.png"
+hash = "114ec25587a9c3b4c95116c0890d67476c7628e03aab7d888ccb22eda971cf8d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_cigar.png"
+hash = "ff5570fa684f02ae24f72143ccaec692d6783ee84f3e99918c3e522e6f147360"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_cigarette.png"
+hash = "c7a4a94c96226c178cfb790aebe7524345b52084ee6b056bf3c7c35cc37633c9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_joint.png"
+hash = "bb58a0875cf47f7a1f985b45eb2f1a0bda14ae65bb80be11d7e8adc757a0a9bd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ember.png"
+hash = "dc6848601253193c6cabb2e7a84e4ff53611dfffafb2815071bac6b2e0af9a07"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ember.png.mcmeta"
+hash = "61d9ed0268db7dffd14d04ad022ec2da66c2d5f52c3b3f689331ae53880f9e40"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a0.png"
+hash = "f54ed0ca18de0a5d2a868332a25b7b9fe0215d955c4a29db3bd3b013768c5ab4"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a1.png"
+hash = "9172805e86256fa475c7015d210cb7af3d745f8089d3e51a080506bb5f586849"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a10.png"
+hash = "42d70ecf239b144ee9783a0d827245472c7ccf99a7400e9ae2ff023ac126f165"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a11.png"
+hash = "edf18d2dbd9a14436b6b8e5eccde06d5ac0ad684292b1c431899b475c2f8c69e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a2.png"
+hash = "d30f5e2bb06150173b11ebd023d39182ae11ef3c7bc8903a1488e3f42e57a1ef"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a3.png"
+hash = "ade3e3ea77e55697c256c9ca3463f4be6ae2d0775e39a93b6088f21eedfed257"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a4.png"
+hash = "759d611d28102bc84abcbb2275b9399b93c23812f4a4c135ebb6ee0547250f88"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a5.png"
+hash = "caec9bd87c4348b3bb18e92177f1951571318dc06fd7603250ed307500008f22"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a6.png"
+hash = "01be0103075ea7b6d6eefe68d61520a04acc5fe80f4a71e0bf1620b6c4442669"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a7.png"
+hash = "e95cb2e518066f7cd5edeb09d8a0885acbb5666436799a6eca1c55bcabfaf212"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a8.png"
+hash = "573fcd2338a2dd2d6fc2205c338095666df1491720bfd04079060ceaf047bc16"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a9.png"
+hash = "0298c4c816e4865f1faa15943e60709c6136c4ad21cf733521fcafa30f04dbc0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b0.png"
+hash = "140206d636ec57abe7256379acd2fc8dfd51feeb6d3c3c97a1b38121a8a08aab"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b1.png"
+hash = "4f1ec880b7da40639269c5627f0aaaf00dfe1a80689f744f99b58886e99e3f27"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b10.png"
+hash = "f3ca1be89f0bec271a2f0594ad2ea4760c545df245c58aa4586d848eb75e2405"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b11.png"
+hash = "5f761564b2ce4be5005e468ac791c6e6ec8fe91dcc79f14ac3c9939bd14295ce"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b2.png"
+hash = "cd5787f33ff68abc6a6626b5a93a3c764331df2ca74ac471c3336b6de06278cd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b3.png"
+hash = "c6e3837ebaecd886487e770190b2915a97b1ae83d3dedf4ddfc7bec3f992a02a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b4.png"
+hash = "1430cfb2246f5e67b67aabab853a3213e919571d641b3e96a751aa9ec1e0434f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b5.png"
+hash = "3ed266e6fab73cfcb9f07aa8cf4c7869e34c40d3ba0d6a6e6578b189b80cc4e0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b6.png"
+hash = "756727913094d6123d149b1e55dc7226d639ac473497ed06d82f7e8ff8bbda2c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b7.png"
+hash = "24aad6d8ddfca83d618ae17cc366f6818bc32f0c05bd22febdc9d65e78afbd1e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b8.png"
+hash = "f7ae460eef4984d30d68209f159aa6e491c49e58705ff9ec37ff27355ecec6d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b9.png"
+hash = "8967c479acd6e30c2d6a397361c2bdf2b34239430eecc14af370584bbaff9825"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a0.png"
+hash = "4b4639eb8ef98859c458f9bfa96bf82d43cd4ccb6b2ed1288ddf32b167f3ddcd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a1.png"
+hash = "1729112841cbce61c80654c780d8d301111098104221fa7ee298b5782a3bcb00"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a2.png"
+hash = "5a1682affc7e12b41a8308336185b5b4b84f4afaf30be58c21ba066bc67ffd47"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a3.png"
+hash = "68d13fc0c07ef944c59cc59628ef1ea5974002d5866beb7c49e88323d1edafcd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a4.png"
+hash = "67cbae9337429627cf951deb123a61a26066984a34c228765ff6811873abec95"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a5.png"
+hash = "9286d62092dddb9f2cb7db9bf113e8c1b4d38fb3140b4d73eb39add19e71a996"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a6.png"
+hash = "e38b81ac403bb6dba13d43ae302af17ea7f3ccc5a9d8dffbaa4ee702be6f68bb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a7.png"
+hash = "8437bea4217ee328cc9b12ed3eb312e69fd0066aaa770ff00b51a1b9acd8c59a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a8.png"
+hash = "e5b65b7ec421099678f426d9b74992d729cdeb393363e1d68037586ac6efa444"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a9.png"
+hash = "cc35d74d17cf064434405bad9bab79c0be18b4ef3ef9704f4547d6da10c6ef3d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b0.png"
+hash = "545352a0f0e737f3a1d14ab59706aac9447cb5a77fb4cbc085a14c1bbd7b25bd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b1.png"
+hash = "ff28cf61f7ac84f95c613f1b163cc5bf41c8d7b5be03e58c4e72f6496f1b64d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b2.png"
+hash = "c654074899d3eee3cb529b96b0a3f999a0d7e18192b039b0338d9f806aa2c61c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b3.png"
+hash = "9dc5604556216c569b3f2b59b0ac1101554673e35c147e0d710ee06a63fca08f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b4.png"
+hash = "a889f255f93892d3bf975b00234ec3b43457d5e815d7d63c321ed54af730d0ae"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b5.png"
+hash = "db052ae40945c2ef785707be448eeaa3be443b2df800db9fcd184a251b819df5"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b6.png"
+hash = "3f278510eda6b13b1d66d56763e3f237e40fa9023c13682230b574192f5c796c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b7.png"
+hash = "08726210f19596300b0543a42f8eafc484e3bf6a3d02e1a07951b40665bac77f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b8.png"
+hash = "0e3497fa8fbbfd75974f02dc83c3e5e7ae3f5dcb868233c88e3a3fdd96747677"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b9.png"
+hash = "3b7499750b0c0c13b61c33c438e433fc0ada5176e0a0d579c9878be04db27664"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_0.png"
+hash = "f24dd67df4dd6594be2517b60a036303ef25426ec2e4595550d6c7d3eaae9693"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_1.png"
+hash = "b3a36975e3ff9b9709e5329e221823e0c1f5b15c372f0019f41530e598d73bf3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_2.png"
+hash = "f0630c80615a767072629538e8eeafed294f46947902451ed8c7585abbd6957f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_3.png"
+hash = "047b95615345fb9129167c5bf058be8f9bc7d758981b0ab6e7542c50e114db75"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_4.png"
+hash = "902158086358c2a27d15ca688ffe37843ac9ebc1c8000e745393d2f7f78efd00"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_5.png"
+hash = "d5902bf0ffe5606498c21d1ee3c2edfa939e15a4a75af68042b938f38cf630be"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a0.png"
+hash = "34bcfc83c24feddaaf51621e7281b405a7116d149ba305de3de6e0f3056b4332"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a1.png"
+hash = "76771afef7ea8cb58317ff34b9cfddb82c16f97cf20919b0953587c073830745"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a2.png"
+hash = "479ec8b0d4387e4ba22f009008a5e150102bca3c9c5d20de54ffdf4ce8d82389"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a3.png"
+hash = "af577f313f954e61fb33d1041752729c5dd9d00559c6a1d352edaf25f08f5b6d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b0.png"
+hash = "dde016cf3b067ce87193f9c8d3cbd8f668e150418fff062a9881d427811643d6"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b1.png"
+hash = "f0dd7083cc5ab5749860484b73120bf94e1f4cd8f6b86781ceb435d15cb91539"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b2.png"
+hash = "0bf63d28f4c7295c22e9c35694db0a15180012a64fb895fc88f8da02b4f75fec"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b3.png"
+hash = "2cc53a88ab26fcfb4d10b9ba5956825f386e5cb78c909a1f291db2261ad1936d"
+
+[[files]]
+file = "kubejs/assets/minecraft/shaders/include/cmpfixes_drugfx.glsl"
+hash = "455b3def82697b6f3668ae3c22dc5cabdf30e1a3caf21dffb53fa6969c4d0e12"
+
+[[files]]
 file = "kubejs/client_scripts/coin_tooltip.js"
-hash = "06440515e14be4ce6a2094df90e88981b4829624bc770c7c128cece0e3e6de48"
+hash = "2095349089c864e27ec718502d572513d28f219290cfeff5949103975a1b041b"
 
 [[files]]
 file = "kubejs/client_scripts/controls.js"
@@ -151,11 +907,23 @@ hash = "372954e21ab2014025c38e6e4b9229a14a804c2117ba7c9538e0219d4a304df2"
 
 [[files]]
 file = "kubejs/client_scripts/zz_cmp_glasses_redraw.js"
-hash = "f75bb147968d44231855036953db658d2bf780cb318dedc7ac2f83eb0bbc7e7d"
+hash = "8ee483f5cdfa9e0b79f754b72de1830ed2b3555e0bc22640b6ae31a92352aed4"
 
 [[files]]
 file = "kubejs/config/web_server.json"
 hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/mixing/nicotine_liquid_from_nicotine.json"
+hash = "fc68e7180c05156e51e567de9ae4896ea338b31b934f3de0bbf5c2d56fed66f8"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/mixing/thc_oil_from_weed.json"
+hash = "f3ca3f533eb8dd4489a69a9f76316a977e3cf5ef314058a8ed564fe49272383d"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/tobacco_bulk_smoking.json"
+hash = "67813ffb633c5af3340a0bd9fef1963c117279231e5922fc6f17a17c9728d51f"
 
 [[files]]
 file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json"
@@ -222,16 +990,16 @@ file = "kubejs/data/copycats/block_armor/copycat_vertical_half_layer.json"
 hash = "59b129c48700089824f5b5809db4bf024738484531b3e1d21819cf7050890940"
 
 [[files]]
-file = "kubejs/data/create/recipe/dough_add_tomato_sauce.json"
-hash = "61feb5fd0d923cf7616e7e28a901b0ef13c48d5eb58ee33b3e0234a2241dac46"
+file = "kubejs/data/crabbersdelight/loot_table/gameplay/crab_trap_loot/air.json"
+hash = "10a86b9d723b961b13dd2b6128398016f16475ec3faa010939393e4da24ebea7"
+
+[[files]]
+file = "kubejs/data/crabbersdelight/loot_table/gameplay/fishing_bait_loot/salmon.json"
+hash = "826d253904aa795e6adf321c1bbe16fecce094e942916828ed0a19c1c561f619"
 
 [[files]]
 file = "kubejs/data/create/recipe/milling/tuff.json"
 hash = "46ed6922a8aa2c261a41ddc1b609fe792e0f3d1d8216a796922c5e036d1ae443"
-
-[[files]]
-file = "kubejs/data/create/recipe/tomato_sauce_filling.json"
-hash = "be6c9b18a6d8b33976bfcd7ba5e2781c259d7fef27683e2ba8ed5a3f84466b1e"
 
 [[files]]
 file = "kubejs/data/create_armorer/data/attachments/muzzle_refit_ap_grenade_data.json"
@@ -284,126 +1052,6 @@ hash = "330af13d29e254f10159809142e574488f49f205a9f3ef81e1e4f29eedfa03b6"
 [[files]]
 file = "kubejs/data/create_armorer/data/guns/sniper_semi_m1_data.json"
 hash = "79d29fa2a738db30719f63835cefa1d8317a9ac274822c68f78f93cd66a3e8dd"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/crafting/kinetics/sticker.json"
-hash = "fb72f95a35b8a010ef5a6338f694a46057a2336e6e5a62c3a72c1f929bd32c97"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/charger.json"
-hash = "2b22283fe5e033b3296cf1f8565ec32f3125390fa9bb0b80b5622af42097618a"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/deployer.json"
-hash = "c2c2513813fbc3b00ee086e678cd9c3ca0625c80651e0e85214a400cda67a398"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/draft.json"
-hash = "6cc654caaa398c1b774ff2e6bdff05ac91b04b44c65c3b0800efb690ba32df72"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_bearing.json"
-hash = "ff85a7cdb58515fd55363c428ed06144c72cd4458de76a0429510b9d90135a0f"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_drill.json"
-hash = "d7661eb98a53949aff2fbe38f7aef70036eda6ec476bfe41ab990921dbc4f4b9"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_mixer.json"
-hash = "ce28066b8c24c35475d724046a46185c210944007230686653ea7601d1e2d687"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_piston.json"
-hash = "925a0d09dc90ca4f37921b48045704cc6cb564d203f50605703a1e2afb6fa0f1"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_press.json"
-hash = "e8b7158133275eae87c863ab550d242f9384368fc53f0ac71c83971a932cb47f"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_roller.json"
-hash = "f65f1ea7922ad75cefde30683be72261f3467949342c43ac6e189867763cb665"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/mechanical_saw.json"
-hash = "290e30849b43cb3930b36a22639abe841787a173124b5c5ee6c066368b282170"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/meteorite_compass.json"
-hash = "5e9f365cd40eea3d7e1819f358be95403a95832b01cb60593f61fce89c418280"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/millstone.json"
-hash = "0c24fe308033b8ba6f9994a214b8cc80ac95b110b03f9912af24bc1649ac9742"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/rolling_mill.json"
-hash = "9c00ee2ac0ba6c5046a161cc19817397bdbae71d4638b555b8e673d996571add"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/rope_pulley.json"
-hash = "9ccbca2cf6d7853e5379fe60c78f3eba006e31b23a3eedd0fd58872e36700070"
-
-[[files]]
-file = "kubejs/data/createages/recipe/andesite_age/processing_line/wheel_bearing.json"
-hash = "211fc80b5a63ab08e3f42cb2d79fa1fd80c94d7cda02f57f420ed5ebf826bfb5"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/clockwork_bearing.json"
-hash = "2382026ca143f54a63f127408a247fb641af249851f0b0e7f35fb3b7b9bb4853"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/elevator_pulley.json"
-hash = "2c8ddc135f69b125888f26820fbf969c9a8a7798620395c202405de1d785b4eb"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_arm.json"
-hash = "2f9ded4e5f15ad0ce69bb4c57c7ff5a8e1dbbde3f88851b59296edd080f7bf57"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_crafter.json"
-hash = "786a848d5efd32ff94759742324628855ab4ec6f768235586484c852dedcd189"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/mechanical_generator.json"
-hash = "4ae1b680e7e36fd163e1c9ab647bd8b071063bf3ad8008568ec1d6553c199b27"
-
-[[files]]
-file = "kubejs/data/createages/recipe/brass_age/processing_line/modular_accumulator.json"
-hash = "be9f3fcbfaf2fa9fe4df429cf6a0ebaee1d0a2290b88dd58de668c43b6d2314f"
-
-[[files]]
-file = "kubejs/data/createages/recipe/calculation_age/processing_line/annihilation_core.json"
-hash = "b9c58124fa1db4895628a0a0f5e491a2fd65b3f8016f4eaa3ace024072c60c51"
-
-[[files]]
-file = "kubejs/data/createages/recipe/calculation_age/processing_line/condenser.json"
-hash = "d8b2bddf76f8ca967d4701188484cc43ff5afcf9d67906611b9cef962e61a491"
-
-[[files]]
-file = "kubejs/data/createages/recipe/calculation_age/processing_line/drive.json"
-hash = "79d14a0ef07e7f2d9980174731a1658754d36cb6ebb8b2aed71422bb1a656a4e"
-
-[[files]]
-file = "kubejs/data/createages/recipe/calculation_age/processing_line/formation_core.json"
-hash = "966374352a446cf011695066d3a7f1d50a6db25aecc51117343681276954c9e3"
-
-[[files]]
-file = "kubejs/data/createages/recipe/calculation_age/processing_line/me_chest.json"
-hash = "b5849dc48c8073a54d6d584a429debd556f403911d69e8affe6a254b060fd3f5"
-
-[[files]]
-file = "kubejs/data/createages/recipe/copper_age/mixing/rubber.json"
-hash = "a27416db72f93b7abea66d1003307f13de048f83e31035ebf8a02c6cded205b4"
-
-[[files]]
-file = "kubejs/data/createages/recipe/copper_age/processing_line/hose_pulley.json"
-hash = "946caf2d4966c30bc5b275c143100dc6fdd4067d609539cdb6ff8114cc62aedb"
-
-[[files]]
-file = "kubejs/data/createages/recipe/copper_age/processing_line/spout.json"
-hash = "14159fba8cecb9c935647ab36598d23c840470116f67781f60a9379247b58d40"
 
 [[files]]
 file = "kubejs/data/createbigcannons/block_armor/bronze_block.json"
@@ -462,16 +1110,444 @@ file = "kubejs/data/createimmersivetacz/recipe/primer_from_nitropowder.json"
 hash = "dbb2512b277212b962355adc7486d9f560e33274c96606ffc5deac070fbc20f6"
 
 [[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/bloody_mary.json"
+hash = "2c8ac6298115da5c1c4b1c3a80c2277a4daeeebd8f49409d4730c5141255186f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/brandy.json"
+hash = "2290be863b9ac67a40df5fa83ae9503674e14bc43ed59c3bad3a768bee5bf192"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/brass_heart.json"
+hash = "8571756a6c6561f23a9a9e018263771a6fe54b091a1d2b3642632f35b8763090"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/carignan.json"
+hash = "f24eeb25d73f04cbb2487f0f8b50798ad47f887b70ad1be48f70df7d49d21953"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/champagne.json"
+hash = "73be8781b79933468c796ab5fc2e2a0b8a07776c15fda75be518ef54c49b59b1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/depth_charge.json"
+hash = "e7442a626c1ae80663a3a5690b28b58fa18630eb2b46b4181db3838eee83b0cb"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/emerald.json"
+hash = "869dd9c97fb63459926d7155e6268ad4f8425982a692b1f02f5a082b4a33228e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/glowflower_brew.json"
+hash = "e1a053f5867e03ce4e2391b13ff5fd06ef6d5f24afb1dbb4f1830b2891ae14e1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/grasshopper.json"
+hash = "6c4cc685d67e6369107de1f258769faaa02b264f353402ee21495956cfd828e2"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/honey_wine.json"
+hash = "df4cdca20e870ca506f530e9ead270823ff05f37b066d043541ae76cb39b27ed"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/ice_wine.json"
+hash = "2d48e37d93457b36b21340b2f27676b536a88c34afcdfe7c769d11b3a3ca687f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/luminous_bride.json"
+hash = "33a2f4731bce9cc492921304300b0c99fc61c933d9e61dd82467acdaaf35853b"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/madame_shexiang.json"
+hash = "51c9d7556cae9ae10bffef4ca7f70fe5e404257322597e17d806533ea534f58c"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/miners_star.json"
+hash = "aacb00b90df58bf213a18eecdf3953442b1fb1ae134594693b1b8eefae325f5d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/mojito.json"
+hash = "5c5480277352204e0e07054f171703f4805b48824bacde513ad7412e86441a72"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/mother_snow.json"
+hash = "8010869009768862344386c1fee98633b83046e5de6fce1af96a52c9646e3500"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/nether_special.json"
+hash = "e6375e0ec79fa01aae108fad45e4a2c15c318ea6a4a7559fd27c3d7b051d65a1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/plum_wine.json"
+hash = "4f760e26358fab5d1e69eee9529428811f520784d2f2e25f4d5c7df47612f258"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/polaris_sweet_white.json"
+hash = "2cb6c05cbd8811cbebdf58ace8102f7449bb29b7ea59548bdb60301eba5b16e2"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/red_queen.json"
+hash = "5c3e57947539a83e11566dbddab55e38d983f54e1ce16eb4466dd4e0b6c1a66c"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/riesling_dry_white.json"
+hash = "8aee1604fc8dcf7a0d8d43cb3162f9a612b122e0953bbfb217238821181015be"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/sakura_wine.json"
+hash = "60698355b6caaa297ba61261e3d7d9bb810e1f256742f865e1b185b28003d9ef"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/sauvignon_blanc_dry_white.json"
+hash = "1dd770c6656cc68a234ab1f22f0e71df537bc5789ae37791e195d7d1bcf9751f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/sherry.json"
+hash = "2125df54a6741d36c8f6696c35e14def271566e795d8b91e736d6a6c8d14e0ed"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/sunset_glow.json"
+hash = "519c6c62c5521083e049f5b3ff06493201bce9e382bdfc765ed60a99bec3d35c"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/sweet_berry_wine.json"
+hash = "f3715208be4e952442628e13dbabfa246aa0eaeaf61fec9ff13e1cda52ebef28"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/vinegar.json"
+hash = "51a4ea1933df5362bd0d36de3f7e9ff754b731697193ce74a82a749dab9662f0"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/vodka.json"
+hash = "daf0d5fa715e0331923936dd78efde9e7b5c002281a9074fab9c884a5037a24d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/whiskey.json"
+hash = "8f45254e9558b083ba9b6e32af164e4c765ce18e94afbe7ddc8f9acc46a12d25"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/white_lady.json"
+hash = "76fbc693dc1b9e7565fdc788976d3b68913b8bdd9b6b29d843dd70371edc481d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/datamap/drink_effect/wine.json"
+hash = "25c860dce95353842007020f548df4d2d647d9c2588c03ec47e5ad49803575ca"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/brandy.json"
+hash = "e024dff97ad974def87dd679f84d87f846ac72785149c38e55fb5d1ddc31a9d1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/carignan.json"
+hash = "b13ea9d64511e15f4a251a2e94206d3fc02dd21652e6ac30bfd38f94a04e34ec"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/champagne.json"
+hash = "2dc7a46d659524ebfb1ea0e6ab40a6dcbdd2f5d40c68885152c39b6dbf88843e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/glowflower_brew.json"
+hash = "9d8552efc29216a11a3f9ea4389069e3b3eb29ae978e3f7422c40270fd37b2bc"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/honey_wine.json"
+hash = "74fa40dfae40f5199cd48b7be6703053e4722aa5deb18786872efa479bcf49e1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/ice_wine.json"
+hash = "97d81c2c57795c58243ea32aa36d3decea18e031be8d8227a22071f75bedee5b"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/luminous_bride.json"
+hash = "18904860c246750e1eada74631e007135f1a2065eebd337e2e6cba18a258bb18"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/madame_shexiang.json"
+hash = "ad7f39688445338c1a2982b1b5a510f45507b268e27a382edb40c8b87abb45e5"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/miners_star.json"
+hash = "b3b260781e04cdccd65353aab809baee1f5584ea2c30f9474d72fe717b5e7cb9"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/molotov.json"
+hash = "fdca261da3af0e0bfed78a979e36397c7562112045ad93750f7792fc9059fb30"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/mother_snow.json"
+hash = "5fabe9f9ab4b893e99b993ff82d6dfc414ef48a8bf0d71df3026f0d9923da05e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/plum_wine.json"
+hash = "8044da619589a077d7e16de620fcf38d1188c44bd6307ff894dd618cde045b53"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/polaris_sweet_white.json"
+hash = "b63088e5ba923cb1c8577de6941543a760be8e7bd18ae7e863c41f19eaf5c319"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/red_queen.json"
+hash = "329b866ee3b95b6f0e1189b789b61884ff0a3dc41ae59e83f47abd9f89409937"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/riesling_dry_white.json"
+hash = "d2f773cfdbedf41e27510d50e3fa496f73c808194a9588b8b35871203d1786cc"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/rum.json"
+hash = "b77c25c7b823e4a35ddcaf132f32736c76315ee5ba2cd1c782730c0c01140757"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/sakura_wine.json"
+hash = "d80467a778376ef02d403a3fe521e1d2ec28378a652d1dbf3c3c371646cd8c02"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/sauvignon_blanc_dry_white.json"
+hash = "5cfd2d07a0c564543561cc14dbc821f19ba7ef5b5aca83bbfe684058f48ce41d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/sherry.json"
+hash = "1d16ebdd14c80d58b262001500e39c834aad6a5d0ccab4b4412af20d24d1b0f8"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/sunset_glow.json"
+hash = "f3c3d785e6ae975014f6577349eda3255967408fd481711fd99b805083e46a0f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/sweet_berry_wine.json"
+hash = "98661d51eda446c820438ba47c408934d793529011cf0d5497ca0bf5c1301158"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/vodka.json"
+hash = "6953d4dbb92e118001f5a4af31b3c96c07f6ab8f1d4a708823bd7af1c6d91d90"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/whiskey.json"
+hash = "12dcd73aa1f1b486a72ede86c6e1ea2125eb46ab28beaaa072aa7aa165073af3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/barrel/wine.json"
+hash = "d375f0b0fb8117f7b682032dbef110709736759419a2f9dc774a9b586279f4b9"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/glow_berries_juice_x1.json"
+hash = "fccdfa530e81a50eeb4720039265c8677de96a67460fb3fb602306a4677e5d10"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/glow_berries_juice_x8.json"
+hash = "d4679de1f0c13a57ae45ec0eb81f3d1ceb56b0dd3963d10192da035e37602ba3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/gold_grape_juice_x1.json"
+hash = "2d32df783d59cfb29a4922cceee19f7f12ef7772155b45d966b2f44bf39d76de"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/gold_grape_juice_x8.json"
+hash = "711b7783dcaaa35166dcc6f761f9a23da1b1c452ddc6113e1200f0a01939c52d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/grape_juice_x1.json"
+hash = "a853b4035f8f99b91c3deacdb1adaa4f734983388e2d0cda1d530cedc5b5fa07"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/grape_juice_x8.json"
+hash = "310dd7a3613916d0f8c222093e8919921b255895009f044c36a405dec0742f2f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/green_grape_juice_x1.json"
+hash = "4dbb89fd9920e36a50328c5fb14df2b94c649a4bfeb6cabb062643ef4998a145"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/green_grape_juice_x8.json"
+hash = "f01d90d0930f856f660a3856a2faa12071b27ec7ba442a0a8cd8a3454001fe8a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/ice_grape_juice_x1.json"
+hash = "cb0da05331eda87a0b028f79b37151575e4a9f2574973e03f4b1d1f2b0addb4c"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/ice_grape_juice_x8.json"
+hash = "371698df8a99872d972f3061a9caccb79908cc9c0a9e5948af0953ebd5bbd56f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/sweet_berries_juice_x1.json"
+hash = "f6cbd4ab5c5fe653e6da2c108036b676646055cfe08ba9b0ef1008dcf938c660"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_tavern/recipe/create_press/sweet_berries_juice_x8.json"
+hash = "bbbb4fa33e32194d265e04679df4525d09129b32d96bc853d98f318dd0909625"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/absolut_vodka.json"
+hash = "4aa6ad7020506eb3547b498b21a715b401e044fb1fbd91ce27a12804ea5dd3fd"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/bacardi_carta_blanca.json"
+hash = "d48b00c3cdee8c79cb55d3051cc19d206b8abdea6b22fb999dec89392a99893f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/bamboo_leaf_green_liquor.json"
+hash = "7db08755fa6181b09b4bf6ef9adc3a83cbefa4e7d574403810bc7861d996b4b2"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/bombay_sapphire_gin.json"
+hash = "b3968abf2ada131e870f697ab4587fada8e5689f3f1ff684299a8b72cc0d7f90"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/cool_tea.json"
+hash = "cc5a64f0c2383ec2b53bfe4ad4b896a4409b54a5c83adbb2d1abef477145379e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/dassai.json"
+hash = "28024af0ce9ec4f7b3b6d0e279ee09a0ee6069215129bc21d55d5e3ca95b92a3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/gin_tonic.json"
+hash = "97fce587d943b7e824f7f02b28bcfb6f2b8d79d58aaac519660f507a49fb6e34"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/highball.json"
+hash = "f2a2badfabc2a42b623359c3001060b8f1d48498b6dcc515feb97da79249baf3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/ice_tea.json"
+hash = "01553601766aefb9a8a8b93c6fa992196f15b30978281d04021304031e3478bf"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/jack_daniel.json"
+hash = "3834e6ffc00a410bab61b7e0b06617c6d297fc6e90f05146c47f5e5042215428"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/johnnie_walker.json"
+hash = "ef2a34ced389386251f904f5fb1fbefcbf798e2196052d2e86ed340e7c0635c0"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/kwas_chlebowy.json"
+hash = "b04e353f5599dd6f2a0b4f77cbd6caa862ccb235ea075f6bb337b5288ca0173f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/lafite_1982.json"
+hash = "357385f97e736d870f962ea1786d9fc709a3048e19fef630eeaeb33b56e06608"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/maotai.json"
+hash = "32d80b1a8a0d1032818ce04343bfec5d1d42f05d5ddbead51bb313f19feb0602"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/pina_colada.json"
+hash = "aacb6f6a4d23f44ae9b3c15cd1c80e212e13a20314b7b1728dd6d5c61f55ab64"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/pine_colada.json"
+hash = "7f6332a90588b951e14530739c6736af94c47669b6b0dac25595763738ab3ee3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/skyy_vodka.json"
+hash = "b3450812c9f5a60a14341cb1f595f33f572387b46ceda43c85c2960b1494d060"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/smirnoff_red_vodka.json"
+hash = "a0636606d93848432756dede4719f18397bf34053b13add5185dac4dbd8212e3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/sour_plum.json"
+hash = "9e8b9d7edcfb0ddc97b43961abe821da957939dbf869f61a50a0d0c74330c94a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/spiryt_vodka.json"
+hash = "fcc5e883cde07696f94115de7b1dc091c4c641c0fe841274bf908c52f1e066d3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/datamap/drink_effect/strongbow.json"
+hash = "02f19eb326961a8830d4f774c14ad06ec47fb7fceca57194bcab962311fba7d2"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/absolut_vodka.json"
+hash = "68e125d0243abfef3f04dfbaa2b12c763ab2f085dd1dc0b19023d7616141305d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/bacardi_carta_blanca.json"
+hash = "19e73b3f803a28660a9ae5671da324956c6ad9481cd07393e08b1a4ff891e916"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/bamboo_leaf_green_liquor.json"
+hash = "8ce7cf98e0da1854033ce7fb14506d3ff43051a91fc2a5a8d9ecfa8fbb893e0c"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/bombay_sapphire_gin.json"
+hash = "0e59cea7429fe3d035e8fef81bf34d2dc7f8301b1853a69253579c0a296df2b4"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/cool_tea.json"
+hash = "0f166ac134cd90551e934e755ac1b380e91fb35c15356c7e7b2cfa004c9239de"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/dassai.json"
+hash = "b1e38a2534e314503cf508632385109960875519c529227f2c18084b85588cb3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/dassai_farmersdelight.json"
+hash = "eb3fb2117100b0196dbd690ae435860756b37d25ae00b78a3268d2cff7073232"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/ice_tea.json"
+hash = "ce587d38b43bebc2ec6b9f6ddb9e1fcc2cdc4b32aeadfa68cb9fcbbaa94a2fab"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/jack_daniel.json"
+hash = "9682978839fa84338d835278cb327d64e49fe0bfbb49ead86469d27815cdc8a5"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/johnnie_walker.json"
+hash = "c1dc02a6ec261934b1203155a5f3403b12aff9b029c1c333be917c669150d7f1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/kwas_chlebowy.json"
+hash = "c2d3a6cfc899510787a4ca0abc0df4873ca834f8dbf0d2813f4ed164128ae125"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/lafite_1982.json"
+hash = "01fdf59651cd1af8221f91e0194ac6769f4431d46ea5f558d8e963f1d6ee131a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/maotai.json"
+hash = "b6128356360b690dff13ded0a4d023a13fefa0fd79a39a8bfbab81062c260ac8"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/maotai_farmersdelight.json"
+hash = "895e0ff1fbab3a956510f9e93e5399f19face212dc82d2d4062216e3586e763e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/pina_colada.json"
+hash = "f95ebf5cda284acf3bbac0ed267599a1296ae18390ad555a37b691d152f1bb2f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/skyy_vodka.json"
+hash = "f4ffffa3dd69dda71d4fbb153b48604c60425f778f7c28ee2aa550d2b760e77a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/smirnoff_red_vodka.json"
+hash = "a9baa78811df874d88f28639be874f3710c117c6d40e638ba91827168d5b9018"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/sour_plum.json"
+hash = "44c06fed02ba744a596a744cc2c354769a4981decef231985e9f8f04f1c3b651"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/spiryt_vodka.json"
+hash = "4e2a00a059bc20eb86ff72f750cfa9ef378f317e93f4561ebebffd57d70fe704"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_world_liquor/recipe/barrel/strongbow.json"
+hash = "6f5415f2c302842c4cad7cd66eb8f029a541f507641a97dd601553ea74fd2aba"
+
+[[files]]
 file = "kubejs/server_scripts/advanced_peripherals.js"
 hash = "c8692e56a2df8983660914c59bebed9300075dce85a6e993d9a6cb8b4737829e"
 
 [[files]]
-file = "kubejs/server_scripts/ages_shop.js"
-hash = "3396295805fd9d131126e721fc7b125d56a4171decfd7715215b652444729432"
-
-[[files]]
 file = "kubejs/server_scripts/artillery_mechanisms.js"
-hash = "c2a46f7943bc55e7c420b52c8f737110f937985875a9180f6574010c85999514"
+hash = "c049070ef7fb04a75507ea82fa284b4b73d2857674d02111513826d708c97394"
 
 [[files]]
 file = "kubejs/server_scripts/artillery_parts.js"
@@ -479,7 +1555,7 @@ hash = "6926a88c6f82080a4e13bd24313df25e70986ca0491d9bac810d962333fa1535"
 
 [[files]]
 file = "kubejs/server_scripts/belts.js"
-hash = "fe7436f9c241c45f81aceb5154a66dd3281cad3da4747699f846498f867b48a5"
+hash = "4b199548265c300458828ecba653c5f79f4e20305be3cc95a4afc24d27891473"
 
 [[files]]
 file = "kubejs/server_scripts/computercraft.js"
@@ -491,7 +1567,7 @@ hash = "2ebdc50d2628d12e5f8cd3830bfaa3c6468cf65fd4283367c65d3df63a8f79cf"
 
 [[files]]
 file = "kubejs/server_scripts/dupe_guards.js"
-hash = "5badf04ecae8636db530c5220d10f6c2cc6464beb7ff2c86e14b27353279bd43"
+hash = "1a037af0c88e94f07bcc6dc9b598b9e48e379b59d39b921ec88b06b463861200"
 
 [[files]]
 file = "kubejs/server_scripts/end_crystals.js"
@@ -506,16 +1582,24 @@ file = "kubejs/server_scripts/honey_welder.js"
 hash = "9fc551bb10da46bac355b54567f454bd84cd63ef8b13a7752f17641f76cc6c24"
 
 [[files]]
-file = "kubejs/server_scripts/loot.js"
-hash = "fd86ac698c37d45c379efe99df8be9a5bd262b367987fde33bfe1ec313dd4d29"
-
-[[files]]
 file = "kubejs/server_scripts/lootr_protection.js"
 hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
+file = "kubejs/server_scripts/market.js"
+hash = "8b9d46a0dfa4f46f1d6ff2d0b55ac39ba94440f9da55e262c8f465fcd2dee352"
+
+[[files]]
+file = "kubejs/server_scripts/market_board.js"
+hash = "3c782183ec210b85b0f646c7d01f16d4f1caeef552c9d1c2366e90d47aee8cad"
+
+[[files]]
 file = "kubejs/server_scripts/numismatics.js"
 hash = "32040919e89c5aeb7b0e1fd1984c4a78ca917cfd259c78429e519ace36c392bb"
+
+[[files]]
+file = "kubejs/server_scripts/plot_rent.js"
+hash = "55dd387e2ba47a4afd8c27be2702f95886f10f6cacfd625ec927b493379e8d59"
 
 [[files]]
 file = "kubejs/server_scripts/radar_fire_arc.js"
@@ -530,12 +1614,36 @@ file = "kubejs/server_scripts/ragdoll_knockdowns.js"
 hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
+file = "kubejs/server_scripts/s2_deposits.js"
+hash = "dd495b2a655e68c5e63fff000cd94676506c3ba7eed63844b537278e8f338bcb"
+
+[[files]]
+file = "kubejs/server_scripts/s2_drinks.js"
+hash = "1ca523f1419c3f59b948f428347de69e86aa447d576eda073b56c7144982fdd1"
+
+[[files]]
+file = "kubejs/server_scripts/s2_generators.js"
+hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
+
+[[files]]
+file = "kubejs/server_scripts/s2_recipes.js"
+hash = "8c8878578917da3d93fe62da234a17e1d2bb1214d538405266be3270b8ea0afc"
+
+[[files]]
+file = "kubejs/server_scripts/s2_ship_loot.js"
+hash = "fde3263ff49de2a4b2cfff4cee458977bedfc291b65b89b5fa5155f70f5f7cf6"
+
+[[files]]
+file = "kubejs/server_scripts/s2_welcome.js"
+hash = "e50fb5d2c8b5072311982bcecd0be267ddb4056721418b6b85d82a343e10a56d"
+
+[[files]]
 file = "kubejs/server_scripts/season1.js"
-hash = "a2c9feb059b69d03760c5dd5fd15cb03ec9cb4d660083266918f1c409e3502ef"
+hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "077cfa9d763eeedf221ecc5ce0c8f6b9a91eb4a9f4a9bf333485e63f95beeb27"
+hash = "8b5840e63fd51ac8785bcf90e5b632c7ead3bbca2f3eac098364cc0830c19e6c"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -543,11 +1651,11 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "b84a20030bb7d75b46ea4b44c4a215679c820e5263d046f032b9abc19cfe9392"
+hash = "1372d4d0b461721c2f93cfe91f71d7661fd19d1d1d7627336832166283c9b809"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
-hash = "dd9730aeb170bd8b0e5db6cfa0bdd87557eb762b81a28548c1d932993c0a62cc"
+hash = "b4850e194160932f3f32eb17a3cbace629815fac8b2d9191f7306d60328906d2"
 
 [[files]]
 file = "kubejs/server_scripts/toolgun.js"
@@ -574,6 +1682,11 @@ metafile = true
 [[files]]
 file = "mods/advancement-plaques.pw.toml"
 hash = "2b02594380f31aa857c89d296afb53bec67621b491956be09a54ab6845552e2a"
+metafile = true
+
+[[files]]
+file = "mods/aeronautics-hot-air-burner-fuel.pw.toml"
+hash = "ddfd16a248200738f2dde9f6274f7d7ec341c5c898f2a2b2f85200404029129c"
 metafile = true
 
 [[files]]
@@ -636,8 +1749,8 @@ hash = "e1f1588b18947699ddc9b4f7c5b5406c5559155b8cb52dcd0f203c07c31cd0b8"
 metafile = true
 
 [[files]]
-file = "mods/brewin-and-chewin.pw.toml"
-hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
+file = "mods/carbons.pw.toml"
+hash = "af9fbcf3e6b3484ab0c209e1c1d884d4ccd532498e1ba35f843231c15e741262"
 metafile = true
 
 [[files]]
@@ -646,18 +1759,13 @@ hash = "82a755cc7393f20c64d3465813840b90dcccc94e067b2e72411ad973e91dd089"
 metafile = true
 
 [[files]]
-file = "mods/cbc-compact-mount.pw.toml"
-hash = "414a58bba157ca4e565529c006a8637660644de1b2347f5452e1d7906b41c225"
+file = "mods/cbc-compact-cannon-mount.pw.toml"
+hash = "7074b7fe00856c4b31f02adbb230355cd8be620d8f9f67440109146e502e7c06"
 metafile = true
 
 [[files]]
 file = "mods/cbc-more-shells.pw.toml"
 hash = "9757f7d050adcb465f923e852b1e1e13aaaf8e58a2f611ce882ad80a2cb15c89"
-metafile = true
-
-[[files]]
-file = "mods/cc-cbc-compact-mount.pw.toml"
-hash = "ce40d18cff81bdf367361d9bf810a4f1e998e69c567522cd63694bb646675395"
 metafile = true
 
 [[files]]
@@ -690,13 +1798,8 @@ hash = "0194091946d249681e33dd32a927122e844d4093c2f14165f2f99f92e028af11"
 metafile = true
 
 [[files]]
-file = "mods/ccdirectgpu.pw.toml"
-hash = "65e97a468077b35d3384c70880981610cf786635f772a3c21c6b93ba439459d5"
-metafile = true
-
-[[files]]
-file = "mods/cchose-1.0.3.jar"
-hash = "5594dd486ffcc0578dc96442c30738bc77c59322e555406b49f9966607258f13"
+file = "mods/cchose-1.0.4.jar"
+hash = "d56fa36ed910fa709c8100d7d8587b0eca8bace8b57680aaac3bba05b6f91898"
 
 [[files]]
 file = "mods/ccpowergridcompat.pw.toml"
@@ -738,24 +1841,40 @@ file = "mods/cmpauth-0.1.0.jar"
 hash = "300aed2badd7e02a5a4ed2e2fdc6478e3115860df764c40998c6503312c0b34e"
 
 [[files]]
-file = "mods/cmpfixes-0.38.1.jar"
-hash = "0a291460b2c8dde4b87fb2c0b43f1849d9b24898171195784810c672a80957bf"
+file = "mods/cmpball-0.1.0.jar"
+hash = "a0c283d258d59006cc846c9f55dffddc66d20fdf6aa90e5e639f2612e0622563"
+
+[[files]]
+file = "mods/cmpcity-0.1.3.jar"
+hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
+
+[[files]]
+file = "mods/cmpfixes-0.39.1.jar"
+hash = "9f63e5f12722ae5024b5b32f5df612a87115c3c40ce5b1291e36520aa91eaeb6"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
 hash = "7244e29ac8332b645ae3eb5f1b6560d30473e1a7da0ab6285dd4b38a9ec7dad0"
 
 [[files]]
-file = "mods/cmpshop-0.1.1.jar"
-hash = "80ac683aff583d9235b72edfcc0d27a5f68ecc2dad4a9b180e083d256a796a22"
+file = "mods/cmprubber-0.1.2.jar"
+hash = "4bdf5a6d43fb60bd8f84be92256300c6d9ac27965ddb35110c0ffef5905b92d8"
+
+[[files]]
+file = "mods/cmpshop-0.4.1.jar"
+hash = "08658f68a0a28ef795787c5ed69dc803b2c02e49bd060a64f835204673deafba"
 
 [[files]]
 file = "mods/cmptab-0.1.0.jar"
 hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
 
 [[files]]
-file = "mods/cmpwar-0.23.4.jar"
-hash = "64385dd429c5582b561a393eb3d19e2d7f563566082fee7b61bb40ae8fac671f"
+file = "mods/cmpveins-0.2.0.jar"
+hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
+
+[[files]]
+file = "mods/cmpwar-0.27.24.jar"
+hash = "9bdaee87fc78e3c7def7569e96f13fe1071ea04f08bc4596272356c5cd8de679"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -793,8 +1912,23 @@ hash = "8e671fbd3a5460a61073cced391ec08efc6b67d765e49015eea45a1f1db159a0"
 metafile = true
 
 [[files]]
+file = "mods/crabbers-delight.pw.toml"
+hash = "6561e381b08dab5643dfc7bff8f2b60df1f2e2e4078c83fa0ead4978266ec37a"
+metafile = true
+
+[[files]]
 file = "mods/crashexploitfixer.pw.toml"
 hash = "2ea431a8a539cf776e004d5f55260cbf60fa5d8e1f0a7f3059298bf59510e1c4"
+metafile = true
+
+[[files]]
+file = "mods/create-addictives.pw.toml"
+hash = "ba8dcbab8a331659ec0791382ad6615b88aaa4f8ac75a39bafedc5f083e3f54a"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-climbable-rope.pw.toml"
+hash = "74458a17668530918172dce94e2e2066f9e6dd128131d85c417e32ff892e1b62"
 metafile = true
 
 [[files]]
@@ -820,11 +1954,6 @@ metafile = true
 [[files]]
 file = "mods/create-aeroworks.pw.toml"
 hash = "210419599e24212d879f58d0b3bacb74dec6d64703f49f1c547440bf7705e942"
-metafile = true
-
-[[files]]
-file = "mods/create-ages.pw.toml"
-hash = "100453b5fc7d3e8b754920a1838159ceac1daa3afc733880661f183e281f7828"
 metafile = true
 
 [[files]]
@@ -928,11 +2057,6 @@ hash = "2677237aa7c7c037f770bd15c33359e054cd27f5614a7667e02183ed23f3c4d1"
 metafile = true
 
 [[files]]
-file = "mods/create-hangars.pw.toml"
-hash = "da8d5e82cf967b40f3e4246b33d42c911620d2598b825b607bce11fdb91edaa3"
-metafile = true
-
-[[files]]
 file = "mods/create-immersive-tacz-integration.pw.toml"
 hash = "7910a6d60620acce95fcce5d071d382b4b4fe5c1e2183f962620228771e378bc"
 metafile = true
@@ -943,11 +2067,6 @@ hash = "205ac4987dcaf6aa6a099c9dbcb97f9aea85b2f9b2f5953fc88c83d92afd90b5"
 metafile = true
 
 [[files]]
-file = "mods/create-let-the-adventure-begin.pw.toml"
-hash = "306079117b2da88795d6af88fb9c2bc0749559e61db0a830bb864ffe881ac79a"
-metafile = true
-
-[[files]]
 file = "mods/create-mobile-packages.pw.toml"
 hash = "3956311952e50e1b437d8e7c5af4537feebd3d95bd5435192b78b251cab38bf2"
 metafile = true
@@ -955,11 +2074,6 @@ metafile = true
 [[files]]
 file = "mods/create-nowheel.pw.toml"
 hash = "b5c4217d430af59d3243e8717ad09398864b726272e1ded301f182604d704a45"
-metafile = true
-
-[[files]]
-file = "mods/create-oredoubling.pw.toml"
-hash = "4f0867a57a09fe56e5fb501884a19e72d1d5da044c81ccc14ff99d7ada1d7d10"
 metafile = true
 
 [[files]]
@@ -983,23 +2097,8 @@ hash = "c24712eb82bb29d7ed210d7bc175baeb3b022c3b365b2dd0275c25f690e98f52"
 metafile = true
 
 [[files]]
-file = "mods/create-rustic-structures.pw.toml"
-hash = "4db36dff15780e4e1ba380f13302a61d03e9c85509a09ca9e38749930f01511d"
-metafile = true
-
-[[files]]
-file = "mods/create-sifting.pw.toml"
-hash = "464baff9adb918c7eb8fbfdb2efedeba5f1d3f6eebe87fc3fad5649e8e4ee18e"
-metafile = true
-
-[[files]]
-file = "mods/create-structures-arise.pw.toml"
-hash = "d07e87a42a1f882ee71b9f68fc531b1b9dcf4637f69fcf0c80322e488cf79171"
-metafile = true
-
-[[files]]
-file = "mods/create-structures-overhaul.pw.toml"
-hash = "a1ece75a981257cc4cb72f29eb89a95f48249269af6ea115de504d3fbe00be4d"
+file = "mods/create-rns.pw.toml"
+hash = "eda98b54aa329bb3f99671a839dd221b310d15c1fd68649a64a8ccd8eb5f279f"
 metafile = true
 
 [[files]]
@@ -1014,7 +2113,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-xaeros-map.pw.toml"
-hash = "ce4f3b213b52415cecadc297652ba0f1c506e4f987a7ae2bfda437f3bd405d5b"
+hash = "34fc08837336e7f5b3e97b43fc0f8df9dfe4456f764bcae2c9736413d2454205"
 metafile = true
 
 [[files]]
@@ -1049,12 +2148,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "6d3e312dbf8db12dd1b6fb3bd1d29f210ab48024a0b2ebdf02fd32c265955c5d"
-metafile = true
-
-[[files]]
-file = "mods/dungeons-and-taverns.pw.toml"
-hash = "75336ef402b68dd45a0b503559d4b4ab80ab451d30bdea158b927aff8caaafab"
+hash = "0c20fea3407ed0db85b4b171f1820a24987f2659946fadd30bae044205041b09"
 metafile = true
 
 [[files]]
@@ -1065,11 +2159,6 @@ metafile = true
 [[files]]
 file = "mods/easy-villagers.pw.toml"
 hash = "d629988991e4e0c461a5031b8c774c184ef409f5b57187211c3abe5b1a21fc3c"
-metafile = true
-
-[[files]]
-file = "mods/embers-floating-islands.pw.toml"
-hash = "82b5da4b806a09e490ce4e03204136194f7581aeb93cecf024f80d6f926764d0"
 metafile = true
 
 [[files]]
@@ -1103,11 +2192,6 @@ hash = "d71abc5f76bbd6c2f1ddf5a113b0cdf8495c23ce85e310a69c50eac462e1821a"
 metafile = true
 
 [[files]]
-file = "mods/explorify.pw.toml"
-hash = "ce673b6e9bd9162fa0066345a3a75341ad0b307e368ddd6da10c1c359fc5f2d2"
-metafile = true
-
-[[files]]
 file = "mods/exposure.pw.toml"
 hash = "b9c7e06aaedf28d4f5fd4d002aa290b755bea76a9c2c0012a4a46efea1a3ef7d"
 metafile = true
@@ -1133,11 +2217,6 @@ hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
 metafile = true
 
 [[files]]
-file = "mods/farmers-pizzeria.pw.toml"
-hash = "ef7be6b02d0348ff3b296b95654fb02b18af552dd7807f568cac11850c92acbe"
-metafile = true
-
-[[files]]
 file = "mods/fast-leaf-decay.pw.toml"
 hash = "e9711a942110d54884394c3a436ae509bc6444a30215e7dd385e4766ba92b400"
 metafile = true
@@ -1151,6 +2230,10 @@ metafile = true
 file = "mods/fragmentum.pw.toml"
 hash = "d4dfbacb2e7b74ca70b6a9c1f2217ff082c853633e83c67569fe55541f6cf014"
 metafile = true
+
+[[files]]
+file = "mods/frigulus-avatar-1.1.0.jar"
+hash = "a0338a23d6030430eba64b8bade48839de18a758f804c4db2daf03c501d50c4c"
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
@@ -1180,6 +2263,11 @@ metafile = true
 [[files]]
 file = "mods/fzzy-config.pw.toml"
 hash = "932c65fb598293dba5dc60a76fc64c2579db427018b10dd4757dd421d9abcaf0"
+metafile = true
+
+[[files]]
+file = "mods/grapplemod-skybound.pw.toml"
+hash = "e2ec4d2dbf88e45a09198b9a44ca0553c1e458701e6757997d0d5055b39bb7be"
 metafile = true
 
 [[files]]
@@ -1242,6 +2330,10 @@ hash = "fb3233553d7a88373fcd54e6fbeac1f593fdfbe44f00e0c24790a01774545e2f"
 metafile = true
 
 [[files]]
+file = "mods/kaleidoscope-merged-1.0.0.jar"
+hash = "bae4aa82c20b2f876346efcd44d1628ee2ee41a644b351ab5541b61af75e982f"
+
+[[files]]
 file = "mods/konkrete.pw.toml"
 hash = "5707b722541648df013644f3b4d50083c77965d536f219df9fac5026f6103777"
 metafile = true
@@ -1269,6 +2361,11 @@ metafile = true
 [[files]]
 file = "mods/ldlib.pw.toml"
 hash = "a57064a0b2f76d1940893fe8e4d6b6a57554fd27d32da88dcf152acfef223383"
+metafile = true
+
+[[files]]
+file = "mods/let-it-walk.pw.toml"
+hash = "0bf08f8e608e27fcb8c7f198618e08e19dfa01602a892e8110ed04efeea23463"
 metafile = true
 
 [[files]]
@@ -1307,11 +2404,6 @@ hash = "40b7f0cb1bc669c7fedf2eed795d08d772891a38ff09dbc2e68823e2a8c20d4c"
 metafile = true
 
 [[files]]
-file = "mods/mechanicals-lib.pw.toml"
-hash = "c9e181185e3177d43fc9bd8d919288ac1bc0ce6b85e7049890f3eb231f5be10d"
-metafile = true
-
-[[files]]
 file = "mods/melody.pw.toml"
 hash = "9dff522b00f5269538d0351536f34b22384996de30be454ef1369f1b1e5c1aeb"
 metafile = true
@@ -1329,16 +2421,6 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "c84140c66f233909b392bd7253ca33c59903ffda51beff558d9a2a4a8c6bc269"
-metafile = true
-
-[[files]]
-file = "mods/moogs-structure-lib.pw.toml"
-hash = "00b3a07b1994eecda04b3893c1696c9114adf7494ac604f2d172b5931fed9275"
-metafile = true
-
-[[files]]
-file = "mods/moogs-voyager-structures.pw.toml"
-hash = "8f1f7a8fad5f76d13cc8fdd8fd3c9b721a461fe72f009c23a247ffab76154586"
 metafile = true
 
 [[files]]
@@ -1500,11 +2582,6 @@ hash = "3f552bbdc42f07fd7d5695ced1d27d774af63cff5460be45817939e5f8e4f9de"
 metafile = true
 
 [[files]]
-file = "mods/shellbound-for-airship.pw.toml"
-hash = "026951f2fdf7709712269e4f2c03aa544d35d20c1fb6180876f5ec5063fc2e34"
-metafile = true
-
-[[files]]
 file = "mods/shulkerboxtooltip.pw.toml"
 hash = "089e4203ca8bbdb98eb171818f1ec8d384e1a477e1276325c4e4f1a4367d8260"
 metafile = true
@@ -1515,8 +2592,8 @@ hash = "8eae737eb20a0488e9b57b6a59f0681d142732bcb22fc896ad4e5ff924ec5683"
 metafile = true
 
 [[files]]
-file = "mods/sky-whale-ship.pw.toml"
-hash = "0be5b145e8ac324bbac2399a6f420a3f4e18f8b50d3b2c18bdb65b67c356eb45"
+file = "mods/simulated-addition.pw.toml"
+hash = "9c4a6bb67f77e40a66de95d4649815c0f9ffb3b2dcb4e4cbc29b577510c9edf0"
 metafile = true
 
 [[files]]
@@ -1549,16 +2626,6 @@ file = "mods/streamsafe-1.0.0.jar"
 hash = "4f824d5aa902794b1df70e67d84739579f3cc4c8daa461899198b9dbeb166a40"
 
 [[files]]
-file = "mods/structory-towers.pw.toml"
-hash = "c2d51d6fd5edb04406c16820ac38700b8272804c386c82d32235b1ee51977e91"
-metafile = true
-
-[[files]]
-file = "mods/structory.pw.toml"
-hash = "eaec78a5dd37404a381ba7cdf378a5cf018a80e50e39b7b3d9b8bd1589e231a2"
-metafile = true
-
-[[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "aa89e067824ca42d818a81a6d02ce5296ce662d834c35dd2ff0d81189d3bc3f9"
 metafile = true
@@ -1580,12 +2647,12 @@ metafile = true
 
 [[files]]
 file = "mods/vs-hose-connectors.pw.toml"
-hash = "6c9883d2fa1643fe221307ab0101fbccb204c80953989d3e064872b4f45efd34"
+hash = "52c86942f80b262807611743be5991c4dfe2df66041a6503a46266d9e7ed4b96"
 metafile = true
 
 [[files]]
-file = "mods/when-dungeons-arise.pw.toml"
-hash = "7e6948368276f2c49d5bccf52cbf80930d0daca75b4dfbc5530479f1d3f95cf8"
+file = "mods/when-dungeons-arise-seven-seas.pw.toml"
+hash = "49daa837ab97ab95e582d7ca094f56e5b3a04bf00248bc86e50ee8874cea87af"
 metafile = true
 
 [[files]]
@@ -1596,6 +2663,11 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "f8cc300d53ae8bf71d77124e6c46a5e85fe31654b39c5d73a1652a4d9c404af4"
+metafile = true
+
+[[files]]
+file = "mods/yacl.pw.toml"
+hash = "539f362e9e192cf3b2813e0dfdfc51a5e6814129c6e82a9733842529beea6242"
 metafile = true
 
 [[files]]

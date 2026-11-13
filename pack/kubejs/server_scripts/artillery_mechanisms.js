@@ -1,9 +1,10 @@
-// One deterministic assembly cycle makes each material's firing mechanism.
+// Cast iron and bronze start from the pressed mechanism (s2_deposits.js), which replaced Create: Ages'
+// andesite mechanism. One deterministic assembly cycle makes each material's firing mechanism.
 // Each ingot is a separate deploying step: Create deployers consume one item per operation.
 ServerEvents.recipes(event => {
     const materials = [
-        { id: 'cast_iron', base: 'createages:andesite_mechanism', plate: 'create:iron_sheet' },
-        { id: 'bronze', base: 'createages:andesite_mechanism', plate: 'create:iron_sheet' },
+        { id: 'cast_iron', base: 'cmpveins:pressed_mechanism', plate: 'create:iron_sheet' },
+        { id: 'bronze', base: 'cmpveins:pressed_mechanism', plate: 'create:iron_sheet' },
         { id: 'steel', base: 'create:precision_mechanism', plate: 'create:iron_sheet' },
         { id: 'nethersteel', base: 'kubejs:steel_mechanism', plate: 'create:sturdy_sheet' }
     ]

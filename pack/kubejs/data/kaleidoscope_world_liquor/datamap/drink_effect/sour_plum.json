@@ -1,0 +1,77 @@
+{
+  "item": "kaleidoscope_world_liquor:sour_plum",
+  "effects": [
+    [
+      {
+        "effect": "minecraft:hunger",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:weakness",
+        "duration": 45,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:weakness",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_world_liquor:tequila",
+        "duration": 160,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:weakness",
+        "duration": 30,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_world_liquor:tequila",
+        "duration": 480,
+        "amplifier": 0,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:weakness",
+        "duration": 20,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_world_liquor:tequila",
+        "duration": 1440,
+        "amplifier": 1,
+        "probability": 1.0
+      }
+    ],
+    [
+      {
+        "effect": "minecraft:weakness",
+        "duration": 10,
+        "amplifier": 0,
+        "probability": 1.0
+      },
+      {
+        "effect": "kaleidoscope_world_liquor:tequila",
+        "duration": 4320,
+        "amplifier": 2,
+        "probability": 1.0
+      }
+    ]
+  ]
+}

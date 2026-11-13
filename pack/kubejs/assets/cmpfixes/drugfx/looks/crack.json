@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "look": "crack",
+  "effect": "addictives:crack_high",
+  "chain": "addictives:shaders/post/crack.json",
+  "layer": "glitch",
+  "cost": "medium",
+  "curve": {
+    "comeUpSeconds": 1,
+    "peak": [0.75, 0.85, 0.95, 1.0, 1.0],
+    "comedown": {
+      "share": 0.3,
+      "minSeconds": 6,
+      "maxSeconds": 40
+    },
+    "tail": 0.3,
+    "afterglowSeconds": 4
+  },
+  "heart": {
+    "bpm": 150
+  },
+  "flash": {
+    "kind": "white",
+    "perSecond": 0.12,
+    "ms": 120,
+    "amount": 0.15
+  },
+  "glitch": {
+    "perSecond": 2.5
+  },
+  "_note": "The intense looks track's crack (T2b, M9): our own program at the mod's path; tears only at the glitches the flash floor admits (this file's glitch rate; glitches alone are capped at 2 a second by the floor) and the rare white flash below, which the common pass draws."
+}

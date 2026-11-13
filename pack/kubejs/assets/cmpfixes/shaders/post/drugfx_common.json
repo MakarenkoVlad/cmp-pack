@@ -1,0 +1,7 @@
+{
+  "targets": [ "swap" ],
+  "passes": [
+    { "name": "cmpfixes:drugfx_common", "intarget": "minecraft:main", "outtarget": "swap" },
+    { "name": "blit", "intarget": "swap", "outtarget": "minecraft:main" }
+  ]
+}

@@ -1,10 +1,11 @@
-// Six cured rubber make two belts, keeping the Create: Ages crafting pattern.
+// Six rubber make two belts (the pattern Create: Ages used). Season 2 rubber comes from latex deposits
+// and the city generators (cmpveins:rubber).
 ServerEvents.recipes(event => {
     event.remove({ output: 'create:belt_connector' })
     event.shaped(Item.of('create:belt_connector', 2), [
         'AAA',
         'AAA'
     ], {
-        A: 'createages:cured_rubber'
+        A: 'cmpveins:rubber'
     }).id('cmp:crafting/belt_connector')
 })

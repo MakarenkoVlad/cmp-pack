@@ -1,0 +1,12 @@
+{
+  "targets": [ "swap", "prev", "quarter" ],
+  "passes": [
+    { "name": "cmpfixes:drugfx_lsd_flow", "intarget": "minecraft:main", "outtarget": "quarter" },
+    {
+      "name": "addictives:lsd", "intarget": "minecraft:main", "outtarget": "swap",
+      "auxtargets": [ { "name": "FlowSampler", "id": "quarter" }, { "name": "PrevSampler", "id": "prev" } ]
+    },
+    { "name": "blit", "intarget": "swap", "outtarget": "minecraft:main" },
+    { "name": "blit", "intarget": "swap", "outtarget": "prev" }
+  ]
+}

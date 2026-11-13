@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:weed"
+    },
+    {
+      "item": "addictives:weed"
+    },
+    {
+      "item": "addictives:weed"
+    },
+    {
+      "item": "addictives:weed"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "id": "addictives:thc_oil"
+    }
+  ]
+}

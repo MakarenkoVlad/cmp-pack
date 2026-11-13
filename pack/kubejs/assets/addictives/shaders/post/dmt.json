@@ -1,0 +1,12 @@
+{
+  "targets": [ "swap", "prev", "half" ],
+  "passes": [
+    { "name": "cmpfixes:drugfx_dmt_pattern", "intarget": "minecraft:main", "outtarget": "half" },
+    {
+      "name": "addictives:dmt", "intarget": "minecraft:main", "outtarget": "swap",
+      "auxtargets": [ { "name": "PatternSampler", "id": "half" }, { "name": "PrevSampler", "id": "prev" } ]
+    },
+    { "name": "blit", "intarget": "swap", "outtarget": "minecraft:main" },
+    { "name": "blit", "intarget": "swap", "outtarget": "prev" }
+  ]
+}

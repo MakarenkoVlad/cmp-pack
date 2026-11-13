@@ -1,0 +1,23 @@
+# CMP: shipped from pack/config to players and the server. Create: Addictives reads this file once at start
+# (net.addictives.Config: keys ignore case and underscores, "#" starts a comment). All 11 keys are here: without
+# EnableShaders, ShaderIntensityScale, ReduceFlashing or ReduceMotion the mod writes the whole file again.
+# Villager drug trades are off (owner decision D9, docs/design/addictives-plan.md); the rest are the mod's defaults.
+
+# Create: Addictives config
+
+# Gameplay & Balance
+PotencyRewardScale =1.0
+ToleranceDecayRate =0.01
+EnableVillagerTrades =false
+
+# Shaders, Visual Effects & Accessibility
+EnableShaders =true
+ShaderIntensityScale =1.0
+ShaderFadeSpeed =0.08
+ShaderSwitchHoldMs =1500
+# ReduceFlashing disables rapid black/white strobing, sudden blindness flashes, and harsh flicker
+ReduceFlashing =false
+# ReduceMotion disables camera angle/roll hijacking, camera detachment, forced perspective, and control inversion
+ReduceMotion =false
+EnableChemTooltips =true
+ColorblindMode =false

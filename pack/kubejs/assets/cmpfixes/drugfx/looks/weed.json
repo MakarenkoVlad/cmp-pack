@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "look": "weed",
+  "effect": "addictives:weed_high",
+  "chain": "addictives:shaders/post/weed.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "comeUpSeconds": 6,
+    "peak": [
+      0.75,
+      0.85,
+      0.95,
+      1.0,
+      1.0
+    ],
+    "comedown": {
+      "share": 0.25,
+      "minSeconds": 8,
+      "maxSeconds": 40
+    },
+    "tail": 0.3,
+    "afterglowSeconds": 6
+  },
+  "heart": {
+    "bpm": 78
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "T2a's look (cmpfixes/ADDICTIVES.md, FX calm looks): our own chain and program at the mod's path; the numbers of docs/design/addictives-fx-design.md 2.7."
+}

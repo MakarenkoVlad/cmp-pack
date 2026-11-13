@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "look": "breakthrough",
+  "effect": null,
+  "driver": "setpiece",
+  "chain": "cmpfixes:shaders/post/drugfx_breakthrough.json",
+  "layer": "warp",
+  "cost": "heavy",
+  "curve": {
+    "riseSeconds": 3,
+    "returnSeconds": 3,
+    "lengthSeconds": 17
+  },
+  "heart": {
+    "bpm": 110,
+    "follows": "dmt"
+  },
+  "flash": null,
+  "glitch": null,
+  "centre": true,
+  "_note": "The DMT breakthrough set piece (S7, fxdmt; cmpfixes/ADDICTIVES.md, \"FX DMT set piece\"): rise 3 s, three rooms, return 3 s, 17 s in all, driven by the set piece's own clock (the breakthrough's window), not by this curve; its white-out goes through the flash floor as SET_PIECE."
+}

@@ -2,5 +2,5 @@
 // numismatics.js); one line on their tooltip says so.
 ItemEvents.modifyTooltips(event => {
     event.add(['numismatics:spur', 'numismatics:bevel', 'numismatics:sprocket', 'numismatics:cog', 'numismatics:crown', 'numismatics:sun'],
-        [Text.gray('You get these from airdrops and spend them with /shop')])
+        [Text.gray('You get these from /money and coin drops, and spend them with /shop')])
 })

@@ -6,6 +6,8 @@ ServerEvents.loaded(event => {
     // There are no hostile mobs (the cmpwar mod keeps them out, [mobs] noHostileMobs), so these would
     // only keep trying to spawn them.
     event.server.runCommandSilent('gamerule doPatrolSpawning false')
+    // Wandering traders sell gunpowder, which Season 2 makes only from sulfur (#7); there are no villagers either.
+    event.server.runCommandSilent('gamerule doTraderSpawning false')
     event.server.runCommandSilent('gamerule doInsomnia false')
     event.server.runCommandSilent('gamerule doWardenSpawning false')
     event.server.runCommandSilent('gamerule disableRaids true')

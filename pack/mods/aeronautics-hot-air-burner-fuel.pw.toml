@@ -1,0 +1,13 @@
+name = "Aeronautics Hot Air Burner Fuel"
+filename = "aeronautics-hot-air-burner-fuel-0.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "80c612aa0e737f043dc910878c5258dbef9a521e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8610829
+project-id = 1645974

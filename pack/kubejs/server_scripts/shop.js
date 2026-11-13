@@ -1,6 +1,11 @@
 // /shop: the only place coins go. Numismatics coins come from airdrops only (the airdrop mod puts them in the
 // crates; numismatics.js takes away every recipe, bank and vendor), and the shop sells the items that are not in
 // the crates any more for them. It never buys anything back: every coin it takes is destroyed.
+// Season 2's plot rent and plot sales are paid the same way, with these functions (plot_rent.js).
+//
+// What it sells: the lists below, CMP_SHOP_OFFERS_ALL and, after it, CMP_SHOP_OFFERS_ADDICTIVES. Of Create:
+// Addictives it sells seeds, spores and Narcan powder only: never a finished drug, and nothing else from the Nether
+// (Narcan powder is made from cinder flour; no cinder flour, blaze powder or nether wart is sold).
 //
 //   /shop                     the shop screen (the cmpshop mod: tabs, search, prices, your coins, the treasury;
 //                             its buttons run the commands below, so every rule here holds), else the list
@@ -11,6 +16,14 @@
 //   /shop treasury <n>        n Cog into your party's treasury; the first party to 320 Cog gets the dragon egg
 //   /shop top                 the treasuries
 //   /shop off, /shop on       ops only (permission level 2): close and open the shop, kept over restarts
+//   /money                    Season 2's hourly money kit: CMP_MONEY_SPURS spurs, then a wait of an hour from that claim
+//                             (missed hours do not add up), at most CMP_MONEY_DAILY claims a UTC day (#60, settled
+//                             point 8). Each crew member has their own hour and daily cap (Vlad, 2026-11-06, replacing
+//                             the crew-wide one of 2026-11-04). The coins count as minted (#minted) in the same tick, so the
+//                             tripwire lets them through. Refused like /kit when they do not fit; works anywhere.
+//
+// Season 2 (#8): with cmpwar's safe square on, every trade (buy, change, treasury) works only inside it, in the city.
+// With it off (Season 1) the shop works anywhere.
 //
 // Payment comes from the 36 main inventory slots only (hotbar included; armour, offhand and Curios slots are
 // never touched), in any coins by their value in spurs (Spur 1, Bevel 8, Sprocket 16, Cog 64, Crown 512,
@@ -33,15 +46,21 @@
 // ships with this script) adds the spurs it puts into crates to #minted and takes off what is destroyed with
 // unopened leftovers; the shop adds what it destroys to #spent (buys) and #treasury (deposits). More spent than
 // minted means coins that never came from a crate, so a trade that would push #spent + #treasury over #minted
-// is refused, the shop closes itself and logs "[shop] tripwire", and an op opens it again with /shop on. Coins
+// is refused, logged as "[shop] tripwire" and told to the ops who are online. The shop stays open (until
+// 2026-11-11 it closed itself, which stopped every crew's rent over one player's trade). Coins
 // from /give count as coins from nowhere too, so ops must not hand out coins on live (an op who has to adds
 // the spurs to #minted: /scoreboard players add #minted cmp_coins <spurs>). CMP_SHOP_TRIPWIRE = false turns
 // the check off; the shop counts #spent and #treasury either way. A trade worth no whole number of spurs above
-// 0 (only a bug could make one) is refused without closing the shop.
+// 0 (only a bug could make one) is refused too.
 //
 // Rhino: a const inside a block (try, if, a loop) fails with "redeclaration of var" or keeps its first value,
 // so everything below a function's top level is let.
 const CMP_SHOP_TRIPWIRE = true
+// The money kit's playtest numbers: 2 spurs a claim, 6 claims a day (12 spurs; a Cog is 64 spurs). Vlad, 2026-11-04:
+// "/money must give 2 spur" (it was 2 Cog).
+const CMP_MONEY_SPURS = 2
+const CMP_MONEY_DAILY = 6
+const CMP_MONEY_WAIT = 60 * 60 * 1000
 const CMP_SHOP_DATA = 'cmp_shop'
 const CMP_SHOP_HURT = 'cmp_shop_hurt' // player persistent data: Date.now() of the last damage taken
 const CMP_SHOP_HURT_WAIT = 30 * 1000
@@ -84,12 +103,14 @@ const CMP_SHOP_CATEGORIES = [
 // Common consumables come in small bundles; bottles, turtle eggs and wither roses are single items.
 const CMP_SHOP_OFFERS_ALL = [
     ['dragon_head', 'minecraft:dragon_head', 1, 60, 'rare'],
-    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 32, 'templates'],
+    // 8 Cog since 2026-11-13 (Vlad's yes): the netherite veins set how fast ingots come, and at 32 a set of four pieces was 40% of the goal.
+    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 8, 'templates'],
     ['blaze_template', 'create_dragons_plus:blaze_upgrade_smithing_template', 1, 32, 'templates'],
     ['god_apple', 'minecraft:enchanted_golden_apple', 1, 20, 'rare'],
     ['blaze_burner', 'create:blaze_burner', 1, 16, 'rare'], // the filled one (create:empty_blaze_burner is empty)
     ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12, 'rare'],
     ['levitite', 'aeronautics:levitite', 8, 12, 'rare'],
+    ['gyroscope', 'aeroworks:gyroscope', 1, 12, 'rare'], // shop only (s2_recipes.js); Season 2's only source
     ['ink_sac', 'minecraft:ink_sac', 8, 0.25, 'supplies'],
     ['ominous_bottle', 'minecraft:ominous_bottle', 1, 0.25, 'supplies'],
     ['spider_eye', 'minecraft:spider_eye', 4, 0.25, 'supplies'],
@@ -111,7 +132,26 @@ const CMP_SHOP_OFFERS_ALL = [
         .map(f => [f + '_froglight', 'minecraft:' + f + '_froglight', 8, 2, 'froglights'])
 )
 
+// Create: Addictives, the owner's picks of 2026-10-28 (docs/design/addictives-plan.md, D12 and D14): seeds or spores
+// for each of its five crops, 4 to a bundle, and Narcan powder, 2 to a bundle, in Supplies at one Sprocket a bundle
+// like the rest of Supplies. Its wild plants are off (cmpfixes' data/addictives/neoforge/biome_modifier), so these and
+// the chest loot are where seeds come from; a grown crop drops 1 to 3 more. Narcan powder (it only makes Narcan, the
+// overdose cure) needs cinder flour, which only comes from crushing the netherrack in a few builds. Never sold:
+// finished drugs, cinder flour, blaze powder, nether wart, and what only lacing uses (chorus fruit, ender pearls,
+// trial keys, dragon's breath, totems, end crystals). A block of its own after the list above, which can change
+// without touching these rows; they go to the end of it, so they come last in Supplies.
+const CMP_SHOP_OFFERS_ADDICTIVES = [
+    ['tobacco_seeds', 'addictives:tobacco_seeds', 4, 0.25, 'supplies'],
+    ['weed_seeds', 'addictives:weed_seeds', 4, 0.25, 'supplies'],
+    ['coca_seeds', 'addictives:coca_seeds', 4, 0.25, 'supplies'],
+    ['shroom_spores', 'addictives:shroom_spores', 4, 0.25, 'supplies'],
+    ['poppy_seeds', 'addictives:poppy_seeds', 4, 0.25, 'supplies'],
+    ['narcan_powder', 'addictives:narcan_powder', 2, 0.25, 'supplies'],
+]
+CMP_SHOP_OFFERS_ADDICTIVES.forEach(entry => CMP_SHOP_OFFERS_ALL.push(entry))
+
 const $CmpShopStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+const $CmpShopPlots = Java.loadClass('dev.cmp.cmpwar.Plots')
 const $CmpShopCompound = Java.loadClass('net.minecraft.nbt.CompoundTag')
 const $CmpShopRegistries = Java.loadClass('net.minecraft.core.registries.BuiltInRegistries')
 const $CmpShopId = Java.loadClass('net.minecraft.resources.ResourceLocation')
@@ -130,6 +170,8 @@ const $CmpShopPriority = Java.loadClass('net.neoforged.bus.api.EventPriority')
 const $CmpShopTeams = Java.loadClass('dev.ftb.mods.ftbteams.api.FTBTeamsAPI')
 const $CmpShopStringArg = Java.loadClass('com.mojang.brigadier.arguments.StringArgumentType')
 const $CmpShopIntArg = Java.loadClass('com.mojang.brigadier.arguments.IntegerArgumentType')
+let $CmpShopSafe = null
+try { $CmpShopSafe = Java.loadClass('dev.cmp.cmpwar.SafeZone') } catch (e) { $CmpShopSafe = null }
 // The /shop screen (the cmpshop mod, in the pack on both sides). Without it every player gets the chat list.
 let $CmpShopNet = null
 try {
@@ -176,8 +218,10 @@ function cmpShopOpen(server) {
     return !cmpShopData(server).getBoolean('off')
 }
 
+// Nobody can pay rent on a city plot while the shop is closed, so cmpwar stops the rent clock until it opens.
 function cmpShopSetOpen(server, open) {
     cmpShopData(server).putBoolean('off', !open)
+    $CmpShopPlots.paymentsClosed(server, !open)
 }
 
 // The tripwire's scores, in spurs. The objective is made when it is missing.
@@ -214,7 +258,9 @@ function cmpShopSpendable(spurs) {
 
 // Null when a trade of `spurs` may go ahead, or what to tell the player. One that is not cmpShopSpendable is
 // refused and the shop stays open. With the tripwire on, one that would make the shop have destroyed more
-// spurs than the airdrops minted closes the shop instead.
+// spurs than were ever minted is refused too, and the staff who are online are told. It used to close the shop
+// for everyone until an op typed /shop on: in the beta that stopped every crew's plot payments from 2026-11-07
+// to 11-09 with nobody told, over one player's trade. /shop off still closes it by hand.
 function cmpShopTripwire(server, player, spurs) {
     if (!cmpShopSpendable(spurs)) {
         console.error('[shop] refused a trade of ' + spurs + ' spurs from ' + cmpShopName(player))
@@ -225,10 +271,27 @@ function cmpShopTripwire(server, player, spurs) {
     const spent = cmpShopScore(server, '#spent')
     const treasury = cmpShopScore(server, '#treasury')
     if (spent + treasury + spurs <= minted) return null
-    cmpShopSetOpen(server, false)
     console.warn('[shop] tripwire: ' + cmpShopName(player) + ' tried to spend ' + spurs + ' spurs with #spent ' + spent
-        + ' + #treasury ' + treasury + ' already against #minted ' + minted + '; the shop is closed until an op runs /shop on')
-    return 'The shop is closed right now.'
+        + ' + #treasury ' + treasury + ' already against #minted ' + minted + '; the trade is refused, the shop stays open')
+    cmpShopTellStaff(server, player, '[shop] ' + cmpShopName(player) + ' tried to spend ' + cmpShopPrice(spurs)
+        + ', more than the server ever gave out (' + cmpShopPrice(Math.max(0, minted - spent - treasury)) + ' left). The trade was refused. '
+        + 'Coins from creative or a dupe cause this. /shop off closes the shop for everyone.')
+    return "The shop can't take these coins right now. Staff have been told."
+}
+
+// Tells every op who is online, at most once a minute for each player who trips the wire, so a player
+// clicking Buy over and over doesn't fill the staff's chat.
+const cmpShopStaffTold = {}
+function cmpShopTellStaff(server, player, text) {
+    const name = cmpShopName(player)
+    const now = Date.now()
+    if (cmpShopStaffTold[name] != null && now - cmpShopStaffTold[name] < 60000) return
+    cmpShopStaffTold[name] = now
+    const players = server.getPlayerList().getPlayers()
+    for (let i = 0; i < players.size(); i++) {
+        let p = players.get(i)
+        if (p.hasPermissions(2)) p.tell(Text.red(text))
+    }
 }
 
 // ---- players, parties, damage --------------------------------------------------------------------------
@@ -241,21 +304,29 @@ function cmpShopLogName(name) {
     return String(name).replace(/\s+/g, '_')
 }
 
-// The player's FTB Teams party, or the player's own team when they have none: {key, name, party}.
+// The player's FTB Teams party, or the player's own team when they have none: {key, name, party, members}, members being
+// the ids of everyone in it, offline players too, and always the player.
 function cmpShopTeam(player) {
+    const own = String(player.getGameProfile().getId())
     try {
         let api = $CmpShopTeams.api()
         if (api.isManagerLoaded()) {
             let found = api.getManager().getTeamForPlayer(player)
             if (found.isPresent()) {
                 let team = found.get()
-                return { key: String(team.getId()), name: String(team.getName().getString()), party: !team.isPlayerTeam() }
+                let members = [own]
+                let ids = team.getMembers().toArray()
+                for (let i = 0; i < ids.length; i++) {
+                    let id = String(ids[i])
+                    if (id != own) members.push(id)
+                }
+                return { key: String(team.getId()), name: String(team.getName().getString()), party: !team.isPlayerTeam(), members: members }
             }
         }
     } catch (err) {
         console.error('[shop] FTB Teams lookup for ' + cmpShopName(player) + ' failed: ' + err)
     }
-    return { key: String(player.getGameProfile().getId()), name: cmpShopName(player), party: false }
+    return { key: own, name: cmpShopName(player), party: false, members: [own] }
 }
 
 // The party as the log writes it: its name with _ for spaces, or - for no party.
@@ -496,6 +567,10 @@ function cmpShopTrader(source) {
         return null
     }
     if (!player.isAlive()) return null
+    if ($CmpShopSafe != null && $CmpShopSafe.on() && !$CmpShopSafe.contains(player)) {
+        cmpShopFail(source, 'The shop only trades in the city. Come back inside the safe zone.')
+        return null
+    }
     const wait = cmpShopHurtWait(player)
     if (wait > 0) {
         cmpShopFail(source, 'You took damage in the last 30 seconds. Try again in ' + Math.ceil(wait / 1000) + 's.')
@@ -770,16 +845,55 @@ function cmpShopSend(source, mode, result) {
 }
 
 // Runs a command and refreshes the player's screen with what came of it (the chat line too, as always). A screen
-// that is not open ignores the refresh.
-function cmpShopAct(source, command) {
+// that is not open ignores the refresh. send: what refreshes the screen the command came from, the shop's own unless
+// one is given (the Metal Market's and Auction's screens are their own: market.js's cmpDeskSend).
+function cmpShopAct(source, command, send) {
     CMP_SHOP_LAST = null
     const result = command()
-    cmpShopSend(source, 'update', CMP_SHOP_LAST)
+    if (send) send(source, 'update', CMP_SHOP_LAST)
+    else cmpShopSend(source, 'update', CMP_SHOP_LAST)
     return result
+}
+
+// ---- the money kit ------------------------------------------------------------------------------------
+
+// A claim is written on the player's own entry in the server's saved data (cmp_shop/money/<player id>: last, day,
+// count), so every crew member has their own hour and their own daily cap, and changing crews changes nothing.
+function cmpMoney(source) {
+    const player = source.getPlayer()
+    if (player == null) return cmpShopFail(source, 'Only players can use /money.')
+    cmpQuestDone(player, 'money') // the Quest Book's /money quest: typing it is enough, also while it's on its hour
+    if (!player.isAlive()) return 0
+    const server = source.getServer()
+    const entry = cmpShopSub(cmpShopSub(cmpShopData(server), 'money'), String(player.getGameProfile().getId()))
+    const now = Date.now()
+    const day = new Date(now).toISOString().slice(0, 10)
+    const last = Math.min(entry.getLong('last'), now) // min: the clock was set back
+    const count = entry.getString('day') == day ? entry.getInt('count') : 0
+    const wait = last + CMP_MONEY_WAIT - now
+    if (wait > 0) return cmpShopFail(source, 'You can use /money again in ' + Math.max(1, Math.ceil(wait / 60000)) + 'm.')
+    if (count >= CMP_MONEY_DAILY) {
+        return cmpShopFail(source, 'You have claimed /money ' + CMP_MONEY_DAILY + ' times today. More tomorrow (the day turns at 00:00 UTC).')
+    }
+    const spurs = CMP_MONEY_SPURS
+    const coins = cmpShopCoinsFor(spurs)
+    const slots = cmpShopPlan(player, {}, coins)
+    if (slots == null) return cmpShopFail(source, 'Your inventory is full. Make some room and try /money again.')
+    cmpShopApply(player, slots)
+    cmpShopAddScore(server, '#minted', spurs)
+    entry.putLong('last', now)
+    entry.putString('day', day)
+    entry.putInt('count', count + 1)
+    console.info('[shop] money ' + cmpShopName(player) + ' ' + CMP_MONEY_SPURS + ' spurs (' + (count + 1) + '/' + CMP_MONEY_DAILY + ' today)')
+    const left = CMP_MONEY_DAILY - count - 1
+    cmpShopSay(source, Text.green('Here are ' + cmpShopCoinWords(coins) + '. ' + (left > 0
+        ? 'Next /money in 1h (' + left + ' more today).' : "That was today's last /money.")))
+    return 1
 }
 
 ServerEvents.loaded(event => {
     cmpShopObjective(event.server)
+    $CmpShopPlots.paymentsClosed(event.server, !cmpShopOpen(event.server))
 })
 
 ServerEvents.commandRegistry(event => {
@@ -811,4 +925,5 @@ ServerEvents.commandRegistry(event => {
         .then(Commands.literal('top').executes(ctx => cmpShopTop(ctx.source)))
         .then(Commands.literal('off').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, false))))
         .then(Commands.literal('on').executes(ctx => cmpShopAct(ctx.source, () => cmpShopSwitch(ctx.source, true)))))
+    event.register(Commands.literal('money').executes(ctx => cmpMoney(ctx.source)))
 })

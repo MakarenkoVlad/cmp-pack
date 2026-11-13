@@ -1,0 +1,43 @@
+{
+  "__comment": "Create: Addictives visuals (cmpfixes/ADDICTIVES.md, FX world, V2): our ember and ash, stage 1 of 3, laid on the mod's own stick (x 7-9, y 0-2, lit end at z 16) by the <item>_burn_1 composite models.",
+  "textures": {
+    "ember": "cmpfixes:item/drugfx/ember",
+    "ash": "cmpfixes:item/drugfx/ash_cigarette",
+    "particle": "cmpfixes:item/drugfx/ember"
+  },
+  "elements": [
+    {
+      "from": [6.95, -0.05, 14.75],
+      "to": [9.05, 2.05, 16.05],
+      "faces": {
+        "east": {
+          "uv": [0, 0, 1.3, 2],
+          "texture": "#ember"
+        },
+        "west": {
+          "uv": [4, 4, 5.3, 6],
+          "texture": "#ember"
+        },
+        "up": {
+          "uv": [8, 8, 9.3, 10],
+          "rotation": 90,
+          "texture": "#ember"
+        },
+        "down": {
+          "uv": [12, 2, 13.3, 4],
+          "rotation": 90,
+          "texture": "#ember"
+        },
+        "south": {
+          "uv": [6, 10, 8, 12],
+          "texture": "#ember"
+        }
+      },
+      "shade": false,
+      "neoforge_data": {
+        "block_light": 15,
+        "sky_light": 15
+      }
+    }
+  ]
+}
