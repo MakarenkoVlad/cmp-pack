@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "look": "lsd",
+  "effect": "addictives:lsd_high",
+  "chain": "addictives:shaders/post/lsd.json",
+  "layer": "warp",
+  "cost": "heavy",
+  "curve": {
+    "comeUpSeconds": 20,
+    "peak": [0.6, 0.8, 0.95, 1.0, 1.0],
+    "comedown": {
+      "share": 0.25,
+      "minSeconds": 15,
+      "maxSeconds": 60
+    },
+    "tail": 0.25,
+    "afterglowSeconds": 10
+  },
+  "heart": {
+    "bpm": 96
+  },
+  "flash": null,
+  "glitch": null,
+  "centre": true,
+  "_note": "The intense looks track's LSD (T2b): our own chain at the mod's path (a quarter-size layer with the flow, the outlines and the aura, the composite, a history for trails); centre true: the crosshair's clear spot (the owner's answer 8)."
+}

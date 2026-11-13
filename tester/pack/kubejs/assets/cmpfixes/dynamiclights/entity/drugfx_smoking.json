@@ -1,0 +1,5 @@
+{
+  "match": { "type": "minecraft:player" },
+  "luminance": [{ "type": "cmpfixes:drugfx_smoking" }],
+  "silence_error": true
+}

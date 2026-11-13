@@ -1,0 +1,20 @@
+{
+  "__comment": "Create: Addictives visuals (cmpfixes/ADDICTIVES.md, FX world, V2): the mod's own joint model as it is (its stick, its textures, its transforms) with our ember and ash, stage 1 of 3.",
+  "parent": "addictives:item/joint_3d",
+  "loader": "neoforge:composite",
+  "children": {
+    "stick": {
+      "parent": "addictives:item/joint_3d"
+    },
+    "burn": {
+      "parent": "cmpfixes:item/drugfx/ember_1",
+      "textures": {
+        "ash": "cmpfixes:item/drugfx/ash_joint"
+      }
+    }
+  },
+  "item_render_order": ["stick", "burn"],
+  "textures": {
+    "particle": "addictives:item/joint_3d"
+  }
+}

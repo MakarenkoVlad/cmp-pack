@@ -1,0 +1,78 @@
+{
+  "version": 3,
+  "name": "drugfx_snort",
+  "author": "CMP (cmpfixes)",
+  "description": "Cocaine: the head dips to the hand at the nose, two sniffs, the head snaps back",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 30,
+    "stopTick": 34,
+    "isLoop": false,
+    "returnTick": 0,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -20, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0, "x": 0, "y": 0, "z": 0, "scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      },
+      {
+        "tick": 5,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -120, "yaw": -38, "roll": 0},
+        "head": {"pitch": 14, "yaw": 0, "roll": 0},
+        "torso": {"pitch": 6, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0.5},
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0, "x": 0, "y": 0, "z": 0, "scaleX": 0.55, "scaleY": 0.55, "scaleZ": 0.55}
+      },
+      {
+        "tick": 9,
+        "easing": "easeInOutSine",
+        "head": {"pitch": 16, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 12,
+        "easing": "easeOutQuad",
+        "head": {"pitch": 10, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 15,
+        "easing": "easeInOutSine",
+        "head": {"pitch": 17, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 19,
+        "easing": "easeOutQuad",
+        "head": {"pitch": 9, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 22,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -115, "yaw": -35, "roll": 0},
+        "rightArmFollow": {"y": 0.5},
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0, "x": 0, "y": 0, "z": 0, "scaleX": 0.55, "scaleY": 0.55, "scaleZ": 0.55}
+      },
+      {
+        "tick": 24,
+        "easing": "easeOutQuad",
+        "head": {"pitch": -10, "yaw": 0, "roll": 0},
+        "torso": {"pitch": 0, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 26,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -40, "yaw": -10, "roll": 0},
+        "rightArmFollow": {"y": 0},
+        "rightItem": {"pitch": 0, "yaw": 0, "roll": 0, "x": 0, "y": 0, "z": 0, "scaleX": 1, "scaleY": 1, "scaleZ": 1}
+      },
+      {
+        "tick": 30,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -20, "yaw": 0, "roll": 0},
+        "head": {"pitch": 0, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

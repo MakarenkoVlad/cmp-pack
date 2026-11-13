@@ -24,14 +24,17 @@ const DEPOSITS = {
 }
 // The share of a drill's operations that give an item, per material (Vlad, 2026-11-06). At miningSpeed 4 and 256 RPM a small vein does 108
 // operations an hour, a medium 400, a rich 500. Metals come out at about twice what one player's City Generator gives an hour (crushing
-// gives 0.889 copper, 0.444 iron, 0.333 zinc and 0.222 gold a stone): a small vein makes 48 iron, 48 copper, 27 zinc, 12 gold an hour.
+// gives 0.889 copper, 0.444 iron, 0.333 zinc and 0.222 gold a stone): a small vein makes 48 iron or 48 copper an hour.
+// Zinc and gold were halved on 2026-11-13 (Vlad: "yes cut it"): the map has no small zinc or gold veins, only 8 medium and 6 rich
+// zinc and 12 rich gold, so at 0.75 and 0.5 it made 37,200 zinc and 16,000 gold a day against 20,600 each of iron and copper, while
+// recipes use far less of both. Now a medium zinc vein gives 50 an hour, a rich one 62, a rich gold vein 28: 18,600 and 8,000 a day.
 // Oil follows Vlad's rule that a small vein feeds 1 gasoline chunk loader, a medium 2, a big one 3: one oil sand is 125 mB of gasoline, and
 // 1, 2, 3 and 4 loaders of a crew burn 10.7, 26.7, 48 and 74.7 oil sand an hour, so 0.11 gives 12, 44 and 55 an hour.
 const CMP_DEPOSIT_RATE = {
     crimsite: 1.0,
-    asurine: 0.75,
+    asurine: 0.375,
     veridium: 0.5,
-    ochrum: 0.5,
+    ochrum: 0.25,
     sulfur: 0.5,
     bone_meal: 0.5,
     latex: 0.375,

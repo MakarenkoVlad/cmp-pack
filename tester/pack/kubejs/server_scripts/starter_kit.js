@@ -59,6 +59,7 @@ ServerEvents.commandRegistry(event => {
             ctx.source.sendFailure(Text.of('Only players can use /kit.'))
             return 0
         }
+        cmpQuestDone(player, 'kit') // the Quest Book's /kit quest: typing it is enough, also while it's on its 24 hours
         const data = player.persistentData
         const now = Date.now()
         // A last use "in the future" means the server clock was set back: count it as now, so the

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "look": "adderall",
+  "effect": "addictives:adderall_high",
+  "chain": "cmpfixes:shaders/post/drugfx_adderall.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "comeUpSeconds": 4,
+    "peak": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.8
+    ],
+    "comedown": {
+      "share": 0.25,
+      "crash": true
+    },
+    "tail": 0.4,
+    "afterglowSeconds": 4
+  },
+  "heart": {
+    "bpm": 104
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "T2a's look (cmpfixes/ADDICTIVES.md, FX calm looks): new (the mod had none); the crash is the last quarter of the high."
+}

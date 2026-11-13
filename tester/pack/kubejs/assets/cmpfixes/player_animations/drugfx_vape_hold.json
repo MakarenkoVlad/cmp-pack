@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "name": "drugfx_vape_hold",
+  "author": "CMP (cmpfixes)",
+  "description": "A vape held up to the lips, upright and close",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 52,
+    "stopTick": 53,
+    "isLoop": true,
+    "returnTick": 7,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -25, "yaw": -5, "roll": 0},
+        "rightArmFollow": {"y": 0}
+      },
+      {
+        "tick": 5,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -80, "yaw": -35, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": 45, "yaw": -30, "roll": 0, "x": 0, "y": 0, "z": 0}
+      },
+      {
+        "tick": 7,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -80, "yaw": -35, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": 45, "yaw": -30, "roll": 0, "x": 0, "y": 0, "z": 0}
+      },
+      {
+        "tick": 30,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -82, "yaw": -35, "roll": 0},
+        "head": {"pitch": -4, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 52,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -80, "yaw": -35, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

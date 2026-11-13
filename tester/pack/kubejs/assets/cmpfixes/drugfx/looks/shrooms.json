@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "look": "shrooms",
+  "effect": "addictives:shrooms_high",
+  "chain": "addictives:shaders/post/shrooms.json",
+  "layer": "warp",
+  "cost": "heavy",
+  "curve": {
+    "comeUpSeconds": 6,
+    "peak": [0.75, 0.85, 0.95, 1.0, 1.0],
+    "comedown": {
+      "share": 0.25,
+      "minSeconds": 5,
+      "maxSeconds": 30
+    },
+    "tail": 0.25,
+    "afterglowSeconds": 8
+  },
+  "heart": {
+    "bpm": 90
+  },
+  "flash": null,
+  "glitch": null,
+  "centre": true,
+  "_note": "The intense looks track's shrooms (T2b): our own chain at the mod's path (a quarter-size warp and marbling layer, the composite, a history for trails); centre true: the crosshair's clear spot (the owner's answer 8)."
+}

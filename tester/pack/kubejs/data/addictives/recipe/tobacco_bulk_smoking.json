@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "addictives:tobacco_leaves"
+  },
+  "result": {
+    "count": 1,
+    "id": "addictives:dried_tobacco"
+  }
+}

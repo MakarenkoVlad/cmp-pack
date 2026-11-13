@@ -1,0 +1,50 @@
+{
+  "version": 3,
+  "name": "drugfx_smoke_drag",
+  "author": "CMP (cmpfixes)",
+  "description": "A smoke held to the lips: the hand comes up to the mouth, the head tips up a little on the drag",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 48,
+    "stopTick": 49,
+    "isLoop": true,
+    "returnTick": 8,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -25, "yaw": -5, "roll": 0},
+        "rightArmFollow": {"y": 0}
+      },
+      {
+        "tick": 6,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -3, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": -15, "yaw": -75, "roll": 0, "x": -2, "y": 0, "z": 3}
+      },
+      {
+        "tick": 8,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -3, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": -15, "yaw": -75, "roll": 0, "x": -2, "y": 0, "z": 3}
+      },
+      {
+        "tick": 28,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -107, "yaw": -22, "roll": 0},
+        "head": {"pitch": -7, "yaw": 0, "roll": 0}
+      },
+      {
+        "tick": 48,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -3, "yaw": 0, "roll": 0}
+      }
+    ]
+  }
+}

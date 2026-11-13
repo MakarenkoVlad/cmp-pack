@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "look": "overdose",
+  "effect": "addictives:overdose",
+  "chain": "cmpfixes:shaders/post/drugfx_overdose.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "staged": true,
+    "stages": [
+      {
+        "amplifier": 0,
+        "ticks": 200
+      },
+      {
+        "amplifier": 1,
+        "ticks": 300
+      }
+    ],
+    "afterglowSeconds": 2
+  },
+  "heart": {
+    "bpm": 55,
+    "stages": [
+      [
+        55,
+        40
+      ],
+      [
+        40,
+        28
+      ]
+    ]
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "Staged (O1 of docs/design/addictives-fx-design.md): stage I from amplifier 0, stage II from 1; the heart slows 55 to 40, then 40 to 28. T2a's look (cmpfixes/ADDICTIVES.md, FX calm looks) is the overdose's own chain now (the mod forced fentanyl's); the tunnel and the blackouts on the beat are the HUD's (fxview)."
+}

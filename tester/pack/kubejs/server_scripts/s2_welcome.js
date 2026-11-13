@@ -69,7 +69,60 @@ function cmpQuestBookLogin(server, player) {
 
 PlayerEvents.loggedIn(event => {
     cmpQuestBookLogin(event.server, event.player)
+    cmpQuestCrewCheck(event.player)
 })
+
+// Quests that tick themselves when the player does the thing (Vlad, 2026-11-13: "completes after person types /money",
+// and the same for /kit, a crew, a plot, a generator bundle and a visit to the Metal Market and the Metal Auction).
+// Each is a hidden advancement, cmp:quest/<name>, with a criterion nothing in the game meets; scripts/questbook.py
+// writes it into the cmp_s2_sites datapack and gives the quest an advancement task that FTB Quests checks by itself
+// four times a second. So all a script does is grant the advancement: cmpQuestDone(player, name). It belongs to the
+// player, so it stays through crew changes, and FTB Quests ticks the quest for the crew the player is in once the
+// quests before it are done. The names are the done() tasks in questbook.py.
+// Called from commands and click handlers that must keep working whatever happens here, so nothing is thrown.
+const $CmpQuestRL = Java.loadClass('net.minecraft.resources.ResourceLocation')
+const $CmpQuestFake = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayer')
+const $CmpQuestTeams = Java.loadClass('dev.ftb.mods.ftbteams.api.FTBTeamsAPI')
+let cmpQuestMissing = {} // names already reported as having no advancement, so a missing datapack logs once each
+
+function cmpQuestDone(player, name) {
+    try {
+        if (player == null || player instanceof $CmpQuestFake) return false
+        // let, not const: Rhino fails on a const inside a block ("redeclaration of var")
+        let holder = player.getServer().getAdvancements().get($CmpQuestRL.parse('cmp:quest/' + name))
+        if (holder == null) {
+            if (!cmpQuestMissing[name]) console.error('[quests] no advancement cmp:quest/' + name + ': the cmp_s2_sites datapack is missing or older than the quest book')
+            cmpQuestMissing[name] = true
+            return false
+        }
+        return player.getAdvancements().award(holder, 'done')
+    } catch (err) {
+        console.error('[quests] could not tick ' + name + ': ' + err)
+        return false
+    }
+}
+
+// "Make a crew": a player who is in a party has done it. Checked when they join one (making a party joins it) and at
+// login, for crews older than this quest.
+function cmpQuestCrewCheck(player) {
+    try {
+        let api = $CmpQuestTeams.api()
+        if (!api.isManagerLoaded()) return
+        let found = api.getManager().getTeamForPlayer(player)
+        if (found.isPresent() && found.get().isPartyTeam()) cmpQuestDone(player, 'crew')
+    } catch (err) {
+        console.error('[quests] crew check: ' + err)
+    }
+}
+
+// FTB Teams' own KubeJS event (FTB XMod Compat). Without it the login check above still ticks the quest.
+if (typeof FTBTeamsEvents !== 'undefined') {
+    FTBTeamsEvents.playerJoinedParty(event => {
+        cmpQuestDone(event.getEntity(), 'crew')
+    })
+} else {
+    console.warn('[quests] no FTBTeamsEvents: the crew quest ticks at the next login instead of at once')
+}
 
 // /quests and /guide: a new Quest Book for a player who has none. Nothing opens the book from a command any more.
 function cmpQuestBookCommand(ctx, name) {

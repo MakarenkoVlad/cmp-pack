@@ -3,8 +3,13 @@
 // the /shop screen since 2026-11-11), and every button there runs a /shop command. These commands only work within reach
 // of a block the player clicked, so people have to bring their metal to the city.
 //
-//   Market:   CMP_MARKET_INGOTS ingots of any of CMP_METALS make 1 spur, at most CMP_MARKET_DAILY spurs per crew per UTC
-//             day. The metal is used up. The coins count as minted.
+//   Market:   CMP_MARKET_INGOTS ingots of copper, iron or zinc make 1 spur, at most CMP_MARKET_DAILY spurs per crew per
+//             UTC day. Gold is the money metal (Vlad, 2026-11-13: gold "should be shared with other metals and give 12
+//             spurs at most (other metals give 8)"): CMP_MARKET_GOLD_INGOTS ingots make 1 spur, and with gold a crew's
+//             day goes up to CMP_MARKET_GOLD_DAILY spurs in all. It is one count: 8 spurs of the other metals leave 4
+//             for gold, and 12 spurs of gold leave nothing for the others. All the gold is on the far islands and
+//             recipes use little of it, so this gives those islands a worth. The metal is used up. The coins count
+//             as minted.
 //   Auction:  CMP_AUCTION_PRIZE spurs a UTC day, by maximum bids, as on eBay (Vlad, 2026-11-11: "players compete for
 //             those 2 cogs, but i want this competition to be fair and for everyone to take part in it who has those
 //             resources", and on this way of doing it: "YES, THAT's the best"). A crew puts in the most it would pay;
@@ -19,11 +24,13 @@
 //             by being the biggest, and the hour a crew plays at doesn't matter. With no bid at the opening price
 //             nobody wins. The prize waits for the crew at the block, and counts as minted when it's collected.
 //
-// cmp_shop/market/<crew>: day, spurs. cmp_shop/auction: day, bids/<crew>: name, total (the crew's maximum), at,
+// cmp_shop/market/<crew>: day, spurs (copper, iron and zinc), gold (the spurs gold made). cmp_shop/auction: day, bids/<crew>: name, total (the crew's maximum), at,
 // players/<player>/<item>: count; back/<player>/<item>: count; prizes/<crew>: spurs; last: name, total (the last winner
 // and what they paid); price, leader (what anyone may see of today: cmpwar's Jade lines read these two and never a total).
 const CMP_MARKET_INGOTS = 16
 const CMP_MARKET_DAILY = 8
+const CMP_MARKET_GOLD_INGOTS = 8
+const CMP_MARKET_GOLD_DAILY = 12
 const CMP_AUCTION_PRIZE = 128
 const CMP_AUCTION_OPENING = 1024
 const CMP_DESK_REACH = 8
@@ -61,11 +68,12 @@ function cmpDeskAt(player) {
 // line in chat with the commands the buttons would run.
 function cmpDeskOpen(player, kind, x, y, z) {
     CMP_DESK_OPEN[cmpDeskPlayerId(player)] = { kind: kind, x: x + 0.5, y: y + 0.5, z: z + 0.5 }
+    cmpQuestDone(player, kind) // the Quest Book's Metal Market and Metal Auction quests: a click on the block is the visit
     const source = player.createCommandSourceStack()
     if (cmpDeskSend(source, 'open', null)) return true
     const metals = Object.keys(CMP_METALS).join('|')
     if (kind == 'market') {
-        cmpShopSay(source, Text.gold('Metal Market: ' + CMP_MARKET_INGOTS + ' ingots make 1 Spur, up to ' + CMP_MARKET_DAILY + ' Spur a day for a crew. /shop market sell <' + metals + '> <ingots>'))
+        cmpShopSay(source, Text.gold('Metal Market: ' + CMP_MARKET_INGOTS + ' ingots make 1 Spur, up to ' + CMP_MARKET_DAILY + ' Spur a day for a crew. Gold: ' + CMP_MARKET_GOLD_INGOTS + ' ingots a Spur, and with gold up to ' + CMP_MARKET_GOLD_DAILY + ' Spur a day in all. /shop market sell <' + metals + '> <ingots>'))
     } else {
         cmpAuctionSettle(player.getServer())
         let lead = cmpAuctionLead(cmpShopSub(cmpAuctionData(player.getServer()), 'bids'))
@@ -102,9 +110,10 @@ function cmpDeskHas(player, id) {
 
 // ---- the market ----------------------------------------------------------------------------------------
 
-function cmpMarketSold(server, crew) {
+// The spurs a crew has made today from copper, iron and zinc, or from gold. The two add up to the day's total.
+function cmpMarketSold(server, crew, gold) {
     const entry = cmpShopSub(cmpShopSub(cmpShopData(server), 'market'), crew)
-    return String(entry.getString('day')) == cmpDeskToday() ? entry.getInt('spurs') : 0
+    return String(entry.getString('day')) == cmpDeskToday() ? entry.getInt(gold ? 'gold' : 'spurs') : 0
 }
 
 function cmpMarketSell(source, metal, ingots) {
@@ -114,25 +123,41 @@ function cmpMarketSell(source, metal, ingots) {
     if (id == null) return cmpShopFail(source, "The market doesn't buy that.")
     const server = source.getServer()
     const team = cmpShopTeam(player)
-    const sold = cmpMarketSold(server, team.key)
-    const left = CMP_MARKET_DAILY - sold
+    const gold = String(metal) == 'gold'
+    const per = gold ? CMP_MARKET_GOLD_INGOTS : CMP_MARKET_INGOTS
+    const sold = cmpMarketSold(server, team.key, gold)
+    const common = cmpMarketSold(server, team.key, false)
+    const total = common + cmpMarketSold(server, team.key, true)
+    // One count for the day: the other metals stop at 8 spurs, and gold fills what is left up to 12.
+    const forGold = CMP_MARKET_GOLD_DAILY - total
+    const left = gold ? forGold : Math.min(CMP_MARKET_DAILY - common, forGold)
     if (left <= 0) {
-        return cmpShopFail(source, (team.party ? 'Your crew has' : 'You have') + " sold today's " + CMP_MARKET_DAILY + ' Spur. More tomorrow (the day turns at 00:00 UTC).')
+        const who = team.party ? 'Your crew has' : 'You have'
+        if (forGold <= 0) return cmpShopFail(source, who + " sold today's " + CMP_MARKET_GOLD_DAILY + ' Spur. More tomorrow (the day turns at 00:00 UTC).')
+        return cmpShopFail(source, who + " sold today's " + CMP_MARKET_DAILY + ' Spur. Gold still sells: ' + forGold + ' Spur more today. The day turns at 00:00 UTC.')
     }
-    const spurs = Math.min(left, Math.floor(Math.min(ingots, cmpDeskHas(player, id)) / CMP_MARKET_INGOTS))
-    if (spurs <= 0) return cmpShopFail(source, 'It takes ' + CMP_MARKET_INGOTS + ' ingots to make 1 Spur.')
+    const spurs = Math.min(left, Math.floor(Math.min(ingots, cmpDeskHas(player, id)) / per))
+    if (spurs <= 0) return cmpShopFail(source, 'It takes ' + per + (gold ? ' gold' : '') + ' ingots to make 1 Spur.')
     const take = {}
-    take[id] = spurs * CMP_MARKET_INGOTS
+    take[id] = spurs * per
     const coins = cmpShopCoinsFor(spurs)
     const slots = cmpShopPlan(player, take, coins)
     if (slots == null) return cmpShopFail(source, 'Your inventory is full. Make some room and try again.')
     cmpShopApply(player, slots)
     cmpShopAddScore(server, '#minted', spurs)
     const entry = cmpShopSub(cmpShopSub(cmpShopData(server), 'market'), team.key)
+    // A new day starts both counts again, whichever metal is sold first.
+    if (String(entry.getString('day')) != cmpDeskToday()) {
+        entry.putInt('spurs', 0)
+        entry.putInt('gold', 0)
+    }
     entry.putString('day', cmpDeskToday())
-    entry.putInt('spurs', sold + spurs)
-    console.info('[shop] market ' + cmpShopName(player) + ' ' + cmpShopLogParty(team) + ' ' + take[id] + ' ' + metal + ' for ' + spurs + ' spurs (' + (sold + spurs) + '/' + CMP_MARKET_DAILY + ' today)')
-    cmpShopSay(source, Text.green('You sold ' + take[id] + ' ingots for ' + cmpShopCoinWords(coins) + '. ' + (left - spurs) + ' Spur left to sell today.'))
+    entry.putInt(gold ? 'gold' : 'spurs', sold + spurs)
+    console.info('[shop] market ' + cmpShopName(player) + ' ' + cmpShopLogParty(team) + ' ' + take[id] + ' ' + metal + ' for ' + spurs + ' spurs (' + (total + spurs) + '/' + CMP_MARKET_GOLD_DAILY + ' today, ' + (gold ? common : common + spurs) + '/' + CMP_MARKET_DAILY + ' without gold)')
+    const leftAll = forGold - spurs
+    const leftCommon = Math.min(CMP_MARKET_DAILY - (gold ? common : common + spurs), leftAll)
+    cmpShopSay(source, Text.green('You sold ' + take[id] + ' ingots for ' + cmpShopCoinWords(coins) + '. ' + (gold ? leftAll : leftCommon) + ' Spur left to sell today'
+        + (!gold && leftAll > leftCommon ? ', ' + leftAll + ' with gold' : '') + '.'))
     return 1
 }
 
@@ -346,7 +371,8 @@ function cmpDeskSnapshot(player) {
     const team = cmpShopTeam(player)
     const metals = Object.keys(CMP_METALS).map(key => ({ key: key, item: CMP_METALS[key] }))
     if (kind == 'market') {
-        return { kind: kind, metals: metals, ingots: CMP_MARKET_INGOTS, cap: CMP_MARKET_DAILY, sold: cmpMarketSold(server, team.key) }
+        return { kind: kind, metals: metals, ingots: CMP_MARKET_INGOTS, cap: CMP_MARKET_DAILY, sold: cmpMarketSold(server, team.key, false),
+            goldIngots: CMP_MARKET_GOLD_INGOTS, goldCap: CMP_MARKET_GOLD_DAILY, goldSold: cmpMarketSold(server, team.key, true) }
     }
     cmpAuctionSettle(server)
     const auction = cmpAuctionData(server)

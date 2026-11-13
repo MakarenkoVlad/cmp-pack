@@ -11,8 +11,3 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 9573550
 project-id = 1779606
-
-[option]
-optional = true
-default = true
-description = "Faster item drawing. Untick it if your game crashes or items look wrong."

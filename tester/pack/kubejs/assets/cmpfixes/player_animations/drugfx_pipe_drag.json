@@ -1,0 +1,55 @@
+{
+  "version": 3,
+  "name": "drugfx_pipe_drag",
+  "author": "CMP (cmpfixes)",
+  "description": "A pipe to the lips, the bowl out in front, the other hand under the bowl",
+  "emote": {
+    "beginTick": 0,
+    "endTick": 48,
+    "stopTick": 49,
+    "isLoop": true,
+    "returnTick": 8,
+    "degrees": true,
+    "moves": [
+      {
+        "tick": 0,
+        "easing": "easeOutQuad",
+        "rightArm": {"pitch": -25, "yaw": -5, "roll": 0},
+        "leftArm": {"pitch": -10, "yaw": 0, "roll": 0},
+        "rightArmFollow": {"y": 0}
+      },
+      {
+        "tick": 6,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0},
+        "leftArm": {"pitch": -87, "yaw": 31, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": 30, "yaw": -30, "roll": 0, "x": 0, "y": -6, "z": -4}
+      },
+      {
+        "tick": 8,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0},
+        "leftArm": {"pitch": -87, "yaw": 31, "roll": 0},
+        "rightArmFollow": {"y": 1},
+        "rightItem": {"pitch": 30, "yaw": -30, "roll": 0, "x": 0, "y": -6, "z": -4}
+      },
+      {
+        "tick": 28,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -107, "yaw": -22, "roll": 0},
+        "head": {"pitch": -5, "yaw": 0, "roll": 0},
+        "leftArm": {"pitch": -84, "yaw": 31, "roll": 0}
+      },
+      {
+        "tick": 48,
+        "easing": "easeInOutSine",
+        "rightArm": {"pitch": -110, "yaw": -22, "roll": 0},
+        "head": {"pitch": -2, "yaw": 0, "roll": 0},
+        "leftArm": {"pitch": -87, "yaw": 31, "roll": 0}
+      }
+    ]
+  }
+}

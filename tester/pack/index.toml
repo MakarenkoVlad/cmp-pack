@@ -17,6 +17,10 @@ file = "config/DistantHorizons.toml"
 hash = "ea071f9fddaa6b453d2475fb8bd908943b78ca9844b81b3ff7ead247b2c751a5"
 
 [[files]]
+file = "config/create-addictives.toml"
+hash = "1dbdcd5611465dedbe4a82f80ffc89916c1db28a51ee44c994d343bf3b7ba414"
+
+[[files]]
 file = "config/euphoria_patcher/settings.toml"
 hash = "67a67f36821cca5d9cb8d6e4b15cf64c189c8b6a722eb41a9c2b3c0f060ca950"
 
@@ -130,6 +134,754 @@ file = "defaultconfigs/openpartiesandclaims-default-player-config.toml"
 hash = "d395bba97eb286d93d46ec609ad838d27f7454b42ed87d48be8a25f2b32f8e71"
 
 [[files]]
+file = "kubejs/assets/addictives/models/item/cigar.json"
+hash = "ce8ad5bcb7e8a45e3321589ddde96daa24b2f234a3295bca03487a671bf9edf2"
+
+[[files]]
+file = "kubejs/assets/addictives/models/item/cigarette.json"
+hash = "e11345dceb131a2e770a0644748e06547f73104501f0bbea0f8bbe8b3ffe5103"
+
+[[files]]
+file = "kubejs/assets/addictives/models/item/joint.json"
+hash = "8fd8ff0c4873dc04d6d8c6fd65f6ca8872df3eb39954281611bec15547d803f2"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/cocaine.json"
+hash = "a0501e11d3d768df372b950bbbcb3380b1d4816335f787b49e1283d31c0de814"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/crack.json"
+hash = "daf8e150bd52bb1e72241c4b18c2fbdab8e45bafcec454bf23c1e462f9430440"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/dmt.json"
+hash = "0b7cf9e13377f7534c53897fed5825da69819fbb37698957d14e5d218b1dc8c8"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/fentanyl.json"
+hash = "c3699bef01b6d9d36b2c55b1aaa9aa4554d6fe696f166085c3dadde2c51f9ddc"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/heroin.json"
+hash = "d5f2711e9dd35db3a2d04d89372dbca53913a7e137cf062428907d7823be8b0e"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/lean.json"
+hash = "8d580c0d1557073127a777159cdec7ed889f9c676060ae5d45c3f28654e11c37"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/lsd.json"
+hash = "01d1229a69b6dfe7a6a2471a6d65138e9825a316118d825cee0e3302dc46ee98"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/mdma.json"
+hash = "2df7da7d5e72b7ada5c124da948c41c1413bb73b6d12b4e721c60ec018527f29"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/meth.json"
+hash = "00d26b0a56c2b8e1c6ab4e978e126bceb1f9cdfaf5c59c4b8627b26f498ea1d7"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/nicotine_high.json"
+hash = "dfcd1e5158a873de4c932b2e279e296797576f5908b3ad08d4fb736f8916bcf4"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/shrooms.json"
+hash = "a06d3170c8996a82b14a6c83a4e453c4f019d3f456f94745d4b641955625b96b"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/tobacco_high.json"
+hash = "866d6e73477b77edd4d18b737822fe0850d1b133ece86b12e361c59388cb04a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/post/weed.json"
+hash = "97719fd27603e34db5574bf9d8a0acec36bb9ec4ac872cbb983b17ca69f4a078"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/cocaine.fsh"
+hash = "c9e6814072b0e99cdb8f35d4c1fe4168237ca1301fe2517a49aa67404b70891e"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/cocaine.json"
+hash = "3dc3f0c621f65c3d3cbd8af32fcabb6b2209df74c8c55af4d2573098fa201879"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/crack.fsh"
+hash = "92f170a8dd44159001c67b16242969bd09adb789c1c6e91776a84f8b4362b989"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/crack.json"
+hash = "6a2f5e16fd844c0b91cfe75444c538dfb988a34b624e6c8b1eeacfe8cdc9f884"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/dmt.fsh"
+hash = "f30c4a1e52e6427419ddf6e31b2809c6bfbbabe5f09e68be024b2938eb8a23ff"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/dmt.json"
+hash = "ad13379af1e804c908acaa7d59bb3e34e2177f9616270e5717314435ed6e450a"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/fentanyl.fsh"
+hash = "966898a055e97e877fedf2b03c5d557f25e100b3067eb2eb1c86f164241ce9cb"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/fentanyl.json"
+hash = "30f4d4ea9275ac3a4e2285dbbbf0c5a294b49cd5ff42898ab400f6fadc46ecf1"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/heroin.fsh"
+hash = "4dc50ba299725e3eebea24b8fd8ba65d3164cb365f9dffe32206951179ef54d0"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/heroin.json"
+hash = "7fdb80ca0957b68fa81b2c24a618b161fd544a2e8f8550de80413862c0424205"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lean.fsh"
+hash = "f666b200d554145dc35a396fe7e1d28386f0d59f52b2f46cd45bb935f212f04d"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lean.json"
+hash = "20f4e785f47ed69fbc9abcf4738ba9d7f3a218d9595427056f2ecf796014f0a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lsd.fsh"
+hash = "b59d21a80074266e64ec1f38e2e974549f376a9a83dfb3214acbe1e156911805"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/lsd.json"
+hash = "f7cb88b12faf952a8b6ae2512dc8c56523c96f510c1b8eb2764e9f86cf276540"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/mdma.fsh"
+hash = "62c50037cfcccef7b2337d6090568e3ccdaa0ba89b82a67cba5f02c3f6a3e330"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/mdma.json"
+hash = "383e4dbfde7b4cd832d1f4df843cedd03e46b4dd67147b71de77dfe8fac4909b"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/meth.fsh"
+hash = "7383a9a927a822a70367c39de6dc60c89acdb6c446eb4764d8da4d1362da28e5"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/meth.json"
+hash = "6a950d5dccc43e2f93b6aca1e6390a8abb12c891a4303c8ad6c2884950578788"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/nicotine_high.fsh"
+hash = "290b29dff81f7b7f77802cc1b259d2d1cc59a20d3c7bb24e819100dc8a522598"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/nicotine_high.json"
+hash = "200556b13b99abc5033fbc72fac24b25b13b9ce6b1dbf96ebca9e02452d2c0a9"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/shrooms.fsh"
+hash = "affe42881f08209bb8dee3b47e07753fdddaeab6fee5db1790d094e9d6a66995"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/shrooms.json"
+hash = "ca608e53f65081bad4ed641e2f75f7061b69f7b6949b04537aa0441756ea8df7"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/tobacco_high.fsh"
+hash = "7222f6c4e6df7a0cdc3d8bc9baf40c5ff13ed69a6c4913e1cb857ac598a516ee"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/tobacco_high.json"
+hash = "4133c765de77166e0799a5fa78b2bddb0f1775c23459dcfb847b8f8d0a5bde51"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/weed.fsh"
+hash = "b7282b9baecc02132204d2db7c89f53452ab086416f2470d15acb406d731286a"
+
+[[files]]
+file = "kubejs/assets/addictives/shaders/program/weed.json"
+hash = "abd3beeef1efbd7b0a87b6227ad399feca57e74fa0599a25508b7ba738cc2f1a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/adderall.json"
+hash = "a9432ea43916fe053f942f66319876c47d6ce8e5ccec9aedc691917b50fc24b0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/benadryl.json"
+hash = "06ed3122f38849f2827970dbc654e42af468c640db47a48e0c9bc9dfbc75c12a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/breakthrough.json"
+hash = "591042a048742b06cd02d5051a42d9096f8a90a863fa0370a67ad173bd95c898"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/caffeine.json"
+hash = "9a6b78afb67111244a397466126094428714203ab2a79ef9bdcd50425f8b6df2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/cocaine.json"
+hash = "5298fc9b2f390ae3a88507b0b8481c2e62be2b326bcbafaab061096f84713542"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/crack.json"
+hash = "a610270f631589ca2b7cdf2f076b1fbaf93fcd1257a86c4f283960ad7182e9d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/dmt.json"
+hash = "fb4bc08cde0929740fd326867570b2f248bb98e0cc1296944dbb80b5b6661e10"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/fentanyl.json"
+hash = "2e3d0405d6d9c5d51486be0915bbb68eee0253327d4f3bfdf9fba103e6e7862c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/heroin.json"
+hash = "2d9d940d0d424ebcf57657e3dc559a741a047e0e8df718902ecb6f808eff3e1c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/lean.json"
+hash = "16a022634124f8b1ad2de5503676099595b8d26375b3b9b029962b370b992150"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/lsd.json"
+hash = "34867e2a6d47f65307329652df28eb6835dfa0562797f7b722421b28e1d24db8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/mdma.json"
+hash = "b6f60a2b0ac16211b071105095ad58c31c45ebd36cf8824772b59e1f05156a2f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/meth.json"
+hash = "6d52cc017a632b8ec6779a9280b579e1580842210859dbdb4390b11e762fc2a9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/nicotine_high.json"
+hash = "253aee66f94bc607037c6e34b4c9667bd41681bce5082376535057852ee9053f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/overdose.json"
+hash = "e643d011ec52a60667e1df1a835fc484303f07bfcec36f80a47ebbcc49d00eb8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/shrooms.json"
+hash = "2f9fb30a655e7dff2f28c98f7c0428e65a2db68d02647434976522cea2280955"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/tobacco_high.json"
+hash = "6b38aa01283b37c373430c0e8054687ff35a43e09763c33d7bfb386479bc4589"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/drugfx/looks/weed.json"
+hash = "19450d7a560a7b255b3d0933ff5c091917d9f9502482dd6dbc20d4ed899b452e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/dynamiclights/entity/drugfx_smoking.json"
+hash = "1f0849483a61e73c677a3a4c2cb2129da78aebbad42db0051b74fda289f45b02"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_1.json"
+hash = "8c9e49e123ddf89ddc5eda04c76a52f3f54b8ee7f5de9328e8e29a600c4c321e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_2.json"
+hash = "e20e0049a887484416d94b3cbcfb4df24d16bc0772df14bad3ef1a750013883c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigar_burn_3.json"
+hash = "3eb46dfbe819699b11991643c27227bc30c496631a5eb305ebe0c75828856a72"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_1.json"
+hash = "6e7ffaad8f1cdd3e907317feed64d5857aaa2079a99638b99630ce81863e2dcb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_2.json"
+hash = "73fc20faaa2396038f98edc0e21621484d6b1c38b6e1e8144de27352439b390f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/cigarette_burn_3.json"
+hash = "1a1003553966bd6cf0d1ebb5a730b998bd781fc7b75e8642c54050adb679af09"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_1.json"
+hash = "ef65cae1e520a7a6430e4b8be34285d040a270dd58d37121ee3e86a7c7338cc1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_2.json"
+hash = "5b58b44c5565d6bd970fddfd94df5170941388f64da8c2b0149736edceae7379"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/ember_3.json"
+hash = "a125f0f8bee91fbec96de774769d19a9b7e6e182cd72ee5829dafe71b98098d8"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_1.json"
+hash = "81f4c7e619b7f7ab6f99b2fcfc2d7e7e2a4910c9d99e5dc4fbe345128a8f9121"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_2.json"
+hash = "b863f11487b5ae73f75a2c4504b1464dc396be1dd3e8d349cfe1c8d0073fb080"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/models/item/drugfx/joint_burn_3.json"
+hash = "1b827fce5d758c22555f8f3fa412f4ea275c0f2cff1f222912c8de54bf0ebb27"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_inject.json"
+hash = "c7ff9215bba1fef2c055ff33f2c6ec8e3a748d12402e42dfda99630494bf4f25"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pill.json"
+hash = "26823f2546e09f1080df594ee3e49293b3488d0b3d6341046caaa1366881fd2d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pipe_drag.json"
+hash = "0b00aa094dad4cd93b3522a7e511c5401a0157c9d3bb1a37070915eb382c1d37"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_pipe_exhale.json"
+hash = "820fc1b57e72f2baaf367252fe44a2722abe6479af6c0741c178426bfa013e0d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_smoke_drag.json"
+hash = "e866b9233571ef7e6dbb03e31c3136f2d74eb4d6a727479a086f6e3c9c68f56b"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_smoke_exhale.json"
+hash = "aed1b0adf17a5f34be65d75d3a621e87194441eb6348885f191e6e7d54ac55ba"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_snort.json"
+hash = "0a30da95c21b75fad57f4815a6be5375e7a0c672be13ab51d08084b9085c4b8f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_snus.json"
+hash = "782d471ccb5e2b7abb017b14ce41d61669a131507d64e21cd0beadbdfb99787d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_vape_exhale.json"
+hash = "0b42a2e8a6b21f2c5dbd16e3f65228c291539e747c9896eee583b41f3ea872c4"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/player_animations/drugfx_vape_hold.json"
+hash = "9c2e0b6155d8425144c0a262ede14a98485fd5e31ba968b80da9d0fe265f45fd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/include/drugfx_breakthrough.glsl"
+hash = "b474dbec2a9f7b472c74dbd8e5d76afeb5aab1922a8c362fc2156a03d4354d6a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_adderall.json"
+hash = "8836335849707f34bd2618ac1122b34c557d9d4c4eacc45b5397bb895e0afc40"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_benadryl.json"
+hash = "ecbd384daa3c3d31a2853baa8dfcc821935d292babaed81348ef75673ac389d5"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_breakthrough.json"
+hash = "f8573659676aed50dbe717ff2130b5c070b7433fb9e86812311110a57769ee01"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_caffeine.json"
+hash = "16cd538de3e946c66dea9e6cc1eeda4b6e0263851a6e0232004aabd22ff9bd56"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_common.json"
+hash = "e6eea89beb59b1bd78e133053c8c01f955f1d18b992a39fb8f683c7289ff33ee"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/post/drugfx_overdose.json"
+hash = "16636c593cfa2ae90c285bfcce4cdc48fec1145394be5ebb2a591eb0c208292e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_adderall.fsh"
+hash = "a87c02c62eacb57616ad93a2c4c6872796c5181978cc96e3a7e4751d96bbb5eb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_adderall.json"
+hash = "1af2ce419a327b892a0b3cb73326299a355e7868a45cd25e73c4878baf879cb9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_benadryl.fsh"
+hash = "ab17798eec0547ae25614a08c8260ba67b74f0231f6dc8750b85c185cfac708a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_benadryl.json"
+hash = "5332bb7c7697d84a5f2a8620998a89f5ba5ba7ce87e5d763b5d26a8cf164c8ee"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_blur.fsh"
+hash = "3c5b05594d489146062c69ebe3711cf77464867156294f758ef13162d4aa4035"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_blur.json"
+hash = "e7981fb0d95f771b8c7d7ea1a67b606c358036ac148f96e1e0c446fbea1dab30"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough.fsh"
+hash = "d6f976ec11d4507f5e334c608c9015b9fb8c819ec6851a29addea0e90329357a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough.json"
+hash = "f5fa8d342736df88479d2f3af3138d44a4061769e6faa462f3f0b4b0bb892d38"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough_rooms.fsh"
+hash = "72da7cf23144715e6e61e01d6ee1d8eeaba99adb2e6b5b4ff8c0fab782595f80"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_breakthrough_rooms.json"
+hash = "be3c89b627f0de29d06592f2d30a75627c558a9ca7fe0f64f3911fd2dffe5756"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_caffeine.fsh"
+hash = "05b9632c02648d60d10c06d02cc27e8e5a57dff1bd51c4752b551fb09f341a30"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_caffeine.json"
+hash = "e8b9233eaea0750e5f36dc6f88387bc2850c336ac6bbbf4d7a00094dace17512"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_common.fsh"
+hash = "c54193d66ab9f27e0f12d14eb9efb5f43d9c63b17ebf04a01c3f976498660a84"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_common.json"
+hash = "d2085bf9ab37f4af90c050a9ace0186e956635867d1f688e22d0d826985fd0f2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_dmt_pattern.fsh"
+hash = "39e21645c53f0033eed52393f81c29db7d01a9da8385cd9e673a58fca35ff88e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_dmt_pattern.json"
+hash = "859f8c1a1ebc6e31397165c445accde07c5deb1fb192e614bcacccfee72a5b0e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_down.fsh"
+hash = "a0fcd431f47d5987e09e134b80b3a7f4d2541ec03c11c5824bb8e6fd534504b1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_down.json"
+hash = "3a03209f26042df57da8240df0f12e210d6f9b654b0d5f02c348b03831854b42"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_lsd_flow.fsh"
+hash = "60f3c73f592a310c90b16564eb734515bcd5350d035599fa60d9e833c0e49650"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_lsd_flow.json"
+hash = "54c4c50dd880559d6bf43640b1fc5acd25e7a4cdabdee6fb3a9991c19e680da1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_overdose.fsh"
+hash = "66a725639ccc816f140579c9851c04ce6bda4cc2acdaaccc0636832931aa7f86"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_overdose.json"
+hash = "285951e8a20cad20b3004ce28ece311df3f7e846628ea52218468c9a9b38f5ab"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_screen.vsh"
+hash = "6ee598f70705b55d1c49f5e17850cff514c16c1a862bd669b98b4371120832bc"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_shrooms_melt.fsh"
+hash = "2cde3d89b70c65e5e8abdb40772f5a59cf120e2fab3d5df3f36b8eda5f9f34a9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/shaders/program/drugfx_shrooms_melt.json"
+hash = "a164d975d2478c4b7e7bdbe3f8856a2ac1b78123deb92c48f1fde8bec90bd1ec"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/effect/drugfx/benadryl_figures.png"
+hash = "1c0fe48861bde6186abc56f47456312da724cf8b99f83137c044826c69bc19d1"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_glow.png"
+hash = "5414a6ffa097e3b452bff1dace55e5e81c5fc9edd82e836a35336a040be18194"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_halo.png"
+hash = "6894da7a4748ee4acee3c9df2a25e3b1b82e49d163440b3e3eae63bc57c58418"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_overdose.png"
+hash = "80265f36dc97b5d9e2693b2b0893ab5f94a48fa8a65be44b72c256d70da8bd41"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_pinned.png"
+hash = "adb7cd7258e60f3ddfd6fa3eac79e2118c107510555e859f9a3627b75661f51d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_red.png"
+hash = "01baced5b0d8bf2b9caef1406f8cec242d33b8ed07118974f037eae115c78bb3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/eyes_wide.png"
+hash = "4a7c69ddaa3da27dae7103007b5ae96c7d90c8adc013b1ba6d8e98fc6c1571b3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/entity/drugfx/pale.png"
+hash = "114ec25587a9c3b4c95116c0890d67476c7628e03aab7d888ccb22eda971cf8d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_cigar.png"
+hash = "ff5570fa684f02ae24f72143ccaec692d6783ee84f3e99918c3e522e6f147360"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_cigarette.png"
+hash = "c7a4a94c96226c178cfb790aebe7524345b52084ee6b056bf3c7c35cc37633c9"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ash_joint.png"
+hash = "bb58a0875cf47f7a1f985b45eb2f1a0bda14ae65bb80be11d7e8adc757a0a9bd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ember.png"
+hash = "dc6848601253193c6cabb2e7a84e4ff53611dfffafb2815071bac6b2e0af9a07"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/item/drugfx/ember.png.mcmeta"
+hash = "61d9ed0268db7dffd14d04ad022ec2da66c2d5f52c3b3f689331ae53880f9e40"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a0.png"
+hash = "f54ed0ca18de0a5d2a868332a25b7b9fe0215d955c4a29db3bd3b013768c5ab4"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a1.png"
+hash = "9172805e86256fa475c7015d210cb7af3d745f8089d3e51a080506bb5f586849"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a10.png"
+hash = "42d70ecf239b144ee9783a0d827245472c7ccf99a7400e9ae2ff023ac126f165"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a11.png"
+hash = "edf18d2dbd9a14436b6b8e5eccde06d5ac0ad684292b1c431899b475c2f8c69e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a2.png"
+hash = "d30f5e2bb06150173b11ebd023d39182ae11ef3c7bc8903a1488e3f42e57a1ef"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a3.png"
+hash = "ade3e3ea77e55697c256c9ca3463f4be6ae2d0775e39a93b6088f21eedfed257"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a4.png"
+hash = "759d611d28102bc84abcbb2275b9399b93c23812f4a4c135ebb6ee0547250f88"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a5.png"
+hash = "caec9bd87c4348b3bb18e92177f1951571318dc06fd7603250ed307500008f22"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a6.png"
+hash = "01be0103075ea7b6d6eefe68d61520a04acc5fe80f4a71e0bf1620b6c4442669"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a7.png"
+hash = "e95cb2e518066f7cd5edeb09d8a0885acbb5666436799a6eca1c55bcabfaf212"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a8.png"
+hash = "573fcd2338a2dd2d6fc2205c338095666df1491720bfd04079060ceaf047bc16"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_a9.png"
+hash = "0298c4c816e4865f1faa15943e60709c6136c4ad21cf733521fcafa30f04dbc0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b0.png"
+hash = "140206d636ec57abe7256379acd2fc8dfd51feeb6d3c3c97a1b38121a8a08aab"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b1.png"
+hash = "4f1ec880b7da40639269c5627f0aaaf00dfe1a80689f744f99b58886e99e3f27"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b10.png"
+hash = "f3ca1be89f0bec271a2f0594ad2ea4760c545df245c58aa4586d848eb75e2405"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b11.png"
+hash = "5f761564b2ce4be5005e468ac791c6e6ec8fe91dcc79f14ac3c9939bd14295ce"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b2.png"
+hash = "cd5787f33ff68abc6a6626b5a93a3c764331df2ca74ac471c3336b6de06278cd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b3.png"
+hash = "c6e3837ebaecd886487e770190b2915a97b1ae83d3dedf4ddfc7bec3f992a02a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b4.png"
+hash = "1430cfb2246f5e67b67aabab853a3213e919571d641b3e96a751aa9ec1e0434f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b5.png"
+hash = "3ed266e6fab73cfcb9f07aa8cf4c7869e34c40d3ba0d6a6e6578b189b80cc4e0"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b6.png"
+hash = "756727913094d6123d149b1e55dc7226d639ac473497ed06d82f7e8ff8bbda2c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b7.png"
+hash = "24aad6d8ddfca83d618ae17cc366f6818bc32f0c05bd22febdc9d65e78afbd1e"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b8.png"
+hash = "f7ae460eef4984d30d68209f159aa6e491c49e58705ff9ec37ff27355ecec6d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/cloud_b9.png"
+hash = "8967c479acd6e30c2d6a397361c2bdf2b34239430eecc14af370584bbaff9825"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a0.png"
+hash = "4b4639eb8ef98859c458f9bfa96bf82d43cd4ccb6b2ed1288ddf32b167f3ddcd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a1.png"
+hash = "1729112841cbce61c80654c780d8d301111098104221fa7ee298b5782a3bcb00"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a2.png"
+hash = "5a1682affc7e12b41a8308336185b5b4b84f4afaf30be58c21ba066bc67ffd47"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a3.png"
+hash = "68d13fc0c07ef944c59cc59628ef1ea5974002d5866beb7c49e88323d1edafcd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a4.png"
+hash = "67cbae9337429627cf951deb123a61a26066984a34c228765ff6811873abec95"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a5.png"
+hash = "9286d62092dddb9f2cb7db9bf113e8c1b4d38fb3140b4d73eb39add19e71a996"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a6.png"
+hash = "e38b81ac403bb6dba13d43ae302af17ea7f3ccc5a9d8dffbaa4ee702be6f68bb"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a7.png"
+hash = "8437bea4217ee328cc9b12ed3eb312e69fd0066aaa770ff00b51a1b9acd8c59a"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a8.png"
+hash = "e5b65b7ec421099678f426d9b74992d729cdeb393363e1d68037586ac6efa444"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_a9.png"
+hash = "cc35d74d17cf064434405bad9bab79c0be18b4ef3ef9704f4547d6da10c6ef3d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b0.png"
+hash = "545352a0f0e737f3a1d14ab59706aac9447cb5a77fb4cbc085a14c1bbd7b25bd"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b1.png"
+hash = "ff28cf61f7ac84f95c613f1b163cc5bf41c8d7b5be03e58c4e72f6496f1b64d2"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b2.png"
+hash = "c654074899d3eee3cb529b96b0a3f999a0d7e18192b039b0338d9f806aa2c61c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b3.png"
+hash = "9dc5604556216c569b3f2b59b0ac1101554673e35c147e0d710ee06a63fca08f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b4.png"
+hash = "a889f255f93892d3bf975b00234ec3b43457d5e815d7d63c321ed54af730d0ae"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b5.png"
+hash = "db052ae40945c2ef785707be448eeaa3be443b2df800db9fcd184a251b819df5"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b6.png"
+hash = "3f278510eda6b13b1d66d56763e3f237e40fa9023c13682230b574192f5c796c"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b7.png"
+hash = "08726210f19596300b0543a42f8eafc484e3bf6a3d02e1a07951b40665bac77f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b8.png"
+hash = "0e3497fa8fbbfd75974f02dc83c3e5e7ae3f5dcb868233c88e3a3fdd96747677"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/puff_b9.png"
+hash = "3b7499750b0c0c13b61c33c438e433fc0ada5176e0a0d579c9878be04db27664"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_0.png"
+hash = "f24dd67df4dd6594be2517b60a036303ef25426ec2e4595550d6c7d3eaae9693"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_1.png"
+hash = "b3a36975e3ff9b9709e5329e221823e0c1f5b15c372f0019f41530e598d73bf3"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_2.png"
+hash = "f0630c80615a767072629538e8eeafed294f46947902451ed8c7585abbd6957f"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_3.png"
+hash = "047b95615345fb9129167c5bf058be8f9bc7d758981b0ab6e7542c50e114db75"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_4.png"
+hash = "902158086358c2a27d15ca688ffe37843ac9ebc1c8000e745393d2f7f78efd00"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/ring_5.png"
+hash = "d5902bf0ffe5606498c21d1ee3c2edfa939e15a4a75af68042b938f38cf630be"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a0.png"
+hash = "34bcfc83c24feddaaf51621e7281b405a7116d149ba305de3de6e0f3056b4332"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a1.png"
+hash = "76771afef7ea8cb58317ff34b9cfddb82c16f97cf20919b0953587c073830745"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a2.png"
+hash = "479ec8b0d4387e4ba22f009008a5e150102bca3c9c5d20de54ffdf4ce8d82389"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_a3.png"
+hash = "af577f313f954e61fb33d1041752729c5dd9d00559c6a1d352edaf25f08f5b6d"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b0.png"
+hash = "dde016cf3b067ce87193f9c8d3cbd8f668e150418fff062a9881d427811643d6"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b1.png"
+hash = "f0dd7083cc5ab5749860484b73120bf94e1f4cd8f6b86781ceb435d15cb91539"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b2.png"
+hash = "0bf63d28f4c7295c22e9c35694db0a15180012a64fb895fc88f8da02b4f75fec"
+
+[[files]]
+file = "kubejs/assets/cmpfixes/textures/particle/drugfx/wisp_b3.png"
+hash = "2cc53a88ab26fcfb4d10b9ba5956825f386e5cb78c909a1f291db2261ad1936d"
+
+[[files]]
+file = "kubejs/assets/minecraft/shaders/include/cmpfixes_drugfx.glsl"
+hash = "455b3def82697b6f3668ae3c22dc5cabdf30e1a3caf21dffb53fa6969c4d0e12"
+
+[[files]]
 file = "kubejs/client_scripts/coin_tooltip.js"
 hash = "2095349089c864e27ec718502d572513d28f219290cfeff5949103975a1b041b"
 
@@ -160,6 +912,18 @@ hash = "8ee483f5cdfa9e0b79f754b72de1830ed2b3555e0bc22640b6ae31a92352aed4"
 [[files]]
 file = "kubejs/config/web_server.json"
 hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/mixing/nicotine_liquid_from_nicotine.json"
+hash = "fc68e7180c05156e51e567de9ae4896ea338b31b934f3de0bbf5c2d56fed66f8"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/mixing/thc_oil_from_weed.json"
+hash = "f3ca3f533eb8dd4489a69a9f76316a977e3cf5ef314058a8ed564fe49272383d"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/tobacco_bulk_smoking.json"
+hash = "67813ffb633c5af3340a0bd9fef1963c117279231e5922fc6f17a17c9728d51f"
 
 [[files]]
 file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json"
@@ -823,7 +1587,7 @@ hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
 file = "kubejs/server_scripts/market.js"
-hash = "36acbd4cbe6e255659f1b85a4cc24faee64d71510dfdf5f782438bb84b71efb5"
+hash = "8b9d46a0dfa4f46f1d6ff2d0b55ac39ba94440f9da55e262c8f465fcd2dee352"
 
 [[files]]
 file = "kubejs/server_scripts/market_board.js"
@@ -835,7 +1599,7 @@ hash = "32040919e89c5aeb7b0e1fd1984c4a78ca917cfd259c78429e519ace36c392bb"
 
 [[files]]
 file = "kubejs/server_scripts/plot_rent.js"
-hash = "afa1ac9dfd8b9311ea8e09119e6f3d713bf11993948910b2b1f7033b1433ec11"
+hash = "55dd387e2ba47a4afd8c27be2702f95886f10f6cacfd625ec927b493379e8d59"
 
 [[files]]
 file = "kubejs/server_scripts/radar_fire_arc.js"
@@ -851,7 +1615,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_deposits.js"
-hash = "8bc3a48f98ad3684a21b19a4a1911684a2fab254b08ebcaf01d8e85d10556b28"
+hash = "dd495b2a655e68c5e63fff000cd94676506c3ba7eed63844b537278e8f338bcb"
 
 [[files]]
 file = "kubejs/server_scripts/s2_drinks.js"
@@ -859,7 +1623,7 @@ hash = "1ca523f1419c3f59b948f428347de69e86aa447d576eda073b56c7144982fdd1"
 
 [[files]]
 file = "kubejs/server_scripts/s2_generators.js"
-hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
+hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
@@ -871,7 +1635,7 @@ hash = "fde3263ff49de2a4b2cfff4cee458977bedfc291b65b89b5fa5155f70f5f7cf6"
 
 [[files]]
 file = "kubejs/server_scripts/s2_welcome.js"
-hash = "90cb7adefe8a20e654cfab5cfdb3c0bac27b5505a9f0684c4c8851e12a4dbe59"
+hash = "e50fb5d2c8b5072311982bcecd0be267ddb4056721418b6b85d82a343e10a56d"
 
 [[files]]
 file = "kubejs/server_scripts/season1.js"
@@ -879,7 +1643,7 @@ hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "81f6c29dc2820a4166a48442746dad8482ebacd81e8c02c1391849b23f326fdd"
+hash = "8b5840e63fd51ac8785bcf90e5b632c7ead3bbca2f3eac098364cc0830c19e6c"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -887,7 +1651,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "cb0f494be14661ecb34010a552706a3946d7c2f88cf1530fb7b92b2c8f04d573"
+hash = "1372d4d0b461721c2f93cfe91f71d7661fd19d1d1d7627336832166283c9b809"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
@@ -986,7 +1750,7 @@ metafile = true
 
 [[files]]
 file = "mods/carbons.pw.toml"
-hash = "af50e3157634349a3f5ea5f7b7f601a96fc55de4d971d4bd7135b793fa9865d1"
+hash = "af9fbcf3e6b3484ab0c209e1c1d884d4ccd532498e1ba35f843231c15e741262"
 metafile = true
 
 [[files]]
@@ -1090,8 +1854,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.38.7.jar"
-hash = "504a204f4bf38841b317f17a2c1cb711177d410d45f14804990303971cdf1670"
+file = "mods/cmpfixes-0.39.1.jar"
+hash = "9f63e5f12722ae5024b5b32f5df612a87115c3c40ce5b1291e36520aa91eaeb6"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1102,8 +1866,8 @@ file = "mods/cmprubber-0.1.2.jar"
 hash = "4bdf5a6d43fb60bd8f84be92256300c6d9ac27965ddb35110c0ffef5905b92d8"
 
 [[files]]
-file = "mods/cmpshop-0.4.0.jar"
-hash = "73b5f2c47e8438dc7d92b29d0c09a68318799317b0765018c69ad1917bc1570f"
+file = "mods/cmpshop-0.4.1.jar"
+hash = "08658f68a0a28ef795787c5ed69dc803b2c02e49bd060a64f835204673deafba"
 
 [[files]]
 file = "mods/cmptab-0.1.0.jar"
@@ -1114,8 +1878,8 @@ file = "mods/cmpveins-0.2.0.jar"
 hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
 
 [[files]]
-file = "mods/cmpwar-0.27.22.jar"
-hash = "0e1ff87627d1afcb80b51997ff2e0bb1884bf6e32efeb4f7720ad15f3064e5ed"
+file = "mods/cmpwar-0.27.23.jar"
+hash = "3f703073f36b5b9b5aec86e4293b088ca6e599d82d7e9acf5edec8fcb559e7a1"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -1160,6 +1924,11 @@ metafile = true
 [[files]]
 file = "mods/crashexploitfixer.pw.toml"
 hash = "2ea431a8a539cf776e004d5f55260cbf60fa5d8e1f0a7f3059298bf59510e1c4"
+metafile = true
+
+[[files]]
+file = "mods/create-addictives.pw.toml"
+hash = "ba8dcbab8a331659ec0791382ad6615b88aaa4f8ac75a39bafedc5f083e3f54a"
 metafile = true
 
 [[files]]

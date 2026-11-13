@@ -114,6 +114,7 @@ function cmpGenClick(player) {
     player.tell(Text.gray(st.left > 0
         ? 'Next bundle after ' + cmpGenMinutes(CMP_GEN_TICKS) + ' more online. ' + st.left + ' more today.'
         : "That was today's last bundle. More tomorrow (00:00 UTC)."))
+    cmpQuestDone(player, 'generator') // the Quest Book's City Generator quest: the first bundle taken
     return 'gave'
 }
 

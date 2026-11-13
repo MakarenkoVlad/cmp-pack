@@ -49,6 +49,7 @@ function cmpPlotPay(source, deal) {
     let message = said + ' You paid ' + cmpShopPrice(price) + '.'
     if (change.length > 0) message += ' You got ' + cmpShopCoinWords(change) + ' back.'
     cmpShopSay(source, Text.green(message))
+    cmpQuestDone(player, 'plot') // the Quest Book's plot quest: any paid /plot rent or /plot buy
     return 1
 }
 

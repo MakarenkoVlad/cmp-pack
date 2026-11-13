@@ -3,6 +3,10 @@
 // the crates any more for them. It never buys anything back: every coin it takes is destroyed.
 // Season 2's plot rent and plot sales are paid the same way, with these functions (plot_rent.js).
 //
+// What it sells: the lists below, CMP_SHOP_OFFERS_ALL and, after it, CMP_SHOP_OFFERS_ADDICTIVES. Of Create:
+// Addictives it sells seeds, spores and Narcan powder only: never a finished drug, and nothing else from the Nether
+// (Narcan powder is made from cinder flour; no cinder flour, blaze powder or nether wart is sold).
+//
 //   /shop                     the shop screen (the cmpshop mod: tabs, search, prices, your coins, the treasury;
 //                             its buttons run the commands below, so every rule here holds), else the list
 //   /shop list                the price list in chat (click an item to fill in the buy command) and your coins
@@ -99,7 +103,8 @@ const CMP_SHOP_CATEGORIES = [
 // Common consumables come in small bundles; bottles, turtle eggs and wither roses are single items.
 const CMP_SHOP_OFFERS_ALL = [
     ['dragon_head', 'minecraft:dragon_head', 1, 60, 'rare'],
-    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 32, 'templates'],
+    // 8 Cog since 2026-11-13 (Vlad's yes): the netherite veins set how fast ingots come, and at 32 a set of four pieces was 40% of the goal.
+    ['netherite_template', 'minecraft:netherite_upgrade_smithing_template', 1, 8, 'templates'],
     ['blaze_template', 'create_dragons_plus:blaze_upgrade_smithing_template', 1, 32, 'templates'],
     ['god_apple', 'minecraft:enchanted_golden_apple', 1, 20, 'rare'],
     ['blaze_burner', 'create:blaze_burner', 1, 16, 'rare'], // the filled one (create:empty_blaze_burner is empty)
@@ -126,6 +131,24 @@ const CMP_SHOP_OFFERS_ALL = [
     ['ochre', 'verdant', 'pearlescent']
         .map(f => [f + '_froglight', 'minecraft:' + f + '_froglight', 8, 2, 'froglights'])
 )
+
+// Create: Addictives, the owner's picks of 2026-10-28 (docs/design/addictives-plan.md, D12 and D14): seeds or spores
+// for each of its five crops, 4 to a bundle, and Narcan powder, 2 to a bundle, in Supplies at one Sprocket a bundle
+// like the rest of Supplies. Its wild plants are off (cmpfixes' data/addictives/neoforge/biome_modifier), so these and
+// the chest loot are where seeds come from; a grown crop drops 1 to 3 more. Narcan powder (it only makes Narcan, the
+// overdose cure) needs cinder flour, which only comes from crushing the netherrack in a few builds. Never sold:
+// finished drugs, cinder flour, blaze powder, nether wart, and what only lacing uses (chorus fruit, ender pearls,
+// trial keys, dragon's breath, totems, end crystals). A block of its own after the list above, which can change
+// without touching these rows; they go to the end of it, so they come last in Supplies.
+const CMP_SHOP_OFFERS_ADDICTIVES = [
+    ['tobacco_seeds', 'addictives:tobacco_seeds', 4, 0.25, 'supplies'],
+    ['weed_seeds', 'addictives:weed_seeds', 4, 0.25, 'supplies'],
+    ['coca_seeds', 'addictives:coca_seeds', 4, 0.25, 'supplies'],
+    ['shroom_spores', 'addictives:shroom_spores', 4, 0.25, 'supplies'],
+    ['poppy_seeds', 'addictives:poppy_seeds', 4, 0.25, 'supplies'],
+    ['narcan_powder', 'addictives:narcan_powder', 2, 0.25, 'supplies'],
+]
+CMP_SHOP_OFFERS_ADDICTIVES.forEach(entry => CMP_SHOP_OFFERS_ALL.push(entry))
 
 const $CmpShopStack = Java.loadClass('net.minecraft.world.item.ItemStack')
 const $CmpShopPlots = Java.loadClass('dev.cmp.cmpwar.Plots')
@@ -839,6 +862,7 @@ function cmpShopAct(source, command, send) {
 function cmpMoney(source) {
     const player = source.getPlayer()
     if (player == null) return cmpShopFail(source, 'Only players can use /money.')
+    cmpQuestDone(player, 'money') // the Quest Book's /money quest: typing it is enough, also while it's on its hour
     if (!player.isAlive()) return 0
     const server = source.getServer()
     const entry = cmpShopSub(cmpShopSub(cmpShopData(server), 'money'), String(player.getGameProfile().getId()))

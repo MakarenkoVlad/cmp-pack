@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "look": "cocaine",
+  "effect": "addictives:cocaine_high",
+  "chain": "addictives:shaders/post/cocaine.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "comeUpSeconds": 2,
+    "peak": [0.75, 0.85, 0.95, 1.0, 1.0],
+    "comedown": {
+      "lastTicks": 600,
+      "crash": true
+    },
+    "tail": 0.35,
+    "afterglowSeconds": 4
+  },
+  "heart": {
+    "bpm": 128,
+    "crashBpm": 96
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "The intense looks track's cocaine (T2b, cmpfixes/ADDICTIVES.md 'FX intense looks'): our own program at the mod's path; cold and crisp, frost from the edges that grows in the crash (the last 600 ticks), a snap and a red and blue split on each heartbeat."
+}

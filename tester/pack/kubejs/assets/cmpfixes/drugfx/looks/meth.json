@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "look": "meth",
+  "effect": "addictives:meth_high",
+  "chain": "addictives:shaders/post/meth.json",
+  "layer": "glitch",
+  "cost": "medium",
+  "curve": {
+    "comeUpSeconds": 2,
+    "peak": [0.75, 0.85, 0.95, 1.0, 1.0],
+    "comedown": {
+      "share": 0.2,
+      "minSeconds": 8,
+      "maxSeconds": 40
+    },
+    "tail": 0.3,
+    "afterglowSeconds": 6
+  },
+  "heart": {
+    "bpm": 136
+  },
+  "flash": {
+    "kind": "black",
+    "perSecond": 0.067,
+    "ms": 150,
+    "amount": 0.35
+  },
+  "glitch": {
+    "perSecond": 1.2
+  },
+  "_note": "The intense looks track's meth (T2b, M9): our own program at the mod's path; slips and the shadows' lunge only at the glitches the flash floor admits, and the rare blackout below, which the common pass draws."
+}

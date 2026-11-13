@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "look": "fentanyl",
+  "effect": "addictives:fentanyl_high",
+  "chain": "addictives:shaders/post/fentanyl.json",
+  "layer": "tone",
+  "cost": "light",
+  "curve": {
+    "comeUpSeconds": 3,
+    "peak": [
+      0.75,
+      0.85,
+      0.95,
+      1.0,
+      1.0
+    ],
+    "comedown": {
+      "share": 0.25,
+      "minSeconds": 10,
+      "maxSeconds": 50
+    },
+    "tail": 0.3,
+    "afterglowSeconds": 8
+  },
+  "heart": {
+    "bpm": 48
+  },
+  "flash": null,
+  "glitch": null,
+  "_note": "T2a's look (cmpfixes/ADDICTIVES.md, FX calm looks): our own chain and program at the mod's path; the nod is in the program (a 42-s cycle)."
+}
