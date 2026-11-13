@@ -34,7 +34,11 @@ const CMP_S2_BANNED = [
     'grapplemod:ender_staff', 'grapplemod:rocket',
     // Simulated Addition's Floatite and Ballasite: their recipes take things the season has no source of, and Floatite is hull
     // material for boats. Shown with no recipe rather than with one nobody can finish.
-    'simulated_addition:floatite', 'simulated_addition:ballasite'
+    'simulated_addition:floatite', 'simulated_addition:ballasite',
+    // No water wheels this season (Vlad, 2026-11-13: "waterwheels remove them"). Only their two recipes go, so a wheel that
+    // already stands keeps turning and one in a chest can still be placed. Nothing else takes a wheel but the large wheel
+    // and a crushing recipe that turns one into wood chips. Hand cranks, windmills and engines are what is left.
+    'create:water_wheel', 'create:large_water_wheel'
     // The Re-Packager (create:repackager) was in this list for a day, 2026-11-11: an order short of its items still left
     // as a full package, so metal came from nothing (Create #8082, #8600, #8155). It is back since cmpfixes 0.38.7, which
     // lets a Re-Packager send out only what came in (cmpfixes/README.md, "A Re-Packager makes items out of nothing").

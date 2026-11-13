@@ -82,7 +82,7 @@ hash = "4c68ab99c906dd487952f61bf33c0635039a8bbff3f02099e3cd8272fe51b4aa"
 
 [[files]]
 file = "config/fancymenu/customization/cmp_title.txt"
-hash = "8e2359f2015739965d7a9d1acf953f0c40a2dd78680c47d6afd1b56c8770713b"
+hash = "0f863210ffa7b2bc8e4f2427fb8a385daffff2308645ae7a236047668ea340b0"
 
 [[files]]
 file = "config/fancymenu/listener_instances.txt"
@@ -1627,7 +1627,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "d7a4c47ed5023e5269a08f42033d50a16181dcf2b186322806c8e77aac387ee4"
+hash = "8c8878578917da3d93fe62da234a17e1d2bb1214d538405266be3270b8ea0afc"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1873,8 +1873,8 @@ file = "mods/cmpveins-0.2.0.jar"
 hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
 
 [[files]]
-file = "mods/cmpwar-0.27.23.jar"
-hash = "3f703073f36b5b9b5aec86e4293b088ca6e599d82d7e9acf5edec8fcb559e7a1"
+file = "mods/cmpwar-0.27.24.jar"
+hash = "9bdaee87fc78e3c7def7569e96f13fe1071ea04f08bc4596272356c5cd8de679"
 
 [[files]]
 file = "mods/collective.pw.toml"
