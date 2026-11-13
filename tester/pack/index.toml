@@ -859,7 +859,7 @@ hash = "989879dd3a9490cf46ca5c9ad9e3af766f631f394ea1429433755d26627b13a7"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "96806059180185a52bbd9a2725bfa088ca2f4784c27728a19f2e772e0a4a0a6e"
+hash = "b5dd46f3d73a08ecf26b85e14e4fffc1ab3840c5011e7413d13cb26cc93c8f50"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1100,8 +1100,8 @@ file = "mods/cmpveins-0.1.0.jar"
 hash = "8b50229207786dbb8c73cc433e833482791e11744c9e33e8f80cca0f3a4542d5"
 
 [[files]]
-file = "mods/cmpwar-0.27.20.jar"
-hash = "55cb703d58ec8d71c304281a97a8789def423619c42a1992302d274062bbe338"
+file = "mods/cmpwar-0.27.21.jar"
+hash = "f4cff43439dbee0bf698dadcc97a865df838010959321b7d03bd727ecfd263c0"
 
 [[files]]
 file = "mods/collective.pw.toml"

@@ -10,7 +10,12 @@
 // left the pack in stage 1, so nothing else makes them.
 // The borehead and its rockcutting wheel cut any block with no HP, no claim check and no raid, even in the city and through the
 // offline shield (launch audit, 2026-11-05), so they stay out.
-const CMP_S2_BANNED = ['minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel',
+const CMP_S2_BANNED = [
+    // No villagers this season (cmpwar [mobs] keptOut), so none of Easy Villagers' machines: the iron farm and the breeder are metal
+    // from nothing, the rest have nothing to hold.
+    'easy_villagers:iron_farm', 'easy_villagers:breeder', 'easy_villagers:converter', 'easy_villagers:auto_trader', 'easy_villagers:trader',
+    'easy_villagers:farmer', 'easy_villagers:incubator',
+    'minecraft:ender_chest', 'minecraft:ender_eye', 'minecraft:ender_pearl', '#minecraft:boats', '#minecraft:chest_boats', 'offroad:borehead_bearing', 'offroad:rockcutting_wheel',
     // Barrels, pressing tubs, taps and freezers are Frigulus's alone, so the city's alcohol market stays his (s2_drinks.js). A
     // shaker stays for sale: it mixes his drinks. The molotov stays out until it works on airships.
     'kaleidoscope_tavern:barrel', 'kaleidoscope_tavern:pressing_tub', 'kaleidoscope_tavern:tap', 'kaleidoscope_world_liquor:freezer',
