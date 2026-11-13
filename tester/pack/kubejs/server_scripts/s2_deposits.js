@@ -18,7 +18,9 @@ const DEPOSITS = {
     sulfur: 'cmpveins:sulfur',
     oil: 'cmpveins:oil_sand',
     latex: 'cmprubber:latex',
-    amethyst: 'minecraft:amethyst_shard'
+    amethyst: 'minecraft:amethyst_shard',
+    diamond: 'minecraft:diamond',
+    netherite: 'minecraft:ancient_debris'
 }
 // The share of a drill's operations that give an item, per material (Vlad, 2026-11-06). At miningSpeed 4 and 256 RPM a small vein does 108
 // operations an hour, a medium 400, a rich 500. Metals come out at about twice what one player's City Generator gives an hour (crushing
@@ -34,7 +36,14 @@ const CMP_DEPOSIT_RATE = {
     bone_meal: 0.5,
     latex: 0.375,
     amethyst: 0.25,
-    oil: 0.11
+    oil: 0.11,
+    // Diamonds and netherite (Vlad, 2026-11-13): four small diamond veins and two small netherite veins on far islands, so territory
+    // decides who gets the gear. A small vein does 108 operations an hour: 0.01 is about 1 diamond an hour (26 a day on a chunk
+    // loader, so a full armour set is about a day of one vein), 0.0025 about one ancient debris in four hours (6.5 a day: 1.6
+    // ingots, each from 4 debris smelted to scrap and 4 gold). Both are half of what was first set here: the balance study of
+    // 2026-11-13 starts them low, since what is mined can't be taken back, and they can go up in week two.
+    diamond: 0.01,
+    netherite: 0.0025
 }
 
 const CMP_RNS_UNUSED = ['create_rns:deposit_scanner', 'create_rns:resonator', 'create_rns:shattering_resonator',

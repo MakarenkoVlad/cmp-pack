@@ -1,0 +1,13 @@
+name = "Simulated Addition"
+filename = "simulated_addition-1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b42e1fe3861df57562c4643f9ae1ea18892c6cbc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8102560
+project-id = 1545612

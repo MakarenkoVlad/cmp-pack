@@ -27,7 +27,14 @@ const CMP_S2_BANNED = [
     // and a 3x3 to 7x7 screen puts its other blocks down across plot and claim lines: a wall nobody can mine. The
     // configurator and the loot crate opener have no use without them (no loot crates, no rewards). The book keeps its recipe.
     'ftbquests:screen_1', 'ftbquests:screen_3', 'ftbquests:screen_5', 'ftbquests:screen_7', 'ftbquests:task_screen_configurator',
-    'ftbquests:loot_crate_opener'
+    'ftbquests:loot_crate_opener',
+    // The Grappling Hook Mod (2026-11-13) stays for its hook, double hook, motor, magnet and long fall boots. Two of its gadgets
+    // are out: the Ender Staff costs 2 amethyst and a stick after the pearl swap and throws its holder about 25 blocks, and the
+    // Porta-Rocket is flight for 3 iron and a firework. Both run on the player's own game, so no server setting limits them.
+    'grapplemod:ender_staff', 'grapplemod:rocket',
+    // Simulated Addition's Floatite and Ballasite: their recipes take things the season has no source of, and Floatite is hull
+    // material for boats. Shown with no recipe rather than with one nobody can finish.
+    'simulated_addition:floatite', 'simulated_addition:ballasite'
     // The Re-Packager (create:repackager) was in this list for a day, 2026-11-11: an order short of its items still left
     // as a full package, so metal came from nothing (Create #8082, #8600, #8155). It is back since cmpfixes 0.38.7, which
     // lets a Re-Packager send out only what came in (cmpfixes/README.md, "A Re-Packager makes items out of nothing").
@@ -37,6 +44,9 @@ const CMP_S2_BANNED = [
 
 ServerEvents.recipes(event => {
     CMP_S2_BANNED.forEach(output => event.remove({ output: output }))
+    // The smithing upgrades that put the two banned gadgets onto a hook.
+    event.remove({ id: 'grapplemod:smithing/hook_ender' })
+    event.remove({ id: 'grapplemod:smithing/hook_rocket' })
     // Lava stays /kit-only: it is thruster and burner fuel, and these two turned cobblestone into it, endless without an oil
     // vein. No other recipe in the pack makes lava (Create's Alex's Mobs lava bottle needs a mod the pack doesn't have).
     event.remove({ id: 'create:mixing/lava_from_cobble' })
