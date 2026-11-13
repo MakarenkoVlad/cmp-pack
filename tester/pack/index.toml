@@ -1759,18 +1759,13 @@ hash = "82a755cc7393f20c64d3465813840b90dcccc94e067b2e72411ad973e91dd089"
 metafile = true
 
 [[files]]
-file = "mods/cbc-compact-mount.pw.toml"
-hash = "414a58bba157ca4e565529c006a8637660644de1b2347f5452e1d7906b41c225"
+file = "mods/cbc-compact-cannon-mount.pw.toml"
+hash = "7074b7fe00856c4b31f02adbb230355cd8be620d8f9f67440109146e502e7c06"
 metafile = true
 
 [[files]]
 file = "mods/cbc-more-shells.pw.toml"
 hash = "9757f7d050adcb465f923e852b1e1e13aaaf8e58a2f611ce882ad80a2cb15c89"
-metafile = true
-
-[[files]]
-file = "mods/cc-cbc-compact-mount.pw.toml"
-hash = "ce40d18cff81bdf367361d9bf810a4f1e998e69c567522cd63694bb646675395"
 metafile = true
 
 [[files]]

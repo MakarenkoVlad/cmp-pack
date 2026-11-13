@@ -1,0 +1,13 @@
+name = "CBC: Compact Cannon Mount"
+filename = "compactmountcomponent-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b7b436bd287e18b7087eb56a73f4b2f918df0f7c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9353692
+project-id = 1675296
