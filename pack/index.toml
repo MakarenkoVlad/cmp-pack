@@ -891,7 +891,7 @@ hash = "d21381963ff595d56e5b00a3ba1cd83c635928e6df8ec09142c6671272015e7b"
 
 [[files]]
 file = "kubejs/client_scripts/graphics.js"
-hash = "b1405fe448498448b6e1943a84592cac78b7d8095f4da7ff51f4ac8abb237ae5"
+hash = "76c316c20f25125377e2965acb281efcfae9a23058d3a9a7e6da03707f02a0a9"
 
 [[files]]
 file = "kubejs/client_scripts/guns.js"
@@ -1627,7 +1627,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "8c8878578917da3d93fe62da234a17e1d2bb1214d538405266be3270b8ea0afc"
+hash = "ec357f173d46e6bd29628ec5c5bed386a843d7f22a903e160a0cf959d5f067c9"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1849,8 +1849,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.39.1.jar"
-hash = "9f63e5f12722ae5024b5b32f5df612a87115c3c40ce5b1291e36520aa91eaeb6"
+file = "mods/cmpfixes-0.43.0.jar"
+hash = "a49d7d1e4632db00642dd5a26d8745c5a1db9bf2f78ffce5bdb62f37533bd84b"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1873,8 +1873,8 @@ file = "mods/cmpveins-0.2.0.jar"
 hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
 
 [[files]]
-file = "mods/cmpwar-0.27.24.jar"
-hash = "9bdaee87fc78e3c7def7569e96f13fe1071ea04f08bc4596272356c5cd8de679"
+file = "mods/cmpwar-0.27.25.jar"
+hash = "c96d6b39f3f0e4a401e5b5b0b09a8b2ba09a5ee2684e11aacf6ab4013ba5a4b2"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -2698,6 +2698,11 @@ metafile = true
 [[files]]
 file = "resourcepacks/improved-create-32x.pw.toml"
 hash = "7105fd32911c437be089020d80fcef21c10e511e85acfd1b9a3f67ca53f0f49c"
+metafile = true
+
+[[files]]
+file = "resourcepacks/low-on-fire.pw.toml"
+hash = "c08873315e71e0a3c17121469321e107659311ec37ed66065202f1d8f8764348"
 metafile = true
 
 [[files]]

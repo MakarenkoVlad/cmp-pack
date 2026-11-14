@@ -51,9 +51,10 @@ ServerEvents.recipes(event => {
     // The smithing upgrades that put the two banned gadgets onto a hook.
     event.remove({ id: 'grapplemod:smithing/hook_ender' })
     event.remove({ id: 'grapplemod:smithing/hook_rocket' })
-    // Lava stays /kit-only: it is thruster and burner fuel, and these two turned cobblestone into it, endless without an oil
-    // vein. No other recipe in the pack makes lava (Create's Alex's Mobs lava bottle needs a mod the pack doesn't have).
-    event.remove({ id: 'create:mixing/lava_from_cobble' })
+    // Lava: /kit's bucket, and Create's own Mixer recipe, cobblestone into 50 mB of lava over a superheated burner (back on
+    // 2026-11-13, Vlad: "bring back lava superheated smelting in mixer recipe"). Superheat here needs a fuelled burner
+    // (Diesel Generators' Burner, Power Grid's Basin Heater, Propulsion's Liquid Burner on diesel or gasoline): there is no
+    // blaze cake. Diesel Generators' bulk fermenting stays out: it made lava from cobblestone over plain heat.
     event.remove({ id: 'createdieselgenerators:bulk_fermenting/lava' })
     // Amethyst takes the pearl's and the eye's place in every recipe that used one: the chunk loader (pearl), the
     // wireless modem (pearl) and the advanced modem (eye) (#34), and anything else, which would otherwise have no

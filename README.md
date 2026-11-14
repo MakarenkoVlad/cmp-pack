@@ -7,3 +7,5 @@ Published by the release workflow of the private CMP repository; changes made he
 Shaders: the pack ships [Complementary Shaders - Unbound](https://www.complementary.dev/) by Complementary Development (off until a player turns it on), used under its license.
 
 ComputerCraft look: the pack turns on the resource pack [Create: ComputerCraft](https://modrinth.com/resourcepack/create-computercraft) by End_Rage, downloaded from its Modrinth page.
+
+Fire overlay: the pack turns on the resource pack [Low On Fire](https://modrinth.com/resourcepack/low-on-fire) by Haikis, downloaded from its Modrinth page.

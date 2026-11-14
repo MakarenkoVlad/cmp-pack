@@ -15,6 +15,8 @@
 //   Universal Bushy Leaves: leaves grow past the block edge, with whatever leaf texture is under it
 //   Fresh Animations: animated animals and villagers (needs the EMF and ETF mods)
 //   Dramatic Skys: painted HD skies, sun and moon (needs the Nuit and Nuit Interop mods)
+//   Low On Fire: a lower fire overlay on screen while burning, so you still see where you go; it also
+//     redraws the fire block textures, so it sits above Faithful, which redraws them too
 // The state lives in local/cmp/graphics-v2.json: for each pack, the zip it last saw and whether it was on.
 // The first version (local/cmp/graphics.json) turned every pack on, so the packs that are now off by
 // default are turned off once for game folders that still have them on from it.
@@ -29,6 +31,7 @@ const CMP_GRAPHICS_PACKS = [
     { key: 'universal-bushy-leaves', file: 'Universal Bushy Leaves', on: true },
     { key: 'fresh-animations', file: 'FreshAnimations', on: true },
     { key: 'dramatic-skys', file: 'Dramatic Skys', on: true },
+    { key: 'low-on-fire', file: 'LowOnFire', on: true },
 ]
 let cmpGraphicsTicks = 0
 let cmpGraphicsChanges = 0
