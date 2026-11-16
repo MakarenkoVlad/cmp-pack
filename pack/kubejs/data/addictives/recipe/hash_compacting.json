@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:kief"
+    },
+    {
+      "item": "addictives:kief"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:hash"
+    }
+  ]
+}

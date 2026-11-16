@@ -85,6 +85,21 @@ ServerEvents.recipes(event => {
     event.replaceInput({ input: 'minecraft:lapis_lazuli' }, 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard')
     event.replaceInput({ input: 'minecraft:glowstone_dust' }, 'minecraft:glowstone_dust', 'cmpveins:sulfur')
     event.replaceInput({ input: 'minecraft:blaze_powder' }, 'minecraft:blaze_powder', 'cmpveins:sulfur')
+    // The two swaps above only reach a recipe this script can read. Create: Addictives writes the results of 20 of its
+    // recipes in an older form, which the game takes and this script does not, so its LSD, Unstable Mix (meth,
+    // Adderall), DMT and Benadryl kept asking for glowstone dust and blaze powder (eclypsie, 2026-11-16). Those 20 are in
+    // pack/kubejs/data/addictives/recipe/ again, in the form of today, the four with sulfur written in.
+    // Nether wart has no stand-in: one red mushroom and two sulfur mix into one (Vlad, 2026-11-16: "just lets do recipe
+    // for nether wart"). DMT takes it, and it grows on the soul sand of /kit like any wart. Two sulfur, not one: a mixer
+    // also runs shapeless crafting, and Big Cannons' tracer tip (glowstone dust and blaze powder) is two sulfur after the
+    // swaps above, so with one sulfur the two recipes tied and the sulfur went into tracer tips. Create runs the recipe
+    // with the most items first. Real blaze powder and glowstone dust still have no source, so no brewing stand runs;
+    // Create's own mixer brewing is a server setting (allowBrewingInMixer, server/config/create-server.toml).
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [{ item: 'minecraft:red_mushroom' }, { item: 'cmpveins:sulfur' }, { item: 'cmpveins:sulfur' }],
+        results: [{ id: 'minecraft:nether_wart' }]
+    }).id('cmp:s2/mixing/nether_wart')
 
     // Gunpowder comes only from sulfur and charcoal in a mixer (#7, #31; the recipe is in s2_deposits.js). Out go
     // Create's cinder flour + harming potion filling and the 25% gunpowder from washing crushed zinc (the wash keeps its
@@ -167,6 +182,13 @@ ServerEvents.recipes(event => {
         ingredients: [{ tag: 'aeroworks:wheel_modules' }, { item: 'cmpveins:rubber' }],
         result: { id: 'aeroworks:wheel_module', count: 1 }
     }).id('cmp:s2/wheel_module_from_styles')
+    // Offroad's tires cost by size (Vlad, 2026-11-14: "yea" to small 1, tire 4, large 8, monstrous 12 rubber). With kelp swapped for
+    // rubber above, the large tire (4 belts, 12 rubber) cost three times the monstrous one (4 dried kelp blocks, which became 4 rubber).
+    // The small tire (shaft and 1 rubber) and the tire (shaft and 4 rubber) keep their swapped recipes.
+    event.remove({ id: 'offroad:large_tire' })
+    event.remove({ id: 'offroad:monstrous_tire' })
+    event.shaped('offroad:large_tire', ['RRR', 'RSR', 'RRR'], { R: 'cmpveins:rubber', S: 'create:shaft' }).id('cmp:s2/large_tire')
+    event.shaped('offroad:monstrous_tire', [' B ', 'BSB', ' B '], { B: 'create:belt_connector', S: 'create:shaft' }).id('cmp:s2/monstrous_tire')
 })
 
 ServerEvents.tags('item', event => {

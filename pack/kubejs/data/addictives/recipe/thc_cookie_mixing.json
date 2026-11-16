@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:cookie"
+    },
+    {
+      "item": "addictives:weed"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:thc_cookie"
+    }
+  ]
+}

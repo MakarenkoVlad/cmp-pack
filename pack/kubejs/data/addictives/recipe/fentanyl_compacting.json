@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:fermented_spider_eye"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:fentanyl",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:poppy_pod"
+    },
+    {
+      "item": "create:cinder_flour"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:narcan_powder"
+    }
+  ]
+}

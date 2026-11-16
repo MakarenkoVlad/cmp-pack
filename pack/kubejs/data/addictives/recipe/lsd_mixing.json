@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "cmpveins:sulfur"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 100,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:lsd",
+      "count": 2
+    }
+  ]
+}

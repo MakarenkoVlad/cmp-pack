@@ -1,0 +1,18 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:cocaine"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:crack",
+      "count": 2
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "item": "addictives:unstable_mix"
+    },
+    {
+      "item": "addictives:unstable_mix"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:crystal_shards",
+      "count": 2
+    }
+  ]
+}

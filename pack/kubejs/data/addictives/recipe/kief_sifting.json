@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "addictives:weed"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:kief",
+      "chance": 0.5
+    }
+  ]
+}

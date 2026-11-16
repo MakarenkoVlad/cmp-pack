@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:nicotine_residue"
+    },
+    {
+      "item": "addictives:nicotine_residue"
+    },
+    {
+      "item": "addictives:nicotine_residue"
+    },
+    {
+      "item": "addictives:nicotine_residue"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:nicotine",
+      "count": 2
+    }
+  ]
+}

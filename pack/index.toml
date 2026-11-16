@@ -914,6 +914,82 @@ file = "kubejs/config/web_server.json"
 hash = "4a30c9be3f878a9b2ecf59f5e0ada934c9d7e390f09c232597a46d5b4e929a50"
 
 [[files]]
+file = "kubejs/data/addictives/recipe/benadryl_mixing.json"
+hash = "65ea38642343c2584392628960abdea3c39c46d56696ceabea26cc3c1ece9699"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/big_vape.json"
+hash = "d9bd127660bf6b5c085c37ccc74922f59fa07d0c0407f4bed6283527d9ca7474"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/caffeine_compacting.json"
+hash = "204a09dc644b04d2748b037664b97d7dac4531edaf1245544111f753df2e02b6"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/cigar_compacting.json"
+hash = "8f93831c0160ce257c3226a5ba583b18dcfb85caddf82dd17b658b70aa8b2338"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/cigarette_compacting.json"
+hash = "56d2efa1578ffa65fa9991843709ba5f741c0d96fc4797add41363c465942d95"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/cocaine_mixing.json"
+hash = "fa1e47e0540710d4c1ee5c54f921dcc0d9fc853587a15d8dae482acccfc8e37d"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/crack_compacting.json"
+hash = "325120035bbd7e2359f0adfa573c651ba8b5588a53fee5a85ac3328f44afe195"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/crystal_shards_mixing.json"
+hash = "46358dcfd2a22b7eff9d2a887db04ca038681a33e6d376c1ccf516627d799531"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/dmt.json"
+hash = "a2d7576292bf1e86f2afea4a2a09757a36df32cdf0bd7b759b650e698ac32135"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/energydrink.json"
+hash = "2f04999a2391c979740d91afb5e4dbc6f23c8fdbea92c0fbbcf74d8a37c79eee"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/fentanyl_compacting.json"
+hash = "4ddc04c3ed27ac33c884b9812e28d3ba48e5dc10b779b151b964d3dbc9a51463"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/hash_compacting.json"
+hash = "fc3f70191ea7cea92d06b6df86ecba5fbc7fad9d806d52816bfab289ec158f41"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/kief_sifting.json"
+hash = "d0dd4cc9a91a251b82b75c882d20ff81bb1b5090a18f9cf0d7f2c52b761df8e1"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/lean_mixing.json"
+hash = "eefd97b8493707c7b2b4b1ed2aaa6e8dc0cd112e8f9e2f9b4da9cae9035d0bda"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/lsd_mixing.json"
+hash = "ed0c04177126256ca1a4193c5513b2640563ecd70cffc67b4988f0dc76a41bc5"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/makatussin_mixing.json"
+hash = "43b8562968209865ee4d8affaacc377dafe854d0599612e7f6b4696cd931fd9c"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/mdma.json"
+hash = "a014ca314ee6a8fca24e30e651bae242fa7291615a3f475e792713db838a912d"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/medium_vape.json"
+hash = "9b58c9f95dd6778b51c264419945ff2da5db9c3c411835837abf069df3a4fe5a"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/meth_compacting.json"
+hash = "4a71cb4d2264d66f2481466dd114b72c003f90e582a2bcc18523a8b5d06182ba"
+
+[[files]]
 file = "kubejs/data/addictives/recipe/mixing/nicotine_liquid_from_nicotine.json"
 hash = "fc68e7180c05156e51e567de9ae4896ea338b31b934f3de0bbf5c2d56fed66f8"
 
@@ -922,8 +998,36 @@ file = "kubejs/data/addictives/recipe/mixing/thc_oil_from_weed.json"
 hash = "f3ca3f533eb8dd4489a69a9f76316a977e3cf5ef314058a8ed564fe49272383d"
 
 [[files]]
+file = "kubejs/data/addictives/recipe/narcan.json"
+hash = "ad79ca4996897286924a87f72e81fbc49aacc3f7c4750927960d3f77b4eb81cd"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/narcan_powder_mixing.json"
+hash = "65e0b4c418fc30373c2d2074de2d13a498541800e39c976209ddd95c0760620a"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/nicotine_mixing.json"
+hash = "fbef330a6deeb4611128cf56e37bc678df5c22ac529e0f6996b60f5c408b9496"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/small_vape.json"
+hash = "fc3547f6084ea0e705b1d005889f1c230f0f0de9b528386408448f4f29d63f49"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/thc_cookie_mixing.json"
+hash = "c6aab7853c0306e42d7d439f1421aed5affe8d0a13808d386b3840112dae7bde"
+
+[[files]]
 file = "kubejs/data/addictives/recipe/tobacco_bulk_smoking.json"
 hash = "67813ffb633c5af3340a0bd9fef1963c117279231e5922fc6f17a17c9728d51f"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/unstable_mix_compacting.json"
+hash = "f7a3cd7ae8e07b97452bb4f374e4da17dfd3d14d7d02cce81e548f2cff8f494b"
+
+[[files]]
+file = "kubejs/data/addictives/recipe/yart.json"
+hash = "67cd51b4c5b8f386e54ea6956be96279b81fd57dc8f89c2fff96df22709dfb99"
 
 [[files]]
 file = "kubejs/data/cbc_at/recipe/cutting/twin_autocannon_barrel_cast_mould.json"
@@ -1627,7 +1731,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "ec357f173d46e6bd29628ec5c5bed386a843d7f22a903e160a0cf959d5f067c9"
+hash = "aa250048fa6af2843882a88332da3db838eb90b94a36abfc15742bae0dd03637"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1849,8 +1953,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.43.0.jar"
-hash = "a49d7d1e4632db00642dd5a26d8745c5a1db9bf2f78ffce5bdb62f37533bd84b"
+file = "mods/cmpfixes-0.45.0.jar"
+hash = "d78380d016ba57d88b497f2c01cf7f512228d0cb7c3587eccff431c0fd705753"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1873,8 +1977,8 @@ file = "mods/cmpveins-0.2.0.jar"
 hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
 
 [[files]]
-file = "mods/cmpwar-0.27.25.jar"
-hash = "c96d6b39f3f0e4a401e5b5b0b09a8b2ba09a5ee2684e11aacf6ab4013ba5a4b2"
+file = "mods/cmpwar-0.27.27.jar"
+hash = "e9735a963044998c73d257737b5399acc7343389bea2c4e0d91a134081d4ffac"
 
 [[files]]
 file = "mods/collective.pw.toml"

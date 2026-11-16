@@ -1,0 +1,16 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "addictives:tobacco_leaves"
+    },
+    {
+      "item": "addictives:tobacco_leaves"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:cigar"
+    }
+  ]
+}

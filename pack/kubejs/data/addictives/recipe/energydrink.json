@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ISI",
+    "MCM",
+    " W "
+  ],
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "S": {
+      "item": "minecraft:sugar"
+    },
+    "M": {
+      "item": "create:copper_sheet"
+    },
+    "C": {
+      "item": "addictives:caffeine"
+    },
+    "W": {
+      "type": "neoforge:components",
+      "items": "minecraft:potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:water"
+        }
+      },
+      "strict": false
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "addictives:energydrink"
+  }
+}

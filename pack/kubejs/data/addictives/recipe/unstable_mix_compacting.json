@@ -1,0 +1,20 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "cmpveins:sulfur"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:unstable_mix",
+      "count": 2
+    }
+  ]
+}

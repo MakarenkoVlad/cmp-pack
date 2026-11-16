@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "addictives:coca_leaf"
+    },
+    {
+      "item": "addictives:coca_leaf"
+    },
+    {
+      "item": "addictives:coca_leaf"
+    },
+    {
+      "type": "neoforge:tag",
+      "amount": 250,
+      "tag": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+      "id": "addictives:cocaine"
+    }
+  ]
+}
