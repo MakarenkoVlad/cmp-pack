@@ -82,7 +82,10 @@ ServerEvents.recipes(event => {
     // nitro. Quartz needs no stand-in: the generators give the first of it (s2_generators.js) and Create's crushing of diorite
     // (the islands' rock blobs) the rest. Diamond, emerald,
     // netherite and the other Nether and End minerals stay without a source (tools, armour, beacons).
-    event.replaceInput({ input: 'minecraft:lapis_lazuli' }, 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard')
+    // Real lapis is back for the enchanting table alone (Vlad, 2026-11-16): washing crushed copper gives it (below). The
+    // lapis block keeps its own recipe, 9 lapis. Swapped, 9 amethyst made a block and the block 9 lapis, so amethyst was
+    // a second source of lapis.
+    event.replaceInput({ input: 'minecraft:lapis_lazuli', not: { id: 'minecraft:lapis_block' } }, 'minecraft:lapis_lazuli', 'minecraft:amethyst_shard')
     event.replaceInput({ input: 'minecraft:glowstone_dust' }, 'minecraft:glowstone_dust', 'cmpveins:sulfur')
     event.replaceInput({ input: 'minecraft:blaze_powder' }, 'minecraft:blaze_powder', 'cmpveins:sulfur')
     // The two swaps above only reach a recipe this script can read. Create: Addictives writes the results of 20 of its
@@ -124,6 +127,14 @@ ServerEvents.recipes(event => {
     }).id('cmp:s2/item_application/sanding_catalyst_from_sand')
     event.remove({ id: 'create:filling/gunpowder' })
     cmpS2Rewash(event, 'crushed_raw_zinc', 'create:crushed_raw_zinc', [{ id: 'create:zinc_nugget', count: 9 }])
+    // Lapis comes only from washing crushed copper, 1 wash in 10, in place of the wash's 50% clay ball (bLoHa's idea; Vlad,
+    // 2026-11-16: "Yes, build it"). A small copper vein crushes into about 43 crushed copper an hour, so about 4 lapis, a
+    // rich one about 20. The City Generator's copper is ingots and never sees the wash, so lapis takes veridium: a vein
+    // or the ore rocks.
+    // Its one use is the enchanting table: every recipe that took lapis takes amethyst (above). Clay keeps Create's other
+    // recipes (washing sand 25%, crushing gravel 5%) and the islands' clay blobs.
+    cmpS2Rewash(event, 'crushed_raw_copper', 'create:crushed_raw_copper',
+        [{ id: 'create:copper_nugget', count: 9 }, { id: 'minecraft:lapis_lazuli', chance: 0.1 }])
 
     // Levitite only from the shop (#19): no recipe makes levitite blend (the fluid that sets into levitite).
     event.remove({ id: 'aeronautics:mixing/levitite_blend' })

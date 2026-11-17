@@ -1658,6 +1658,10 @@ file = "kubejs/server_scripts/artillery_parts.js"
 hash = "6926a88c6f82080a4e13bd24313df25e70986ca0491d9bac810d962333fa1535"
 
 [[files]]
+file = "kubejs/server_scripts/autocannon_ammo.js"
+hash = "ad35afeaf2b41e827c1ce4121081e58fde197e5b640b217be8b4acf4beb17b13"
+
+[[files]]
 file = "kubejs/server_scripts/belts.js"
 hash = "4b199548265c300458828ecba653c5f79f4e20305be3cc95a4afc24d27891473"
 
@@ -1691,7 +1695,7 @@ hash = "7953e2d2527ebdb4b39ea3c8ddecb0e3ca66f334cce0262635061ae251af875b"
 
 [[files]]
 file = "kubejs/server_scripts/market.js"
-hash = "8b9d46a0dfa4f46f1d6ff2d0b55ac39ba94440f9da55e262c8f465fcd2dee352"
+hash = "aaab8d703eea3f71a8a51519b781ba6d5b1a45c7baf683c1f3310f9b24358a92"
 
 [[files]]
 file = "kubejs/server_scripts/market_board.js"
@@ -1731,7 +1735,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "aa250048fa6af2843882a88332da3db838eb90b94a36abfc15742bae0dd03637"
+hash = "023af23c356e244017d3266459f11cf53d956d849c0d12677e00c42cee9e6041"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1953,8 +1957,8 @@ file = "mods/cmpcity-0.1.3.jar"
 hash = "a330848ba5fe6e5975ae157375f39c031471f0b0677fa28590bddec6cbb9fc4f"
 
 [[files]]
-file = "mods/cmpfixes-0.45.0.jar"
-hash = "d78380d016ba57d88b497f2c01cf7f512228d0cb7c3587eccff431c0fd705753"
+file = "mods/cmpfixes-0.46.0.jar"
+hash = "5c115c15ef40a50ac46cb1ddd10e07e3ee22f2dd49aa0fad51279a6a4df0d0eb"
 
 [[files]]
 file = "mods/cmpguard-0.2.0.jar"
@@ -1977,8 +1981,8 @@ file = "mods/cmpveins-0.2.0.jar"
 hash = "a91da68b145f81d2b8534364d0c34b9fa65aee6317896080ea41089ee7b8007f"
 
 [[files]]
-file = "mods/cmpwar-0.27.27.jar"
-hash = "e9735a963044998c73d257737b5399acc7343389bea2c4e0d91a134081d4ffac"
+file = "mods/cmpwar-0.27.28.jar"
+hash = "b072be90e5d2bcf224d33053d1f035e6cdc968662c92a50e55d3f21e293053a3"
 
 [[files]]
 file = "mods/collective.pw.toml"
@@ -2033,6 +2037,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-climbable-rope.pw.toml"
 hash = "74458a17668530918172dce94e2e2066f9e6dd128131d85c417e32ff892e1b62"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-encased-fluid-pipes.pw.toml"
+hash = "c43a63422172da82f7bf9331f54b298058df9fbef57cb32473de691ce91f580d"
 metafile = true
 
 [[files]]

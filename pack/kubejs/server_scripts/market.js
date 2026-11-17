@@ -15,7 +15,8 @@
 //             resources", and on this way of doing it: "YES, THAT's the best"). A crew puts in the most it would pay;
 //             its bids add up and can't be taken back before the end. Nobody else is shown the amount. The crew that
 //             put in the most leads, once that is at least the opening price of CMP_AUCTION_OPENING ingots (his number
-//             too, so that a crew bidding alone can't win for one ingot); among equal amounts the first to get there.
+//             too, so that a crew bidding alone can't win for one ingot: 1024 on 2026-11-11, and on 2026-11-16 "lower
+//             metal auction starting metal from 1024 to 256"); among equal amounts the first to get there.
 //             The price is what the leader would pay right now: one ingot more than the next crew's amount, never
 //             under the opening price and never over the leader's own amount. The price and the leader's name are all
 //             anyone sees. At the end of the day the leader wins: the price is used up out of its metal (copper first,
@@ -32,7 +33,7 @@ const CMP_MARKET_DAILY = 8
 const CMP_MARKET_GOLD_INGOTS = 8
 const CMP_MARKET_GOLD_DAILY = 12
 const CMP_AUCTION_PRIZE = 128
-const CMP_AUCTION_OPENING = 1024
+const CMP_AUCTION_OPENING = 256
 const CMP_DESK_REACH = 8
 const CMP_METALS = { copper: 'minecraft:copper_ingot', iron: 'minecraft:iron_ingot', zinc: 'create:zinc_ingot', gold: 'minecraft:gold_ingot' }
 const CMP_DESK_BLOCKS = { 'cmpcity:market': 'market', 'cmpcity:auction': 'auction' }
