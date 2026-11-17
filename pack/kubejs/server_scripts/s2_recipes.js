@@ -53,16 +53,16 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'grapplemod:smithing/hook_rocket' })
     // Lava: /kit's bucket, and Create's own Mixer recipe, cobblestone into 50 mB of lava over a superheated burner (back on
     // 2026-11-13, Vlad: "bring back lava superheated smelting in mixer recipe"). Superheat here needs a fuelled burner
-    // (Diesel Generators' Burner, Power Grid's Basin Heater, Propulsion's Liquid Burner on diesel or gasoline): there is no
-    // blaze cake. Diesel Generators' bulk fermenting stays out: it made lava from cobblestone over plain heat.
+    // (Diesel Generators' Burner, Power Grid's Basin Heater, Propulsion's Liquid Burner on diesel or gasoline) or, since
+    // netherrack came back on 2026-11-17 (below), a blaze cake in a blaze burner. Diesel Generators' bulk fermenting stays out: it made lava from cobblestone over plain heat.
     event.remove({ id: 'createdieselgenerators:bulk_fermenting/lava' })
     // Amethyst takes the pearl's and the eye's place in every recipe that used one: the chunk loader (pearl), the
     // wireless modem (pearl) and the advanced modem (eye) (#34), and anything else, which would otherwise have no
     // source at all.
     event.replaceInput({ input: 'minecraft:ender_pearl' }, 'minecraft:ender_pearl', 'minecraft:amethyst_shard')
     event.replaceInput({ input: 'minecraft:ender_eye' }, 'minecraft:ender_eye', 'minecraft:amethyst_shard')
-    // Recipe audit (#33, stage 2): the Nether is locked, so nothing gives netherrack, and the empty blaze burner needs
-    // one. Charcoal stands in. That makes the Diesel Generators liquid burner (the refinery's heat, #5) craftable; a
+    // Recipe audit (#33, stage 2): the Nether is locked, so nothing gave netherrack (until 2026-11-17: /kit and the
+    // mixer recipe below), and the empty blaze burner needs one. Charcoal stands in. That makes the Diesel Generators liquid burner (the refinery's heat, #5) craftable; a
     // blaze burner still needs a blaze to work, and filled ones come from the shop only.
     event.replaceInput({ output: 'create:empty_blaze_burner' }, '#c:netherracks', 'minecraft:charcoal')
     // Survival cannon parts don't join until welded, and casting is out, so the welder is the only way to a cast iron, steel or bronze
@@ -103,6 +103,20 @@ ServerEvents.recipes(event => {
         ingredients: [{ item: 'minecraft:red_mushroom' }, { item: 'cmpveins:sulfur' }, { item: 'cmpveins:sulfur' }],
         results: [{ id: 'minecraft:nether_wart' }]
     }).id('cmp:s2/mixing/nether_wart')
+
+    // Netherrack is back (Vlad, 2026-11-17): /kit gives one a day, and a mixer makes one from a cinder flour, a
+    // cobblestone and 100 mB of lava ("bring back netherrack recipe with lava and cobble and netherrack powder"). No mod
+    // in the pack has such a recipe, so this one is the pack's own; 100 mB and no heat are a first guess. Crushing a
+    // netherrack gives one cinder flour and a second one half the time, so the two recipes together turn one netherrack
+    // into as much netherrack and cinder flour as there is lava and cobblestone for. What cinder flour opens: the blaze
+    // cake (superheat on a blaze burner), Addictives' Narcan powder and Benadryl, and Create's glowstone dust from a
+    // spout of Night Vision potion (mixer brewing is on). Its redstone needs Strength, so blaze powder, which still has
+    // no source, and its gunpowder stays out (below).
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [{ item: 'create:cinder_flour' }, { tag: 'c:cobblestones' }, { type: 'neoforge:single', amount: 100, fluid: 'minecraft:lava' }],
+        results: [{ id: 'minecraft:netherrack' }]
+    }).id('cmp:s2/mixing/netherrack')
 
     // Gunpowder comes only from sulfur and charcoal in a mixer (#7, #31; the recipe is in s2_deposits.js). Out go
     // Create's cinder flour + harming potion filling and the 25% gunpowder from washing crushed zinc (the wash keeps its

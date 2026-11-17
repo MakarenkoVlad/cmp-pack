@@ -1723,7 +1723,7 @@ hash = "f9ce021b3d67c690f4d338b0844265d34ac5506cdb9166ef10947d1498f7571e"
 
 [[files]]
 file = "kubejs/server_scripts/s2_deposits.js"
-hash = "dd495b2a655e68c5e63fff000cd94676506c3ba7eed63844b537278e8f338bcb"
+hash = "38932841b2ea09252a2437eb2a351ea0f093d6285c5b564116b291fe863de6bc"
 
 [[files]]
 file = "kubejs/server_scripts/s2_drinks.js"
@@ -1735,7 +1735,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "023af23c356e244017d3266459f11cf53d956d849c0d12677e00c42cee9e6041"
+hash = "fac301cec447b32f1afa2e88e638a537f5de669bc5b3ee2503d51a9a98fe0cf3"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1759,7 +1759,7 @@ hash = "6918b9a29f770bc66a79906b7c02ad508d0d6fdb46029550de2a9f0afa70bcf5"
 
 [[files]]
 file = "kubejs/server_scripts/starter_kit.js"
-hash = "1372d4d0b461721c2f93cfe91f71d7661fd19d1d1d7627336832166283c9b809"
+hash = "94bad27723a48613ece1eb78f720f998f66e22ed03f355b27f9cb557d0fcedc9"
 
 [[files]]
 file = "kubejs/server_scripts/thruster_fuels.js"
