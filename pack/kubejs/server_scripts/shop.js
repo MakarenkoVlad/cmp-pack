@@ -111,7 +111,7 @@ const CMP_SHOP_OFFERS_ALL = [
     ['pearlescent_levitite', 'aeronautics:pearlescent_levitite', 8, 12, 'rare'],
     ['levitite', 'aeronautics:levitite', 8, 12, 'rare'],
     ['gyroscope', 'aeroworks:gyroscope', 1, 12, 'rare'], // shop only (s2_recipes.js); Season 2's only source
-    ['ink_sac', 'minecraft:ink_sac', 8, 0.25, 'supplies'],
+    // No ink sacs since 2026-11-20 (Vlad): a Mixer makes them from charcoal and water (s2_recipes.js).
     ['ominous_bottle', 'minecraft:ominous_bottle', 1, 0.25, 'supplies'],
     ['spider_eye', 'minecraft:spider_eye', 4, 0.25, 'supplies'],
     ['turtle_egg', 'minecraft:turtle_egg', 1, 0.25, 'supplies'],
@@ -582,7 +582,7 @@ function cmpShopTrader(source) {
 function cmpShopList(source) {
     const server = source.getServer()
     if (!cmpShopOpen(server)) cmpShopSay(source, Text.red('The shop is closed right now.'))
-    cmpShopSay(source, Text.gold('Prices are per bundle; ink_sac x8 means 8 to a bundle. 1 Cog = 4 Sprocket. Click an item to put its /shop buy command in chat.'))
+    cmpShopSay(source, Text.gold('Prices are per bundle; raw_cod x8 means 8 to a bundle. 1 Cog = 4 Sprocket. Click an item to put its /shop buy command in chat.'))
     const prices = []
     CMP_SHOP_OFFERS.forEach(offer => {
         if (prices.indexOf(offer.price) < 0) prices.push(offer.price)

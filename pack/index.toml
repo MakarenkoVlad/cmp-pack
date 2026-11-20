@@ -1743,7 +1743,7 @@ hash = "f56ef159c242daf3d9856dcdb37cb1dc239c76086f949cc00b457ba43f9b0f91"
 
 [[files]]
 file = "kubejs/server_scripts/s2_recipes.js"
-hash = "fac301cec447b32f1afa2e88e638a537f5de669bc5b3ee2503d51a9a98fe0cf3"
+hash = "356879d3801d97d46db24238b9a051a646aa630e472e5c311da0cb9567925324"
 
 [[files]]
 file = "kubejs/server_scripts/s2_ship_loot.js"
@@ -1759,7 +1759,7 @@ hash = "ad0d8d6ef5550e32c2e59b54f87b49441b89b90839875c8ee25fb35f7d5f4731"
 
 [[files]]
 file = "kubejs/server_scripts/shop.js"
-hash = "8b5840e63fd51ac8785bcf90e5b632c7ead3bbca2f3eac098364cc0830c19e6c"
+hash = "ac5642cd809f8b528989a85e4983254a08d05ae731505879427c83349ef323b9"
 
 [[files]]
 file = "kubejs/server_scripts/smithing_templates.js"
@@ -1867,11 +1867,6 @@ metafile = true
 [[files]]
 file = "mods/better-third-person.pw.toml"
 hash = "e1f1588b18947699ddc9b4f7c5b5406c5559155b8cb52dcd0f203c07c31cd0b8"
-metafile = true
-
-[[files]]
-file = "mods/carbons.pw.toml"
-hash = "af9fbcf3e6b3484ab0c209e1c1d884d4ccd532498e1ba35f843231c15e741262"
 metafile = true
 
 [[files]]
@@ -1986,8 +1981,8 @@ file = "mods/cmpshop-0.4.1.jar"
 hash = "08658f68a0a28ef795787c5ed69dc803b2c02e49bd060a64f835204673deafba"
 
 [[files]]
-file = "mods/cmptab-0.1.0.jar"
-hash = "dc00c08e7eaba431b7188a3b1e980aad2b30db1e2697dc85fd74612c856acd5b"
+file = "mods/cmptab-0.2.1.jar"
+hash = "1ac6650ff5db2bc377955f7087c16b0844938222ace267c2fc0cb0d03293748d"
 
 [[files]]
 file = "mods/cmpveins-0.2.0.jar"
@@ -2734,7 +2729,7 @@ metafile = true
 
 [[files]]
 file = "mods/spark.pw.toml"
-hash = "5995decc8738d7ddccec218dfa1ed95db9eca5bb64c98fd2cede8bf9bbc837c2"
+hash = "593fa7b30ab016aa45be07bd6bef3a9f160ed0f24689850d60bf84995d69b843"
 metafile = true
 
 [[files]]

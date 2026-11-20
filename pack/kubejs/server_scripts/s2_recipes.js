@@ -118,6 +118,18 @@ ServerEvents.recipes(event => {
         results: [{ id: 'minecraft:netherrack' }]
     }).id('cmp:s2/mixing/netherrack')
 
+    // Ink sacs come from a Mixer (Vlad, 2026-11-20): one charcoal or coal and 250 mB of water make one, with no heat. No squid
+    // spawns (cmpwar's [mobs] naturalSpawnsOff), and the shop no longer sells them (it sold 8 for a Sprocket). Glow ink sacs
+    // for signs come from these (IntrepidHam asked): Create's haunting turns an ink sac into a glow ink sac in a fan's stream
+    // through soul fire or a soul campfire, and /kit has the soul sand. No loop: an ink sac mills or cuts into 2 black dye, and
+    // no dye goes back into coal or charcoal. A basin full of charcoal makes ink, not coal blocks: a Mixer leaves the 9-alike
+    // shapeless recipes (9 charcoal into a coal block, above) to the Press (allowShapedSquareInPress).
+    event.custom({
+        type: 'create:mixing',
+        ingredients: [{ tag: 'minecraft:coals' }, { type: 'neoforge:single', amount: 250, fluid: 'minecraft:water' }],
+        results: [{ id: 'minecraft:ink_sac' }]
+    }).id('cmp:s2/mixing/ink_sac')
+
     // Gunpowder comes only from sulfur and charcoal in a mixer (#7, #31; the recipe is in s2_deposits.js). Out go
     // Create's cinder flour + harming potion filling and the 25% gunpowder from washing crushed zinc (the wash keeps its
     // 9 zinc nuggets). Kept: the two round trips that only give gunpowder back (Big Cannons' 9 pinches, Immersive
